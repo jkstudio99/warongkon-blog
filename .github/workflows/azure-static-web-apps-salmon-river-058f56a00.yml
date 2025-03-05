@@ -30,6 +30,12 @@ jobs:
         with:
           version: 9.15.2
 
+      - name: Check pnpm installation
+        run: |
+          pnpm -v || echo "pnpm not found, checking PATH"
+          echo "Current PATH: $PATH"
+          which pnpm || echo "pnpm executable not found in PATH"
+
       - name: Install dependencies and build
         run: |
           pnpm install --frozen-lockfile
