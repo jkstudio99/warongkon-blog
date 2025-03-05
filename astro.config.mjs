@@ -6,9 +6,9 @@ import { autoNewTabExternalLinks } from './src/autoNewTabExternalLinks';
 
 import partytown from "@astrojs/partytown";
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://devolio.devaradise.com',
+  site: 'https://warongkon.dev',
+  outDir: './dist',  // ตรวจสอบว่าใช้ ./dist
   integrations: [mdx(), sitemap(), tailwind(), partytown()],
   markdown: {
     extendDefaultPlugins: true,
