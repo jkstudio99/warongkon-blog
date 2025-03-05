@@ -27,7 +27,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
+<<<<<<< HEAD
           node-version: '18.20.7' # ปรับให้ตรงกับ Oryx ที่ใช้
+=======
+          node-version: '18.20.7'  # ปรับให้ตรงกับ Oryx ที่ใช้
+>>>>>>> ea71a5ebe6d53e8a9bdf53ad81f084dcaaff375d
           cache: 'pnpm'
 
       - name: Install dependencies and build
@@ -41,11 +45,19 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_RIVER_058F56A00 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
+<<<<<<< HEAD
           action: 'upload'
           app_location: '/'
           api_location: ''
           output_location: 'dist'
           app_build_command: 'pnpm run build' # ระบุคำสั่ง build แบบชัดเจน
+=======
+          action: "upload"
+          app_location: "/"  
+          api_location: ""  
+          output_location: "dist"
+          app_build_command: "pnpm run build"  # ระบุคำสั่ง build แบบชัดเจน
+>>>>>>> ea71a5ebe6d53e8a9bdf53ad81f084dcaaff375d
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -57,4 +69,8 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_RIVER_058F56A00 }}
+<<<<<<< HEAD
           action: 'close'
+=======
+          action: "close"
+>>>>>>> ea71a5ebe6d53e8a9bdf53ad81f084dcaaff375d
