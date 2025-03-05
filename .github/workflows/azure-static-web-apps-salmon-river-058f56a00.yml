@@ -19,22 +19,16 @@ jobs:
         with:
           submodules: true
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22.14.0'
-          cache: 'pnpm'
-
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9.15.2
 
-      - name: Check pnpm installation
-        run: |
-          pnpm -v || echo "pnpm not found, checking PATH"
-          echo "Current PATH: $PATH"
-          which pnpm || echo "pnpm executable not found in PATH"
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.14.0'
+          cache: 'pnpm'
 
       - name: Install dependencies and build
         run: |
