@@ -50,10 +50,11 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_RIVER_058F56A00 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"  
+          app_location: "/"  # Root ของ repository
           api_location: ""  
-          output_location: "dist"  # ตรวจสอบว่า dist มี index.html
+          output_location: "dist"  # ชี้ไปยังโฟลเดอร์ที่เก็บ output
           skip_app_build: true  # ข้ามการ build ใน Oryx
+          app_artifact_location: "dist"  # ระบุตำแหน่ง artifacts ชัดเจน
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
