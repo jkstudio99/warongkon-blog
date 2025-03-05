@@ -27,7 +27,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22.14.0'
+          node-version: '18.20.7'  # ปรับให้ตรงกับ Oryx ที่ใช้
           cache: 'pnpm'
 
       - name: Install dependencies and build
@@ -45,6 +45,7 @@ jobs:
           app_location: "/"  
           api_location: ""  
           output_location: "dist"
+          app_build_command: "pnpm run build"  # ระบุคำสั่ง build แบบชัดเจน
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
