@@ -22,13 +22,18 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # ปรับตาม version ที่ Astro ใช้ (เช่น 16, 18, หรือ 20)
+          node-version: '22.14.0'  # อัปเดตเป็น Node.js 22.14.0
           cache: 'pnpm'  # ใช้ cache สำหรับ pnpm
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8  # ปรับตาม version pnpm ที่คุณใช้ (ดูใน package.json หรือ `pnpm -v`)
+          version: 9.15.2  # ติดตั้ง pnpm 9.15.2
+
+      - name: Verify pnpm and Node.js versions
+        run: |
+          node -v
+          pnpm -v
 
       - name: Install dependencies and build
         run: |
@@ -44,7 +49,7 @@ jobs:
           action: "upload"
           app_location: "/"  # App source code path
           api_location: ""  # Api source code path - optional
-          output_location: "dist"  # Built app content directory
+          output_location: "dist"  # Built app content directory (ตรวจสอบว่าโฟลเดอร์ dist ถูกต้อง)
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
