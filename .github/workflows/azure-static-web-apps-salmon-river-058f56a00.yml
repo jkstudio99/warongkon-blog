@@ -25,11 +25,11 @@ jobs:
           node-version: '22.14.0'
           cache: 'pnpm'
 
-      - name: Enable Corepack and Install pnpm
+      - name: Install pnpm manually
         run: |
-          corepack enable
-          corepack prepare pnpm@9.15.2 --activate
-          pnpm -v  # ตรวจสอบเวอร์ชัน
+          npm install -g pnpm@9.15.2  # ติดตั้ง pnpm ด้วย npm
+          echo "PNPM PATH: $(which pnpm)"
+          pnpm -v  # ตรวจสอบเวอร์ชันว่าติดตั้งสำเร็จหรือไม่
 
       - name: Install dependencies and build
         run: |
