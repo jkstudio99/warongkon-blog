@@ -30,10 +30,18 @@ jobs:
           node-version: '18.20.7'  # ตรงกับ Oryx
           cache: 'pnpm'
 
-      - name: Install dependencies and build locally
+      - name: Install dependencies and build
         run: |
           pnpm install --frozen-lockfile
           pnpm run build
+
+      - name: Check build output
+        run: |
+          ls -la dist  # ตรวจสอบไฟล์ใน dist
+          if [ ! -f "dist/index.html" ] && [ ! -f "dist/Index.html" ]; then
+            echo "Error: No default file (index.html or Index.html) found in dist folder"
+            exit 1
+          fi
 
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
@@ -44,9 +52,8 @@ jobs:
           action: "upload"
           app_location: "/"  
           api_location: ""  
-          output_location: "dist"
-          app_build_command: "pnpm run build"  # ระบุชัดเจนว่าใช้ pnpm
-          skip_app_build: true  # ข้ามการ build ใน Oryx เพราะเรา build ด้วย pnpm แล้ว
+          output_location: "dist"  # ตรวจสอบว่า dist มี index.html
+          skip_app_build: true  # ข้ามการ build ใน Oryx
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
