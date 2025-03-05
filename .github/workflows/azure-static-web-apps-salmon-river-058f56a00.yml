@@ -19,17 +19,16 @@ jobs:
         with:
           submodules: true
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.2
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '22.14.0'
           cache: 'pnpm'
-
-      - name: Install pnpm manually
-        run: |
-          npm install -g pnpm@9.15.2  # ติดตั้ง pnpm ด้วย npm
-          echo "PNPM PATH: $(which pnpm)"
-          pnpm -v  # ตรวจสอบเวอร์ชันว่าติดตั้งสำเร็จหรือไม่
 
       - name: Install dependencies and build
         run: |
