@@ -1,6 +1,6 @@
 # Warongkon Blog V1.0
 
-[Demo](https://warongkon.dev)
+[My Website](https://warongkon.dev)
 
 ---
 
