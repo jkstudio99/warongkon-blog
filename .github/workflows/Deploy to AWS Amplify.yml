@@ -1,5 +1,10 @@
 name: Deploy to AWS Amplify
 
+# เพิ่ม permissions เพื่อให้ GitHub Actions ใช้ OIDC
+permissions:
+  id-token: write  # อนุญาตให้ขอ OIDC token
+  contents: read   # อนุญาตให้อ่าน repository
+
 on:
   push:
     branches:
@@ -47,13 +52,13 @@ jobs:
             exit 1
           fi
 
-      # ตั้งค่า AWS credentials ด้วยเวอร์ชันใหม่
+      # ตั้งค่า AWS credentials ด้วย OIDC
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: arn:aws:iam::ACCOUNT_ID:role/github-actions-amplify-role  # แทนที่ด้วย ARN ของ role ที่คุณสร้าง
           aws-region: us-east-1  # ปรับ region ตามที่คุณใช้ใน Amplify
+          role-duration-seconds: 3600  # เวลาที่ role จะใช้งานได้ (1 ชั่วโมง)
 
       # Deploy ไป AWS Amplify
       - name: Deploy to AWS Amplify
