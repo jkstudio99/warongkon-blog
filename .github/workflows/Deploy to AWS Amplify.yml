@@ -47,9 +47,9 @@ jobs:
             exit 1
           fi
 
-      # ตั้งค่า AWS credentials
+      # ตั้งค่า AWS credentials ด้วยเวอร์ชันใหม่
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -58,8 +58,8 @@ jobs:
       # Deploy ไป AWS Amplify
       - name: Deploy to AWS Amplify
         run: |
-          npm install -g @aws-amplify/cli  # ติดตั้ง Amplify CLI
-          amplify publish --yes  # Deploy โดยไม่ต้องยืนยัน
+          npm install -g @aws-amplify/cli
+          amplify publish --yes
         env:
           AMPLIFY_APP_ID: ${{ secrets.AMPLIFY_APP_ID }}
 
