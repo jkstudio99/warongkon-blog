@@ -1,4 +1,4 @@
-name: Azure Static Web Apps CI/CD with pnpm for warongkon-blog
+name: Deploy to AWS Amplify
 
 on:
   push:
@@ -10,60 +10,62 @@ on:
       - main
 
 jobs:
-  build_and_deploy_job:
+  build_and_deploy:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
     steps:
+      # Checkout โค้ดจาก repository
       - uses: actions/checkout@v4
         with:
           submodules: true
 
+      # ตั้งค่า pnpm
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9.15.2
 
+      # ตั้งค่า Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.20.7'  # ตรงกับ Oryx
+          node-version: '18.20.7'
           cache: 'pnpm'
 
+      # ติดตั้ง dependencies และ build โปรเจกต์
       - name: Install dependencies and build
         run: |
           pnpm install --frozen-lockfile
           pnpm run build
 
+      # ตรวจสอบว่า build output มี index.html
       - name: Check build output
         run: |
-          ls -la dist  # ตรวจสอบไฟล์ใน dist
+          ls -la dist
           if [ ! -f "dist/index.html" ] && [ ! -f "dist/Index.html" ]; then
             echo "Error: No default file (index.html or Index.html) found in dist folder"
             exit 1
           fi
 
-      - name: Deploy to Azure Static Web Apps
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
+      # ตั้งค่า AWS credentials
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_RIVER_058F56A00 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"
-          app_location: "dist"  # ปรับให้ชี้ไปยัง dist แทน root
-          api_location: ""  
-          output_location: ""  # ไม่ต้องระบุ เพราะ app_location ชี้ไปยัง dist แล้ว
-          skip_app_build: true  # ข้ามการ build ใน Oryx
-          app_artifact_location: ""  # ลบหรือไม่ต้องระบุ เพราะ app_location ชี้ไปยัง dist
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1  # ปรับ region ตามที่คุณใช้ใน Amplify
 
-  close_pull_request_job:
+      # Deploy ไป AWS Amplify
+      - name: Deploy to AWS Amplify
+        run: |
+          npm install -g @aws-amplify/cli  # ติดตั้ง Amplify CLI
+          amplify publish --yes  # Deploy โดยไม่ต้องยืนยัน
+        env:
+          AMPLIFY_APP_ID: ${{ secrets.AMPLIFY_APP_ID }}
+
+  close_pull_request:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Close Pull Request Job
     steps:
       - name: Close Pull Request
-        id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_RIVER_058F56A00 }}
-          action: "close"
+        run: echo "Pull request closed, no deployment needed."
