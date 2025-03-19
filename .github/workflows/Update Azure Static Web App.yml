@@ -1,0 +1,67 @@
+name: Azure Static Web Apps CI/CD with pnpm for warongkon-blog
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+
+jobs:
+  build_and_deploy_job:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.20.7'  # ตรงกับ Oryx
+          cache: 'pnpm'
+
+      - name: Install dependencies and build
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm run build
+      - name: Check build output
+        run: |
+          ls -la dist  # ตรวจสอบไฟล์ใน dist
+          if [ ! -f "dist/index.html" ] && [ ! -f "dist/Index.html" ]; then
+            echo "Error: No default file (index.html or Index.html) found in dist folder"
+            exit 1
+          fi
+      - name: Deploy to Azure Static Web Apps
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_RIVER_058F56A00 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "dist"  # ปรับให้ชี้ไปยัง dist แทน root
+          api_location: ""  
+          output_location: ""  # ไม่ต้องระบุ เพราะ app_location ชี้ไปยัง dist แล้ว
+          skip_app_build: true  # ข้ามการ build ใน Oryx
+          app_artifact_location: ""  # ลบหรือไม่ต้องระบุ เพราะ app_location ชี้ไปยัง dist
+
+  close_pull_request_job:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request Job
+    steps:
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_RIVER_058F56A00 }}
+          action: "close"
