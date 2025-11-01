@@ -12,10 +12,10 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: 'Devaradise.com',
-    description: 'A blog that sharing web development resources and tutorials',
-    demoLink: 'https://devaradise.com',
-    tags: ['Blog']
+    name: 'Gofitrunnow.com',
+    description: 'A Master Thesis web application that utilizes gamification to track and motivate users in their running and overall wellness journey.',
+    demoLink: 'https://gofitrunnow.com',
+    tags: ['Master Thesis Prioject', 'Gammification', 'Health', 'Wellness', 'Run']
   },
   {
     name: 'Sellercraft App',
