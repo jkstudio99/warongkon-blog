@@ -15,7 +15,7 @@ export const projects: Project[] = [
     name: 'Gofitrunnow.com',
     description: 'A Master Thesis web application that utilizes gamification to track and motivate users in their running and overall wellness journey.',
     demoLink: 'https://gofitrunnow.com',
-    tags: ['Master Thesis Prioject', 'Gammification', 'Health', 'Wellness', 'Run']
+    tags: ['Gammification', 'Health']
   },
   {
     name: 'Sellercraft App',
