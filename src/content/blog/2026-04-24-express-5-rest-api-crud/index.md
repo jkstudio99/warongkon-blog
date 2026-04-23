@@ -1,145 +1,143 @@
 ---
-title: 'สอนสร้าง REST API ด้วย Express 5 ฉบับปี 2026: เจาะลึก CRUD แบบ Step-by-Step'
-seoTitle: 'คู่มือสร้าง Express 5 REST API CRUD ภาษาไทย 2026 - Warongkon Blog'
-slug: 'express-5-rest-api-crud-thai-guide-2026'
-description: 'สอนสร้าง REST API ด้วย Express 5 และ TypeScript แบบละเอียดทุกขั้นตอน ตั้งแต่เริ่มต้นจนถึงการจัดการ Error แบบมืออาชีพ'
+title: 'สอนสร้าง REST API ด้วย Express 5 + PostgreSQL ฉบับปี 2026: คู่มือ CRUD ฉบับสมบูรณ์'
+seoTitle: 'คู่มือ Express 5 PostgreSQL REST API CRUD 2026 - Warongkon Blog'
+slug: 'express-5-postgresql-book-crud-2026'
+description: 'ยกระดับการพัฒนา API ด้วยการเชื่อมต่อ Express 5 กับ PostgreSQL สอนสร้างระบบจัดการหนังสือ (Book Store) แบบ Step-by-Step'
 pubDate: '2026-04-24'
-tags: ["Node.js", "Express 5", "TypeScript", "REST API", "Tutorial"]
+tags: ["Node.js", "Express 5", "PostgreSQL", "REST API", "Database"]
 coverImage: './cover.jpg'
 ---
 
-ยินดีต้อนรับสู่ปี 2026 ครับ! ในยุคที่การพัฒนาซอฟต์แวร์เน้นความรวดเร็วและปลอดภัย **Express 5** ได้กลายเป็นมาตรฐานหลักของนักพัฒนา Node.js ทั่วโลก วันนี้ผมจะพาทุกคนมาสร้าง REST API สำหรับจัดการข้อมูล (CRUD) โดยใช้ Express 5 และ TypeScript แบบละเอียดทุกขั้นตอนครับ
+หลังจากที่เราได้เรียนรู้พื้นฐานของ Express 5 ไปแล้ว วันนี้เราจะมาอัปเกรดระบบของเราให้ใช้งานได้จริงด้วยการเชื่อมต่อกับฐานข้อมูลยอดนิยมอย่าง **PostgreSQL** ครับ โดยเราจะสร้างระบบจัดการ "หนังสือ" (Book Store) แบบครบวงจรครับ
 
-## ทำไมต้อง Express 5?
+## ทำไมต้อง PostgreSQL ในปี 2026?
 
-ฟีเจอร์ที่เปลี่ยนชีวิตนักพัฒนามากที่สุดในเวอร์ชัน 5 คือ **Native Async Error Handling** ครับ สมัยก่อนเราต้องเขียน `try-catch` ครอบทุกฟังก์ชัน หรือใช้ middleware เสริม แต่ในเวอร์ชัน 5 นี้ ถ้ามี Error เกิดขึ้นใน `async` function ตัว Express จะจับส่งไปยัง Error Handler ให้เราโดยอัตโนมัติ ทำให้โค้ดสะอาดขึ้นมาก!
+PostgreSQL ยังคงเป็นฐานข้อมูล Relational ที่แข็งแกร่งที่สุด ด้วยฟีเจอร์ที่รองรับทั้ง SQL และ JSONB รวมถึงประสิทธิภาพที่ไว้วางใจได้ เมื่อจับคู่กับ Express 5 ที่จัดการ Async ได้ดีเยี่ยม จะทำให้ API ของเราทรงพลังมากครับ
 
 ---
 
-## ขั้นตอนที่ 1: การเตรียมโครงสร้างโปรเจกต์ (Setup)
+## ขั้นตอนที่ 1: เตรียม Library ที่จำเป็น
 
-ก่อนอื่นให้เราเริ่มต้นด้วยการลงไลบรารีที่จำเป็น (แนะนำให้ใช้ pnpm นะครับ)
+เราจะใช้ `pg` ซึ่งเป็น Driver มาตรฐานสำหรับเชื่อมต่อ Node.js กับ PostgreSQL ครับ
 
 ```bash
-pnpm init
-pnpm add express@5.0.0
-pnpm add -D typescript @types/node @types/express ts-node
-```
-
-สร้างไฟล์ `app.ts` และตั้งค่าเริ่มต้น:
-
-```typescript
-import express, { Request, Response, NextFunction } from 'express';
-
-const app = express();
-
-// Middleware สำหรับอ่าน JSON body จาก Request
-app.use(express.json());
-
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Server is running on http://localhost:${PORT}`);
-});
+pnpm add pg
+pnpm add -D @types/pg
 ```
 
 ---
 
-## ขั้นตอนที่ 2: กำหนดโครงสร้างข้อมูล (Data Model)
+## ขั้นตอนที่ 2: ตั้งค่าการเชื่อมต่อฐานข้อมูล (Database Connection)
 
-ในยุค 2026 การใช้ TypeScript เป็นเรื่องที่ขาดไม่ได้ เพื่อให้เรามั่นใจว่าข้อมูลที่รับส่งมีความถูกต้อง
+สร้างไฟล์สำหรับจัดการการเชื่อมต่อ (ในตัวอย่างนี้ผมจะเขียนรวมใน `app.ts` เพื่อความเข้าใจง่ายนะครับ)
 
 ```typescript
-interface Course {
-  id: number;
-  title: string;
-  instructor: string;
-}
+import { Pool } from 'pg';
 
-// จำลองฐานข้อมูลแบบ In-memory
-let courses: Course[] = [
-  { id: 1, title: 'Modern C# 2026', instructor: 'Warongkon' },
-  { id: 2, title: 'Express 5 Mastery', instructor: 'Warongkon' }
-];
+// ตั้งค่าการเชื่อมต่อ (แนะนำให้ใช้ .env ในการทำงานจริง)
+const pool = new Pool({
+  user: 'your_user',
+  host: 'localhost',
+  database: 'bookstore',
+  password: 'your_password',
+  port: 5432,
+});
+
+// ตรวจสอบการเชื่อมต่อ
+pool.on('connect', () => {
+  console.log('🐘 Connected to PostgreSQL successfully!');
+});
+```
+
+*อย่าลืมสร้าง Table ใน PostgreSQL ก่อนนะครับ:*
+```sql
+CREATE TABLE books (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  author VARCHAR(255) NOT NULL,
+  published_year INTEGER
+);
 ```
 
 ---
 
-## ขั้นตอนที่ 3: การเขียน CRUD Operations
+## ขั้นตอนที่ 3: เขียน CRUD Operations ด้วย SQL
 
-### 1. Read (ดึงข้อมูลทั้งหมด)
-เราจะใช้ `app.get` เพื่อสร้าง Endpoint สำหรับดึงข้อมูลครับ
+ใน Express 5 เราสามารถใช้ `async/await` ร่วมกับ `pool.query` ได้อย่างลื่นไหลครับ
 
+### 1. Create: เพิ่มหนังสือใหม่ (POST)
 ```typescript
-app.get('/api/courses', async (req: Request, res: Response) => {
-  // ใน Express 5 คุณสามารถดึงข้อมูลจาก DB ได้เลยโดยไม่ต้องกลัว Error หลุด
-  res.json(courses);
-});
-```
-
-### 2. Create (เพิ่มข้อมูลใหม่)
-ใช้ `app.post` และรับค่าจาก `req.body`
-
-```typescript
-app.post('/api/courses', async (req: Request, res: Response) => {
-  const { title, instructor } = req.body;
+app.post('/api/books', async (req: Request, res: Response) => {
+  const { title, author, published_year } = req.body;
   
-  if (!title || !instructor) {
-    return res.status(400).json({ message: 'กรุณากรอกข้อมูลให้ครบถ้วน' });
-  }
+  const query = 'INSERT INTO books (title, author, published_year) VALUES ($1, $2, $3) RETURNING *';
+  const values = [title, author, published_year];
 
-  const newCourse: Course = {
-    id: courses.length + 1,
-    title,
-    instructor
-  };
-
-  courses.push(newCourse);
-  res.status(201).json(newCourse);
+  const result = await pool.query(query, values);
+  res.status(201).json(result.rows[0]);
 });
 ```
 
-### 3. Update (แก้ไขข้อมูล)
-ใช้ `app.put` และระบุ `id` ผ่านทาง URL Parameters (`req.params.id`)
-
+### 2. Read: ดึงข้อมูลหนังสือทั้งหมด (GET)
 ```typescript
-app.put('/api/courses/:id', async (req: Request, res: Response) => {
-  const id = parseInt(req.params.id);
-  const { title, instructor } = req.body;
+app.get('/api/books', async (req: Request, res: Response) => {
+  const result = await pool.query('SELECT * FROM books ORDER BY id DESC');
+  res.json(result.rows);
+});
+```
+
+### 3. Read: ดึงข้อมูลหนังสือตาม ID (GET)
+```typescript
+app.get('/api/books/:id', async (req: Request, res: Response) => {
+  const id = req.params.id;
+  const result = await pool.query('SELECT * FROM books WHERE id = $1', [id]);
   
-  const index = courses.findIndex(c => c.id === id);
-  if (index === -1) {
-    return res.status(404).json({ message: 'ไม่พบคอร์สที่ต้องการแก้ไข' });
+  if (result.rows.length === 0) {
+    return res.status(404).json({ message: 'ไม่พบหนังสือที่ระบุ' });
   }
-
-  courses[index] = { ...courses[index], title, instructor };
-  res.json(courses[index]);
+  res.json(result.rows[0]);
 });
 ```
 
-### 4. Delete (ลบข้อมูล)
-ใช้ `app.delete` เพื่อลบข้อมูลตาม `id`
-
+### 4. Update: แก้ไขข้อมูลหนังสือ (PUT)
 ```typescript
-app.delete('/api/courses/:id', async (req: Request, res: Response) => {
-  const id = parseInt(req.params.id);
-  courses = courses.filter(c => c.id !== id);
-  res.status(204).send(); // ส่งสถานะ No Content กลับไป
+app.put('/api/books/:id', async (req: Request, res: Response) => {
+  const id = req.params.id;
+  const { title, author, published_year } = req.body;
+  
+  const query = 'UPDATE books SET title = $1, author = $2, published_year = $3 WHERE id = $4 RETURNING *';
+  const values = [title, author, published_year, id];
+
+  const result = await pool.query(query, values);
+  
+  if (result.rows.length === 0) {
+    return res.status(404).json({ message: 'ไม่พบหนังสือที่ต้องการแก้ไข' });
+  }
+  res.json(result.rows[0]);
+});
+```
+
+### 5. Delete: ลบหนังสือ (DELETE)
+```typescript
+app.delete('/api/books/:id', async (req: Request, res: Response) => {
+  const id = req.params.id;
+  await pool.query('DELETE FROM books WHERE id = $1', [id]);
+  res.status(204).send();
 });
 ```
 
 ---
 
-## ขั้นตอนที่ 4: การจัดการ Error (Global Error Handler)
+## ขั้นตอนที่ 4: การจัดการ Error (Express 5 Magic)
 
-นี่คือส่วนที่ Express 5 ทำได้ดีมาก เราแค่เขียน Middleware ตัวเดียวไว้ท้ายสุดของไฟล์ครับ
+ขอย้ำอีกครั้งว่าใน Express 5 ถ้า Database Query เกิด Error (เช่น ใส่ข้อมูลผิดประเภท) ระบบจะจับส่งไปที่ Error Handler อัตโนมัติครับ
 
 ```typescript
+// Global Error Handler
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
-  console.error('❌ เกิดข้อผิดพลาด:', err.message);
-  
-  res.status(err.status || 500).json({
+  res.status(500).json({
     status: 'error',
-    message: err.message || 'Internal Server Error'
+    message: 'เกิดข้อผิดพลาดในการจัดการฐานข้อมูล: ' + err.message
   });
 });
 ```
@@ -148,9 +146,9 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
 
 ## สรุปบทเรียน
 
-การพัฒนา REST API ในปี 2026 ด้วย Express 5 ช่วยลดภาระในการจัดการ Error และทำให้เราโฟกัสกับ Business Logic ได้มากขึ้น สิ่งสำคัญคือ:
-1. **TypeScript** คือหัวใจสำคัญของความเสถียร
-2. **Async/Await** ทำงานได้เนียนตาขึ้นใน Express 5
-3. **Clean Code** พยายามแยก Logic ออกเป็นส่วนๆ เพื่อให้ง่ายต่อการดูแลรักษาครับ
+การเปลี่ยนจาก In-memory มาเป็น **PostgreSQL** ทำให้แอปพลิเคชันของเราพร้อมใช้งานจริง (Production-ready) มากขึ้น:
+1. **Data Persistence:** ข้อมูลไม่หายเมื่อ Restart Server
+2. **Security:** การใช้ Parameterized Queries (`$1, $2`) ช่วยป้องกัน SQL Injection
+3. **Efficiency:** Express 5 ช่วยให้การเขียนโค้ดต่อฐานข้อมูลสั้นลงและอ่านง่ายขึ้นมากครับ
 
-หวังว่าคู่มือฉบับนี้จะเป็นประโยชน์ต่อเพื่อนๆ นักพัฒนาทุกคนนะครับ หากมีคำถามตรงไหน คอมเมนต์พูดคุยกันได้เลยครับ!
+ลองนำไปปรับใช้กับโปรเจกต์ของเพื่อนๆ ดูนะครับ! ปี 2026 นี้ PostgreSQL + Express 5 คือคู่หูที่ลงตัวที่สุดครับ
