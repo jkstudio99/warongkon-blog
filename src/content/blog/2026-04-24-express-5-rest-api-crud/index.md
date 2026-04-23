@@ -1,154 +1,162 @@
 ---
-title: 'สอนสร้าง REST API ด้วย Express 5 + PostgreSQL ฉบับปี 2026: คู่มือ CRUD ฉบับสมบูรณ์'
-seoTitle: 'คู่มือ Express 5 PostgreSQL REST API CRUD 2026 - Warongkon Blog'
-slug: 'express-5-postgresql-book-crud-2026'
-description: 'ยกระดับการพัฒนา API ด้วยการเชื่อมต่อ Express 5 กับ PostgreSQL สอนสร้างระบบจัดการหนังสือ (Book Store) แบบ Step-by-Step'
+title: 'สถาปัตยกรรม REST API ระดับ Senior: การประยุกต์ใช้ Express 5, Prisma และหลักการ SOLID ในปี 2026'
+seoTitle: 'Senior REST API Architecture Express 5 Prisma SOLID 2026 - Warongkon Blog'
+slug: 'senior-rest-api-architecture-express-5-prisma-2026'
+description: 'เจาะลึกการออกแบบ REST API ให้รองรับการขยายตัวและง่ายต่อการดูแลรักษา ด้วย Layered Architecture, Repository Pattern และหลักการ SOLID'
 pubDate: '2026-04-24'
-tags: ["Node.js", "Express 5", "PostgreSQL", "REST API", "Database"]
+tags: ["Senior Dev", "Clean Code", "SOLID", "Prisma", "Architecture"]
 coverImage: './cover.jpg'
 ---
 
-หลังจากที่เราได้เรียนรู้พื้นฐานของ Express 5 ไปแล้ว วันนี้เราจะมาอัปเกรดระบบของเราให้ใช้งานได้จริงด้วยการเชื่อมต่อกับฐานข้อมูลยอดนิยมอย่าง **PostgreSQL** ครับ โดยเราจะสร้างระบบจัดการ "หนังสือ" (Book Store) แบบครบวงจรครับ
+ในปี 2026 การเขียนโค้ดให้ "ทำงานได้" นั้นไม่เพียงพออีกต่อไปสำหรับนักพัฒนาระดับ Senior สิ่งที่แยกมืออาชีพออกจากมือสมัครเล่นคือ **ความสามารถในการดูแลรักษา (Maintainability)** และ **ความยืดหยุ่น (Scalability)** ของระบบ วันนี้เราจะมาสร้างระบบจัดการหนังสือ (Book Store) โดยใช้ **Express 5** และ **Prisma ORM** ผ่านเลนส์ของ **Clean Code** และ **SOLID Principles** ครับ
 
-## ทำไมต้อง PostgreSQL ในปี 2026?
+## 🏗️ Layered Architecture: หัวใจของความสะอาด
 
-PostgreSQL ยังคงเป็นฐานข้อมูล Relational ที่แข็งแกร่งที่สุด ด้วยฟีเจอร์ที่รองรับทั้ง SQL และ JSONB รวมถึงประสิทธิภาพที่ไว้วางใจได้ เมื่อจับคู่กับ Express 5 ที่จัดการ Async ได้ดีเยี่ยม จะทำให้ API ของเราทรงพลังมากครับ
+เราจะไม่เขียน Logic ทุกอย่างกองไว้ใน Route แต่เราจะแบ่งแอปพลิเคชันออกเป็น 3 เลเยอร์หลักตามหลักการ **Separation of Concerns (SRP - Single Responsibility Principle)**:
 
----
-
-## ขั้นตอนที่ 1: เตรียม Library ที่จำเป็น
-
-เราจะใช้ `pg` ซึ่งเป็น Driver มาตรฐานสำหรับเชื่อมต่อ Node.js กับ PostgreSQL ครับ
-
-```bash
-pnpm add pg
-pnpm add -D @types/pg
-```
+1.  **Controllers:** จัดการเรื่อง Request และ Response เท่านั้น
+2.  **Services:** จัดการ Business Logic และกฎเกณฑ์ต่างๆ ของระบบ
+3.  **Repositories:** จัดการการเข้าถึงฐานข้อมูล (ในที่นี้คือ Prisma)
 
 ---
 
-## ขั้นตอนที่ 2: ตั้งค่าการเชื่อมต่อฐานข้อมูล (Database Connection)
+## ขั้นตอนที่ 1: กำหนด Schema ด้วย Prisma
 
-สร้างไฟล์สำหรับจัดการการเชื่อมต่อ (ในตัวอย่างนี้ผมจะเขียนรวมใน `app.ts` เพื่อความเข้าใจง่ายนะครับ)
+Prisma ช่วยให้เราทำ **Type-safe Database Access** ได้อย่างสมบูรณ์แบบ ซึ่งสอดคล้องกับแนวคิดของนักพัฒนาระดับ Senior ที่ต้องการลด Error ตั้งแต่ตอน Compile
 
-```typescript
-import { Pool } from 'pg';
-
-// ตั้งค่าการเชื่อมต่อ (แนะนำให้ใช้ .env ในการทำงานจริง)
-const pool = new Pool({
-  user: 'your_user',
-  host: 'localhost',
-  database: 'bookstore',
-  password: 'your_password',
-  port: 5432,
-});
-
-// ตรวจสอบการเชื่อมต่อ
-pool.on('connect', () => {
-  console.log('🐘 Connected to PostgreSQL successfully!');
-});
-```
-
-*อย่าลืมสร้าง Table ใน PostgreSQL ก่อนนะครับ:*
-```sql
-CREATE TABLE books (
-  id SERIAL PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
-  author VARCHAR(255) NOT NULL,
-  published_year INTEGER
-);
+```prisma
+// schema.prisma
+model Book {
+  id        Int      @id @default(autoincrement())
+  title     String
+  author    String
+  price     Float
+  createdAt DateTime @default(now())
+}
 ```
 
 ---
 
-## ขั้นตอนที่ 3: เขียน CRUD Operations ด้วย SQL
+## ขั้นตอนที่ 2: Repository Layer (จัดการ Data)
 
-ใน Express 5 เราสามารถใช้ `async/await` ร่วมกับ `pool.query` ได้อย่างลื่นไหลครับ
+เราใช้ **Repository Pattern** เพื่อแยก Logic การดึงข้อมูลออกจาก Business Logic วิธีนี้ช่วยให้เราสามารถเปลี่ยน ORM หรือฐานข้อมูลในอนาคตได้โดยไม่กระทบเลเยอร์อื่น (สอดคล้องกับ **Open/Closed Principle**)
 
-### 1. Create: เพิ่มหนังสือใหม่ (POST)
 ```typescript
-app.post('/api/books', async (req: Request, res: Response) => {
-  const { title, author, published_year } = req.body;
-  
-  const query = 'INSERT INTO books (title, author, published_year) VALUES ($1, $2, $3) RETURNING *';
-  const values = [title, author, published_year];
+// repositories/BookRepository.ts
+import { PrismaClient, Book } from '@prisma/client';
 
-  const result = await pool.query(query, values);
-  res.status(201).json(result.rows[0]);
-});
-```
+export interface IBookRepository {
+  findAll(): Promise<Book[]>;
+  findById(id: number): Promise<Book | null>;
+  create(data: Omit<Book, 'id' | 'createdAt'>): Promise<Book>;
+}
 
-### 2. Read: ดึงข้อมูลหนังสือทั้งหมด (GET)
-```typescript
-app.get('/api/books', async (req: Request, res: Response) => {
-  const result = await pool.query('SELECT * FROM books ORDER BY id DESC');
-  res.json(result.rows);
-});
-```
+export class BookRepository implements IBookRepository {
+  private prisma = new PrismaClient();
 
-### 3. Read: ดึงข้อมูลหนังสือตาม ID (GET)
-```typescript
-app.get('/api/books/:id', async (req: Request, res: Response) => {
-  const id = req.params.id;
-  const result = await pool.query('SELECT * FROM books WHERE id = $1', [id]);
-  
-  if (result.rows.length === 0) {
-    return res.status(404).json({ message: 'ไม่พบหนังสือที่ระบุ' });
+  async findAll() {
+    return await this.prisma.book.findMany();
   }
-  res.json(result.rows[0]);
-});
-```
 
-### 4. Update: แก้ไขข้อมูลหนังสือ (PUT)
-```typescript
-app.put('/api/books/:id', async (req: Request, res: Response) => {
-  const id = req.params.id;
-  const { title, author, published_year } = req.body;
-  
-  const query = 'UPDATE books SET title = $1, author = $2, published_year = $3 WHERE id = $4 RETURNING *';
-  const values = [title, author, published_year, id];
-
-  const result = await pool.query(query, values);
-  
-  if (result.rows.length === 0) {
-    return res.status(404).json({ message: 'ไม่พบหนังสือที่ต้องการแก้ไข' });
+  async findById(id: number) {
+    return await this.prisma.book.findUnique({ where: { id } });
   }
-  res.json(result.rows[0]);
-});
+
+  async create(data: any) {
+    return await this.prisma.book.create({ data });
+  }
+}
 ```
 
-### 5. Delete: ลบหนังสือ (DELETE)
+---
+
+## ขั้นตอนที่ 3: Service Layer (จัดการ Business Logic)
+
+เลเยอร์นี้คือที่สำหรับใส่กฎของธุรกิจ เช่น "ห้ามเพิ่มหนังสือที่มีชื่อซ้ำกัน" หรือ "การคำนวณส่วนลด" โดยเราจะใช้ **Dependency Injection (DIP - Dependency Inversion Principle)** เพื่อให้ Code ของเรา Test ได้ง่ายขึ้น
+
 ```typescript
-app.delete('/api/books/:id', async (req: Request, res: Response) => {
-  const id = req.params.id;
-  await pool.query('DELETE FROM books WHERE id = $1', [id]);
-  res.status(204).send();
+// services/BookService.ts
+import { IBookRepository } from '../repositories/BookRepository';
+
+export class BookService {
+  constructor(private bookRepository: IBookRepository) {}
+
+  async getAllBooks() {
+    return await this.bookRepository.findAll();
+  }
+
+  async getBookDetails(id: number) {
+    const book = await this.bookRepository.findById(id);
+    if (!book) throw new Error('Book not found');
+    return book;
+  }
+}
+```
+
+---
+
+## ขั้นตอนที่ 4: Controller Layer (จัดการ Request/Response)
+
+Controller ในระดับ Senior จะมีความสั้นและอ่านง่าย เพราะหน้าที่ของมันมีแค่รับ input และเรียก Service ต่อไป
+
+```typescript
+// controllers/BookController.ts
+import { Request, Response } from 'express';
+import { BookService } from '../services/BookService';
+
+export class BookController {
+  constructor(private bookService: BookService) {}
+
+  getAll = async (req: Request, res: Response) => {
+    const books = await this.bookService.getAllBooks();
+    res.json(books);
+  }
+
+  getOne = async (req: Request, res: Response) => {
+    const book = await this.bookService.getBookDetails(parseInt(req.params.id));
+    res.json(book);
+  }
+}
+```
+
+---
+
+## ขั้นตอนที่ 5: การประกอบร่าง (Wiring up with Express 5)
+
+ใน Express 5 เราสามารถต่อเชื่อมเลเยอร์ต่างๆ เข้าด้วยกัน และใช้ประโยชน์จาก **Native Async Error Handling** ได้ทันที
+
+```typescript
+// app.ts
+import express from 'express';
+import { BookRepository } from './repositories/BookRepository';
+import { BookService } from './services/BookService';
+import { BookController } from './controllers/BookController';
+
+const app = express();
+app.use(express.json());
+
+// Manual Dependency Injection
+const bookRepo = new BookRepository();
+const bookService = new BookService(bookRepo);
+const bookController = new BookController(bookService);
+
+// Routes
+app.get('/api/books', bookController.getAll);
+app.get('/api/books/:id', bookController.getOne);
+
+// Global Error Handler (Catch-all for all layers)
+app.use((err: any, req: any, res: any, next: any) => {
+  res.status(err.status || 500).json({ error: err.message });
 });
 ```
 
 ---
 
-## ขั้นตอนที่ 4: การจัดการ Error (Express 5 Magic)
+## 💡 สรุปมุมมองระดับ Senior
 
-ขอย้ำอีกครั้งว่าใน Express 5 ถ้า Database Query เกิด Error (เช่น ใส่ข้อมูลผิดประเภท) ระบบจะจับส่งไปที่ Error Handler อัตโนมัติครับ
+การเขียนโค้ดแบบนี้อาจดูเหมือนมีไฟล์เยอะขึ้นในตอนแรก แต่ในระยะยาว:
+1.  **Testability:** คุณสามารถ Mock Repository เพื่อเขียน Unit Test ให้ Service ได้ง่ายๆ
+2.  **Scalability:** เมื่อทีมขยายใหญ่ขึ้น นักพัฒนาคนอื่นจะรู้ทันทีว่าต้องแก้ไข Logic ที่ไฟล์ไหน
+3.  **Readability:** โค้ดแต่ละส่วนมีหน้าที่เดียว (SRP) ทำให้อ่านง่ายและลดโอกาสเกิด Side-effect
 
-```typescript
-// Global Error Handler
-app.use((err: any, req: Request, res: Response, next: NextFunction) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'เกิดข้อผิดพลาดในการจัดการฐานข้อมูล: ' + err.message
-  });
-});
-```
-
----
-
-## สรุปบทเรียน
-
-การเปลี่ยนจาก In-memory มาเป็น **PostgreSQL** ทำให้แอปพลิเคชันของเราพร้อมใช้งานจริง (Production-ready) มากขึ้น:
-1. **Data Persistence:** ข้อมูลไม่หายเมื่อ Restart Server
-2. **Security:** การใช้ Parameterized Queries (`$1, $2`) ช่วยป้องกัน SQL Injection
-3. **Efficiency:** Express 5 ช่วยให้การเขียนโค้ดต่อฐานข้อมูลสั้นลงและอ่านง่ายขึ้นมากครับ
-
-ลองนำไปปรับใช้กับโปรเจกต์ของเพื่อนๆ ดูนะครับ! ปี 2026 นี้ PostgreSQL + Express 5 คือคู่หูที่ลงตัวที่สุดครับ
+การเป็นนักพัฒนาที่ยอดเยี่ยมในปี 2026 ไม่ใช่แค่การเขียนสิ่งที่ทำงานได้เร็วที่สุด แต่คือการเขียนสิ่งที่เพื่อนร่วมทีมของคุณสามารถดูแลต่อได้อย่างมีความสุขครับ!
