@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostsByYear from '../../components/PostsByYear.astro';
+import Pagination from '../../components/Pagination.astro';
+
+type BlogPost = CollectionEntry<'blog'>;
+
+export async function getStaticPaths() {
+  const pageSize = 10;
+  const allPosts = (await getCollection('blog')).sort((a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const totalPages = Math.ceil(allPosts.length / pageSize);
+
+  return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, index) => {
+    const currentPage = index + 2;
+    const start = (currentPage - 1) * pageSize;
+
+    return {
+      params: { page: String(currentPage) },
+      props: {
+        currentPage,
+        totalPages,
+        posts: allPosts.slice(start, start + pageSize),
+      },
+    };
+  });
+}
+
+interface Props {
+  currentPage: number;
+  totalPages: number;
+  posts: BlogPost[];
+}
+
+const { currentPage, totalPages, posts } = Astro.props;
+const title = `All posts - Page ${currentPage}`;
+const description = 'Articles, guides, tutorials, and tech updates.';
+---
+
+<BaseLayout
+	title={title}
+	description={description}
+>
+  <div class='container'>
+    <div class="mb-10">
+      <h1 class="text-3xl font-bold mb-2">All posts</h1>
+      <p class="text-zinc-700 dark:text-zinc-300 text-lg">{description}</p>
+    </div>
+    <PostsByYear posts={posts}/>
+    <Pagination currentPage={currentPage} totalPages={totalPages} />
+  </div>
+</BaseLayout>

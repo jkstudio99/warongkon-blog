@@ -1,0 +1,61 @@
+---
+interface Props {
+  currentPage: number;
+  totalPages: number;
+  basePath?: string;
+}
+
+const { currentPage, totalPages, basePath = '/posts' } = Astro.props;
+
+const getPageHref = (page: number) => page === 1 ? `${basePath}/` : `${basePath}/${page}/`;
+const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
+---
+
+{totalPages > 1 && (
+  <nav class="mt-8 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between" aria-label="Posts pagination">
+    <div class="text-sm text-zinc-600 dark:text-zinc-400">
+      Page {currentPage} of {totalPages}
+    </div>
+    <div class="flex flex-wrap gap-2">
+      {currentPage > 1 ? (
+        <a
+          class="border border-zinc-300 dark:border-zinc-700 rounded-lg px-3 py-1.5 text-sm no-underline text-zinc-700 dark:text-zinc-300 hover:border-zinc-700 dark:hover:border-zinc-300"
+          href={getPageHref(currentPage - 1)}
+        >
+          Previous
+        </a>
+      ) : (
+        <span class="border border-zinc-200 dark:border-zinc-800 rounded-lg px-3 py-1.5 text-sm text-zinc-400 dark:text-zinc-600">
+          Previous
+        </span>
+      )}
+      {pageNumbers.map((page) => page === currentPage ? (
+        <span
+          class="border border-zinc-800 dark:border-zinc-100 bg-zinc-900 dark:bg-zinc-100 rounded-lg px-3 py-1.5 text-sm text-white dark:text-zinc-900"
+          aria-current="page"
+        >
+          {page}
+        </span>
+      ) : (
+        <a
+          class="border border-zinc-300 dark:border-zinc-700 rounded-lg px-3 py-1.5 text-sm no-underline text-zinc-700 dark:text-zinc-300 hover:border-zinc-700 dark:hover:border-zinc-300"
+          href={getPageHref(page)}
+        >
+          {page}
+        </a>
+      ))}
+      {currentPage < totalPages ? (
+        <a
+          class="border border-zinc-300 dark:border-zinc-700 rounded-lg px-3 py-1.5 text-sm no-underline text-zinc-700 dark:text-zinc-300 hover:border-zinc-700 dark:hover:border-zinc-300"
+          href={getPageHref(currentPage + 1)}
+        >
+          Next
+        </a>
+      ) : (
+        <span class="border border-zinc-200 dark:border-zinc-800 rounded-lg px-3 py-1.5 text-sm text-zinc-400 dark:text-zinc-600">
+          Next
+        </span>
+      )}
+    </div>
+  </nav>
+)}

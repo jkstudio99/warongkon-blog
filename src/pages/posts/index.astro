@@ -3,12 +3,16 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostsByYear from '../../components/PostsByYear.astro';
+import Pagination from '../../components/Pagination.astro';
 
 type BlogPost = CollectionEntry<'blog'>;
 const title = 'All posts'
-const description = 'Articles, guides, tutorials about front-end development.'
+const description = 'Articles, guides, tutorials, and tech updates.'
+const PAGE_SIZE = 10;
 
-const posts = (await getCollection('blog')).sort((a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const allPosts = (await getCollection('blog')).sort((a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = allPosts.slice(0, PAGE_SIZE);
+const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
 ---
 
 <BaseLayout
@@ -21,5 +25,6 @@ const posts = (await getCollection('blog')).sort((a: BlogPost, b: BlogPost) => b
       <p class="text-zinc-700 dark:text-zinc-300 text-lg">{description}</p>
     </div>
     <PostsByYear posts={posts}/>
+    <Pagination currentPage={1} totalPages={totalPages} />
   </div>
 </BaseLayout>
