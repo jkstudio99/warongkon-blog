@@ -1,90 +1,101 @@
 ---
-title: 'Tech Update Daily 2026: Global & Thailand - AI Agents, Cloud และโครงสร้างพื้นฐานรอบใหม่'
-seoTitle: 'Tech Update Daily 2026 Global Thailand AI Cloud Infrastructure - Warongkon Blog'
+title: 'Tech Update Daily 2026: ข่าวไอทีล่าสุด ณ 14:40 วันที่ 24 เมษายน 2026'
+seoTitle: 'Tech Update Daily 24 Apr 2026 AI Cloud Thailand Tech News - Warongkon Blog'
 slug: 'tech-update-daily-global-thailand-ai-cloud-2026'
-description: 'สรุปข่าวเทคโนโลยีประจำวันที่ 24 เมษายน 2026 ทั้งภาพ global และประเทศไทย ครอบคลุม AI agents, ชิป AI, security, cloud infrastructure และทิศทาง ecosystem ไทย'
+description: 'สรุปข่าวไอทีล่าสุดประจำวันที่ 24 เมษายน 2026 เวลา 14:40 ครอบคลุม AI models, enterprise AI, layoff, gaming, EV battery และ ecosystem เทคไทย'
 pubDate: '2026-04-24'
+updatedDate: '2026-04-24'
 tags: ["Tech Update", "AI", "Cloud", "Thailand", "2026"]
 ---
 
-อัปเดตประจำวันที่ **24 เมษายน 2026** วันนี้ภาพรวมของโลกเทคชัดมากว่า AI กำลังขยับจาก "ฟีเจอร์เสริม" ไปเป็นโครงสร้างการทำงานหลักขององค์กร ทั้งในเครื่องมือทำงานประจำวัน, โครงสร้างพื้นฐานคลาวด์, ชิปสำหรับรันโมเดล, งาน security และการลงทุนระดับประเทศ ส่วนประเทศไทยเริ่มเห็นภาพชัดขึ้นว่า cloud region, data center และเวทีเชื่อม ecosystem กำลังกลายเป็นฐานแข่งขันของเศรษฐกิจดิจิทัล
+อัปเดตล่าสุดเวลา **14:40 น. วันที่ 24 เมษายน 2026** วันนี้ภาพรวมของโลกเทคเด่นมากในสามแกน: **AI models แข่งกันหนักขึ้น**, **องค์กรใหญ่เริ่มปรับโครงสร้างคนและต้นทุนเพื่อยุค AI**, และ **ecosystem ไทยพยายามยกระดับตัวเองเป็น Tech Gateway ของภูมิภาค**
 
-## Global: AI Agents เข้าใกล้งานจริงมากขึ้น
+ถ้ามองแบบ developer/engineering leader ข่าววันนี้ไม่ใช่แค่ "มีโมเดลใหม่อีกแล้ว" แต่คือสัญญาณว่า cost, talent, infrastructure และ governance กำลังกลายเป็นโจทย์เดียวกัน
 
-ข่าวใหม่สุดของวันนี้คือ **OpenAI ออก GPT-5.5 และ GPT-5.5 Pro** โดยวางเป็นโมเดลหลักรุ่นใหม่ที่เน้นความสามารถด้านเขียนงาน แก้โค้ด ค้นคว้า วิเคราะห์ข้อมูล และใช้งานกับ Codex ได้มีประสิทธิภาพด้านโทเค็นดีขึ้น ประเด็นนี้สะท้อนว่าการแข่งขันของ frontier model ในปี 2026 ไม่ได้แข่งแค่ "ฉลาดกว่า" แต่แข่งที่ **ทำงานจริงได้คุ้มต้นทุนกว่า** ด้วย
+## 1. DeepSeek-V4 เปิดตัว ชูจุดขาย performance ต่อราคา
 
-ถ้ามองในมุมทีม product และ engineering สิ่งที่ควรทดลองคือการวัดผลแบบ task-level เช่น ค่าใช้จ่ายต่อ pull request review, ค่าใช้จ่ายต่อ research brief หรือค่าใช้จ่ายต่อ dashboard analysis เพราะโมเดลที่ราคา token สูงกว่าอาจถูกกว่าในภาพรวมถ้ามันใช้รอบแก้งานน้อยลง
+ข่าวล่าสุดช่วงบ่ายคือ **DeepSeek-V4** ออกมาแล้ว โดยมี 2 รุ่นหลักคือ **DeepSeek-V4-Pro** และ **DeepSeek-V4-Flash** จุดที่น่าสนใจคือ DeepSeek วางตำแหน่งโมเดลไว้ในสนามเดียวกับ Opus, GPT และ Gemini รุ่นบน โดยเฉพาะงานเขียนโค้ด
 
-ข่าวแรกที่สะท้อนภาพการใช้งานจริงคือ **Agent Mode ใน Word, Excel และ PowerPoint เข้าสู่สถานะ GA** แล้วสำหรับผู้ใช้ Microsoft 365 หลายกลุ่ม จากเดิมที่ AI ในออฟฟิศมักเป็นผู้ช่วยเขียนหรือสรุป แต่ตอนนี้เริ่มเดินไปสู่ agent ที่ทำงานเป็นขั้นตอน ตัดสินใจระหว่างทาง และสร้างผลลัพธ์ตามแนวทางขององค์กรได้มากขึ้น
+DeepSeek-V4-Pro เน้นความสามารถระดับสูง ส่วน DeepSeek-V4-Flash ลด cost ลงแรงมากเพื่อใช้กับงานที่ต้องยิง request เยอะ ๆ ข่าวนี้บอกเราว่า AI model market ปี 2026 ไม่ได้แข่งกันที่ความฉลาดอย่างเดียว แต่แข่งที่ **price-performance** และ **license** ด้วย เพราะทั้งสองรุ่นยังใช้สัญญาอนุญาตแบบ MIT ทำให้มีโอกาสเห็นผู้ให้บริการรายอื่นนำไป host เป็น API ได้เร็ว
 
-ผลกระทบที่น่าจับตาคือองค์กรจะไม่ได้ถามแค่ว่า "ใช้ AI ตัวไหนดี" แต่ต้องเริ่มถามว่า **workflow ไหนให้ AI ทำแทนได้อย่างปลอดภัย** เพราะเมื่อ agent เข้าไปอยู่ในเอกสาร สเปรดชีต และพรีเซนเทชัน เรื่องสิทธิ์ข้อมูล, audit log, brand governance และ human review จะสำคัญขึ้นทันที
+**มุม developer:** ถ้าทีมใช้ LLM ใน workflow เช่น code review, agentic task, test generation หรือ document summarization ควรเริ่มวัดผลเป็น **cost per completed task** ไม่ใช่ดูราคา token อย่างเดียว
 
-## Infrastructure: สงครามชิป AI ยังเร่งต่อ
+## 2. OpenAI ออก GPT-5.5 เน้นงานจริงและใช้ token คุ้มขึ้น
 
-ฝั่ง Google เปิดตัว **TPU รุ่นที่ 8** โดยแยกชิปสำหรับฝึกโมเดลและชิปรัน inference ออกจากกันชัดเจน แนวทางนี้บอกอะไรเราได้เยอะมาก เพราะตลาด AI ไม่ได้มีโจทย์เดียวอีกต่อไป การเทรนโมเดลขนาดใหญ่ต้องการ throughput และการเชื่อมต่อระดับสูง ส่วน inference ต้องการ latency, memory bandwidth และต้นทุนต่อ request ที่คุมได้
+ฝั่ง OpenAI เปิดตัว **GPT-5.5 และ GPT-5.5 Pro** โดยโฟกัสความสามารถด้านเขียนงาน แก้โค้ด ค้นคว้าออนไลน์ วิเคราะห์ข้อมูล สร้างเอกสาร และทำงานกับซอฟต์แวร์ จุดที่น่าสนใจคือมีการพูดถึงประสิทธิภาพการใช้โทเค็นที่ดีขึ้น โดยเฉพาะการใช้งานกับ Codex
 
-สำหรับทีม engineering สิ่งที่ควรอ่านจากข่าวนี้คือ cloud provider กำลัง optimize stack ของตัวเองลงลึกถึงระดับ hardware แล้ว ดังนั้นการออกแบบระบบ AI ในปี 2026 จะต้องคิดเรื่อง **model choice + infrastructure cost + latency budget** ไปพร้อมกัน ไม่ใช่เลือกโมเดลจาก benchmark อย่างเดียว
+นี่คือแนวโน้มที่ชัดมาก: frontier model เริ่มขายคุณค่าด้วยคำว่า **ทำงานสำเร็จเร็วขึ้น ใช้รอบแก้น้อยลง และต้นทุนรวมต่ำลง** มากกว่าแค่คะแนน benchmark
 
-## Platform: Gemini Enterprise รวมชื่อเพื่อขายองค์กร
+**มุมทีมเทค:** ถ้าองค์กรจะเลือกโมเดลในปีนี้ ควรทำ evaluation จากงานจริง เช่น PR review หนึ่งชุด, incident summary หนึ่งเคส, หรือ dashboard analysis หนึ่งเรื่อง แล้วเทียบทั้ง quality, latency, token usage และจำนวนรอบที่มนุษย์ต้องแก้
 
-อีกข่าวจาก Google คือการรวบบริการ LLM ฝั่งองค์กรภายใต้ชื่อ **Gemini Enterprise** มากขึ้น ทั้งส่วนแอปสำหรับสร้าง agent และ platform สำหรับพัฒนา/ควบคุม agent ในองค์กร จุดนี้เป็นสัญญาณว่า vendor รายใหญ่กำลังพยายามทำให้ AI platform เข้าใจง่ายขึ้นสำหรับผู้บริหารและทีม procurement
+## 3. AI เริ่มกระทบโครงสร้างองค์กรใหญ่: Meta และ Microsoft
 
-แต่ในมุม developer สิ่งที่ต้องดูต่อคือความ lock-in และ integration surface ว่า agent เชื่อมกับข้อมูล ระบบ identity และ workflow ภายในองค์กรได้ลึกแค่ไหน ถ้าใช้เร็วแต่ governance ตามไม่ทัน ความเสี่ยงจะย้ายจาก "AI ตอบผิด" ไปเป็น "AI ทำงานผิดที่ผิดทางด้วยสิทธิ์จริง"
+วันนี้มีข่าวแรงฝั่ง workforce สองข่าว
 
-## Security: AI เริ่มช่วยหาช่องโหว่ในระดับที่ทีมต้องปรับกระบวนการ
+ข่าวแรกคือ **Meta ยืนยันปลดพนักงาน 8,000 คน** และปิดตำแหน่งว่างอีก 6,000 ตำแหน่ง รวมผลกระทบประมาณ 14,000 ตำแหน่ง เหตุผลหลักที่ถูกพูดถึงคือการเพิ่ม efficiency และการลงทุนด้านอื่น โดยมีบริบทชัดเจนว่า AI เริ่มทำงานบางส่วนแทนคนได้
 
-Mozilla เปิดเผยว่า Firefox 150 แก้ช่องโหว่จำนวนมากจากการตรวจสอบด้วย Claude Mythos ข่าวนี้น่าสนใจมากเพราะไม่ใช่แค่เรื่อง model เก่งขึ้น แต่เป็นเรื่อง **security workflow** ที่ต้องรองรับการค้นพบช่องโหว่จำนวนมากในเวลาสั้นลง
+อีกข่าวจาก Techsauce คือ **Microsoft เปิดโครงการสมัครใจลาออกในสหรัฐฯ** สำหรับพนักงานบางกลุ่มราว 7% พร้อมภาพการเปลี่ยนผ่านผู้บริหารและแรงกดดันจากยุทธศาสตร์ AI
 
-ในปี 2026 ทีม security และ platform engineering ควรเริ่มเตรียม pipeline สำหรับ AI-assisted security review อย่างจริงจัง เช่น การจัดลำดับความรุนแรง, การ reproduce ช่องโหว่, การแปลง finding เป็น test case และการเชื่อมกับ release gate เพราะถ้า AI หา issue ได้เร็วกว่าเดิม แต่ทีม triage ยังทำด้วยวิธีเดิม สุดท้าย bottleneck จะย้ายมาอยู่ที่คนเหมือนเดิม
+**มุมมองสำคัญ:** AI ไม่ได้กระทบแค่ productivity tool แต่กระทบ org design แล้ว องค์กรใหญ่กำลังถามว่า "งานไหนควรให้คนทำ งานไหนควรให้ AI ทำ และทีมควรมีขนาดเท่าไร" คำถามนี้จะไหลลงมาถึงทีม product, engineering, support, ops และ content อย่างหลีกเลี่ยงไม่ได้
 
-## Thailand: Cloud และ AI Infrastructure กลายเป็นวาระประเทศ
+## 4. Xbox รีแบรนด์วิสัยทัศน์ใหม่: จากคอนโซลสู่แพลตฟอร์มผู้เล่นและครีเอเตอร์
 
-ฝั่งไทยมีสองข่าวที่ต่อกันชัดเจน ข่าวแรกคือ **Google Cloud เปิด region กรุงเทพฯ** โดยมี 3 zone และเริ่มให้บริการ infrastructure หลายกลุ่ม แม้บริการ AI บางส่วนยังไม่ได้เปิดใน region ไทยก็ตาม ประเด็นสำคัญคือ data residency และ latency เริ่มกลายเป็นข้อได้เปรียบจริงสำหรับองค์กรที่มีข้อกำกับด้านข้อมูล เช่น ธนาคาร ประกัน และภาครัฐ
+ฝั่งเกมมีข่าว **Asha Sharma ซีอีโอใหม่ของ Xbox** ประกาศวิสัยทัศน์ใหม่ "We are Xbox" และเลิกใช้ชื่อ Microsoft Gaming กลับมาใช้แบรนด์ Xbox เป็นแกนหลัก
 
-อีกข่าวคือ **Microsoft ประกาศลงทุนในไทยมากกว่า 1 พันล้านดอลลาร์สหรัฐช่วงปี 2026-2028** เพื่อโครงสร้างพื้นฐาน cloud และ AI รวมถึงการพัฒนาทักษะแรงงาน ข่าวนี้ทำให้ภาพของไทยชัดขึ้นว่าเราไม่ได้เป็นแค่ตลาดผู้ใช้ AI แต่กำลังถูกวางเป็นพื้นที่ infrastructure ของภูมิภาคด้วย
+ทิศทางที่น่าสนใจคือ Xbox ไม่อยากถูกวัดแค่ยอดขายคอนโซล แต่ขยับไปเป็นแพลตฟอร์มที่เชื่อม **players + creators** และใช้ตัวชี้วัดแบบ daily active users มากขึ้น แผนยังพูดถึงราคา Game Pass ที่ยืดหยุ่นขึ้น, cloud gaming ที่ต้องรู้สึกเหมือน native, และการขยายตลาดสู่ mobile-first / emerging markets
 
-สิ่งที่องค์กรไทยควรทำตอนนี้ไม่ใช่รอให้ทุกบริการมาเปิดครบก่อน แต่ควรเริ่มเตรียม readiness 4 ด้าน: data classification, cloud landing zone, AI governance และทักษะทีมภายใน โดยเฉพาะการแยก use case ที่ควรรันในประเทศจาก use case ที่ใช้บริการ global region ได้
+**มุมธุรกิจ:** ตลาดเกมปี 2026 กำลังเปลี่ยนจาก hardware-first เป็น ecosystem-first ใครคุม creator loop, community, subscription และ cross-device experience ได้ จะได้เปรียบกว่าแค่มีเครื่องแรง
 
-## Thailand Ecosystem: Techsauce Global Summit 2026 เป็นสัญญาณเชื่อมตลาดภูมิภาค
+## 5. AI Healthcare: ChatGPT for Clinicians เปิดใช้ฟรีในสหรัฐฯ
 
-Techsauce เปิดรายละเอียด **Techsauce Global Summit 2026** ภายใต้ธีม "The Race to The Next..." จัดวันที่ 26-28 สิงหาคม 2026 ที่ศูนย์การประชุมแห่งชาติสิริกิติ์ โดยวางตัวเป็นเวทีเชื่อม startups, corporates, investors และ policy makers จากหลายประเทศ
+Techsauce รายงานว่า OpenAI เปิดตัว **ChatGPT for Clinicians** สำหรับแพทย์ พยาบาล ผู้ช่วยแพทย์ และเภสัชกรที่ยืนยันตัวตนแล้ว โดยเริ่มใช้ฟรีในสหรัฐฯ ก่อน
 
-มุมที่น่าสนใจคือ ecosystem ไทยกำลังมีทั้ง infrastructure จาก hyperscaler และเวที business matching ระดับภูมิภาค หากสองฝั่งนี้เดินไปพร้อมกัน โอกาสของ startup และ enterprise ไทยจะไม่ได้จำกัดแค่ "นำ AI มาใช้" แต่รวมถึงการสร้าง product, data platform และ vertical solution สำหรับตลาด Southeast Asia ด้วย
+Use case หลักคือช่วยงานเอกสาร งานค้นงานวิจัย งานสรุปข้อมูล และ workflow ที่ทำซ้ำในโรงพยาบาล โดยมีประเด็นด้านความปลอดภัยข้อมูลสุขภาพและมาตรฐาน HIPAA เข้ามาเป็นแกนสำคัญ
 
-## Business: องค์กรไทยเริ่มขยับจาก AI ทดลองเป็น AI Production
+**มุม product:** healthcare AI เป็นตัวอย่างของ vertical AI ที่ต้องมี governance หนากว่า consumer AI มาก เพราะ AI ไม่ได้แค่ตอบคำถาม แต่เข้าไปอยู่ใกล้ decision workflow ที่มีผลต่อชีวิตคน ดังนั้น human-in-the-loop, audit trail, privacy และ liability ต้องถูกออกแบบตั้งแต่วันแรก
 
-ตัวอย่างจาก GABLE ที่ประกาศยุทธศาสตร์ปี 2569 ในฐานะ "AI Powered Tech Enabler" และโฟกัส AI, cloud, data platform, managed security รวมถึง Zero Trust สะท้อนว่าตลาด enterprise ไทยเริ่มเปลี่ยนคำถามจาก "AI ทำอะไรได้บ้าง" ไปเป็น "จะทำให้เกิดผลลัพธ์ทางธุรกิจจริงได้อย่างไร"
+## 6. Hardware และ Infrastructure: CPU, TPU, Battery ยังเป็นฐานของ AI economy
 
-นี่คือจุดเปลี่ยนที่ทีมเทคควรเตรียมตัว เพราะ AI production ไม่ได้จบที่ demo สวย ๆ แต่ต้องมี data pipeline, observability, security, cost control, fallback process และคนที่เข้าใจ business domain พอจะตรวจคุณภาพผลลัพธ์ได้
+ข่าว infrastructure วันนี้ยังแน่น:
 
-## Consumer Tech: เกม subscription ปรับสมดุลราคาและคอนเทนต์
+- **Intel Q1/2026** รายได้รวมโต 7% และ data center โต 22% ซีอีโอชี้ว่ายุค AI ยังขาด CPU ไม่ได้
+- **Google TPU รุ่นที่ 8** แยกชิปสำหรับ training และ inference ชัดเจน สะท้อนว่า workload AI เริ่มเฉพาะทางมากขึ้น
+- **CATL เปิดตัวแบตเตอรี่ EV ชาร์จเต็มใน 6 นาทีครึ่ง** ทำให้ประสบการณ์ EV เข้าใกล้การเติมน้ำมันมากขึ้น
 
-ฝั่ง consumer มีข่าว Xbox ปรับราคา **PC Game Pass ในไทยลงเหลือ 129 บาทต่อเดือน** แต่แลกกับการที่ Call of Duty ภาคใหม่จะไม่เข้า Game Pass ตั้งแต่วันแรก ข่าวนี้เป็นตัวอย่างที่ดีของตลาด subscription ปี 2026: ผู้ให้บริการต้องหาจุดสมดุลระหว่างราคาที่คนยอมจ่ายกับต้นทุนคอนเทนต์ระดับ AAA
+ภาพรวมคือ AI ไม่ได้อยู่แค่ใน software layer แต่ลากทั้ง supply chain ตั้งแต่ CPU, accelerator, memory, network, data center, energy และ battery technology ให้เร่งตามไปด้วย
 
-บทเรียนไม่ได้จำกัดแค่วงการเกม เพราะ subscription ทุกประเภทกำลังเจอคำถามคล้ายกัน คือควร bundle ทุกอย่างเพื่อเพิ่ม perceived value หรือแยก tier ให้ราคายืดหยุ่นกว่าเดิม
+**มุม architecture:** ทีมที่ทำ AI product ต้องคิด infrastructure ตั้งแต่ต้น เช่น latency budget, region, GPU/TPU availability, data movement, cache strategy และ cost ceiling ไม่ใช่รอให้ระบบโตแล้วค่อยแก้
 
-## สรุปวันนี้
+## 7. Thailand & SEA: Techsauce + JFCCT ดันไทยเป็น Tech Gateway
 
-ภาพรวมของวันที่ 24 เมษายน 2026 คือ **AI กำลังลงจาก keynote มาสู่ระบบงานจริง** มากขึ้นเรื่อย ๆ ฝั่ง global แข่งกันทั้ง agent, model, chip และ security automation ส่วนไทยกำลังเร่งสร้างฐาน infrastructure และ ecosystem ให้รองรับการใช้งานระดับ production
+ข่าวไทยที่น่าจับตาคือ **Techsauce และ JFCCT ลงนาม MOU** เพื่อยกระดับไทยเป็น **Tech Gateway ของอาเซียน** โดยเน้น AI, digital transformation, sustainability, data centres และการเชื่อมเครือข่ายธุรกิจต่างชาติกับ ecosystem ไทย
 
-สำหรับ developer และทีมเทคในไทย สิ่งที่ควรทำต่อทันทีคือ:
+ประกอบกับข่าว **Techsauce Global Summit 2026** ที่จะจัดวันที่ 26-28 สิงหาคม 2026 ที่ QSNCC ภายใต้ธีม "The Race to The Next..." ภาพรวมคือไทยกำลังพยายามขยับจากตลาดผู้ใช้เทคโนโลยี ไปเป็นพื้นที่เชื่อมทุน, startup, enterprise, policy และ infrastructure ในระดับภูมิภาค
 
-1. เลือก 1-2 workflow ที่ AI agent ช่วยลดเวลาจริง แล้วออกแบบ guardrail ให้ครบ
-2. วัดต้นทุน AI เป็น cost per task ไม่ใช่ cost per token อย่างเดียว
-3. เตรียม security review pipeline ที่รับ finding จาก AI ได้
-4. ทำ data readiness และ cloud governance ก่อนย้าย use case สำคัญขึ้น production
-5. มองตลาดไทยและ Southeast Asia เป็นโจทย์เดียวกัน เพราะ infrastructure และ ecosystem กำลังเชื่อมกันเร็วขึ้น
+**มุมประเทศไทย:** ถ้าไทยจะเป็น Tech Gateway จริง โจทย์สำคัญไม่ใช่แค่มี event ใหญ่ แต่ต้องมี talent pipeline, cloud/data center readiness, AI governance, startup financing และ enterprise adoption ที่ต่อกันเป็นระบบ
+
+## สรุป ณ 14:40
+
+ข่าววันนี้เล่าเรื่องเดียวกันชัดมาก: **AI กำลังเปลี่ยนทั้งเครื่องมือทำงาน โมเดลธุรกิจ โครงสร้างทีม และ infrastructure**
+
+สำหรับ developer และทีมเทคในไทย สิ่งที่ควรทำต่อมี 5 ข้อ:
+
+1. ทดลองเทียบ LLM ด้วยงานจริง ไม่ใช่ benchmark อย่างเดียว
+2. ออกแบบ AI workflow ให้มี guardrail, audit และ human review
+3. วัดต้นทุนแบบ cost per task / cost per outcome
+4. เตรียมทีมให้ทำงานร่วมกับ AI agent ได้ ไม่ใช่แค่ใช้ chatbot
+5. มอง ecosystem ไทยในบริบท SEA เพราะโอกาสใหม่จะมาเป็น cross-border มากขึ้น
 
 ## แหล่งอ้างอิง
 
+- Blognone: [DeepSeek-V4 ออกแล้ว เทียบชั้น Opus 4.6, Gemini 3.1 Pro](https://www.blognone.com/node/150343)
 - Blognone: [OpenAI ออก GPT-5.5 โมเดลรุ่นหลักตัวใหม่](https://www.blognone.com/node/150337)
-- Blognone: [Agent Mode ใน Word, Excel, PowerPoint เข้าสู่สถานะ GA](https://www.blognone.com/node/150333)
-- Blognone: [Google เปิดตัว TPU รุ่นที่ 8](https://www.blognone.com/node/150325)
-- Blognone: [Google รวบบริการ LLM ฝั่งองค์กรเป็น Gemini Enterprise](https://www.blognone.com/node/150324)
-- Blognone: [Firefox 150 แก้ไขช่องโหว่จาก Claude Mythos](https://www.blognone.com/node/150322)
-- Blognone: [Google Cloud เปิดตัวศูนย์ข้อมูลในกรุงเทพ](https://www.blognone.com/node/149501)
-- Blognone: [Microsoft ประกาศลงทุนในไทยกว่า 1 พันล้านดอลลาร์](https://www.blognone.com/node/150156)
-- Blognone: [Xbox ปรับราคา PC Game Pass ในไทยลงเหลือ 129 บาท](https://www.blognone.com/node/150320)
-- Techsauce: [Techsauce Global Summit 2026](https://techsauce.co/en/tech-and-biz/techsauce-global-summit-2026-the-race-to-the-next)
-- Techsauce: [Microsoft ลงทุนในไทยเพื่อโครงสร้างพื้นฐาน AI](https://techsauce.co/news/microsoft-thailand-1-billion-ai-investment-2026)
-- Techsauce: [GABLE ยุทธศาสตร์ AI Powered Tech Enabler ปี 2569](https://techsauce.co/pr-news/g-able-2026-ai-cloud-security-growth)
+- Blognone: [ยืนยันแล้ว Meta ปลดพนักงาน 8,000 คน + ปิดงานตำแหน่งว่าง 6,000 ตำแหน่ง](https://www.blognone.com/node/150340)
+- Blognone: [ซีอีโอใหม่ Xbox ประกาศวิสัยทัศน์ใหม่](https://www.blognone.com/node/150341)
+- Blognone: [Intel รายงานผลประกอบการ ซีพียู Data Center โต 22%](https://www.blognone.com/node/150339)
+- Blognone: [กูเกิลเปิดตัว TPU รุ่นที่ 8](https://www.blognone.com/node/150325)
+- Techsauce: [Microsoft เปิดโครงการสมัครใจลาออกครั้งแรก](https://techsauce.co/news/microsoft-executive-exodus-ai-restructure)
+- Techsauce: [OpenAI เปิดตัว ChatGPT for Clinicians](https://techsauce.co/news/chatgpt-for-clinicians)
+- Techsauce: [CATL เปิดตัวแบตเตอรี่ EV ชาร์จเต็มเร็วใน 6 นาทีครึ่ง](https://techsauce.co/news/catl-ev-battery-6-minute-charge)
+- Techsauce: [Techsauce และ JFCCT ลงนาม MOU ยกระดับไทยสู่ Tech Gateway](https://techsauce.co/news/techsauce-jfcct-thailand-tech-gateway-ai)
+- Techsauce: [Techsauce Global Summit 2026](https://techsauce.co/tech-and-biz/techsauce-global-summit-2026)
