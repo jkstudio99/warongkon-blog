@@ -28,13 +28,27 @@ export const kFormatter = (num: number) => {
 };
 
 export const getRepositoryDetails = async (repositoryFullname: string) => {
-	const repoDetails = await fetch('https://api.github.com/repos/' + repositoryFullname, {
-		method: 'GET',
-		headers: {
-			Authorization: `Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}`,
-			'X-GitHub-Api-Version': '2022-11-28'
+	const headers: Record<string, string> = {
+		'X-GitHub-Api-Version': '2022-11-28'
+	};
+
+	if (GITHUB_PERSONAL_ACCESS_TOKEN) {
+		headers.Authorization = `Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}`;
+	}
+
+	try {
+		const repoDetails = await fetch('https://api.github.com/repos/' + repositoryFullname, {
+			method: 'GET',
+			headers
+		});
+
+		if (!repoDetails.ok) {
+			return {};
 		}
-	});
-	const response = await repoDetails.json();
-	return response;
+
+		const response = await repoDetails.json();
+		return response;
+	} catch {
+		return {};
+	}
 };
