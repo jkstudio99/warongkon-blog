@@ -86,6 +86,7 @@ function renderPosts() {
 
 	for (const post of paginatedPosts) {
 		const row = document.createElement('tr');
+		const viewUrl = getPostViewUrl(post);
 		row.innerHTML = `
 			<td>
 				<div class="title-cell">
@@ -98,7 +99,7 @@ function renderPosts() {
 			<td>${post.hasCover ? `<span class="cover-dot">${escapeHtml(t('cover.ready'))}</span>` : `<span class="cover-dot empty">${escapeHtml(t('cover.missing'))}</span>`}</td>
 			<td>
 				<div class="row-actions" aria-label="${escapeHtml(t('table.actions'))}">
-					<a class="icon-button" href="/${encodeURIComponent(post.slug)}/" target="_blank" rel="noreferrer" aria-label="${escapeHtml(t('actions.view'))}" title="${escapeHtml(t('actions.view'))}">
+					<a class="icon-button" href="${escapeHtml(viewUrl)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(t('actions.view'))}" title="${escapeHtml(t('actions.view'))}">
 						<span class="lucide-icon lucide-eye" aria-hidden="true"></span>
 						<span class="visually-hidden">${escapeHtml(t('actions.view'))}</span>
 					</a>
@@ -151,6 +152,10 @@ function getFilteredPosts() {
 function getStoredPageSize() {
 	const stored = Number(localStorage.getItem(pageSizeKey));
 	return [5, 10, 20, 50].includes(stored) ? stored : 10;
+}
+
+function getPostViewUrl(post) {
+	return typeof post.viewUrl === 'string' && post.viewUrl.startsWith('/') ? post.viewUrl : `/${encodeURIComponent(post.slug)}/`;
 }
 
 function getTotalPages(total) {

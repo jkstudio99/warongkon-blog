@@ -6,6 +6,7 @@ import sharp from 'sharp';
 
 const rootDir = process.cwd();
 const blogDir = path.join(rootDir, 'src/content/blog');
+const distDir = path.join(rootDir, 'dist');
 const fontsDir = path.join(rootDir, 'public/fonts');
 const lucideIconsDir = path.join(rootDir, 'node_modules/lucide-static/icons');
 const publicDir = path.join(rootDir, 'public/backoffice');
@@ -16,13 +17,16 @@ const slugPattern = /^[a-z0-9][a-z0-9-]*[a-z0-9]$/;
 const contentTypes = {
 	'.css': 'text/css; charset=utf-8',
 	'.html': 'text/html; charset=utf-8',
+	'.ico': 'image/x-icon',
 	'.js': 'text/javascript; charset=utf-8',
+	'.json': 'application/json; charset=utf-8',
 	'.jpg': 'image/jpeg',
 	'.jpeg': 'image/jpeg',
 	'.png': 'image/png',
 	'.svg': 'image/svg+xml; charset=utf-8',
 	'.ttf': 'font/ttf',
-	'.webp': 'image/webp'
+	'.webp': 'image/webp',
+	'.xml': 'application/xml; charset=utf-8'
 };
 
 const postRepository = {
@@ -78,9 +82,12 @@ const postRepository = {
 		const parsed = parseMarkdown(source);
 		const coverPath = path.join(dir, 'cover.jpg');
 		const hasCover = await fileExists(coverPath);
+		const routeSlug = getRouteSlug(parsed.frontmatter.slug, safeSlug);
 
 		return {
 			slug: safeSlug,
+			routeSlug,
+			viewUrl: `/${routeSlug}/`,
 			fileName: entry.fileName,
 			title: parsed.frontmatter.title || '',
 			seoTitle: parsed.frontmatter.seoTitle || '',
@@ -172,7 +179,7 @@ const server = http.createServer(async (req, res) => {
 			return;
 		}
 
-		sendJson(res, 404, { error: { code: 'not_found', message: 'Route not found' } });
+		await serveBuiltSite(res, url);
 	} catch (error) {
 		const message = error instanceof Error ? error.message : 'Back office server error';
 		sendJson(res, 500, { error: { code: 'server_error', message } });
@@ -181,6 +188,7 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(port, () => {
 	console.log(`Blog back office running at http://localhost:${port}/backoffice/`);
+	console.log(`Blog preview routes are served from ${path.relative(rootDir, distDir) || '.'}`);
 });
 
 async function handleApiV1(req, res, url) {
@@ -287,12 +295,49 @@ async function serveLucideIcon(res, url) {
 	await serveFile(res, path.join(lucideIconsDir, fileName));
 }
 
-async function serveFile(res, filePath) {
+async function serveBuiltSite(res, url) {
+	const pathname = decodeURIComponent(url.pathname || '/');
+
+	if (pathname.includes('\0') || pathname.includes('..')) {
+		sendJson(res, 400, { error: { code: 'bad_static_path', message: 'Invalid static path' } });
+		return;
+	}
+
+	const requested = pathname.replace(/^\/+/, '');
+	const candidates = [];
+
+	if (!requested || pathname.endsWith('/')) {
+		candidates.push(path.join(distDir, requested, 'index.html'));
+	} else {
+		candidates.push(path.join(distDir, requested));
+
+		if (!path.extname(requested)) {
+			candidates.push(path.join(distDir, requested, 'index.html'));
+		}
+	}
+
+	for (const candidate of candidates) {
+		if (await fileExists(candidate)) {
+			await serveFile(res, candidate);
+			return;
+		}
+	}
+
+	const notFoundPage = path.join(distDir, '404.html');
+	if (await fileExists(notFoundPage)) {
+		await serveFile(res, notFoundPage, 404);
+		return;
+	}
+
+	sendJson(res, 404, { error: { code: 'not_found', message: 'Route not found' } });
+}
+
+async function serveFile(res, filePath, status = 200) {
 	try {
 		const safePath = path.resolve(filePath);
 		const type = contentTypes[path.extname(safePath).toLowerCase()] || 'application/octet-stream';
 		await access(safePath);
-		res.writeHead(200, { 'Content-Type': type, 'Cache-Control': 'no-store' });
+		res.writeHead(status, { 'Content-Type': type, 'Cache-Control': 'no-store' });
 		createReadStream(safePath).pipe(res);
 	} catch {
 		sendJson(res, 404, { error: { code: 'file_not_found', message: 'File not found' } });
@@ -427,6 +472,15 @@ function validateSlug(slug) {
 	}
 
 	return safeSlug;
+}
+
+function getRouteSlug(frontmatterSlug, fallbackSlug) {
+	const routeSlug = String(frontmatterSlug || fallbackSlug)
+		.trim()
+		.toLowerCase()
+		.replace(/^\/+|\/+$/g, '');
+
+	return slugPattern.test(routeSlug) ? routeSlug : fallbackSlug;
 }
 
 function slugify(input) {
