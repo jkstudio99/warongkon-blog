@@ -27,7 +27,7 @@ const { Content, headings } = await post.render();
 ---
 
 <BaseLayout title={seoTitle || title} description={description} image={coverImage?.src || undefined}>
-	<div class='container lg:flex gap-14'>
+	<div class='container gap-10 lg:flex'>
 		<main
 			class='min-w-0 grow overflow-hidden'
 		>
@@ -35,7 +35,7 @@ const { Content, headings } = await post.render();
 				<Prose>
 					<div>
 						<h1 class='!my-1 leading-tight'>{title}</h1>
-            <div class='mt-4 flex flex-col gap-4 py-2 text-[1.05rem] font-[700] leading-8 sm:mt-2 sm:flex-row sm:items-center sm:justify-between md:text-right'>
+            <div class='mt-4 flex flex-col gap-4 py-2 text-[1.02rem] font-[700] leading-8 text-zinc-700 dark:text-zinc-300 sm:mt-2 sm:flex-row sm:items-center sm:justify-between md:text-right'>
               {
                 <div class='flex flex-wrap gap-2'>
                   {
@@ -90,7 +90,7 @@ const { Content, headings } = await post.render();
 
 			</article>
 		</main>
-    <aside class='hidden w-[340px] shrink-0 md:block' aria-label='Article sidebar'>
+    <aside class='hidden w-[300px] shrink-0 md:block' aria-label='Article sidebar'>
       <div class='mb-4'>
 				<AboutTheAuthor />
 			</div>

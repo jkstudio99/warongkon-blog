@@ -1214,12 +1214,21 @@ textarea:focus {
 }
 
 @media (max-width: 560px) {
-	.nav-item span,
 	th:nth-child(3),
 	td:nth-child(3),
 	th:nth-child(4),
 	td:nth-child(4) {
 		display: none;
+	}
+
+	.nav {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.nav-item {
+		font-size: 1rem;
+		justify-content: flex-start;
+		padding-inline: 0.75rem;
 	}
 
 	.metrics {
@@ -1233,6 +1242,20 @@ textarea:focus {
 	th,
 	td {
 		padding-inline: 0.75rem;
+	}
+
+	table {
+		min-width: 660px;
+	}
+
+	th:nth-child(2),
+	td:nth-child(2) {
+		width: 7rem;
+	}
+
+	th:nth-child(5),
+	td:nth-child(5) {
+		width: 8rem;
 	}
 
 	.title-cell strong {

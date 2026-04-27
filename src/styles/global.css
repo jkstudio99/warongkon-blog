@@ -48,7 +48,7 @@
 
 	html {
 		font-family: var(--font-thai);
-		font-size: clamp(18px, 0.45vw + 16px, 20px);
+		font-size: clamp(17px, 0.25vw + 16px, 18.5px);
 		scroll-behavior: smooth;
 	}
 

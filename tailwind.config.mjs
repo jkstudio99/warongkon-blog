@@ -25,7 +25,6 @@ export default {
             maxWidth: '100%',
             fontSize: '1.16rem',
             lineHeight: '1.72',
-            color: '#27272a',
             '--tw-prose-body': '#27272a',
             '--tw-prose-headings': '#18181b',
             '--tw-prose-lead': '#3f3f46',

@@ -89,17 +89,17 @@ const menu = [
 				</button>
 			</div>
 		</nav>
-    <div class='fixed left-1/2 top-3 z-[999] w-auto max-w-full -translate-x-1/2 px-3'>
-      <div class="flex rounded-full border bg-white/95 px-3 text-[1.02rem] font-bold leading-tight shadow-lg shadow-black/5 backdrop-blur-md dark:border-zinc-700 dark:bg-zinc-900/85">
-        <div class="px-2">
-          <HeaderLink class="flex min-h-12 items-center px-1" href="/" aria-label="Home">
+    <div class='fixed left-1/2 top-3 z-[999] w-auto max-w-[calc(100vw-1rem)] -translate-x-1/2 overflow-x-auto px-1'>
+      <div class="flex rounded-full border bg-white/95 px-2 text-[0.98rem] font-bold leading-tight shadow-lg shadow-black/5 backdrop-blur-md dark:border-zinc-700 dark:bg-zinc-900/85">
+        <div class="px-1.5">
+          <HeaderLink class="flex min-h-11 items-center px-2" href="/" aria-label="Home">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
           </HeaderLink>
         </div>
         {
           menu.map((item) => (
-            <div class='px-2'>
-              <HeaderLink class="flex min-h-12 items-center px-1" href={item.link}>
+            <div class='px-1.5'>
+              <HeaderLink class="flex min-h-11 items-center px-2" href={item.link}>
                 {item.label}
               </HeaderLink>
             </div>

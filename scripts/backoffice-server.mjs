@@ -143,11 +143,6 @@ const server = http.createServer(async (req, res) => {
 	try {
 		const url = new URL(req.url || '/', `http://${req.headers.host || 'localhost'}`);
 
-		if (url.pathname === '/') {
-			redirect(res, '/backoffice/');
-			return;
-		}
-
 		if (url.pathname === '/favicon.ico') {
 			res.writeHead(204, { 'Cache-Control': 'no-store' });
 			res.end();
@@ -506,11 +501,6 @@ async function assertMissing(filePath, message) {
 	if (await fileExists(filePath)) {
 		throw new Error(message);
 	}
-}
-
-function redirect(res, location) {
-	res.writeHead(302, { Location: location });
-	res.end();
 }
 
 function sendJson(res, status, payload) {
