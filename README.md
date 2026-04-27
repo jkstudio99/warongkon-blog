@@ -51,12 +51,30 @@ All commands are run from the root of the project, from a terminal:
 | :------------------------ | :----------------------------------------------- |
 | `pnpm install`             | Installs dependencies                            |
 | `pnpm run dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm run backoffice`      | Starts local blog CRUD back office at `localhost:8787/backoffice/` |
 | `pnpm run build`           | Build your production site to `./dist/`          |
 | `pnpm run preview`         | Preview your build locally, before deploying     |
 | `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm run astro -- --help` | Get help using the Astro CLI                     |
 
+## Blog Back Office
+
+Run the local blog manager with:
+
+```sh
+pnpm run backoffice
+```
+
+Then open `http://localhost:8787/backoffice/`.
+
+The back office reads and writes real files inside `src/content/blog/`.
+
+- Dashboard: `http://localhost:8787/backoffice/`
+- Create post: `http://localhost:8787/backoffice/create`
+- Edit post: `http://localhost:8787/backoffice/edit?slug=your-post-slug`
+
+The API is exposed under `/api/v1` and supports listing posts, getting stats, creating posts, editing frontmatter/body, replacing cover images, renaming slugs, and deleting post folders. Cover uploads are converted to `cover.jpg` at 960 x 480 to satisfy the Astro content schema.
+
 ## 👀 Want to learn more?
 
 Check out [Astro documentation](https://docs.astro.build).
-

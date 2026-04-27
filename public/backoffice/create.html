@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="th">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Create Post | Blog Back Office</title>
+		<link rel="stylesheet" href="/backoffice/styles.css" />
+	</head>
+	<body>
+		<div class="app-shell">
+			<aside class="sidebar">
+				<a class="brand" href="/backoffice/" aria-label="Blog Back Office">
+					<span class="brand-mark">W</span>
+					<span><strong>Warongkon</strong><small>Blog Ops</small></span>
+				</a>
+				<nav class="nav" aria-label="Back office">
+					<a class="nav-item" href="/backoffice/">Content</a>
+					<a class="nav-item active" href="/backoffice/create">Create</a>
+				</nav>
+				<div class="side-card">
+					<p class="label">Mode</p>
+					<strong>Create post</strong>
+					<span>Writes a new folder under src/content/blog</span>
+				</div>
+			</aside>
+
+			<main class="workspace form-workspace">
+				<header class="topbar">
+					<div>
+						<p id="statusText" class="label">Create</p>
+						<h1>Create Blog Post</h1>
+					</div>
+					<div class="top-actions">
+						<a class="button ghost" href="/backoffice/">Cancel</a>
+						<button id="saveButton" class="button primary" type="button">Create post</button>
+					</div>
+				</header>
+
+				<section class="panel form-panel">
+					<form id="postForm" class="form">
+						<div class="form-section">
+							<p class="section-title">Meta</p>
+							<div class="field-grid two">
+								<label class="field"><span>Title</span><input id="titleInput" required /></label>
+								<label class="field">
+									<span>Slug</span>
+									<div class="inline-field">
+										<input id="slugInput" required pattern="[a-z0-9][a-z0-9-]*[a-z0-9]" />
+										<button id="slugButton" class="button compact" type="button">Generate</button>
+									</div>
+								</label>
+							</div>
+							<label class="field"><span>SEO title</span><input id="seoTitleInput" /></label>
+							<label class="field"><span>Description</span><textarea id="descriptionInput" rows="3" required></textarea></label>
+							<div class="field-grid three">
+								<label class="field"><span>Published</span><input id="pubDateInput" type="date" required /></label>
+								<label class="field"><span>Updated</span><input id="updatedDateInput" type="date" /></label>
+								<label class="field"><span>Tags</span><input id="tagsInput" placeholder="AI, Thailand, Tech Update" /></label>
+							</div>
+						</div>
+
+						<div class="form-section cover-section">
+							<div>
+								<p class="section-title">Cover</p>
+								<div class="cover-preview">
+									<img id="coverPreview" alt="Cover preview" />
+									<div class="cover-empty">960 x 480</div>
+								</div>
+							</div>
+							<label class="field"><span>Upload image</span><input id="coverInput" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" /></label>
+						</div>
+
+						<div class="form-section">
+							<p class="section-title">Content</p>
+							<label class="field"><span>Markdown body</span><textarea id="bodyInput" class="body-input" required></textarea></label>
+						</div>
+					</form>
+				</section>
+			</main>
+		</div>
+
+		<script type="module" src="/backoffice/editor.js"></script>
+	</body>
+</html>

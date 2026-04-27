@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="th">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Blog Back Office</title>
+		<link rel="stylesheet" href="/backoffice/styles.css" />
+	</head>
+	<body>
+		<div class="app-shell">
+			<aside class="sidebar">
+				<a class="brand" href="/backoffice/" aria-label="Blog Back Office">
+					<span class="brand-mark">W</span>
+					<span><strong>Warongkon</strong><small>Blog Ops</small></span>
+				</a>
+				<nav class="nav" aria-label="Back office">
+					<a class="nav-item active" href="/backoffice/">Content</a>
+					<a class="nav-item" href="/backoffice/create">Create</a>
+				</nav>
+				<div class="side-card">
+					<p class="label">Repository</p>
+					<strong>src/content/blog</strong>
+					<span>Markdown content source</span>
+				</div>
+			</aside>
+
+			<main class="workspace">
+				<header class="topbar">
+					<div>
+						<p class="label">Dashboard</p>
+						<h1>Blog Management</h1>
+					</div>
+					<div class="top-actions">
+						<button id="refreshButton" class="button ghost" type="button">Refresh</button>
+						<a class="button primary" href="/backoffice/create">New post</a>
+					</div>
+				</header>
+
+				<section class="metrics" aria-label="Blog stats">
+					<article class="metric-card"><span>Total posts</span><strong id="postCount">0</strong></article>
+					<article class="metric-card"><span>Latest date</span><strong id="latestDate">-</strong></article>
+					<article class="metric-card"><span>Tags</span><strong id="tagCount">0</strong></article>
+					<article class="metric-card"><span>With cover</span><strong id="coverCount">0</strong></article>
+				</section>
+
+				<section class="panel library-panel" aria-labelledby="libraryTitle">
+					<div class="panel-header">
+						<div>
+							<p class="label">Library</p>
+							<h2 id="libraryTitle">Posts</h2>
+						</div>
+						<label class="search-field">
+							<span class="visually-hidden">Search posts</span>
+							<input id="searchInput" type="search" placeholder="Search title, slug, tag" />
+						</label>
+					</div>
+
+					<div class="table-shell dashboard-table">
+						<table>
+							<thead>
+								<tr>
+									<th>Title</th>
+									<th>Date</th>
+									<th>Tags</th>
+									<th>Cover</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody id="postList"></tbody>
+						</table>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script type="module" src="/backoffice/dashboard.js"></script>
+	</body>
+</html>
