@@ -1,11 +1,15 @@
 import { api } from './api.js';
+import { initPreferences, t } from './preferences.js';
 import { normalizeDate, slugify } from './view-utils.js';
+
+initPreferences();
 
 const mode = location.pathname.includes('/edit') ? 'edit' : 'create';
 const params = new URLSearchParams(location.search);
 const originalSlug = params.get('slug') || '';
 let coverDataUrl = '';
 let currentPost = null;
+let statusKey = '';
 
 const els = {
 	body: document.querySelector('#bodyInput'),
@@ -38,13 +42,19 @@ els.title.addEventListener('blur', () => {
 els.cover.addEventListener('change', handleCoverChange);
 els.saveButton.addEventListener('click', savePost);
 els.deleteButton?.addEventListener('click', deletePost);
+window.addEventListener('backoffice:language-change', () => {
+	if (statusKey) setStatus(statusKey);
+	if (currentPost && els.pageTitle) {
+		els.pageTitle.textContent = currentPost.title || currentPost.slug;
+	}
+});
 
 if (mode === 'edit') {
 	await loadPost();
 } else {
 	els.pubDate.value = new Date().toISOString().slice(0, 10);
-	els.body.value = 'เขียนเนื้อหาบทความที่นี่';
-	setStatus('Create');
+	els.body.value = t('editor.defaultBody');
+	setStatus('status.create');
 }
 
 async function loadPost() {
@@ -53,10 +63,10 @@ async function loadPost() {
 		return;
 	}
 
-	setStatus('Loading');
+	setStatus('status.loading');
 	currentPost = await api.getPost(originalSlug);
 	fillForm(currentPost);
-	setStatus('Edit');
+	setStatus('status.edit');
 }
 
 function fillForm(post) {
@@ -84,7 +94,7 @@ async function handleCoverChange(event) {
 async function savePost() {
 	if (!els.form.reportValidity()) return;
 
-	setStatus(mode === 'create' ? 'Creating' : 'Updating');
+	setStatus(mode === 'create' ? 'status.creating' : 'status.updating');
 	const payload = getPayload();
 	const saved = mode === 'create' ? await api.createPost(payload) : await api.updatePost(originalSlug, payload);
 
@@ -93,9 +103,9 @@ async function savePost() {
 
 async function deletePost() {
 	if (!originalSlug) return;
-	if (!window.confirm(`Delete "${originalSlug}" and all files inside it?`)) return;
+	if (!window.confirm(t('confirm.delete', { slug: originalSlug }))) return;
 
-	setStatus('Deleting');
+	setStatus('status.deleting');
 	await api.deletePost(originalSlug);
 	window.location.href = '/backoffice/';
 }
@@ -128,8 +138,9 @@ function hasCover() {
 	return els.coverPreview.parentElement.classList.contains('has-image');
 }
 
-function setStatus(message) {
-	els.status.textContent = message;
+function setStatus(key) {
+	statusKey = key;
+	els.status.textContent = t(key);
 }
 
 function readFileAsDataUrl(file) {

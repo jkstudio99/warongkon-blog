@@ -1,5 +1,8 @@
 import { api } from './api.js';
+import { initPreferences, t } from './preferences.js';
 import { escapeHtml, normalizeDate, renderTags } from './view-utils.js';
+
+initPreferences();
 
 const els = {
 	coverCount: document.querySelector('#coverCount'),
@@ -15,6 +18,7 @@ let posts = [];
 
 els.refreshButton.addEventListener('click', loadDashboard);
 els.search.addEventListener('input', renderPosts);
+window.addEventListener('backoffice:language-change', renderPosts);
 
 await loadDashboard();
 
@@ -28,7 +32,7 @@ async function loadDashboard() {
 		console.error(error);
 		posts = [];
 		renderStats({});
-		els.postList.innerHTML = '<tr><td class="empty-row" colspan="5">Cannot load posts. Restart the back office server and refresh this page.</td></tr>';
+		els.postList.innerHTML = `<tr><td class="empty-row" colspan="5">${escapeHtml(t('empty.loadError'))}</td></tr>`;
 	}
 }
 
@@ -49,7 +53,7 @@ function renderPosts() {
 	els.postList.innerHTML = '';
 
 	if (!filtered.length) {
-		els.postList.innerHTML = '<tr><td class="empty-row" colspan="5">No posts found</td></tr>';
+		els.postList.innerHTML = `<tr><td class="empty-row" colspan="5">${escapeHtml(t('empty.noPosts'))}</td></tr>`;
 		return;
 	}
 
@@ -63,13 +67,22 @@ function renderPosts() {
 				</div>
 			</td>
 			<td>${escapeHtml(normalizeDate(post.pubDate) || '-')}</td>
-			<td><div class="tag-stack">${renderTags(post.tags || [])}</div></td>
-			<td>${post.hasCover ? '<span class="cover-dot">Ready</span>' : '<span class="cover-dot empty">Missing</span>'}</td>
+			<td><div class="tag-stack">${renderTags(post.tags || [], t('tags.none'))}</div></td>
+			<td>${post.hasCover ? `<span class="cover-dot">${escapeHtml(t('cover.ready'))}</span>` : `<span class="cover-dot empty">${escapeHtml(t('cover.missing'))}</span>`}</td>
 			<td>
-				<div class="row-actions">
-					<a class="button ghost compact" href="/${encodeURIComponent(post.slug)}/" target="_blank" rel="noreferrer">View</a>
-					<a class="button compact" href="/backoffice/edit?slug=${encodeURIComponent(post.slug)}">Edit</a>
-					<button class="button danger compact" type="button" data-delete-slug="${escapeHtml(post.slug)}">Delete</button>
+				<div class="row-actions" aria-label="${escapeHtml(t('table.actions'))}">
+					<a class="icon-button" href="/${encodeURIComponent(post.slug)}/" target="_blank" rel="noreferrer" aria-label="${escapeHtml(t('actions.view'))}" title="${escapeHtml(t('actions.view'))}">
+						${icon('view')}
+						<span class="visually-hidden">${escapeHtml(t('actions.view'))}</span>
+					</a>
+					<a class="icon-button" href="/backoffice/edit?slug=${encodeURIComponent(post.slug)}" aria-label="${escapeHtml(t('actions.edit'))}" title="${escapeHtml(t('actions.edit'))}">
+						${icon('edit')}
+						<span class="visually-hidden">${escapeHtml(t('actions.edit'))}</span>
+					</a>
+					<button class="icon-button danger" type="button" data-delete-slug="${escapeHtml(post.slug)}" aria-label="${escapeHtml(t('actions.delete'))}" title="${escapeHtml(t('actions.delete'))}">
+						${icon('delete')}
+						<span class="visually-hidden">${escapeHtml(t('actions.delete'))}</span>
+					</button>
 				</div>
 			</td>
 		`;
@@ -86,13 +99,23 @@ function renderPosts() {
 }
 
 async function deletePost(slug) {
-	if (!window.confirm(`Delete "${slug}" and all files inside it?`)) return;
+	if (!window.confirm(t('confirm.delete', { slug }))) return;
 
 	try {
 		await api.deletePost(slug);
 		await loadDashboard();
 	} catch (error) {
 		console.error(error);
-		window.alert(error.message || 'Cannot delete post');
+		window.alert(error.message || t('alert.deleteFailed'));
 	}
+}
+
+function icon(name) {
+	const icons = {
+		delete: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16" /><path d="M10 11v6M14 11v6" /><path d="M6 7l1 14h10l1-14" /><path d="M9 7V4h6v3" /></svg>',
+		edit: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" /></svg>',
+		view: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg>'
+	};
+
+	return icons[name] || '';
 }

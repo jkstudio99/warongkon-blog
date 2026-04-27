@@ -4,9 +4,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Edit Post | Blog Back Office</title>
+		<script>
+			document.documentElement.dataset.theme = localStorage.getItem('warongkon.backoffice.theme') || 'system';
+			document.documentElement.lang = localStorage.getItem('warongkon.backoffice.language') || 'th';
+		</script>
 		<link rel="stylesheet" href="/backoffice/styles.css" />
 	</head>
-	<body>
+	<body data-i18n-document-title="title.edit">
 		<div class="app-shell">
 			<aside class="sidebar">
 				<a class="brand" href="/backoffice/" aria-label="Blog Back Office">
@@ -14,13 +18,13 @@
 					<span><strong>Warongkon</strong><small>Blog Ops</small></span>
 				</a>
 				<nav class="nav" aria-label="Back office">
-					<a class="nav-item" href="/backoffice/">Content</a>
-					<a class="nav-item" href="/backoffice/create">Create</a>
+					<a class="nav-item" href="/backoffice/" data-i18n="nav.content">Content</a>
+					<a class="nav-item" href="/backoffice/create" data-i18n="nav.create">Create</a>
 				</nav>
 				<div class="side-card">
-					<p class="label">Mode</p>
-					<strong>Edit post</strong>
-					<span>Updates an existing Markdown entry</span>
+					<p class="label" data-i18n="mode.label">Mode</p>
+					<strong data-i18n="edit.mode">Edit post</strong>
+					<span data-i18n="edit.help">Updates an existing Markdown entry</span>
 				</div>
 			</aside>
 
@@ -28,55 +32,72 @@
 				<header class="topbar">
 					<div>
 						<p id="statusText" class="label">Edit</p>
-						<h1 id="pageTitle">Edit Blog Post</h1>
+						<h1 id="pageTitle" data-i18n="edit.title">Edit Blog Post</h1>
 					</div>
 					<div class="top-actions">
-						<a class="button ghost" href="/backoffice/">Back</a>
-						<button id="deleteButton" class="button danger" type="button">Delete</button>
-						<button id="saveButton" class="button primary" type="button">Update post</button>
+						<div class="preference-bar" aria-label="Preferences">
+							<div class="segmented-control" data-i18n-aria-label="preferences.language" aria-label="Language">
+								<button class="segmented-option" type="button" data-lang-option="th">TH</button>
+								<button class="segmented-option" type="button" data-lang-option="en">EN</button>
+							</div>
+							<div class="segmented-control" data-i18n-aria-label="preferences.theme" aria-label="Theme">
+								<button class="segmented-option icon-toggle" type="button" data-theme-option="light" data-i18n-aria-label="theme.light" data-i18n-title="theme.light" aria-label="Light mode" title="Light mode">
+									<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
+								</button>
+								<button class="segmented-option icon-toggle" type="button" data-theme-option="dark" data-i18n-aria-label="theme.dark" data-i18n-title="theme.dark" aria-label="Dark mode" title="Dark mode">
+									<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5Z" /></svg>
+								</button>
+								<button class="segmented-option icon-toggle" type="button" data-theme-option="system" data-i18n-aria-label="theme.system" data-i18n-title="theme.system" aria-label="System mode" title="System mode">
+									<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2" /><path d="M8 20h8M12 16v4" /></svg>
+								</button>
+							</div>
+						</div>
+						<a class="button ghost" href="/backoffice/" data-i18n="actions.back">Back</a>
+						<button id="deleteButton" class="button danger" type="button" data-i18n="actions.delete">Delete</button>
+						<button id="saveButton" class="button primary" type="button" data-i18n="actions.updatePost">Update post</button>
 					</div>
 				</header>
 
 				<section class="panel form-panel">
 					<form id="postForm" class="form">
 						<div class="form-section">
-							<p class="section-title">Meta</p>
+							<p class="section-title" data-i18n="form.meta">Meta</p>
 							<div class="field-grid two">
-								<label class="field"><span>Title</span><input id="titleInput" required /></label>
+								<label class="field"><span data-i18n="form.title">Title</span><input id="titleInput" required /></label>
 								<label class="field">
-									<span>Slug</span>
+									<span data-i18n="form.slug">Slug</span>
 									<div class="inline-field">
 										<input id="slugInput" required pattern="[a-z0-9][a-z0-9-]*[a-z0-9]" />
-										<button id="slugButton" class="button compact" type="button">Generate</button>
+										<button id="slugButton" class="button compact" type="button" data-i18n="actions.generate">Generate</button>
 									</div>
 								</label>
 							</div>
-							<label class="field"><span>SEO title</span><input id="seoTitleInput" /></label>
-							<label class="field"><span>Description</span><textarea id="descriptionInput" rows="3" required></textarea></label>
+							<label class="field"><span data-i18n="form.seoTitle">SEO title</span><input id="seoTitleInput" /></label>
+							<label class="field"><span data-i18n="form.description">Description</span><textarea id="descriptionInput" rows="3" required></textarea></label>
 							<div class="field-grid three">
-								<label class="field"><span>Published</span><input id="pubDateInput" type="date" required /></label>
-								<label class="field"><span>Updated</span><input id="updatedDateInput" type="date" /></label>
-								<label class="field"><span>Tags</span><input id="tagsInput" placeholder="AI, Thailand, Tech Update" /></label>
+								<label class="field"><span data-i18n="form.published">Published</span><input id="pubDateInput" type="date" required /></label>
+								<label class="field"><span data-i18n="form.updated">Updated</span><input id="updatedDateInput" type="date" /></label>
+								<label class="field"><span data-i18n="form.tags">Tags</span><input id="tagsInput" placeholder="AI, Thailand, Tech Update" data-i18n-placeholder="form.tagsPlaceholder" /></label>
 							</div>
 						</div>
 
 						<div class="form-section cover-section">
 							<div>
-								<p class="section-title">Cover</p>
+								<p class="section-title" data-i18n="form.cover">Cover</p>
 								<div class="cover-preview">
 									<img id="coverPreview" alt="Cover preview" />
-									<div class="cover-empty">960 x 480</div>
+									<div class="cover-empty" data-i18n="form.coverSize">960 x 480</div>
 								</div>
 							</div>
 							<div class="cover-controls">
-								<label class="field"><span>Upload image</span><input id="coverInput" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" /></label>
-								<label class="check-row"><input id="removeCoverInput" type="checkbox" /><span>Remove current cover on save</span></label>
+								<label class="field"><span data-i18n="form.uploadImage">Upload image</span><input id="coverInput" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" /></label>
+								<label class="check-row"><input id="removeCoverInput" type="checkbox" /><span data-i18n="form.removeCover">Remove current cover on save</span></label>
 							</div>
 						</div>
 
 						<div class="form-section">
-							<p class="section-title">Content</p>
-							<label class="field"><span>Markdown body</span><textarea id="bodyInput" class="body-input" required></textarea></label>
+							<p class="section-title" data-i18n="form.content">Content</p>
+							<label class="field"><span data-i18n="form.markdownBody">Markdown body</span><textarea id="bodyInput" class="body-input" required></textarea></label>
 						</div>
 					</form>
 				</section>

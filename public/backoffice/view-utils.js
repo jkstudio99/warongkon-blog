@@ -21,8 +21,8 @@ export function escapeHtml(value) {
 		.replace(/'/g, '&#039;');
 }
 
-export function renderTags(tags) {
-	if (!tags.length) return '<span class="chip">No tags</span>';
+export function renderTags(tags, emptyLabel = 'No tags') {
+	if (!tags.length) return `<span class="chip">${escapeHtml(emptyLabel)}</span>`;
 
 	return tags
 		.slice(0, 3)
