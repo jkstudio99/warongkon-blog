@@ -103,6 +103,33 @@
 							<tbody id="postList"></tbody>
 						</table>
 					</div>
+					<div class="pagination-bar" aria-label="Pagination">
+						<label class="page-size-control">
+							<span data-i18n="pagination.rowsPerPage">Rows per page</span>
+							<select id="pageSizeSelect" aria-label="Rows per page" data-i18n-aria-label="pagination.rowsPerPage">
+								<option value="5">5</option>
+								<option value="10" selected>10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+							</select>
+						</label>
+						<p id="paginationRange" class="pagination-range">-</p>
+						<nav class="pagination-controls" aria-label="Pagination">
+							<button id="firstPageButton" class="pagination-button" type="button" data-i18n-aria-label="pagination.first" data-i18n-title="pagination.first" aria-label="First page" title="First page">
+								<span class="lucide-icon lucide-chevrons-left" aria-hidden="true"></span>
+							</button>
+							<button id="prevPageButton" class="pagination-button" type="button" data-i18n-aria-label="pagination.previous" data-i18n-title="pagination.previous" aria-label="Previous page" title="Previous page">
+								<span class="lucide-icon lucide-chevron-left" aria-hidden="true"></span>
+							</button>
+							<div id="pageNumbers" class="page-numbers" aria-label="Page numbers"></div>
+							<button id="nextPageButton" class="pagination-button" type="button" data-i18n-aria-label="pagination.next" data-i18n-title="pagination.next" aria-label="Next page" title="Next page">
+								<span class="lucide-icon lucide-chevron-right" aria-hidden="true"></span>
+							</button>
+							<button id="lastPageButton" class="pagination-button" type="button" data-i18n-aria-label="pagination.last" data-i18n-title="pagination.last" aria-label="Last page" title="Last page">
+								<span class="lucide-icon lucide-chevrons-right" aria-hidden="true"></span>
+							</button>
+						</nav>
+					</div>
 				</section>
 			</main>
 		</div>
