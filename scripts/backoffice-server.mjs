@@ -6,6 +6,7 @@ import sharp from 'sharp';
 
 const rootDir = process.cwd();
 const blogDir = path.join(rootDir, 'src/content/blog');
+const lucideIconsDir = path.join(rootDir, 'node_modules/lucide-static/icons');
 const publicDir = path.join(rootDir, 'public/backoffice');
 const port = Number(process.env.BACKOFFICE_PORT || 8787);
 const maxBodySize = 16 * 1024 * 1024;
@@ -154,6 +155,11 @@ const server = http.createServer(async (req, res) => {
 			return;
 		}
 
+		if (url.pathname.startsWith('/backoffice/vendor/lucide/')) {
+			await serveLucideIcon(res, url);
+			return;
+		}
+
 		if (url.pathname.startsWith('/backoffice')) {
 			await serveBackOffice(res, url);
 			return;
@@ -250,6 +256,17 @@ async function serveContentAsset(res, url) {
 	}
 
 	await serveFile(res, path.join(getPostDir(slug), fileName));
+}
+
+async function serveLucideIcon(res, url) {
+	const fileName = url.pathname.split('/').pop() || '';
+
+	if (!/^[a-z0-9-]+\.svg$/.test(fileName)) {
+		sendJson(res, 400, { error: { code: 'bad_icon_path', message: 'Invalid icon name' } });
+		return;
+	}
+
+	await serveFile(res, path.join(lucideIconsDir, fileName));
 }
 
 async function serveFile(res, filePath) {

@@ -151,6 +151,39 @@ svg {
 	display: none;
 }
 
+.lucide-icon {
+	background: currentColor;
+	display: inline-block;
+	height: 1.05rem;
+	mask: var(--lucide-icon) center / contain no-repeat;
+	-webkit-mask: var(--lucide-icon) center / contain no-repeat;
+	width: 1.05rem;
+}
+
+.lucide-eye {
+	--lucide-icon: url("/backoffice/vendor/lucide/eye.svg");
+}
+
+.lucide-monitor {
+	--lucide-icon: url("/backoffice/vendor/lucide/monitor.svg");
+}
+
+.lucide-moon {
+	--lucide-icon: url("/backoffice/vendor/lucide/moon.svg");
+}
+
+.lucide-square-pen {
+	--lucide-icon: url("/backoffice/vendor/lucide/square-pen.svg");
+}
+
+.lucide-sun {
+	--lucide-icon: url("/backoffice/vendor/lucide/sun.svg");
+}
+
+.lucide-trash-2 {
+	--lucide-icon: url("/backoffice/vendor/lucide/trash-2.svg");
+}
+
 .app-shell {
 	display: grid;
 	grid-template-columns: 256px minmax(0, 1fr);
