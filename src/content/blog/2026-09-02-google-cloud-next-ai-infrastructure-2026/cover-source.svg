@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="48" y1="40" x2="904" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#09160F"/>
+      <stop offset="1" stop-color="#143A28"/>
+    </linearGradient>
+    <linearGradient id="rack" x1="108" y1="118" x2="414" y2="378" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9B24B"/>
+      <stop offset="1" stop-color="#F46C2F"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <g opacity="0.15" stroke="#86E4B9">
+    <path d="M62 86H898"/>
+    <path d="M62 152H898"/>
+    <path d="M62 218H898"/>
+    <path d="M62 284H898"/>
+    <path d="M62 350H898"/>
+    <path d="M62 416H898"/>
+  </g>
+  <g>
+    <rect x="86" y="96" width="116" height="248" rx="18" fill="#10261C" stroke="#F5A94A" stroke-width="3"/>
+    <rect x="226" y="96" width="116" height="248" rx="18" fill="#10261C" stroke="#F5A94A" stroke-width="3"/>
+    <rect x="366" y="96" width="116" height="248" rx="18" fill="#10261C" stroke="#F5A94A" stroke-width="3"/>
+    <rect x="108" y="124" width="72" height="18" rx="9" fill="url(#rack)"/>
+    <rect x="248" y="124" width="72" height="18" rx="9" fill="url(#rack)"/>
+    <rect x="388" y="124" width="72" height="18" rx="9" fill="url(#rack)"/>
+    <rect x="108" y="170" width="72" height="10" rx="5" fill="#2A6F52"/>
+    <rect x="248" y="170" width="72" height="10" rx="5" fill="#2A6F52"/>
+    <rect x="388" y="170" width="72" height="10" rx="5" fill="#2A6F52"/>
+    <rect x="108" y="202" width="72" height="10" rx="5" fill="#2A6F52"/>
+    <rect x="248" y="202" width="72" height="10" rx="5" fill="#2A6F52"/>
+    <rect x="388" y="202" width="72" height="10" rx="5" fill="#2A6F52"/>
+    <rect x="108" y="234" width="72" height="10" rx="5" fill="#2A6F52"/>
+    <rect x="248" y="234" width="72" height="10" rx="5" fill="#2A6F52"/>
+    <rect x="388" y="234" width="72" height="10" rx="5" fill="#2A6F52"/>
+  </g>
+  <path d="M560 118H860" stroke="#86E4B9" stroke-width="4"/>
+  <path d="M560 178H860" stroke="#86E4B9" stroke-width="4"/>
+  <path d="M560 238H860" stroke="#86E4B9" stroke-width="4"/>
+  <path d="M560 298H860" stroke="#86E4B9" stroke-width="4"/>
+  <circle cx="598" cy="118" r="12" fill="#86E4B9"/>
+  <circle cx="688" cy="178" r="12" fill="#F5A94A"/>
+  <circle cx="780" cy="238" r="12" fill="#86E4B9"/>
+  <circle cx="846" cy="298" r="12" fill="#F5A94A"/>
+  <path d="M598 118L688 178L780 238L846 298" stroke="#F5A94A" stroke-width="6"/>
+  <text x="560" y="90" fill="#A8F1D0" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">HARDWARE / INFRASTRUCTURE</text>
+  <text x="560" y="386" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="50" font-weight="800">TPU 8t  TPU 8i</text>
+  <text x="560" y="424" fill="#D5FBEA" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">Virgo Network and AI factories</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="84" y1="46" x2="896" y2="434" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2438"/>
+      <stop offset="1" stop-color="#0E5A6A"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="112" y1="88" x2="418" y2="318" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD064"/>
+      <stop offset="1" stop-color="#FF7A59"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <circle cx="170" cy="128" r="72" fill="#FFD064" opacity="0.14"/>
+  <path d="M136 318C194 250 282 208 386 198C472 190 560 216 646 256C722 292 784 304 854 294" stroke="url(#arc)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M150 352C218 286 302 254 394 248C474 242 560 264 640 302C716 338 782 356 846 350" stroke="#5AD9D1" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <g opacity="0.7">
+    <rect x="112" y="316" width="28" height="76" rx="8" fill="#9BEFE8"/>
+    <rect x="152" y="296" width="34" height="96" rx="8" fill="#9BEFE8"/>
+    <rect x="200" y="272" width="38" height="120" rx="8" fill="#9BEFE8"/>
+    <rect x="252" y="304" width="28" height="88" rx="8" fill="#9BEFE8"/>
+    <rect x="292" y="286" width="32" height="106" rx="8" fill="#9BEFE8"/>
+  </g>
+  <g>
+    <rect x="566" y="96" width="288" height="206" rx="24" fill="#0F2238" stroke="#5AD9D1" stroke-width="2"/>
+    <rect x="596" y="128" width="94" height="16" rx="8" fill="#2C4B68"/>
+    <rect x="596" y="166" width="222" height="18" rx="9" fill="#5AD9D1"/>
+    <rect x="596" y="202" width="176" height="12" rx="6" fill="#2C4B68"/>
+    <rect x="596" y="228" width="198" height="12" rx="6" fill="#2C4B68"/>
+    <rect x="596" y="256" width="124" height="32" rx="16" fill="#FFD064"/>
+  </g>
+  <text x="566" y="72" fill="#A7FFF8" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">THAILAND / SEA ECOSYSTEM</text>
+  <text x="110" y="102" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="50" font-weight="800">THAI AI</text>
+  <text x="112" y="142" fill="#FBE8C0" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="600">infrastructure, skills, regional scale</text>
+</svg>
