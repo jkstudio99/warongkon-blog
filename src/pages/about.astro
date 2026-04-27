@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Prose from '../components/Prose.astro';
 
@@ -10,13 +9,13 @@ import Prose from '../components/Prose.astro';
 	description="About Warongkon - Software Developer with 4 years of experience"
 >
   <div class='container'>
-		<main class='prose text-lg dark:prose-invert'>
+		<main class='prose prose-lg sm:prose-xl max-w-none dark:prose-invert'>
       <article>
         <div class='w-full md:flex md:items-center gap-16 mb-10'>
-          <div class="text-pretty leading-9">
-            <h1 class="text-4xl font-bold mb-4">About Me</h1>
+          <div class="text-pretty">
+            <h1 class="mb-5 text-5xl font-bold leading-tight">About Me</h1>
             <Prose>
-              <div class="text-lg">
+              <div>
                 <p>Hi, I’m <strong>Warongkon</strong> – a passionate Software Developer dedicated to building efficient, scalable, and high-performance solutions. As of 2026, I have accumulated 4 years of professional experience in the software industry.</p>
               </div>
             </Prose>

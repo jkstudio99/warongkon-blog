@@ -9,7 +9,7 @@ interface Props {
 const { picSize } = Astro.props;
 ---
 
-<div class='flex gap-4 items-center leading-tight not-prose'>
+<div class='not-prose flex items-center gap-5 leading-tight'>
 	<a
 		href='https://github.com/jkstudio99'
 		target='_blank'
@@ -17,8 +17,8 @@ const { picSize } = Astro.props;
 		class:list={[
 			'rounded-full overflow-hidden shrink-0',
 			{ 'w-12 h-12': picSize === 'sm' },
-			{ 'w-[70px] h-[70px]': picSize === 'md' },
-			{ 'w-[90px] h-[90px]': picSize === 'lg' }
+			{ 'w-[82px] h-[82px]': picSize === 'md' },
+			{ 'w-[104px] h-[104px]': picSize === 'lg' }
 		]}
 	>
 		<Image src={Ava} alt='Warongkon Fukthongyoo' />
@@ -27,13 +27,13 @@ const { picSize } = Astro.props;
 		<div>
 			<a
 				href='https://github.com/jkstudio99'
-				class='block font-bold text-inherit hover:text-[var(--link-color)]'
+				class='block text-[1.12rem] font-bold text-inherit hover:text-[var(--link-color)]'
 				target='_blank'
 				rel='noopener noreferrer'
 			>
 				Warongkon Fukthongyoo
 			</a>
 		</div>
-		<small class='avatar__subtitle'>Software Developer</small>
+		<small class='avatar__subtitle text-[0.98rem] text-zinc-600 dark:text-zinc-300'>Software Developer</small>
 	</div>
 </div>

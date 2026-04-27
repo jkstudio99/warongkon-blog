@@ -52,22 +52,22 @@ const description = 'Post tags: concise keywords categorizing content for easy n
 ---
 
 <BaseLayout title={title} description={description}>
-	<div class='container'>
+  <div class='container'>
     <div class="mb-10">
-      <h1 class="text-3xl font-bold mb-2">{title}</h1>
-      <p class="text-zinc-700 dark:text-zinc-300 text-lg">{description}</p>
+      <h1 class="mb-3 text-4xl font-bold leading-tight">{title}</h1>
+      <p class="text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300">{description}</p>
     </div>
     <div>
       {groupedTags.map(({ letter, tags }) => (
-        <div class="flex gap-2 border-b dark:border-b-zinc-700 py-3 mb-5 capitalize">
-          <h2 class="text-2xl font-bold text-zinc-800 dark:text-zinc-200 w-7 shrink-0">{letter}</h2>
+        <div class="mb-6 flex gap-4 border-b py-4 capitalize dark:border-b-zinc-700">
+          <h2 class="w-9 shrink-0 text-3xl font-bold text-zinc-800 dark:text-zinc-200">{letter}</h2>
           <div class='flex gap-2 flex-wrap'>
             {
               (tags || [] )?.map((tag: Tag) => (
                 <a
                   class='border border-zinc-300 dark:border-zinc-700 rounded-2xl
-                    text-sm text-zinc-700 dark:text-zinc-300 no-underline px-3 py-1
-                    transition-all duration-700
+                    text-[1.05rem] leading-7 text-zinc-700 dark:text-zinc-300 no-underline px-4 py-1.5
+                    transition-colors duration-200
                   hover:border-zinc-700 dark:hover:border-zinc-300'
                   href={`/tags/${slugify(tag.value)}/`}>
                   {tag.label} ({tag.postCount})

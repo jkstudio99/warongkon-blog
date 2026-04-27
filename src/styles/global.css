@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
 	@font-face {
 		font-display: swap;
@@ -34,17 +35,64 @@
 		src: url("/fonts/thsarabun/THSarabunNew-BoldItalic.ttf") format("truetype");
 	}
 
+	:root {
+		--font-thai: "THSarabun", "TH Sarabun New", "TH SarabunPSK", ui-sans-serif, system-ui, sans-serif;
+		--focus-ring: #f59e0b;
+		--reading-measure: 72ch;
+		color-scheme: light;
+	}
+
+	.dark {
+		color-scheme: dark;
+	}
+
 	html {
-		font-family: "THSarabun", "TH Sarabun New", "TH SarabunPSK", ui-sans-serif, system-ui, sans-serif;
+		font-family: var(--font-thai);
+		font-size: clamp(18px, 0.45vw + 16px, 20px);
+		scroll-behavior: smooth;
 	}
 
 	body {
 		font-family: inherit;
+		line-height: 1.65;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
 	}
 
 	pre,
 	code {
 		font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
-		font-size: 0.875rem;
+		font-size: 0.92em;
+	}
+
+	a,
+	button {
+		cursor: pointer;
+	}
+
+	a {
+		text-decoration-thickness: 0.08em;
+		text-underline-offset: 0.18em;
+	}
+
+	:focus-visible {
+		border-radius: 0.5rem;
+		outline: 3px solid var(--focus-ring);
+		outline-offset: 4px;
+	}
+
+	::selection {
+		background: rgba(245, 158, 11, 0.35);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
 	}
 }

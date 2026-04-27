@@ -2,9 +2,7 @@
 import { SITE_TITLE, SITE_TAGLINE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
-import Ava from '@src/assets/img/ava.jpg';
 import Prose from '../components/Prose.astro';
 import { projects } from './projects/projects';
 import ProjectList from '../components/ProjectList.astro'
@@ -18,20 +16,20 @@ const posts = (await getCollection('blog')).sort((a: BlogPost, b: BlogPost) => b
 
 <BaseLayout title={SITE_TITLE + ' - ' + SITE_TAGLINE} description={SITE_DESCRIPTION}>
 	<div class='container'>
-    <div class='w-full md:flex md:items-center gap-16 mb-10'>
-      <div class="text-pretty leading-9">
-        <h1 class="text-4xl font-bold mb-4">Warongkon Blog </h1>
+    <div class='mb-12 w-full md:flex md:items-center md:gap-16'>
+      <div class="text-pretty">
+        <h1 class="mb-5 text-5xl font-bold leading-tight">Warongkon Blog </h1>
         <Prose>
-          <div class="text-lg">
+          <div>
             Hi, I’m Warongkon – an enthusiastic Software Developer with 4 years of experience, specializing in C#, TypeScript, Angular, ASP.NET Core, SQL Server, and MongoDB. I’m passionate about leveraging my love for C# to build high-performance, scalable solutions and RESTful APIs, following Clean Code and SOLID principles to drive efficient development workflows and impactful software solutions. </div>
         </Prose>
       </div>
 		</div>
 		<main>
       <div class='mt-6 mb-12'>
-        <div class="flex justify-between gap-2 border-b mb-1 dark:border-b-zinc-700">
-          <h2 class="text-lg font-bold mb-3">Recent Posts</h2>
-          <a href="/posts/" class="inline-block py-2 underline dark:prose-invert">All posts &raquo;</a>
+        <div class="mb-2 flex justify-between gap-3 border-b dark:border-b-zinc-700">
+          <h2 class="mb-4 text-2xl font-bold">Recent Posts</h2>
+          <a href="/posts/" class="inline-block py-2 text-[1.08rem] font-bold underline dark:prose-invert">All posts &raquo;</a>
         </div>
         <div>
           {
@@ -44,9 +42,9 @@ const posts = (await getCollection('blog')).sort((a: BlogPost, b: BlogPost) => b
         </div>
       </div>
       <div>
-        <div class="flex justify-between gap-2 mb-1">
-          <h2 class="text-lg font-bold mb-3">My Projects</h2>
-          <a href="/projects/" class="inline-block py-2 underline dark:prose-invert">All projects &raquo;</a>
+        <div class="mb-2 flex justify-between gap-3">
+          <h2 class="mb-4 text-2xl font-bold">My Projects</h2>
+          <a href="/projects/" class="inline-block py-2 text-[1.08rem] font-bold underline dark:prose-invert">All projects &raquo;</a>
         </div>
         <ProjectList projects={top6Projects}/>
       </div>

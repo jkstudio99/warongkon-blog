@@ -11,15 +11,15 @@ const { projects } = Astro.props
 <div class="grid grid-cols-12 gap-5">
   {
     projects.map((project: Project) => 
-      <div class="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-sm p-5">
+      <div class="col-span-12 rounded-2xl border p-5 shadow-sm transition-colors duration-200 hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-500 sm:col-span-6 lg:col-span-4">
         <div class="flex justify-between items-center">
-          <div class='flex gap-2'>
+          <div class='flex flex-wrap gap-2'>
             {
               (project.tags || [] )?.map((tag: string) => (
                 <span
                   class='border border-zinc-300 dark:border-zinc-700 rounded-2xl
-                    text-sm text-zinc-700 dark:text-zinc-300 no-underline px-2 py-0.5
-                    transition-all duration-700
+                    text-[1rem] leading-7 text-zinc-700 dark:text-zinc-300 no-underline px-3 py-1
+                    transition-colors duration-200
                   hover:border-zinc-700 dark:hover:border-zinc-300'
                   >
                   {tag}
@@ -34,8 +34,8 @@ const { projects } = Astro.props
                 href={project.html_url}
                 target="_blank"
                 class='border border-zinc-300 dark:border-zinc-700 rounded-2xl
-                    text-xs text-zinc-700 dark:text-zinc-300 no-underline px-2 py-0.5
-                    transition-all duration-700
+                    text-[0.95rem] leading-7 text-zinc-700 dark:text-zinc-300 no-underline px-3 py-1
+                    transition-colors duration-200
                   hover:border-zinc-700 dark:hover:border-zinc-300
                     flex items-center gap-1
               '>
@@ -46,13 +46,13 @@ const { projects } = Astro.props
             </div>
           )}
         </div>
-        <h3 class="font-semibold my-2">
-          <a class="underline" href={project.demoLink} target="_blank" rel={project.demoLinkRel}>{project.name}</a>
+        <h3 class="my-3 text-[1.28rem] font-bold leading-8">
+          <a class="underline underline-offset-4" href={project.demoLink} target="_blank" rel={project.demoLinkRel}>{project.name}</a>
         </h3>
-        <div class="line-clamp-2 text-zinc-600 dark:text-zinc-300 mb-4 min-h-[50px]">
+        <div class="mb-5 line-clamp-3 min-h-[4.6rem] text-[1.08rem] leading-8 text-zinc-600 dark:text-zinc-300">
           <p>{project.description}</p>
         </div>
-        <div class="flex justify-end gap-3">
+        <div class="flex justify-end gap-3 text-[1.05rem] font-bold">
           {
             project.postLink &&
             <a class="underline flex items-center gap-2" href={project.postLink}>

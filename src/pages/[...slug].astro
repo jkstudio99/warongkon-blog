@@ -27,23 +27,23 @@ const { Content, headings } = await post.render();
 ---
 
 <BaseLayout title={seoTitle || title} description={description} image={coverImage?.src || undefined}>
-	<div class='container lg:flex gap-10'>
+	<div class='container lg:flex gap-14'>
 		<main
-			class='overflow-hidden grow'
+			class='min-w-0 grow overflow-hidden'
 		>
 			<article>
 				<Prose>
 					<div>
 						<h1 class='!my-1 leading-tight'>{title}</h1>
-            <div class='text-sm font-[500] mt-2 sm:mt-0 py-1 md:text-right flex flex-col sm:flex-row gap-3 sm:justify-between sm:items-center'>
+            <div class='mt-4 flex flex-col gap-4 py-2 text-[1.05rem] font-[700] leading-8 sm:mt-2 sm:flex-row sm:items-center sm:justify-between md:text-right'>
               {
-                <div class='flex gap-2'>
+                <div class='flex flex-wrap gap-2'>
                   {
                     (tags || [] )?.map((tag: string) => (
                       <a
                         class='border border-zinc-300 dark:border-zinc-700 rounded-2xl
-                          text-sm text-zinc-700 dark:text-zinc-300 no-underline px-2 py-0.5
-                          transition-all duration-700
+                          text-[1.02rem] leading-7 text-zinc-800 dark:text-zinc-200 no-underline px-3 py-1
+                          transition-colors duration-200
                         hover:border-zinc-700 dark:hover:border-zinc-300'
                         href={`/tags/${slugify(tag)}`}>
                         {tag}
@@ -62,8 +62,8 @@ const { Content, headings } = await post.render();
               </div>
             </div>
 					</div>
-          <div class='py-3 overflow-hidden'>
-            {coverImage && <Image class='rounded-3xl w-full m-0 lg:mb-2' src={coverImage} alt={title} loading='eager' />}
+          <div class='overflow-hidden py-5'>
+            {coverImage && <Image class='m-0 w-full rounded-[1.75rem] shadow-xl shadow-black/15 lg:mb-3' src={coverImage} alt={title} loading='eager' />}
           </div>
 					<Content />
 				</Prose>
@@ -90,12 +90,12 @@ const { Content, headings } = await post.render();
 
 			</article>
 		</main>
-    <div class='shrink-0 w-[280px] hidden md:block'>
+    <aside class='hidden w-[340px] shrink-0 md:block' aria-label='Article sidebar'>
       <div class='mb-4'>
 				<AboutTheAuthor />
 			</div>
 			<TableOfContent headings={headings} />
-		</div>
+		</aside>
 	</div>
 </BaseLayout>
 

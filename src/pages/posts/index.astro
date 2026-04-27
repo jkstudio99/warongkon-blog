@@ -21,8 +21,8 @@ const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
 >
   <div class='container'>
     <div class="mb-10">
-      <h1 class="text-3xl font-bold mb-2">{title}</h1>
-      <p class="text-zinc-700 dark:text-zinc-300 text-lg">{description}</p>
+      <h1 class="mb-3 text-4xl font-bold leading-tight">{title}</h1>
+      <p class="text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300">{description}</p>
     </div>
     <PostsByYear posts={posts}/>
     <Pagination currentPage={1} totalPages={totalPages} />
