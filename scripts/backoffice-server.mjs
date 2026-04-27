@@ -6,6 +6,7 @@ import sharp from 'sharp';
 
 const rootDir = process.cwd();
 const blogDir = path.join(rootDir, 'src/content/blog');
+const fontsDir = path.join(rootDir, 'public/fonts');
 const lucideIconsDir = path.join(rootDir, 'node_modules/lucide-static/icons');
 const publicDir = path.join(rootDir, 'public/backoffice');
 const port = Number(process.env.BACKOFFICE_PORT || 8787);
@@ -20,6 +21,7 @@ const contentTypes = {
 	'.jpeg': 'image/jpeg',
 	'.png': 'image/png',
 	'.svg': 'image/svg+xml; charset=utf-8',
+	'.ttf': 'font/ttf',
 	'.webp': 'image/webp'
 };
 
@@ -155,6 +157,11 @@ const server = http.createServer(async (req, res) => {
 			return;
 		}
 
+		if (url.pathname.startsWith('/fonts/')) {
+			await serveFontAsset(res, url);
+			return;
+		}
+
 		if (url.pathname.startsWith('/backoffice/vendor/lucide/')) {
 			await serveLucideIcon(res, url);
 			return;
@@ -256,6 +263,17 @@ async function serveContentAsset(res, url) {
 	}
 
 	await serveFile(res, path.join(getPostDir(slug), fileName));
+}
+
+async function serveFontAsset(res, url) {
+	const fileName = url.pathname.replace(/^\/fonts\//, '');
+
+	if (!fileName || fileName.includes('..') || !/^[a-zA-Z0-9/_-]+\.(?:ttf|woff2?)$/.test(fileName)) {
+		sendJson(res, 400, { error: { code: 'bad_font_path', message: 'Invalid font path' } });
+		return;
+	}
+
+	await serveFile(res, path.join(fontsDir, fileName));
 }
 
 async function serveLucideIcon(res, url) {

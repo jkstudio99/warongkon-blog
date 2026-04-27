@@ -1,6 +1,8 @@
 const languageKey = 'warongkon.backoffice.language';
+const sidebarKey = 'warongkon.backoffice.sidebar';
 const themeKey = 'warongkon.backoffice.theme';
 const languages = new Set(['th', 'en']);
+const sidebarStates = new Set(['expanded', 'collapsed']);
 const themes = new Set(['light', 'dark', 'system']);
 
 const dictionary = {
@@ -61,6 +63,8 @@ const dictionary = {
 		'repository.label': 'Repository',
 		'repository.source': 'Markdown content source',
 		'search.posts': 'Search title, slug, tag',
+		'sidebar.collapse': 'Collapse sidebar',
+		'sidebar.expand': 'Expand sidebar',
 		'status.create': 'Create',
 		'status.creating': 'Creating',
 		'status.deleting': 'Deleting',
@@ -137,6 +141,8 @@ const dictionary = {
 		'repository.label': 'Repository',
 		'repository.source': 'แหล่งไฟล์ Markdown',
 		'search.posts': 'ค้นหาชื่อ, slug, แท็ก',
+		'sidebar.collapse': 'ย่อ sidebar',
+		'sidebar.expand': 'ขยาย sidebar',
 		'status.create': 'สร้าง',
 		'status.creating': 'กำลังสร้าง',
 		'status.deleting': 'กำลังลบ',
@@ -160,6 +166,7 @@ const dictionary = {
 
 export function initPreferences() {
 	applyTheme(getTheme());
+	applySidebar(getSidebarState());
 	applyLanguage(getLanguage());
 	bindPreferenceControls();
 	translatePage();
@@ -173,6 +180,11 @@ export function getLanguage() {
 export function getTheme() {
 	const stored = localStorage.getItem(themeKey);
 	return themes.has(stored) ? stored : 'system';
+}
+
+export function getSidebarState() {
+	const stored = localStorage.getItem(sidebarKey);
+	return sidebarStates.has(stored) ? stored : 'expanded';
 }
 
 export function t(key, values = {}) {
@@ -211,6 +223,9 @@ function bindPreferenceControls() {
 			setTheme(button.dataset.themeOption);
 		});
 	});
+	document.querySelectorAll('[data-sidebar-toggle]').forEach((button) => {
+		button.addEventListener('click', toggleSidebar);
+	});
 
 	updatePreferenceControls();
 }
@@ -231,6 +246,13 @@ function setTheme(theme) {
 	updatePreferenceControls();
 }
 
+function toggleSidebar() {
+	const nextState = getSidebarState() === 'collapsed' ? 'expanded' : 'collapsed';
+	localStorage.setItem(sidebarKey, nextState);
+	applySidebar(nextState);
+	updatePreferenceControls();
+}
+
 function applyLanguage(language) {
 	document.documentElement.lang = language;
 }
@@ -239,8 +261,13 @@ function applyTheme(theme) {
 	document.documentElement.dataset.theme = theme;
 }
 
+function applySidebar(state) {
+	document.documentElement.dataset.sidebar = state;
+}
+
 function updatePreferenceControls() {
 	const language = getLanguage();
+	const sidebarState = getSidebarState();
 	const theme = getTheme();
 
 	document.querySelectorAll('[data-lang-option]').forEach((button) => {
@@ -253,5 +280,12 @@ function updatePreferenceControls() {
 		const isActive = button.dataset.themeOption === theme;
 		button.classList.toggle('active', isActive);
 		button.setAttribute('aria-pressed', String(isActive));
+	});
+
+	document.querySelectorAll('[data-sidebar-toggle]').forEach((button) => {
+		const label = t(sidebarState === 'collapsed' ? 'sidebar.expand' : 'sidebar.collapse');
+		button.setAttribute('aria-label', label);
+		button.setAttribute('title', label);
+		button.setAttribute('aria-expanded', String(sidebarState !== 'collapsed'));
 	});
 }

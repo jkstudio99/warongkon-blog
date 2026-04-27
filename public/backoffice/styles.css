@@ -1,5 +1,39 @@
+@font-face {
+	font-display: swap;
+	font-family: "THSarabun";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/thsarabun/THSarabunNew.ttf") format("truetype");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "THSarabun";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/fonts/thsarabun/THSarabunNew-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "THSarabun";
+	font-style: italic;
+	font-weight: 400;
+	src: url("/fonts/thsarabun/THSarabunNew-Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "THSarabun";
+	font-style: italic;
+	font-weight: 700;
+	src: url("/fonts/thsarabun/THSarabunNew-BoldItalic.ttf") format("truetype");
+}
+
 :root {
 	color-scheme: light;
+	--sidebar-width: 256px;
+	--sidebar-collapsed-width: 84px;
 	--bg: #f5f6f8;
 	--surface: #ffffff;
 	--surface-soft: #fafbfc;
@@ -118,7 +152,9 @@ body {
 		var(--bg);
 	color: var(--ink);
 	font-family:
-		Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+		"THSarabun", "TH Sarabun New", "TH SarabunPSK", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	font-size: 1.28rem;
+	line-height: 1.25;
 	margin: 0;
 }
 
@@ -164,12 +200,28 @@ svg {
 	--lucide-icon: url("/backoffice/vendor/lucide/eye.svg");
 }
 
+.lucide-files {
+	--lucide-icon: url("/backoffice/vendor/lucide/files.svg");
+}
+
 .lucide-monitor {
 	--lucide-icon: url("/backoffice/vendor/lucide/monitor.svg");
 }
 
 .lucide-moon {
 	--lucide-icon: url("/backoffice/vendor/lucide/moon.svg");
+}
+
+.lucide-panel-left-close {
+	--lucide-icon: url("/backoffice/vendor/lucide/panel-left-close.svg");
+}
+
+.lucide-panel-left-open {
+	--lucide-icon: url("/backoffice/vendor/lucide/panel-left-open.svg");
+}
+
+.lucide-square-plus {
+	--lucide-icon: url("/backoffice/vendor/lucide/square-plus.svg");
 }
 
 .lucide-square-pen {
@@ -186,8 +238,13 @@ svg {
 
 .app-shell {
 	display: grid;
-	grid-template-columns: 256px minmax(0, 1fr);
+	grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
 	min-height: 100vh;
+	transition: grid-template-columns 180ms ease;
+}
+
+:root[data-sidebar="collapsed"] .app-shell {
+	grid-template-columns: var(--sidebar-collapsed-width) minmax(0, 1fr);
 }
 
 .sidebar {
@@ -200,6 +257,16 @@ svg {
 	position: sticky;
 	top: 0;
 	height: 100vh;
+	transition:
+		gap 180ms ease,
+		padding 180ms ease;
+}
+
+.sidebar-head {
+	align-items: center;
+	display: flex;
+	gap: 0.75rem;
+	justify-content: space-between;
 }
 
 .brand {
@@ -207,6 +274,7 @@ svg {
 	color: white;
 	display: flex;
 	gap: 0.75rem;
+	min-width: 0;
 	text-decoration: none;
 }
 
@@ -233,6 +301,83 @@ svg {
 	margin-top: 0.1rem;
 }
 
+.brand-text,
+.nav-label,
+.side-card {
+	transition:
+		opacity 140ms ease,
+		transform 140ms ease,
+		width 180ms ease;
+}
+
+.sidebar-toggle {
+	align-items: center;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 999px;
+	color: rgba(255, 255, 255, 0.82);
+	cursor: pointer;
+	display: inline-flex;
+	flex: 0 0 auto;
+	height: 2.25rem;
+	justify-content: center;
+	transition:
+		background 150ms ease,
+		color 150ms ease,
+		transform 150ms ease;
+	width: 2.25rem;
+}
+
+.sidebar-toggle:hover {
+	background: rgba(255, 255, 255, 0.14);
+	color: white;
+	transform: translateY(-1px);
+}
+
+.sidebar-icon-expand {
+	display: none;
+}
+
+:root[data-sidebar="collapsed"] .sidebar {
+	align-items: center;
+	gap: 1.25rem;
+	padding-inline: 1rem;
+}
+
+:root[data-sidebar="collapsed"] .sidebar-head,
+:root[data-sidebar="collapsed"] .brand,
+:root[data-sidebar="collapsed"] .nav {
+	width: 100%;
+}
+
+:root[data-sidebar="collapsed"] .brand {
+	justify-content: center;
+}
+
+:root[data-sidebar="collapsed"] .brand-text,
+:root[data-sidebar="collapsed"] .nav-label,
+:root[data-sidebar="collapsed"] .side-card {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	transform: translateX(-0.4rem);
+	width: 0;
+}
+
+:root[data-sidebar="collapsed"] .sidebar-toggle {
+	position: absolute;
+	right: -1.1rem;
+	top: 1.35rem;
+}
+
+:root[data-sidebar="collapsed"] .sidebar-icon-collapse {
+	display: none;
+}
+
+:root[data-sidebar="collapsed"] .sidebar-icon-expand {
+	display: inline-block;
+}
+
 .nav {
 	display: grid;
 	gap: 0.35rem;
@@ -246,6 +391,12 @@ svg {
 	gap: 0.75rem;
 	padding: 0.78rem 0.85rem;
 	text-decoration: none;
+	white-space: nowrap;
+}
+
+:root[data-sidebar="collapsed"] .nav-item {
+	justify-content: center;
+	padding-inline: 0;
 }
 
 .nav-item:hover,
@@ -551,6 +702,7 @@ svg {
 table {
 	border-collapse: collapse;
 	font-size: 0.88rem;
+	min-width: 1080px;
 	width: 100%;
 }
 
@@ -560,6 +712,18 @@ td {
 	padding: 0.82rem 1rem;
 	text-align: left;
 	vertical-align: middle;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+	min-width: 9.5rem;
+	width: 9.5rem;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+	min-width: 8.5rem;
+	width: 8.5rem;
 }
 
 th {
@@ -637,7 +801,10 @@ tbody tr.active {
 	font-size: 0.72rem;
 	font-weight: 900;
 	gap: 0.3rem;
+	justify-content: center;
+	min-width: 5.8rem;
 	padding: 0.35rem 0.55rem;
+	white-space: nowrap;
 }
 
 .cover-dot.empty {
@@ -648,7 +815,7 @@ tbody tr.active {
 
 .form-workspace {
 	margin-inline: auto;
-	max-width: 1180px;
+	max-width: 1320px;
 	width: 100%;
 }
 
@@ -733,7 +900,7 @@ textarea:focus {
 }
 
 .cover-section {
-	grid-template-columns: minmax(260px, 0.95fr) minmax(220px, 1fr);
+	grid-template-columns: minmax(380px, 1.35fr) minmax(260px, 0.75fr);
 }
 
 .cover-preview {
@@ -812,13 +979,35 @@ textarea:focus {
 }
 
 @media (max-width: 820px) {
+	:root[data-sidebar="collapsed"] .app-shell,
 	.app-shell {
 		grid-template-columns: 1fr;
 	}
 
+	:root[data-sidebar="collapsed"] .sidebar,
 	.sidebar {
+		align-items: stretch;
 		height: auto;
+		padding: 1.25rem;
 		position: static;
+	}
+
+	:root[data-sidebar="collapsed"] .brand-text,
+	:root[data-sidebar="collapsed"] .nav-label,
+	:root[data-sidebar="collapsed"] .side-card {
+		opacity: 1;
+		pointer-events: auto;
+		position: static;
+		transform: none;
+		width: auto;
+	}
+
+	:root[data-sidebar="collapsed"] .brand {
+		justify-content: flex-start;
+	}
+
+	.sidebar-toggle {
+		display: none;
 	}
 
 	.nav {

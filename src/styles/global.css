@@ -2,8 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
+	@font-face {
+		font-display: swap;
+		font-family: "THSarabun";
+		font-style: normal;
+		font-weight: 400;
+		src: url("/fonts/thsarabun/THSarabunNew.ttf") format("truetype");
+	}
+
+	@font-face {
+		font-display: swap;
+		font-family: "THSarabun";
+		font-style: normal;
+		font-weight: 700;
+		src: url("/fonts/thsarabun/THSarabunNew-Bold.ttf") format("truetype");
+	}
+
+	@font-face {
+		font-display: swap;
+		font-family: "THSarabun";
+		font-style: italic;
+		font-weight: 400;
+		src: url("/fonts/thsarabun/THSarabunNew-Italic.ttf") format("truetype");
+	}
+
+	@font-face {
+		font-display: swap;
+		font-family: "THSarabun";
+		font-style: italic;
+		font-weight: 700;
+		src: url("/fonts/thsarabun/THSarabunNew-BoldItalic.ttf") format("truetype");
+	}
+
+	html {
+		font-family: "THSarabun", "TH Sarabun New", "TH SarabunPSK", ui-sans-serif, system-ui, sans-serif;
+	}
+
+	body {
+		font-family: inherit;
+	}
+
 	pre,
 	code {
+		font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
 		font-size: 0.875rem;
 	}
 }

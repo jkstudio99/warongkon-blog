@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Blog Back Office</title>
 		<script>
+			document.documentElement.dataset.sidebar = localStorage.getItem('warongkon.backoffice.sidebar') || 'expanded';
 			document.documentElement.dataset.theme = localStorage.getItem('warongkon.backoffice.theme') || 'system';
 			document.documentElement.lang = localStorage.getItem('warongkon.backoffice.language') || 'th';
 		</script>
@@ -13,13 +14,25 @@
 	<body data-i18n-document-title="title.dashboard">
 		<div class="app-shell">
 			<aside class="sidebar">
-				<a class="brand" href="/backoffice/" aria-label="Blog Back Office">
-					<span class="brand-mark">W</span>
-					<span><strong>Warongkon</strong><small>Blog Ops</small></span>
-				</a>
+				<div class="sidebar-head">
+					<a class="brand" href="/backoffice/" aria-label="Blog Back Office">
+						<span class="brand-mark">W</span>
+						<span class="brand-text"><strong>Warongkon</strong><small>Blog Ops</small></span>
+					</a>
+					<button class="sidebar-toggle" type="button" data-sidebar-toggle aria-label="Collapse sidebar" title="Collapse sidebar">
+						<span class="lucide-icon lucide-panel-left-close sidebar-icon-collapse" aria-hidden="true"></span>
+						<span class="lucide-icon lucide-panel-left-open sidebar-icon-expand" aria-hidden="true"></span>
+					</button>
+				</div>
 				<nav class="nav" aria-label="Back office">
-					<a class="nav-item active" href="/backoffice/" data-i18n="nav.content">Content</a>
-					<a class="nav-item" href="/backoffice/create" data-i18n="nav.create">Create</a>
+					<a class="nav-item active" href="/backoffice/" title="Content" data-i18n-title="nav.content">
+						<span class="lucide-icon lucide-files" aria-hidden="true"></span>
+						<span class="nav-label" data-i18n="nav.content">Content</span>
+					</a>
+					<a class="nav-item" href="/backoffice/create" title="Create" data-i18n-title="nav.create">
+						<span class="lucide-icon lucide-square-plus" aria-hidden="true"></span>
+						<span class="nav-label" data-i18n="nav.create">Create</span>
+					</a>
 				</nav>
 				<div class="side-card">
 					<p class="label" data-i18n="repository.label">Repository</p>
