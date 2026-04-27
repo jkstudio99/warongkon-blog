@@ -34,6 +34,15 @@
 	color-scheme: light;
 	--sidebar-width: 256px;
 	--sidebar-collapsed-width: 84px;
+	--font-thai: "THSarabun", "TH Sarabun New", "TH SarabunPSK", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--text-label: 0.9rem;
+	--text-support: 0.98rem;
+	--text-body: 1.08rem;
+	--text-control: 1.08rem;
+	--text-table: 1.05rem;
+	--text-title: 1.16rem;
+	--text-heading: 1.62rem;
+	--text-metric: 1.9rem;
 	--bg: #f5f6f8;
 	--surface: #ffffff;
 	--surface-soft: #fafbfc;
@@ -151,10 +160,9 @@ body {
 		linear-gradient(315deg, rgba(31, 122, 255, 0.07), transparent 30%),
 		var(--bg);
 	color: var(--ink);
-	font-family:
-		"THSarabun", "TH Sarabun New", "TH SarabunPSK", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	font-family: var(--font-thai);
 	font-size: 1.28rem;
-	line-height: 1.25;
+	line-height: 1.35;
 	margin: 0;
 }
 
@@ -313,7 +321,7 @@ svg {
 
 .brand small {
 	color: rgba(255, 255, 255, 0.56);
-	font-size: 0.78rem;
+	font-size: var(--text-label);
 	margin-top: 0.1rem;
 }
 
@@ -404,6 +412,8 @@ svg {
 	border-radius: var(--radius);
 	color: rgba(255, 255, 255, 0.68);
 	display: flex;
+	font-size: var(--text-control);
+	font-weight: 800;
 	gap: 0.75rem;
 	padding: 0.78rem 0.85rem;
 	text-decoration: none;
@@ -440,13 +450,13 @@ svg {
 }
 
 .side-card strong {
-	font-size: 0.92rem;
+	font-size: var(--text-body);
 	margin-bottom: 0.25rem;
 }
 
 .side-card span {
 	color: rgba(255, 255, 255, 0.58);
-	font-size: 0.78rem;
+	font-size: var(--text-label);
 }
 
 .workspace {
@@ -469,14 +479,14 @@ svg {
 
 .topbar h1,
 .panel h2 {
-	font-size: 1.35rem;
+	font-size: var(--text-heading);
 	line-height: 1.1;
 	margin: 0;
 }
 
 .label {
 	color: var(--muted);
-	font-size: 0.72rem;
+	font-size: var(--text-label);
 	font-weight: 800;
 	letter-spacing: 0.12em;
 	margin: 0 0 0.35rem;
@@ -514,7 +524,7 @@ svg {
 	color: var(--muted);
 	cursor: pointer;
 	display: inline-flex;
-	font-size: 0.72rem;
+	font-size: var(--text-label);
 	font-weight: 900;
 	justify-content: center;
 	min-height: 2rem;
@@ -549,6 +559,7 @@ svg {
 	color: var(--ink);
 	cursor: pointer;
 	display: inline-flex;
+	font-size: var(--text-control);
 	font-weight: 800;
 	gap: 0.48rem;
 	justify-content: center;
@@ -654,14 +665,14 @@ svg {
 .metric-card span {
 	color: var(--muted);
 	display: block;
-	font-size: 0.78rem;
+	font-size: var(--text-support);
 	font-weight: 800;
 	margin-bottom: 0.45rem;
 	text-transform: uppercase;
 }
 
 .metric-card strong {
-	font-size: 1.5rem;
+	font-size: var(--text-metric);
 	letter-spacing: 0;
 }
 
@@ -717,8 +728,9 @@ svg {
 
 table {
 	border-collapse: collapse;
-	font-size: 0.88rem;
-	min-width: 1080px;
+	font-size: var(--text-table);
+	min-width: 1180px;
+	table-layout: fixed;
 	width: 100%;
 }
 
@@ -732,20 +744,28 @@ td {
 
 th:nth-child(4),
 td:nth-child(4) {
-	min-width: 9.5rem;
-	width: 9.5rem;
+	width: 10.25rem;
 }
 
 th:nth-child(5),
 td:nth-child(5) {
-	min-width: 8.5rem;
-	width: 8.5rem;
+	width: 8.75rem;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+	width: 8.8rem;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+	width: 23rem;
 }
 
 th {
 	background: var(--surface-soft);
 	color: var(--muted);
-	font-size: 0.72rem;
+	font-size: var(--text-label);
 	font-weight: 900;
 	position: sticky;
 	text-transform: uppercase;
@@ -776,9 +796,10 @@ tbody tr.active {
 .title-cell strong {
 	color: var(--ink);
 	display: block;
+	font-size: var(--text-title);
 	font-weight: 850;
-	line-height: 1.3;
-	max-width: 390px;
+	line-height: 1.25;
+	max-width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -786,14 +807,14 @@ tbody tr.active {
 
 .title-cell span {
 	color: var(--muted);
-	font-size: 0.76rem;
+	font-size: var(--text-support);
 }
 
 .tag-stack {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.28rem;
-	max-width: 230px;
+	max-width: 100%;
 }
 
 .chip {
@@ -801,10 +822,10 @@ tbody tr.active {
 	border: 1px solid var(--chip-line);
 	border-radius: 999px;
 	color: var(--ink-2);
-	font-size: 0.72rem;
+	font-size: var(--text-label);
 	font-weight: 800;
-	line-height: 1;
-	padding: 0.32rem 0.5rem;
+	line-height: 1.05;
+	padding: 0.38rem 0.62rem;
 }
 
 .cover-dot {
@@ -814,12 +835,12 @@ tbody tr.active {
 	border-radius: 999px;
 	color: var(--success);
 	display: inline-flex;
-	font-size: 0.72rem;
+	font-size: var(--text-label);
 	font-weight: 900;
 	gap: 0.3rem;
 	justify-content: center;
-	min-width: 5.8rem;
-	padding: 0.35rem 0.55rem;
+	min-width: 6.6rem;
+	padding: 0.42rem 0.72rem;
 	white-space: nowrap;
 }
 
@@ -850,7 +871,7 @@ tbody tr.active {
 
 .section-title {
 	color: var(--ink);
-	font-size: 0.82rem;
+	font-size: var(--text-support);
 	font-weight: 900;
 	letter-spacing: 0.1em;
 	margin: 0;
@@ -866,7 +887,7 @@ tbody tr.active {
 .field span,
 .check-row span {
 	color: var(--muted);
-	font-size: 0.78rem;
+	font-size: var(--text-support);
 	font-weight: 850;
 }
 
@@ -876,6 +897,7 @@ textarea {
 	border: 1px solid var(--line);
 	border-radius: 7px;
 	color: var(--ink);
+	font-size: var(--text-body);
 	outline: 0;
 	padding: 0.72rem 0.78rem;
 	width: 100%;
@@ -992,7 +1014,7 @@ textarea:focus {
 	align-items: center;
 	color: var(--muted);
 	display: flex;
-	font-size: 0.78rem;
+	font-size: var(--text-support);
 	font-weight: 850;
 	gap: 0.55rem;
 	white-space: nowrap;
@@ -1016,7 +1038,7 @@ textarea:focus {
 
 .pagination-range {
 	color: var(--muted);
-	font-size: 0.78rem;
+	font-size: var(--text-support);
 	font-weight: 850;
 	margin: 0;
 	text-align: center;
@@ -1038,6 +1060,7 @@ textarea:focus {
 	color: var(--ink);
 	cursor: pointer;
 	display: inline-flex;
+	font-size: var(--text-label);
 	font-weight: 900;
 	height: 2.15rem;
 	justify-content: center;
