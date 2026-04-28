@@ -7,10 +7,10 @@ type BlogPost = CollectionEntry<'blog'>;
 const { post }: Record<string, any> | { post: BlogPost } = Astro.props
 ---
 <div class='mb-1 flex flex-col gap-3 border-b py-4 capitalize dark:border-b-zinc-700 sm:flex-row sm:items-start'>        
-  <div class='w-32 shrink-0 text-[1.02rem] font-semibold leading-7 text-zinc-700 dark:text-zinc-300'>
+  <div class='w-32 shrink-0 text-[1rem] font-medium leading-7 text-zinc-500 dark:text-zinc-400'>
     <FormattedDate date={post.data.pubDate} />
   </div>
-  <h3 class='grow text-[1.24rem] font-bold leading-8'>
+  <h3 class='grow text-[1.24rem] font-semibold leading-8'>
     <a class='rounded-md no-underline transition-colors duration-200 hover:text-zinc-600 dark:hover:text-zinc-300' href={`/${post.slug}/`}>
       {post.data.title}
     </a>
@@ -19,8 +19,8 @@ const { post }: Record<string, any> | { post: BlogPost } = Astro.props
     {
       (post.data.tags || [] )?.map((tag: string) => (
         <a
-          class='border border-zinc-300 dark:border-zinc-700 rounded-full
-          text-[1rem] leading-7 text-zinc-700 dark:text-zinc-300 no-underline px-3 py-1
+          class='border border-zinc-200 dark:border-zinc-800 rounded-full
+          text-[0.92rem] font-medium leading-7 text-zinc-600 dark:text-zinc-400 no-underline px-3 py-0.5
           transition-colors duration-200
           hover:border-zinc-700 dark:hover:border-zinc-300'
           href={`/tags/${slugify(tag)}`}>

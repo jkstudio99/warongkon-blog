@@ -31,11 +31,11 @@ export default {
             '--tw-prose-bold': '#18181b',
             '--tw-prose-links': '#18181b',
             h1: {
-              fontWeight: '800',
+              fontWeight: '700',
               letterSpacing: '-0.025em',
             },
             h2: {
-              fontWeight: '700',
+              fontWeight: '600',
               letterSpacing: '-0.02em',
               marginTop: '2.5rem',
             },

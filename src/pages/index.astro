@@ -22,7 +22,7 @@ const posts = (await getCollection('blog'))
 		<div class='mb-20 w-full'>
       <div class='flex flex-col-reverse items-start gap-10 md:flex-row md:items-center md:gap-16'>
         <div class="flex-1">
-          <h1 class="mb-8 text-4xl font-extrabold leading-tight tracking-tighter sm:text-5xl">
+          <h1 class="mb-8 text-4xl font-semibold leading-tight tracking-tighter sm:text-5xl">
             Warongkon Blog
           </h1>
 
@@ -49,28 +49,27 @@ const posts = (await getCollection('blog'))
           </div>
         </div>
       </div>
+		<div class='mt-6 mb-12'>
+		  <div class="mb-2 flex justify-between gap-3 border-b dark:border-b-zinc-700">
+		    <h2 class="mb-4 text-2xl font-semibold">Recent Posts</h2>
+		    <a href="/posts/" class="inline-block py-2 text-[1.08rem] font-semibold underline dark:prose-invert">All posts &raquo;</a>
+		  </div>
+		  <div>
+		    {
+		      posts.map((post: BlogPost) => (
+		        <PostItem post={post} />
+		      ))
+		    }      
+		  </div>
 		</div>
-		<main>
-      <div class='mt-6 mb-12'>
-        <div class="mb-2 flex justify-between gap-3 border-b dark:border-b-zinc-700">
-          <h2 class="mb-4 text-2xl font-bold">Recent Posts</h2>
-          <a href="/posts/" class="inline-block py-2 text-[1.08rem] font-bold underline dark:prose-invert">All posts &raquo;</a>
-        </div>
-        <div>
-          {
-            posts.map((post: BlogPost) => (
-              <PostItem post={post} />
-            ))
-          }      
-        </div>
-      </div>
-      <div>
-        <div class="mb-2 flex justify-between gap-3">
-          <h2 class="mb-4 text-2xl font-bold">My Projects</h2>
-          <a href="/projects/" class="inline-block py-2 text-[1.08rem] font-bold underline dark:prose-invert">All projects &raquo;</a>
-        </div>
-        <ProjectList projects={top6Projects}/>
-      </div>
+		<div>
+		  <div class="mb-2 flex justify-between gap-3">
+		    <h2 class="mb-4 text-2xl font-semibold">My Projects</h2>
+		    <a href="/projects/" class="inline-block py-2 text-[1.08rem] font-semibold underline dark:prose-invert">All projects &raquo;</a>
+		  </div>
+		  <ProjectList projects={top6Projects}/>
+		</div>
+
 		</main>
 	</div>
 </BaseLayout>
