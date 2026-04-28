@@ -3,40 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-	@font-face {
-		font-display: swap;
-		font-family: "THSarabun";
-		font-style: normal;
-		font-weight: 400;
-		src: url("/fonts/thsarabun/THSarabunNew.ttf") format("truetype");
-	}
-
-	@font-face {
-		font-display: swap;
-		font-family: "THSarabun";
-		font-style: normal;
-		font-weight: 700;
-		src: url("/fonts/thsarabun/THSarabunNew-Bold.ttf") format("truetype");
-	}
-
-	@font-face {
-		font-display: swap;
-		font-family: "THSarabun";
-		font-style: italic;
-		font-weight: 400;
-		src: url("/fonts/thsarabun/THSarabunNew-Italic.ttf") format("truetype");
-	}
-
-	@font-face {
-		font-display: swap;
-		font-family: "THSarabun";
-		font-style: italic;
-		font-weight: 700;
-		src: url("/fonts/thsarabun/THSarabunNew-BoldItalic.ttf") format("truetype");
-	}
-
 	:root {
-		--font-thai: "THSarabun", "TH Sarabun New", "TH SarabunPSK", ui-sans-serif, system-ui, sans-serif;
+		--font-main: "Inter", "IBM Plex Sans Thai Looped", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 		--focus-ring: #f59e0b;
 		--reading-measure: 72ch;
 		color-scheme: light;
@@ -47,16 +15,23 @@
 	}
 
 	html {
-		font-family: var(--font-thai);
-		font-size: clamp(17px, 0.25vw + 16px, 18.5px);
+		font-family: var(--font-main);
+		font-size: 16px;
 		scroll-behavior: smooth;
+		-webkit-text-size-adjust: 100%;
 	}
 
 	body {
 		font-family: inherit;
-		line-height: 1.65;
+		line-height: 1.625;
 		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing: antialiased;
+		color: #18181b;
+		letter-spacing: -0.011em;
+	}
+
+	.dark body {
+		color: #f4f4f5;
 	}
 
 	pre,
