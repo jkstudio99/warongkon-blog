@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="46" x2="918" y2="432" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#180C2E"/>
+      <stop offset="1" stop-color="#4D1E6E"/>
+    </linearGradient>
+    <linearGradient id="pad" x1="122" y1="142" x2="408" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35E6FF"/>
+      <stop offset="1" stop-color="#FF4FB8"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <g opacity="0.14">
+    <rect x="64" y="78" width="832" height="324" rx="24" stroke="#F7B5FF" stroke-width="2"/>
+    <rect x="88" y="102" width="784" height="276" rx="18" stroke="#35E6FF" stroke-width="2"/>
+  </g>
+  <g>
+    <rect x="118" y="146" width="322" height="186" rx="93" fill="#130C26" stroke="url(#pad)" stroke-width="8"/>
+    <circle cx="230" cy="238" r="30" fill="#35E6FF"/>
+    <circle cx="342" cy="238" r="30" fill="#FF4FB8"/>
+    <rect x="194" y="222" width="72" height="12" rx="6" fill="#112A37"/>
+    <rect x="224" y="192" width="12" height="72" rx="6" fill="#112A37"/>
+    <path d="M378 202L404 228L378 254L352 228L378 202Z" fill="#35E6FF"/>
+  </g>
+  <g opacity="0.9">
+    <rect x="540" y="122" width="134" height="60" rx="16" fill="#35E6FF"/>
+    <rect x="692" y="122" width="182" height="60" rx="16" fill="#FF4FB8"/>
+    <rect x="540" y="206" width="334" height="60" rx="16" fill="#2A1947" stroke="#F7B5FF" stroke-width="2"/>
+    <rect x="540" y="290" width="334" height="60" rx="16" fill="#2A1947" stroke="#F7B5FF" stroke-width="2"/>
+  </g>
+  <text x="540" y="92" fill="#FCE0FF" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">GAMES / CONSUMER</text>
+  <text x="540" y="388" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="800">PLAYSTATION PLUS</text>
+  <text x="540" y="424" fill="#F3DFFF" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">catalog cadence still drives console loyalty</text>
+</svg>
