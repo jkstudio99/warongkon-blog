@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="48" y1="40" x2="912" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10141E"/>
+      <stop offset="1" stop-color="#203A78"/>
+    </linearGradient>
+    <linearGradient id="mesh" x1="118" y1="118" x2="420" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD45F"/>
+      <stop offset="1" stop-color="#69C3FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#D5E6FF">
+    <path d="M60 96H900"/>
+    <path d="M60 170H900"/>
+    <path d="M60 244H900"/>
+    <path d="M60 318H900"/>
+    <path d="M60 392H900"/>
+  </g>
+  <g>
+    <rect x="112" y="128" width="292" height="184" rx="24" fill="#121C2B" stroke="url(#mesh)" stroke-width="5"/>
+    <rect x="146" y="160" width="74" height="50" rx="10" fill="#FFD45F"/>
+    <rect x="240" y="160" width="74" height="50" rx="10" fill="#69C3FF"/>
+    <rect x="334" y="160" width="36" height="50" rx="10" fill="#4F82FF"/>
+    <rect x="146" y="232" width="224" height="48" rx="12" fill="#173050" stroke="#B8D4FF" stroke-width="2"/>
+    <path d="M184 185H353" stroke="#0F1725" stroke-width="6" stroke-linecap="round"/>
+    <path d="M184 256H332" stroke="#B8D4FF" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="124" cy="114" r="12" fill="#FFD45F"/>
+    <circle cx="392" cy="114" r="12" fill="#69C3FF"/>
+    <circle cx="124" cy="326" r="12" fill="#69C3FF"/>
+    <circle cx="392" cy="326" r="12" fill="#FFD45F"/>
+    <path d="M124 114L392 114L392 326L124 326Z" stroke="url(#mesh)" stroke-width="4" stroke-dasharray="10 8"/>
+  </g>
+  <g opacity="0.94">
+    <rect x="492" y="116" width="152" height="54" rx="14" fill="#FFD45F"/>
+    <rect x="660" y="116" width="152" height="54" rx="14" fill="#69C3FF"/>
+    <rect x="492" y="192" width="340" height="54" rx="14" fill="#173050" stroke="#C9DEFF" stroke-width="2"/>
+    <rect x="492" y="266" width="340" height="54" rx="14" fill="#173050" stroke="#C9DEFF" stroke-width="2"/>
+    <rect x="492" y="340" width="340" height="54" rx="14" fill="#173050" stroke="#C9DEFF" stroke-width="2"/>
+  </g>
+  <text x="492" y="88" fill="#EAF4FF" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">HARDWARE / INFRA</text>
+  <text x="492" y="372" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="800">VIRGO + TPU 8</text>
+  <text x="492" y="410" fill="#EAF4FF" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="500">fabric, latency, scale-out architecture</text>
+</svg>

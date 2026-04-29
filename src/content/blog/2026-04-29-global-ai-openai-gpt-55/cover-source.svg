@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="32" x2="920" y2="452" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0D3B57"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="214" y1="111" x2="432" y2="328" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FF0D6"/>
+      <stop offset="1" stop-color="#59B5FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#C8F7FF">
+    <path d="M56 92H904"/>
+    <path d="M56 160H904"/>
+    <path d="M56 228H904"/>
+    <path d="M56 296H904"/>
+    <path d="M56 364H904"/>
+  </g>
+  <g>
+    <circle cx="250" cy="212" r="108" fill="#0A1F31" stroke="url(#ring)" stroke-width="6"/>
+    <circle cx="250" cy="212" r="62" fill="#10344F" stroke="#7FF0D6" stroke-width="4"/>
+    <path d="M250 132V292" stroke="#59B5FF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M170 212H330" stroke="#7FF0D6" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="250" cy="212" r="18" fill="#E8FFFF"/>
+    <circle cx="176" cy="138" r="10" fill="#7FF0D6"/>
+    <circle cx="324" cy="138" r="10" fill="#59B5FF"/>
+    <circle cx="176" cy="286" r="10" fill="#59B5FF"/>
+    <circle cx="324" cy="286" r="10" fill="#7FF0D6"/>
+  </g>
+  <g opacity="0.95">
+    <rect x="494" y="116" width="114" height="50" rx="14" fill="#7FF0D6"/>
+    <rect x="622" y="116" width="120" height="50" rx="14" fill="#59B5FF"/>
+    <rect x="756" y="116" width="110" height="50" rx="14" fill="#153A58" stroke="#BFEFFF" stroke-width="2"/>
+    <rect x="494" y="196" width="372" height="48" rx="14" fill="#112D46" stroke="#BFEFFF" stroke-width="2"/>
+    <rect x="494" y="266" width="372" height="48" rx="14" fill="#112D46" stroke="#BFEFFF" stroke-width="2"/>
+    <rect x="494" y="336" width="372" height="48" rx="14" fill="#112D46" stroke="#BFEFFF" stroke-width="2"/>
+  </g>
+  <text x="494" y="88" fill="#DDFBFF" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">GLOBAL / AI</text>
+  <text x="494" y="372" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="800">GPT-5.5</text>
+  <text x="494" y="410" fill="#DDFBFF" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="500">agentic work, lower friction, real execution</text>
+</svg>

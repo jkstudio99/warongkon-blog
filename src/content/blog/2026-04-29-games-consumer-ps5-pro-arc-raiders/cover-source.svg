@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="44" y1="40" x2="916" y2="444" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B1023"/>
+      <stop offset="1" stop-color="#114B8A"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="128" y1="146" x2="390" y2="312" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6C6C"/>
+      <stop offset="1" stop-color="#8FD8FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#E9F4FF">
+    <path d="M58 94H902"/>
+    <path d="M58 164H902"/>
+    <path d="M58 234H902"/>
+    <path d="M58 304H902"/>
+    <path d="M58 374H902"/>
+  </g>
+  <g>
+    <path d="M132 286L200 132H342L410 286H132Z" fill="#0D1B30" stroke="url(#visor)" stroke-width="5"/>
+    <path d="M184 174H358L334 256H208L184 174Z" fill="url(#visor)" fill-opacity="0.35" stroke="#C9EBFF" stroke-width="3"/>
+    <path d="M228 196H314" stroke="#C9EBFF" stroke-width="6" stroke-linecap="round"/>
+    <path d="M214 226H328" stroke="#FF9B9B" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="166" cy="316" r="14" fill="#FF6C6C"/>
+    <circle cx="376" cy="316" r="14" fill="#8FD8FF"/>
+  </g>
+  <g opacity="0.95">
+    <rect x="492" y="116" width="138" height="52" rx="14" fill="#FF6C6C"/>
+    <rect x="646" y="116" width="168" height="52" rx="14" fill="#8FD8FF"/>
+    <rect x="492" y="194" width="338" height="52" rx="14" fill="#17345B" stroke="#D3E7FF" stroke-width="2"/>
+    <rect x="492" y="268" width="338" height="52" rx="14" fill="#17345B" stroke="#D3E7FF" stroke-width="2"/>
+    <rect x="492" y="342" width="338" height="52" rx="14" fill="#17345B" stroke="#D3E7FF" stroke-width="2"/>
+  </g>
+  <text x="492" y="88" fill="#EEF7FF" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">GAMES / CONSUMER</text>
+  <text x="492" y="372" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="800">PS5 PRO x ARC RAIDERS</text>
+  <text x="492" y="410" fill="#EEF7FF" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">upgraded PSSR and live consumer value</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="46" y1="42" x2="914" y2="438" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A0B14"/>
+      <stop offset="1" stop-color="#0E4D62"/>
+    </linearGradient>
+    <linearGradient id="seal" x1="132" y1="124" x2="404" y2="304" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8F70"/>
+      <stop offset="1" stop-color="#A7F4E3"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#FCE8EF">
+    <path d="M58 94H902"/>
+    <path d="M58 164H902"/>
+    <path d="M58 234H902"/>
+    <path d="M58 304H902"/>
+    <path d="M58 374H902"/>
+  </g>
+  <g>
+    <circle cx="266" cy="220" r="108" fill="#2D1320" stroke="url(#seal)" stroke-width="6"/>
+    <circle cx="266" cy="220" r="70" fill="#143D48" stroke="#A7F4E3" stroke-width="4"/>
+    <path d="M226 220L252 246L308 188" stroke="#FFB48F" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="266" cy="220" r="96" stroke="#FCE8EF" stroke-opacity="0.3" stroke-dasharray="10 8"/>
+    <rect x="194" y="310" width="144" height="22" rx="11" fill="#FF8F70"/>
+  </g>
+  <g opacity="0.95">
+    <rect x="494" y="116" width="130" height="52" rx="14" fill="#FF8F70"/>
+    <rect x="640" y="116" width="160" height="52" rx="14" fill="#A7F4E3"/>
+    <rect x="494" y="194" width="338" height="52" rx="14" fill="#164654" stroke="#DFF8F1" stroke-width="2"/>
+    <rect x="494" y="268" width="338" height="52" rx="14" fill="#164654" stroke="#DFF8F1" stroke-width="2"/>
+    <rect x="494" y="342" width="338" height="52" rx="14" fill="#164654" stroke="#DFF8F1" stroke-width="2"/>
+  </g>
+  <text x="494" y="88" fill="#FFF2F6" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">THAILAND / SEA</text>
+  <text x="494" y="372" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="800">AI STANDARDS FROM SG</text>
+  <text x="494" y="410" fill="#FFF2F6" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">benchmarking, red teaming, trust layer</text>
+</svg>
