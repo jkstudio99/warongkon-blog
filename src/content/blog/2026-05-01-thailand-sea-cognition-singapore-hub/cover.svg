@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#190f17"/>
+      <stop offset="100%" stop-color="#311919"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="78" y="78" width="1444" height="744" rx="28" fill="#1a1116" opacity="0.76" stroke="#ff9a62" stroke-width="4"/>
+  <rect x="108" y="108" width="390" height="18" rx="9" fill="#ff9a62"/>
+  <rect x="108" y="770" width="660" height="18" rx="9" fill="#ff9a62"/>
+  <path d="M1120 650 L1280 170 L1440 650 Z" fill="#ff9a62" opacity="0.12"/>
+  <path d="M1195 650 L1280 390 L1365 650 Z" fill="#ff9a62" opacity="0.24"/>
+  <text x="112" y="165" fill="#ff9a62" font-size="34" font-family="Arial, Helvetica, sans-serif" letter-spacing="3">WARONGKON BLOG</text>
+  <text x="112" y="315" fill="#ffffff" font-size="112" font-weight="700" font-family="Arial, Helvetica, sans-serif">SINGAPORE</text>
+  <text x="112" y="430" fill="#ffffff" font-size="102" font-weight="700" font-family="Arial, Helvetica, sans-serif">APAC AI HUB</text>
+  <text x="115" y="540" fill="#ff9a62" font-size="42" font-family="Arial, Helvetica, sans-serif">Cognition  •  Devin  •  SEA Ecosystem</text>
+</svg>
