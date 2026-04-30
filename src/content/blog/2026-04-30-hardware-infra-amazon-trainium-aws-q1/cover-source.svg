@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="44" y1="30" x2="920" y2="446" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17120B"/>
+      <stop offset="1" stop-color="#503616"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="120" y1="112" x2="370" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD16D"/>
+      <stop offset="1" stop-color="#FF9551"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#FFE5B4">
+    <path d="M58 96H902"/>
+    <path d="M58 164H902"/>
+    <path d="M58 232H902"/>
+    <path d="M58 300H902"/>
+    <path d="M58 368H902"/>
+  </g>
+  <g>
+    <rect x="118" y="110" width="258" height="214" rx="28" fill="#2A1F14" stroke="url(#chip)" stroke-width="6"/>
+    <rect x="172" y="156" width="150" height="122" rx="18" fill="#503616" stroke="#FFD16D" stroke-width="4"/>
+    <path d="M140 138V296" stroke="#FFD16D" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 14"/>
+    <path d="M354 138V296" stroke="#FF9551" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 14"/>
+    <path d="M196 136H300" stroke="#FFE7C2" stroke-width="6" stroke-linecap="round"/>
+    <path d="M196 298H300" stroke="#FFE7C2" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.96">
+    <rect x="458" y="120" width="140" height="50" rx="16" fill="#FFD16D"/>
+    <rect x="614" y="120" width="168" height="50" rx="16" fill="#FF9551"/>
+    <rect x="458" y="198" width="368" height="48" rx="14" fill="#362616" stroke="#FFE5B4" stroke-width="2"/>
+    <rect x="458" y="268" width="368" height="48" rx="14" fill="#362616" stroke="#FFE5B4" stroke-width="2"/>
+    <rect x="458" y="338" width="368" height="48" rx="14" fill="#362616" stroke="#FFE5B4" stroke-width="2"/>
+  </g>
+  <text x="458" y="88" fill="#FFF2D7" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">HARDWARE / INFRA</text>
+  <text x="458" y="372" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="800">AWS, TRAINIUM</text>
+  <text x="458" y="410" fill="#FFF2D7" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="500">capex, chips, power for AI scale</text>
+</svg>

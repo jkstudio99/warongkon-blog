@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="44" y1="34" x2="918" y2="446" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1A17"/>
+      <stop offset="1" stop-color="#0E5D4A"/>
+    </linearGradient>
+    <linearGradient id="rise" x1="134" y1="148" x2="356" y2="326" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F36D"/>
+      <stop offset="1" stop-color="#4DE2B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="480" rx="28" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#DFFFF1">
+    <path d="M52 96H908"/>
+    <path d="M52 164H908"/>
+    <path d="M52 232H908"/>
+    <path d="M52 300H908"/>
+    <path d="M52 368H908"/>
+  </g>
+  <g>
+    <rect x="116" y="116" width="264" height="210" rx="28" fill="#163328" stroke="url(#rise)" stroke-width="6"/>
+    <path d="M156 274L206 216L246 242L322 164" stroke="#A7F36D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="156" cy="274" r="12" fill="#DFFFF1"/>
+    <circle cx="206" cy="216" r="12" fill="#4DE2B5"/>
+    <circle cx="246" cy="242" r="12" fill="#DFFFF1"/>
+    <circle cx="322" cy="164" r="12" fill="#A7F36D"/>
+    <path d="M154 292H340" stroke="#DFFFF1" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.95">
+    <rect x="460" y="118" width="126" height="50" rx="16" fill="#A7F36D"/>
+    <rect x="602" y="118" width="178" height="50" rx="16" fill="#4DE2B5"/>
+    <rect x="460" y="196" width="358" height="48" rx="14" fill="#124135" stroke="#DFFFF1" stroke-width="2"/>
+    <rect x="460" y="266" width="358" height="48" rx="14" fill="#124135" stroke="#DFFFF1" stroke-width="2"/>
+    <rect x="460" y="336" width="358" height="48" rx="14" fill="#124135" stroke="#DFFFF1" stroke-width="2"/>
+  </g>
+  <text x="460" y="86" fill="#E8FFF7" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">THAILAND / SEA</text>
+  <text x="460" y="372" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="800">BOI Q1 AI SURGE</text>
+  <text x="460" y="410" fill="#E8FFF7" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="500">data centers and digital capital reshape Thailand</text>
+</svg>
