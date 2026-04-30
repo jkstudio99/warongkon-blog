@@ -17,7 +17,7 @@ export default {
 		},
 		extend: {
       fontFamily: {
-        sans: ['Inter', '"IBM Plex Sans Thai Looped"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        sans: ['pracharath', 'Inter', '"IBM Plex Sans Thai Looped"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
       typography: {
         DEFAULT: {
