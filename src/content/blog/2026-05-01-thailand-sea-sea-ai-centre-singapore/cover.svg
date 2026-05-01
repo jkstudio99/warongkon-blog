@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sea AI Centre Singapore Cover</title>
+  <desc id="desc">Illustration for Sea Limited AI Centre of Excellence in Singapore.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#072b17" />
+      <stop offset="55%" stop-color="#16835a" />
+      <stop offset="100%" stop-color="#d6f5a3" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="90" y="100" width="1020" height="430" rx="30" fill="#0b2219" opacity="0.9" />
+  <circle cx="980" cy="145" r="115" fill="#f4ffd5" opacity="0.18" />
+  <path d="M180 450h840" stroke="#eaffd7" stroke-width="8" stroke-linecap="round" opacity="0.45" />
+  <rect x="210" y="265" width="120" height="185" fill="#1e5d42" />
+  <rect x="350" y="220" width="130" height="230" fill="#25714f" />
+  <rect x="505" y="180" width="140" height="270" fill="#2f8860" />
+  <rect x="675" y="235" width="125" height="215" fill="#3ea474" />
+  <rect x="825" y="285" width="105" height="165" fill="#88d498" />
+  <path d="M270 245l145-70 165 55 160-80 140 50" fill="none" stroke="#f4ffd5" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="270" cy="245" r="15" fill="#f4ffd5" />
+  <circle cx="415" cy="175" r="15" fill="#f4ffd5" />
+  <circle cx="580" cy="230" r="15" fill="#f4ffd5" />
+  <circle cx="740" cy="150" r="15" fill="#f4ffd5" />
+  <circle cx="880" cy="200" r="15" fill="#f4ffd5" />
+  <text x="140" y="88" fill="#f4ffd5" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="700">SEA BUILDS AI CAPABILITY</text>
+  <text x="140" y="572" fill="#f4ffd5" font-size="28" font-family="Arial, Helvetica, sans-serif">Sea Limited • Singapore • 20 April 2026</text>
+</svg>

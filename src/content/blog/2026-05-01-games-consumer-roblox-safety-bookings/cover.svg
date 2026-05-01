@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Roblox Safety and Bookings Cover</title>
+  <desc id="desc">Consumer games illustration about Roblox safety controls and revenue pressure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#240608" />
+      <stop offset="48%" stop-color="#a61d2d" />
+      <stop offset="100%" stop-color="#ffd166" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="110" y="95" width="980" height="440" rx="30" fill="#2a0b11" opacity="0.9" />
+  <rect x="180" y="180" width="250" height="250" rx="36" fill="#ff5a5f" />
+  <rect x="245" y="245" width="120" height="120" transform="rotate(15 305 305)" fill="#fff4ef" />
+  <path d="M640 200h260v34H640z" fill="#ffd7cf" opacity="0.9" />
+  <path d="M640 255h200v22H640z" fill="#ffd7cf" opacity="0.55" />
+  <path d="M640 320h320v18H640z" fill="#ffd7cf" opacity="0.8" />
+  <path d="M640 355h280v18H640z" fill="#ffd7cf" opacity="0.6" />
+  <path d="M640 390h170v18H640z" fill="#ffd7cf" opacity="0.42" />
+  <path d="M905 455l45-110 45 110" fill="none" stroke="#fff4ef" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M995 345v110" fill="none" stroke="#fff4ef" stroke-width="18" stroke-linecap="round" />
+  <circle cx="995" cy="318" r="18" fill="#fff4ef" />
+  <text x="160" y="82" fill="#fff4ef" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="700">ROBLOX: SAFETY VS GROWTH</text>
+  <text x="160" y="575" fill="#fff4ef" font-size="28" font-family="Arial, Helvetica, sans-serif">30 April 2026 • Consumer platform trust becomes a revenue issue</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Microsoft Azure Capex Cover</title>
+  <desc id="desc">Abstract infrastructure illustration for Microsoft Azure growth and AI capital spending.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07121f" />
+      <stop offset="50%" stop-color="#114b91" />
+      <stop offset="100%" stop-color="#42c4ff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="90" y="100" width="1020" height="430" rx="30" fill="#08192a" opacity="0.88" />
+  <rect x="140" y="155" width="260" height="28" rx="14" fill="#8fdfff" opacity="0.85" />
+  <rect x="140" y="205" width="190" height="16" rx="8" fill="#8fdfff" opacity="0.5" />
+  <rect x="140" y="300" width="210" height="150" rx="18" fill="#103f6f" />
+  <rect x="380" y="265" width="210" height="185" rx="18" fill="#145692" />
+  <rect x="620" y="220" width="210" height="230" rx="18" fill="#1f73bc" />
+  <rect x="860" y="175" width="210" height="275" rx="18" fill="#3baef0" />
+  <path d="M245 452 L245 265 L485 265 L485 220 L725 220 L725 175 L965 175" fill="none" stroke="#d9f6ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="245" cy="452" r="16" fill="#d9f6ff" />
+  <circle cx="485" cy="265" r="16" fill="#d9f6ff" />
+  <circle cx="725" cy="220" r="16" fill="#d9f6ff" />
+  <circle cx="965" cy="175" r="16" fill="#d9f6ff" />
+  <text x="140" y="88" fill="#e7f9ff" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="700">AZURE 40% • CAPEX $190B</text>
+  <text x="140" y="572" fill="#d7f6ff" font-size="28" font-family="Arial, Helvetica, sans-serif">Microsoft earnings • 29 April 2026 • AI infrastructure race</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">OpenAI Workspace Agents Cover</title>
+  <desc id="desc">Illustration for OpenAI workspace agents launch in April 2026.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#062b2f" />
+      <stop offset="55%" stop-color="#0d5c63" />
+      <stop offset="100%" stop-color="#8ee3ef" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="950" cy="110" r="160" fill="#b8fff2" opacity="0.18" />
+  <circle cx="270" cy="520" r="190" fill="#02181b" opacity="0.22" />
+  <rect x="90" y="110" width="1020" height="410" rx="28" fill="#04191c" opacity="0.9" />
+  <rect x="140" y="165" width="320" height="38" rx="19" fill="#0f3b40" />
+  <rect x="140" y="225" width="250" height="18" rx="9" fill="#8ee3ef" opacity="0.9" />
+  <rect x="140" y="258" width="300" height="18" rx="9" fill="#8ee3ef" opacity="0.55" />
+  <rect x="140" y="308" width="230" height="92" rx="18" fill="#0d5c63" />
+  <rect x="398" y="308" width="230" height="92" rx="18" fill="#104f58" />
+  <rect x="656" y="308" width="230" height="92" rx="18" fill="#126b73" />
+  <rect x="914" y="308" width="146" height="92" rx="18" fill="#16333a" />
+  <path d="M500 184h170l34 34-34 34H500l-34-34z" fill="#b8fff2" />
+  <path d="M720 184h170l34 34-34 34H720l-34-34z" fill="#7ddbd7" />
+  <path d="M610 218h120" stroke="#04282c" stroke-width="10" stroke-linecap="round" />
+  <rect x="140" y="436" width="420" height="20" rx="10" fill="#7ddbd7" opacity="0.8" />
+  <rect x="140" y="470" width="320" height="20" rx="10" fill="#7ddbd7" opacity="0.45" />
+  <text x="140" y="95" fill="#d8fffb" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="700">WORKSPACE AGENTS</text>
+  <text x="140" y="565" fill="#d8fffb" font-size="28" font-family="Arial, Helvetica, sans-serif">OpenAI • 22 April 2026 • Team workflow automation</text>
+</svg>
