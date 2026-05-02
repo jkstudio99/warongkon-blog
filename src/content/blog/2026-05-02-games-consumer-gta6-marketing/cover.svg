@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#150914"/>
+      <stop offset="100%" stop-color="#3b1237"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="78" y="78" width="1444" height="744" rx="28" fill="#1d0d1a" opacity="0.86" stroke="#ff88cf" stroke-width="4"/>
+  <circle cx="1265" cy="255" r="154" fill="#ff88cf" opacity="0.12"/>
+  <circle cx="1265" cy="255" r="78" fill="#ff88cf" opacity="0.28"/>
+  <rect x="112" y="112" width="360" height="18" rx="9" fill="#ff88cf"/>
+  <rect x="112" y="770" width="620" height="18" rx="9" fill="#ff88cf"/>
+  <text x="112" y="168" fill="#ff88cf" font-size="34" font-family="Arial, Helvetica, sans-serif" letter-spacing="3">WARONGKON BLOG</text>
+  <text x="112" y="315" fill="#ffffff" font-size="118" font-weight="700" font-family="Arial, Helvetica, sans-serif">GTA VI</text>
+  <text x="112" y="430" fill="#ffffff" font-size="92" font-weight="700" font-family="Arial, Helvetica, sans-serif">MARKETING</text>
+  <text x="112" y="545" fill="#ff88cf" font-size="92" font-weight="700" font-family="Arial, Helvetica, sans-serif">SOON</text>
+  <text x="115" y="640" fill="#ffe3f6" font-size="40" font-family="Arial, Helvetica, sans-serif">Games  •  Consumer Attention  •  Launch Cycle</text>
+</svg>
