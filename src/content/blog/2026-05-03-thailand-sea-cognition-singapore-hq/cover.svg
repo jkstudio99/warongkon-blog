@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Cognition Singapore APAC hub cover</title>
+  <desc id="desc">A stylized Southeast Asia regional hub map with code nodes centered on Singapore.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b0f2a"/>
+      <stop offset="55%" stop-color="#3c096c"/>
+      <stop offset="100%" stop-color="#ff7b00"/>
+    </linearGradient>
+    <linearGradient id="hub" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#ff9f1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1260" cy="180" r="170" fill="#ffffff" opacity="0.07"/>
+  <circle cx="250" cy="740" r="230" fill="#ffd166" opacity="0.08"/>
+  <rect x="135" y="125" width="1330" height="650" rx="42" fill="#12061f" opacity="0.6" stroke="#ffd166" stroke-opacity="0.25"/>
+  <g fill="#ffb703" opacity="0.9">
+    <circle cx="830" cy="430" r="16"/>
+    <circle cx="640" cy="320" r="12"/>
+    <circle cx="520" cy="445" r="12"/>
+    <circle cx="970" cy="315" r="12"/>
+    <circle cx="1110" cy="445" r="12"/>
+    <circle cx="1220" cy="350" r="12"/>
+  </g>
+  <g stroke="#ffd166" stroke-width="6" stroke-linecap="round" opacity="0.65">
+    <line x1="830" y1="430" x2="640" y2="320"/>
+    <line x1="830" y1="430" x2="520" y2="445"/>
+    <line x1="830" y1="430" x2="970" y2="315"/>
+    <line x1="830" y1="430" x2="1110" y2="445"/>
+    <line x1="830" y1="430" x2="1220" y2="350"/>
+  </g>
+  <circle cx="830" cy="430" r="78" fill="none" stroke="url(#hub)" stroke-width="18"/>
+  <path d="M805 390h50v30h-18v18h-14v-18h-18z" fill="#ffd166"/>
+  <rect x="1000" y="250" width="220" height="140" rx="24" fill="#2d153f" stroke="#ffd166" stroke-opacity="0.35"/>
+  <text x="1035" y="305" fill="#ffd166" font-size="32" font-family="Arial, Helvetica, sans-serif" font-weight="700">APAC HQ</text>
+  <text x="1035" y="347" fill="#fff1c2" font-size="24" font-family="Arial, Helvetica, sans-serif">Singapore node</text>
+  <text x="220" y="705" fill="#fff8ef" font-size="66" font-family="Arial, Helvetica, sans-serif" font-weight="700">SEA is becoming an agent deployment zone</text>
+  <text x="220" y="764" fill="#ffe2a8" font-size="31" font-family="Arial, Helvetica, sans-serif">Cognition regional HQ • April 29, 2026</text>

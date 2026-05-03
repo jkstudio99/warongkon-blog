@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Azure Local sovereign cloud cover</title>
+  <desc id="desc">An abstract sovereign cloud data center with server blocks and a boundary ring.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="50%" stop-color="#12355b"/>
+      <stop offset="100%" stop-color="#1f6feb"/>
+    </linearGradient>
+    <linearGradient id="grid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#74c0fc"/>
+      <stop offset="100%" stop-color="#c3fae8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="110" y="110" width="1380" height="680" rx="44" fill="#061423" opacity="0.65" stroke="#74c0fc" stroke-opacity="0.28"/>
+  <g fill="none" stroke="#74c0fc" stroke-opacity="0.2">
+    <circle cx="1215" cy="315" r="200"/>
+    <circle cx="1215" cy="315" r="150"/>
+    <circle cx="1215" cy="315" r="100"/>
+  </g>
+  <g transform="translate(210 220)">
+    <rect x="0" y="0" width="620" height="340" rx="28" fill="#0d1b2a" stroke="#74c0fc" stroke-opacity="0.4"/>
+    <g fill="#1b4965">
+      <rect x="48" y="48" width="240" height="64" rx="12"/>
+      <rect x="332" y="48" width="240" height="64" rx="12"/>
+      <rect x="48" y="138" width="240" height="64" rx="12"/>
+      <rect x="332" y="138" width="240" height="64" rx="12"/>
+      <rect x="48" y="228" width="240" height="64" rx="12"/>
+      <rect x="332" y="228" width="240" height="64" rx="12"/>
+    </g>
+    <g fill="#c3fae8">
+      <circle cx="82" cy="80" r="7"/>
+      <circle cx="366" cy="80" r="7"/>
+      <circle cx="82" cy="170" r="7"/>
+      <circle cx="366" cy="170" r="7"/>
+      <circle cx="82" cy="260" r="7"/>
+      <circle cx="366" cy="260" r="7"/>
+    </g>
+  </g>
+  <path d="M1085 230l105 48 105-48 0 170c0 88-59 164-146 190-87-26-146-102-146-190Z" fill="none" stroke="url(#grid)" stroke-width="18"/>
+  <path d="M1138 404l64 64 113-143" fill="none" stroke="#c3fae8" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="210" y="685" fill="#f8fbff" font-size="68" font-family="Arial, Helvetica, sans-serif" font-weight="700">Sovereign AI needs its own stack</text>
+  <text x="210" y="745" fill="#b6e3ff" font-size="32" font-family="Arial, Helvetica, sans-serif">Azure Local • sovereign private cloud • late April 2026</text>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">OpenAI account security cover</title>
+  <desc id="desc">Illustration of a secured AI account with passkey rings and a shield.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081c15"/>
+      <stop offset="55%" stop-color="#0f3d3e"/>
+      <stop offset="100%" stop-color="#16324f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7ae582"/>
+      <stop offset="100%" stop-color="#48bfe3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1240" cy="180" r="180" fill="#ffffff" opacity="0.06"/>
+  <circle cx="340" cy="760" r="220" fill="#7ae582" opacity="0.08"/>
+  <rect x="150" y="160" width="1300" height="580" rx="36" fill="#0b1220" opacity="0.72" stroke="#7ae582" stroke-opacity="0.3"/>
+  <rect x="230" y="235" width="560" height="350" rx="28" fill="#101a2e" stroke="#48bfe3" stroke-opacity="0.35"/>
+  <path d="M510 315c66 0 120 52 120 116v40h-240v-40c0-64 54-116 120-116Z" fill="#1d3557"/>
+  <rect x="370" y="455" width="280" height="165" rx="28" fill="#132238" stroke="#7ae582" stroke-width="4"/>
+  <circle cx="510" cy="525" r="26" fill="#7ae582"/>
+  <rect x="498" y="525" width="24" height="48" rx="12" fill="#7ae582"/>
+  <g transform="translate(890 255)">
+    <circle cx="165" cy="150" r="104" fill="none" stroke="url(#accent)" stroke-width="28"/>
+    <rect x="240" y="134" width="180" height="34" rx="17" fill="url(#accent)"/>
+    <rect x="372" y="96" width="36" height="110" rx="18" fill="url(#accent)"/>
+  </g>
+  <text x="230" y="690" fill="#f5f7ff" font-size="70" font-family="Arial, Helvetica, sans-serif" font-weight="700">AI account is now a high-risk surface</text>
+  <text x="230" y="750" fill="#9dd9f3" font-size="32" font-family="Arial, Helvetica, sans-serif">OpenAI advanced account security • April 30, 2026</text>
