@@ -1,0 +1,36 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="46" x2="1080" y2="584" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0D14"/>
+      <stop offset="1" stop-color="#271603"/>
+    </linearGradient>
+    <linearGradient id="rack" x1="210" y1="126" x2="988" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24170B"/>
+      <stop offset="1" stop-color="#0C111C"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="208" y1="314" x2="1004" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB347"/>
+      <stop offset="1" stop-color="#FFD479"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#bg)"/>
+  <circle cx="1032" cy="120" r="124" fill="#5E3512" fill-opacity="0.32"/>
+  <circle cx="168" cy="96" r="92" fill="#231406" fill-opacity="0.64"/>
+  <rect x="148" y="122" width="904" height="372" rx="28" fill="url(#rack)" stroke="#FFB64A" stroke-opacity="0.28" stroke-width="2"/>
+  <rect x="210" y="174" width="194" height="248" rx="20" fill="#0B1220" stroke="#9E6930" stroke-opacity="0.48"/>
+  <rect x="438" y="174" width="194" height="248" rx="20" fill="#0B1220" stroke="#9E6930" stroke-opacity="0.48"/>
+  <rect x="666" y="174" width="194" height="248" rx="20" fill="#0B1220" stroke="#9E6930" stroke-opacity="0.48"/>
+  <rect x="894" y="174" width="96" height="248" rx="20" fill="#0B1220" stroke="#9E6930" stroke-opacity="0.48"/>
+  <path d="M210 314H1004" stroke="url(#pulse)" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="320" cy="314" r="16" fill="#FFD479"/>
+  <circle cx="548" cy="314" r="16" fill="#FFB347"/>
+  <circle cx="776" cy="314" r="16" fill="#FFD479"/>
+  <rect x="236" y="206" width="78" height="12" rx="6" fill="#283548"/>
+  <rect x="236" y="232" width="116" height="12" rx="6" fill="#283548"/>
+  <rect x="464" y="206" width="78" height="12" rx="6" fill="#283548"/>
+  <rect x="464" y="232" width="116" height="12" rx="6" fill="#283548"/>
+  <rect x="692" y="206" width="78" height="12" rx="6" fill="#283548"/>
+  <rect x="692" y="232" width="116" height="12" rx="6" fill="#283548"/>
+  <text x="150" y="540" fill="#FFF2DD" font-family="Arial, sans-serif" font-size="42" font-weight="700">HARDWARE / INFRASTRUCTURE</text>
+  <text x="150" y="592" fill="#FFBF5C" font-family="Arial, sans-serif" font-size="56" font-weight="700">ANTHROPIC × AMAZON 5GW</text>
+</svg>

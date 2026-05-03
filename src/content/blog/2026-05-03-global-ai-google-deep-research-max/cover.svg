@@ -1,0 +1,38 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="44" x2="1116" y2="596" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081225"/>
+      <stop offset="1" stop-color="#173A63"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="160" y1="120" x2="1040" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173B63"/>
+      <stop offset="1" stop-color="#0C1C34"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="236" y1="180" x2="972" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FE7C7"/>
+      <stop offset="1" stop-color="#6AB7FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#bg)"/>
+  <circle cx="976" cy="118" r="124" fill="#123A60" fill-opacity="0.55"/>
+  <circle cx="202" cy="548" r="156" fill="#0A2A47" fill-opacity="0.72"/>
+  <rect x="120" y="104" width="960" height="422" rx="30" fill="url(#panel)" stroke="#5CAEF4" stroke-opacity="0.28" stroke-width="2"/>
+  <rect x="182" y="164" width="298" height="252" rx="22" fill="#0A1627" stroke="#68D9FF" stroke-opacity="0.32"/>
+  <path d="M214 344C250 300 284 282 316 290C346 298 368 334 404 338C430 342 454 330 474 308" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="214" cy="344" r="12" fill="#7FE7C7"/>
+  <circle cx="316" cy="290" r="12" fill="#8DCAFF"/>
+  <circle cx="404" cy="338" r="12" fill="#7FE7C7"/>
+  <circle cx="474" cy="308" r="12" fill="#8DCAFF"/>
+  <rect x="216" y="192" width="112" height="16" rx="8" fill="#1D304D"/>
+  <rect x="216" y="222" width="164" height="12" rx="6" fill="#163251"/>
+  <rect x="216" y="246" width="136" height="12" rx="6" fill="#163251"/>
+  <rect x="530" y="166" width="420" height="36" rx="18" fill="#10233C"/>
+  <rect x="530" y="228" width="266" height="18" rx="9" fill="#74D8C4"/>
+  <rect x="530" y="264" width="356" height="18" rx="9" fill="#E6F1FF" fill-opacity="0.9"/>
+  <rect x="530" y="300" width="388" height="18" rx="9" fill="#E6F1FF" fill-opacity="0.72"/>
+  <rect x="530" y="336" width="328" height="18" rx="9" fill="#E6F1FF" fill-opacity="0.72"/>
+  <rect x="530" y="388" width="188" height="68" rx="20" fill="#10233C"/>
+  <rect x="744" y="388" width="206" height="68" rx="20" fill="#10233C"/>
+  <text x="180" y="480" fill="#EAF4FF" font-family="Arial, sans-serif" font-size="42" font-weight="700">GLOBAL / AI</text>
+  <text x="180" y="538" fill="#7FE7C7" font-family="Arial, sans-serif" font-size="64" font-weight="700">DEEP RESEARCH MAX</text>
+</svg>

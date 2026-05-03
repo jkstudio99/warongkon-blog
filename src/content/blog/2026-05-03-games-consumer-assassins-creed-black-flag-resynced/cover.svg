@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sea" x1="100" y1="30" x2="1060" y2="602" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081A2B"/>
+      <stop offset="1" stop-color="#154866"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="898" y1="80" x2="1038" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC56A"/>
+      <stop offset="1" stop-color="#FF8B3D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#sea)"/>
+  <circle cx="962" cy="150" r="88" fill="url(#sun)"/>
+  <path d="M0 420C114 388 228 368 342 376C456 384 570 432 684 440C798 448 912 414 1026 404C1083 399 1141 401 1200 410V630H0V420Z" fill="#0E3551"/>
+  <path d="M0 468C120 444 240 440 360 452C480 464 600 510 720 516C840 522 960 486 1080 472C1120 468 1160 468 1200 470V630H0V468Z" fill="#15547A"/>
+  <path d="M420 398L586 266L620 272L754 398H420Z" fill="#0E1A24"/>
+  <path d="M590 214L612 152L634 214H590Z" fill="#16293E"/>
+  <rect x="604" y="214" width="16" height="154" fill="#2A1D0F"/>
+  <path d="M620 224L708 274L620 286V224Z" fill="#F4E7D2"/>
+  <path d="M604 224L516 274L604 286V224Z" fill="#E9D7BE"/>
+  <path d="M494 398L586 330H670L764 398H494Z" fill="#1A2836"/>
+  <path d="M300 210C340 178 382 180 430 196C486 215 520 214 562 186" stroke="#B5E0FF" stroke-opacity="0.44" stroke-width="6" stroke-linecap="round"/>
+  <text x="122" y="520" fill="#F5F0E9" font-family="Arial, sans-serif" font-size="42" font-weight="700">GAMES / CONSUMER</text>
+  <text x="122" y="582" fill="#FFC56A" font-family="Arial, sans-serif" font-size="56" font-weight="700">BLACK FLAG RESYNCED</text>
+</svg>

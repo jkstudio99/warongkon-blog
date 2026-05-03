@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="128" y1="60" x2="1092" y2="576" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A0F17"/>
+      <stop offset="1" stop-color="#5F1D27"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="256" y1="380" x2="920" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD36B"/>
+      <stop offset="1" stop-color="#FF8F61"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#bg)"/>
+  <circle cx="180" cy="104" r="98" fill="#7E2234" fill-opacity="0.36"/>
+  <circle cx="1026" cy="520" r="142" fill="#7A2431" fill-opacity="0.42"/>
+  <rect x="130" y="118" width="940" height="390" rx="28" fill="#4B1622" stroke="#F5B96E" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M228 418L332 352L436 378L540 290L644 314L748 234L852 250L956 172" stroke="url(#bar)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="228" cy="418" r="12" fill="#FFD36B"/>
+  <circle cx="332" cy="352" r="12" fill="#FFB26B"/>
+  <circle cx="436" cy="378" r="12" fill="#FFD36B"/>
+  <circle cx="540" cy="290" r="12" fill="#FFB26B"/>
+  <circle cx="644" cy="314" r="12" fill="#FFD36B"/>
+  <circle cx="748" cy="234" r="12" fill="#FFB26B"/>
+  <circle cx="852" cy="250" r="12" fill="#FFD36B"/>
+  <circle cx="956" cy="172" r="12" fill="#FF8F61"/>
+  <rect x="228" y="196" width="138" height="154" rx="18" fill="#6A1E2C"/>
+  <rect x="392" y="244" width="138" height="106" rx="18" fill="#812635"/>
+  <rect x="556" y="166" width="138" height="184" rx="18" fill="#962E40"/>
+  <rect x="720" y="214" width="138" height="136" rx="18" fill="#B03B4B"/>
+  <text x="158" y="546" fill="#FFF2E3" font-family="Arial, sans-serif" font-size="42" font-weight="700">THAILAND / SEA</text>
+  <text x="158" y="594" fill="#FFD36B" font-family="Arial, sans-serif" font-size="56" font-weight="700">BOI DIGITAL &amp; AI SURGE</text>
+</svg>
