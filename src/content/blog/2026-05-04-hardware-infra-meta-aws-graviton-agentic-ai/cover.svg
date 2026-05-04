@@ -1,0 +1,30 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#091016"/>
+  <rect x="72" y="72" width="1456" height="756" rx="36" fill="url(#bg2)"/>
+  <rect x="176" y="164" width="560" height="420" rx="30" fill="#0D1A22" stroke="#55D79A" stroke-opacity="0.35"/>
+  <rect x="856" y="210" width="560" height="470" rx="34" fill="#101C26" stroke="#78A7FF" stroke-opacity="0.35"/>
+  <rect x="250" y="236" width="412" height="276" rx="22" fill="#122531"/>
+  <path d="M298 318H614" stroke="#69E6A3" stroke-width="20" stroke-linecap="round"/>
+  <path d="M298 372H614" stroke="#2FC8FF" stroke-width="20" stroke-linecap="round"/>
+  <path d="M298 426H508" stroke="#7FF4BB" stroke-width="20" stroke-linecap="round"/>
+  <rect x="928" y="286" width="416" height="318" rx="26" fill="#0A141B"/>
+  <rect x="980" y="342" width="94" height="94" rx="18" fill="#123A28"/>
+  <rect x="1110" y="342" width="182" height="18" rx="9" fill="#78E8AA"/>
+  <rect x="1110" y="380" width="148" height="14" rx="7" fill="#78A7FF"/>
+  <rect x="1110" y="414" width="110" height="14" rx="7" fill="#78A7FF" fill-opacity="0.7"/>
+  <path d="M980 488H1292" stroke="#2FC8FF" stroke-width="14" stroke-linecap="round"/>
+  <path d="M1030 534H1242" stroke="#69E6A3" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="1260" cy="192" r="108" fill="#2FC8FF" fill-opacity="0.12"/>
+  <circle cx="1382" cy="660" r="140" fill="#69E6A3" fill-opacity="0.12"/>
+  <circle cx="736" cy="632" r="90" fill="#78A7FF" fill-opacity="0.14"/>
+  <path d="M176 640H1416" stroke="#6AE2A9" stroke-width="2" stroke-opacity="0.22"/>
+  <text x="176" y="690" fill="#EFFAF4" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">Meta + AWS Graviton</text>
+  <text x="176" y="755" fill="#8DE9B2" font-family="Arial, Helvetica, sans-serif" font-size="34">Why agentic AI is making CPUs strategic again</text>
+  <text x="176" y="806" fill="#7DB2FF" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">HARDWARE / INFRASTRUCTURE • 4 MAY 2026</text>
+  <defs>
+    <linearGradient id="bg2" x1="72" y1="72" x2="1528" y2="828" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D161E"/>
+      <stop offset="1" stop-color="#16242E"/>
+    </linearGradient>
+  </defs>
+</svg>

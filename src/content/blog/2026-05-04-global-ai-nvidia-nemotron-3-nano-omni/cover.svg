@@ -1,0 +1,34 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#07111B"/>
+  <rect x="72" y="72" width="1456" height="756" rx="36" fill="url(#bg)"/>
+  <circle cx="1220" cy="228" r="170" fill="#78FFD6" fill-opacity="0.18"/>
+  <circle cx="1325" cy="640" r="210" fill="#8BFF66" fill-opacity="0.10"/>
+  <circle cx="330" cy="260" r="140" fill="#00E1FF" fill-opacity="0.12"/>
+  <rect x="170" y="190" width="420" height="220" rx="28" fill="#0E2232" stroke="#3AF2C5" stroke-opacity="0.45"/>
+  <rect x="218" y="246" width="92" height="92" rx="18" fill="#102C40"/>
+  <path d="M241 291H287" stroke="#83FFD8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M264 268V314" stroke="#83FFD8" stroke-width="12" stroke-linecap="round"/>
+  <rect x="340" y="240" width="200" height="18" rx="9" fill="#7EEFD7"/>
+  <rect x="340" y="278" width="160" height="14" rx="7" fill="#4FD7FF"/>
+  <rect x="340" y="312" width="120" height="14" rx="7" fill="#4FD7FF" fill-opacity="0.7"/>
+  <rect x="680" y="180" width="720" height="540" rx="32" fill="#08141F" stroke="#5BFFC7" stroke-opacity="0.3"/>
+  <rect x="742" y="248" width="240" height="140" rx="20" fill="#10283A"/>
+  <rect x="1030" y="248" width="300" height="140" rx="20" fill="#10283A"/>
+  <rect x="742" y="430" width="588" height="220" rx="24" fill="#0C1D2B"/>
+  <path d="M790 553C847 474 910 589 980 518C1043 454 1110 595 1182 522C1210 494 1242 474 1280 486" stroke="#83FFD8" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="865" cy="319" r="34" fill="#78FFD6"/>
+  <rect x="1078" y="286" width="120" height="18" rx="9" fill="#83FFD8"/>
+  <rect x="1078" y="322" width="180" height="14" rx="7" fill="#3DD0FF"/>
+  <rect x="1078" y="356" width="90" height="14" rx="7" fill="#3DD0FF" fill-opacity="0.7"/>
+  <path d="M230 604H628" stroke="#76F5C8" stroke-width="2" stroke-dasharray="10 10" stroke-opacity="0.45"/>
+  <path d="M1206 720H1380" stroke="#76F5C8" stroke-width="2" stroke-dasharray="10 10" stroke-opacity="0.45"/>
+  <text x="170" y="510" fill="#DDFBF2" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">NVIDIA Nemotron 3 Nano Omni</text>
+  <text x="170" y="580" fill="#8DEBCD" font-family="Arial, Helvetica, sans-serif" font-size="34">Multimodal perception layer for the next wave of AI agents</text>
+  <text x="170" y="720" fill="#4ED6FF" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">GLOBAL / AI • 4 MAY 2026</text>
+  <defs>
+    <linearGradient id="bg" x1="72" y1="72" x2="1528" y2="828" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1B2A"/>
+      <stop offset="1" stop-color="#12243A"/>
+    </linearGradient>
+  </defs>
+</svg>

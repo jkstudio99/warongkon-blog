@@ -1,0 +1,30 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#081315"/>
+  <rect x="72" y="72" width="1456" height="756" rx="36" fill="url(#bg4)"/>
+  <circle cx="1280" cy="206" r="136" fill="#4AE1D3" fill-opacity="0.18"/>
+  <circle cx="1222" cy="636" r="214" fill="#D7FF6A" fill-opacity="0.10"/>
+  <rect x="182" y="176" width="516" height="356" rx="28" fill="#102126" stroke="#58E7D3" stroke-opacity="0.35"/>
+  <rect x="254" y="248" width="160" height="160" rx="28" fill="#133740"/>
+  <path d="M290 330H378" stroke="#6AF2DE" stroke-width="18" stroke-linecap="round"/>
+  <path d="M334 286V374" stroke="#6AF2DE" stroke-width="18" stroke-linecap="round"/>
+  <rect x="454" y="258" width="172" height="18" rx="9" fill="#6AF2DE"/>
+  <rect x="454" y="296" width="140" height="14" rx="7" fill="#B7FF72"/>
+  <rect x="454" y="330" width="110" height="14" rx="7" fill="#B7FF72" fill-opacity="0.7"/>
+  <path d="M762 318C830 282 898 282 964 318C1032 354 1100 354 1168 318C1236 282 1304 282 1372 318" stroke="#61E6D8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M762 412C830 376 898 376 964 412C1032 448 1100 448 1168 412C1236 376 1304 376 1372 412" stroke="#B8FF72" stroke-width="12" stroke-linecap="round"/>
+  <rect x="760" y="220" width="630" height="312" rx="30" fill="#0A171A" stroke="#57DCCF" stroke-opacity="0.28"/>
+  <rect x="824" y="250" width="164" height="92" rx="18" fill="#11343C"/>
+  <rect x="1020" y="250" width="300" height="18" rx="9" fill="#63E7D9"/>
+  <rect x="1020" y="288" width="210" height="14" rx="7" fill="#B8FF72"/>
+  <rect x="1020" y="322" width="130" height="14" rx="7" fill="#B8FF72" fill-opacity="0.7"/>
+  <rect x="192" y="600" width="1216" height="116" rx="24" fill="#0A1417" stroke="#5DE6D9" stroke-opacity="0.2"/>
+  <text x="182" y="646" fill="#ECFFFB" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">Thailand Science Park × Cyberport</text>
+  <text x="182" y="708" fill="#7EEDE1" font-family="Arial, Helvetica, sans-serif" font-size="34">A cross-border path for Thai startups, AI, and regional expansion</text>
+  <text x="182" y="768" fill="#C9FF79" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">THAILAND / SEA ECOSYSTEM • 4 MAY 2026</text>
+  <defs>
+    <linearGradient id="bg4" x1="72" y1="72" x2="1528" y2="828" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E2022"/>
+      <stop offset="1" stop-color="#173034"/>
+    </linearGradient>
+  </defs>
+</svg>

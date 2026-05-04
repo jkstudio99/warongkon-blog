@@ -1,0 +1,27 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#170B12"/>
+  <rect x="72" y="72" width="1456" height="756" rx="36" fill="url(#bg3)"/>
+  <circle cx="1310" cy="220" r="150" fill="#FFD05A" fill-opacity="0.2"/>
+  <circle cx="1180" cy="650" r="210" fill="#FF5F7A" fill-opacity="0.12"/>
+  <rect x="184" y="176" width="560" height="320" rx="28" fill="#24111C" stroke="#FFB55E" stroke-opacity="0.38"/>
+  <path d="M242 410C320 320 372 278 446 278C520 278 566 322 638 410" stroke="#FFD15B" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="308" cy="314" r="30" fill="#FF6A4B"/>
+  <circle cx="420" cy="248" r="30" fill="#FFE27C"/>
+  <circle cx="540" cy="248" r="30" fill="#FFE27C"/>
+  <circle cx="622" cy="314" r="30" fill="#FF6A4B"/>
+  <rect x="840" y="176" width="520" height="360" rx="30" fill="#1F111A" stroke="#FF6C7A" stroke-opacity="0.4"/>
+  <rect x="906" y="242" width="390" height="66" rx="16" fill="#311625"/>
+  <rect x="906" y="332" width="300" height="18" rx="9" fill="#FFD05A"/>
+  <rect x="906" y="370" width="246" height="14" rx="7" fill="#FF8C6B"/>
+  <rect x="906" y="404" width="200" height="14" rx="7" fill="#FF8C6B" fill-opacity="0.7"/>
+  <rect x="248" y="566" width="1104" height="118" rx="24" fill="#140B11" stroke="#FFB55E" stroke-opacity="0.22"/>
+  <text x="184" y="610" fill="#FFF0E7" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700">MARVEL Tōkon: Fighting Avengers</text>
+  <text x="184" y="676" fill="#FFCF7A" font-family="Arial, Helvetica, sans-serif" font-size="34">A big-IP fighter built to be playable, watchable, and community-ready</text>
+  <text x="184" y="750" fill="#FF7E8B" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">GAMES / CONSUMER • 4 MAY 2026</text>
+  <defs>
+    <linearGradient id="bg3" x1="72" y1="72" x2="1528" y2="828" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#211019"/>
+      <stop offset="1" stop-color="#3B1724"/>
+    </linearGradient>
+  </defs>
+</svg>
