@@ -1,0 +1,30 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#12091F"/>
+  <rect x="46" y="46" width="1508" height="808" rx="34" fill="url(#bg3)"/>
+  <rect x="110" y="112" width="256" height="52" rx="26" fill="#F72585"/>
+  <text x="148" y="146" fill="#FFF1F8" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">GAMES / CONSUMER</text>
+  <text x="110" y="254" fill="#FFF4FB" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700">Subscription Wars</text>
+  <text x="114" y="320" fill="#E5C9DB" font-family="Arial, Helvetica, sans-serif" font-size="30">PlayStation Plus Monthly Games • Announced April 29, 2026</text>
+  <rect x="112" y="430" width="412" height="248" rx="28" fill="#2A133D"/>
+  <text x="152" y="494" fill="#FFAFCC" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">MAY LINEUP</text>
+  <text x="152" y="554" fill="#FFF4FB" font-family="Arial, Helvetica, sans-serif" font-size="40">EA Sports FC 26</text>
+  <text x="152" y="606" fill="#FFF4FB" font-family="Arial, Helvetica, sans-serif" font-size="40">Wuchang</text>
+  <text x="152" y="658" fill="#FFF4FB" font-family="Arial, Helvetica, sans-serif" font-size="40">Nine Sols</text>
+  <rect x="884" y="206" width="500" height="458" rx="34" fill="#1C0E2D" stroke="#5C2A75" stroke-width="2"/>
+  <rect x="936" y="270" width="396" height="74" rx="20" fill="#5A189A"/>
+  <text x="1018" y="318" fill="#FFF4FB" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">MONTHLY VALUE</text>
+  <rect x="936" y="388" width="118" height="118" rx="22" fill="#4CC9F0"/>
+  <rect x="1076" y="388" width="118" height="118" rx="22" fill="#F72585"/>
+  <rect x="1216" y="388" width="118" height="118" rx="22" fill="#FFD166"/>
+  <text x="970" y="458" fill="#072437" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">FC</text>
+  <text x="1105" y="458" fill="#FFF2FA" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">WU</text>
+  <text x="1245" y="458" fill="#3E2905" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">9S</text>
+  <text x="936" y="574" fill="#EAD7F5" font-family="Arial, Helvetica, sans-serif" font-size="30">Retention is the real battle.</text>
+  <text x="936" y="620" fill="#CDB5DB" font-family="Arial, Helvetica, sans-serif" font-size="24">Lineup + perks + monthly habit</text>
+  <defs>
+    <linearGradient id="bg3" x1="86" y1="88" x2="1480" y2="832" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#31124B"/>
+      <stop offset="1" stop-color="#180B26"/>
+    </linearGradient>
+  </defs>
+</svg>
