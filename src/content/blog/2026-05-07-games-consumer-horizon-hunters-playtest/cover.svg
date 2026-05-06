@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#08120D"/>
+  <rect x="28" y="28" width="1144" height="574" rx="28" fill="url(#bg3)"/>
+  <path d="M0 462C134 408 206 378 344 394C487 410 566 496 692 500C826 504 934 406 1200 350V630H0V462Z" fill="#14532D" fill-opacity="0.58"/>
+  <path d="M772 210L846 96L920 210H884L846 154L808 210H772Z" fill="#F59E0B"/>
+  <circle cx="846" cy="124" r="18" fill="#FDE68A"/>
+  <rect x="104" y="98" width="424" height="220" rx="28" fill="#071A12" stroke="#4ADE80" stroke-opacity="0.36"/>
+  <rect x="134" y="134" width="152" height="16" rx="8" fill="#86EFAC"/>
+  <rect x="134" y="166" width="302" height="12" rx="6" fill="#E2E8F0" fill-opacity="0.82"/>
+  <rect x="134" y="190" width="264" height="12" rx="6" fill="#CBD5E1" fill-opacity="0.62"/>
+  <rect x="134" y="236" width="110" height="30" rx="15" fill="#22C55E"/>
+  <rect x="266" y="236" width="134" height="30" rx="15" fill="#F59E0B"/>
+  <rect x="620" y="138" width="424" height="248" rx="30" fill="#08130F" fill-opacity="0.58" stroke="#FDE68A" stroke-opacity="0.32"/>
+  <path d="M664 322L720 262L766 298L842 214L936 278L1004 220" stroke="#FCD34D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="720" cy="262" r="16" fill="#86EFAC"/>
+  <circle cx="766" cy="298" r="16" fill="#60A5FA"/>
+  <circle cx="842" cy="214" r="16" fill="#F59E0B"/>
+  <circle cx="936" cy="278" r="16" fill="#FB7185"/>
+  <circle cx="1004" cy="220" r="16" fill="#C084FC"/>
+  <text x="104" y="520" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="44" font-weight="700">Horizon Hunters Gathering</text>
+  <text x="104" y="562" fill="#BBF7D0" font-family="Arial, sans-serif" font-size="24">Closed playtest, new hunters, new region</text>
+  <defs>
+    <linearGradient id="bg3" x1="90" y1="40" x2="1100" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F2216"/>
+      <stop offset="0.55" stop-color="#10291B"/>
+      <stop offset="1" stop-color="#0B1A12"/>
+    </linearGradient>
+  </defs>
+</svg>
+

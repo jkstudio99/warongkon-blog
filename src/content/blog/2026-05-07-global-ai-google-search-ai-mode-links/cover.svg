@@ -1,0 +1,37 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0B1220"/>
+  <rect x="32" y="32" width="1136" height="566" rx="28" fill="url(#bg)"/>
+  <circle cx="1030" cy="142" r="108" fill="#60A5FA" fill-opacity="0.18"/>
+  <circle cx="932" cy="498" r="142" fill="#34D399" fill-opacity="0.16"/>
+  <rect x="96" y="110" width="408" height="62" rx="18" fill="#F8FAFC" fill-opacity="0.1"/>
+  <rect x="126" y="131" width="142" height="18" rx="9" fill="#60A5FA"/>
+  <rect x="286" y="131" width="184" height="18" rx="9" fill="#E2E8F0" fill-opacity="0.88"/>
+  <rect x="96" y="206" width="438" height="204" rx="26" fill="#020617" fill-opacity="0.52" stroke="#38BDF8" stroke-opacity="0.35"/>
+  <rect x="126" y="238" width="188" height="16" rx="8" fill="#F8FAFC" fill-opacity="0.92"/>
+  <rect x="126" y="272" width="276" height="14" rx="7" fill="#CBD5E1" fill-opacity="0.85"/>
+  <rect x="126" y="302" width="244" height="14" rx="7" fill="#CBD5E1" fill-opacity="0.68"/>
+  <rect x="126" y="344" width="160" height="28" rx="14" fill="#22C55E"/>
+  <rect x="324" y="344" width="136" height="28" rx="14" fill="#F59E0B"/>
+  <path d="M645 188H1066" stroke="#93C5FD" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <rect x="642" y="214" width="444" height="78" rx="24" fill="#08111F" stroke="#7DD3FC" stroke-opacity="0.42"/>
+  <rect x="674" y="238" width="262" height="16" rx="8" fill="#E2E8F0" fill-opacity="0.9"/>
+  <rect x="674" y="264" width="182" height="12" rx="6" fill="#94A3B8" fill-opacity="0.85"/>
+  <rect x="642" y="324" width="202" height="166" rx="24" fill="#08111F" stroke="#A7F3D0" stroke-opacity="0.42"/>
+  <rect x="874" y="324" width="212" height="166" rx="24" fill="#08111F" stroke="#FDE68A" stroke-opacity="0.42"/>
+  <rect x="672" y="352" width="104" height="14" rx="7" fill="#A7F3D0"/>
+  <rect x="672" y="380" width="124" height="12" rx="6" fill="#E2E8F0" fill-opacity="0.85"/>
+  <rect x="672" y="404" width="94" height="12" rx="6" fill="#CBD5E1" fill-opacity="0.7"/>
+  <rect x="904" y="352" width="118" height="14" rx="7" fill="#FCD34D"/>
+  <rect x="904" y="380" width="136" height="12" rx="6" fill="#E2E8F0" fill-opacity="0.85"/>
+  <rect x="904" y="404" width="114" height="12" rx="6" fill="#CBD5E1" fill-opacity="0.7"/>
+  <text x="96" y="504" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="46" font-weight="700">Google AI Search Updates</text>
+  <text x="96" y="554" fill="#BFDBFE" font-family="Arial, sans-serif" font-size="24">AI Mode, links, subscriptions, and community context</text>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="52" x2="1124" y2="596" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.5" stop-color="#102A43"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>
+
