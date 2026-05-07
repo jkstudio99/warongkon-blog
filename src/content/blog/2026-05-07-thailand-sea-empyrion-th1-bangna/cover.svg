@@ -1,0 +1,27 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#07131A"/>
+  <rect x="32" y="32" width="1136" height="566" rx="28" fill="url(#bg)"/>
+  <rect x="90" y="116" width="230" height="334" rx="22" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.38"/>
+  <rect x="354" y="88" width="174" height="362" rx="22" fill="#111827" stroke="#F59E0B" stroke-opacity="0.34"/>
+  <rect x="562" y="140" width="172" height="310" rx="22" fill="#0F172A" stroke="#34D399" stroke-opacity="0.34"/>
+  <rect x="768" y="104" width="286" height="346" rx="22" fill="#111827" stroke="#A78BFA" stroke-opacity="0.34"/>
+  <path d="M206 408C340 324 444 286 602 298C764 310 874 390 1088 322" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 12"/>
+  <circle cx="206" cy="408" r="11" fill="#38BDF8"/>
+  <circle cx="602" cy="298" r="11" fill="#F59E0B"/>
+  <circle cx="1088" cy="322" r="11" fill="#34D399"/>
+  <rect x="124" y="162" width="42" height="42" rx="8" fill="#38BDF8"/>
+  <rect x="182" y="162" width="42" height="42" rx="8" fill="#38BDF8"/>
+  <rect x="240" y="162" width="42" height="42" rx="8" fill="#38BDF8"/>
+  <rect x="396" y="132" width="88" height="18" rx="9" fill="#FCD34D"/>
+  <rect x="600" y="188" width="98" height="18" rx="9" fill="#6EE7B7"/>
+  <rect x="810" y="152" width="176" height="20" rx="10" fill="#C4B5FD"/>
+  <text x="90" y="520" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">Empyrion TH1 Bangkok</text>
+  <text x="90" y="566" fill="#BFDBFE" font-family="Arial, sans-serif" font-size="24">Bang Na, AI-ready capacity, and regional interconnection</text>
+  <defs>
+    <linearGradient id="bg" x1="72" y1="48" x2="1118" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.52" stop-color="#10233B"/>
+      <stop offset="1" stop-color="#0B1320"/>
+    </linearGradient>
+  </defs>
+</svg>
