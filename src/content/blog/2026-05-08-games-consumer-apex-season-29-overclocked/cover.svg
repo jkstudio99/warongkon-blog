@@ -1,0 +1,19 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#120B10"/>
+  <rect x="34" y="34" width="1132" height="562" rx="28" fill="#171717"/>
+  <path d="M82 408L344 160L614 298L896 108L1116 242" stroke="#EF4444" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M102 468L372 246L630 382L924 188L1098 296" stroke="#F97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18 18"/>
+  <circle cx="344" cy="160" r="44" fill="#111827" stroke="#FBBF24" stroke-width="8"/>
+  <circle cx="896" cy="108" r="44" fill="#111827" stroke="#2DD4BF" stroke-width="8"/>
+  <rect x="120" y="110" width="228" height="88" rx="24" fill="#1F2937" stroke="#F97316" stroke-opacity="0.64"/>
+  <text x="158" y="166" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="34" font-weight="700">AXLE</text>
+  <rect x="432" y="132" width="282" height="94" rx="24" fill="#0F172A" stroke="#2DD4BF" stroke-opacity="0.6"/>
+  <text x="472" y="190" fill="#CCFBF1" font-family="Arial, sans-serif" font-size="30" font-weight="700">Deathbox Respawn</text>
+  <rect x="742" y="340" width="296" height="82" rx="24" fill="#1F2937" stroke="#FBBF24" stroke-opacity="0.6"/>
+  <text x="786" y="392" fill="#FEF3C7" font-family="Arial, sans-serif" font-size="32" font-weight="700">7 seconds</text>
+  <path d="M220 356L298 302L376 356L298 410Z" fill="#EF4444" fill-opacity="0.36" stroke="#FCA5A5" stroke-width="5"/>
+  <path d="M540 430L620 372L700 430L620 488Z" fill="#14B8A6" fill-opacity="0.32" stroke="#99F6E4" stroke-width="5"/>
+  <text x="86" y="524" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="44" font-weight="700">Apex Season 29: Overclocked</text>
+  <text x="86" y="570" fill="#FECACA" font-family="Arial, sans-serif" font-size="24">speed, squad recovery, movement meta, and live service tuning</text>
+</svg>
+

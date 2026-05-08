@@ -1,0 +1,23 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#071116"/>
+  <rect x="34" y="34" width="1132" height="562" rx="28" fill="#10201E"/>
+  <rect x="96" y="134" width="150" height="296" rx="20" fill="#134E4A" stroke="#5EEAD4" stroke-opacity="0.46"/>
+  <rect x="286" y="230" width="150" height="200" rx="20" fill="#1F2937" stroke="#FBBF24" stroke-opacity="0.46"/>
+  <rect x="476" y="176" width="150" height="254" rx="20" fill="#172554" stroke="#60A5FA" stroke-opacity="0.46"/>
+  <rect x="666" y="286" width="150" height="144" rx="20" fill="#312E81" stroke="#A78BFA" stroke-opacity="0.46"/>
+  <rect x="856" y="102" width="150" height="328" rx="20" fill="#3B1D13" stroke="#FB923C" stroke-opacity="0.5"/>
+  <path d="M142 472C230 386 314 374 406 404C512 440 566 500 676 462C782 426 848 330 1018 312" stroke="#22C55E" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="142" cy="472" r="13" fill="#5EEAD4"/>
+  <circle cx="406" cy="404" r="13" fill="#FBBF24"/>
+  <circle cx="676" cy="462" r="13" fill="#A78BFA"/>
+  <circle cx="1018" cy="312" r="13" fill="#FB923C"/>
+  <rect x="130" y="170" width="82" height="18" rx="9" fill="#99F6E4"/>
+  <rect x="320" y="264" width="82" height="18" rx="9" fill="#FDE68A"/>
+  <rect x="510" y="212" width="82" height="18" rx="9" fill="#BFDBFE"/>
+  <rect x="700" y="320" width="82" height="18" rx="9" fill="#DDD6FE"/>
+  <rect x="890" y="140" width="82" height="18" rx="9" fill="#FED7AA"/>
+  <rect x="726" y="132" width="336" height="84" rx="24" fill="#0F172A" stroke="#FBBF24" stroke-opacity="0.56"/>
+  <text x="768" y="186" fill="#FEF3C7" font-family="Arial, sans-serif" font-size="32" font-weight="700">Amity $100M</text>
+  <text x="86" y="524" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="44" font-weight="700">SEA Funding and Agentic AI</text>
+  <text x="86" y="570" fill="#A7F3D0" font-family="Arial, sans-serif" font-size="24">Q1 2026 capital, Thailand roots, and regional AI workflows</text>
+</svg>

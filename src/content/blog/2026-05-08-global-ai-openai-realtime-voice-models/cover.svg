@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#071019"/>
+  <rect x="32" y="32" width="1136" height="566" rx="28" fill="#101820"/>
+  <path d="M88 318C156 214 252 166 376 186C516 208 556 318 704 306C836 296 886 204 1048 190" stroke="#14B8A6" stroke-width="9" stroke-linecap="round"/>
+  <path d="M104 430C216 366 300 360 414 402C532 446 650 500 790 444C884 406 962 332 1092 354" stroke="#F97316" stroke-width="7" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <rect x="114" y="118" width="332" height="174" rx="26" fill="#0B1220" stroke="#5EEAD4" stroke-opacity="0.5"/>
+  <rect x="156" y="160" width="60" height="92" rx="30" fill="#2DD4BF"/>
+  <rect x="238" y="138" width="24" height="134" rx="12" fill="#F8FAFC" fill-opacity="0.82"/>
+  <rect x="292" y="168" width="24" height="74" rx="12" fill="#F59E0B"/>
+  <rect x="346" y="148" width="24" height="114" rx="12" fill="#38BDF8"/>
+  <rect x="612" y="108" width="436" height="202" rx="28" fill="#111827" stroke="#FBBF24" stroke-opacity="0.48"/>
+  <circle cx="678" cy="172" r="24" fill="#F97316"/>
+  <circle cx="742" cy="172" r="24" fill="#14B8A6"/>
+  <circle cx="806" cy="172" r="24" fill="#38BDF8"/>
+  <rect x="662" y="228" width="284" height="18" rx="9" fill="#E5E7EB" fill-opacity="0.86"/>
+  <rect x="662" y="260" width="220" height="14" rx="7" fill="#9CA3AF" fill-opacity="0.8"/>
+  <rect x="168" y="358" width="248" height="86" rx="26" fill="#1E293B" stroke="#38BDF8" stroke-opacity="0.44"/>
+  <path d="M226 404H356" stroke="#E0F2FE" stroke-width="13" stroke-linecap="round"/>
+  <path d="M258 382L226 404L258 426" stroke="#38BDF8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="690" y="372" width="312" height="92" rx="26" fill="#1F2937" stroke="#FB7185" stroke-opacity="0.44"/>
+  <text x="732" y="429" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="34" font-weight="700">70+ to 13</text>
+  <text x="86" y="528" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="44" font-weight="700">OpenAI Realtime Voice</text>
+  <text x="86" y="574" fill="#BAE6FD" font-family="Arial, sans-serif" font-size="24">reasoning, translation, transcription, and live tools</text>
+</svg>
+
