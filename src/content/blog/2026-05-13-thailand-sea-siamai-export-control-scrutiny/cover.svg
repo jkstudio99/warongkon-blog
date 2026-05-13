@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Thailand SEA AI infrastructure export control cover</title>
+  <desc id="desc">Map-inspired Thailand and Southeast Asia network routes with server racks and export control checkpoint.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="0.48" stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#B91C1C"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#BFDBFE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g opacity="0.24" fill="none" stroke="#E0F2FE" stroke-width="2">
+    <path d="M60 118 H1140 M60 198 H1140 M60 278 H1140 M60 358 H1140 M60 438 H1140 M60 518 H1140"/>
+    <path d="M140 70 V574 M260 70 V574 M380 70 V574 M500 70 V574 M620 70 V574 M740 70 V574 M860 70 V574 M980 70 V574"/>
+  </g>
+  <path d="M506 174 C545 210 556 258 527 294 C497 332 528 366 580 376 C642 388 676 438 641 488 C602 543 506 522 460 468 C410 411 392 348 420 294 C444 248 466 206 506 174 Z" fill="#F8FAFC" opacity="0.86"/>
+  <circle cx="548" cy="374" r="16" fill="#DC2626"/>
+  <text x="572" y="383" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#F8FAFC">BKK</text>
+  <g fill="none" stroke-linecap="round" stroke-width="6">
+    <path d="M548 374 C690 278 792 250 936 186" stroke="#FDE68A"/>
+    <path d="M548 374 C710 404 808 462 984 498" stroke="#A7F3D0"/>
+    <path d="M548 374 C432 412 328 448 216 526" stroke="#93C5FD"/>
+  </g>
+  <g transform="translate(822 132)">
+    <rect x="0" y="0" width="214" height="160" rx="18" fill="#020617" stroke="#FDE68A" stroke-width="4"/>
+    <rect x="38" y="34" width="138" height="28" rx="6" fill="#FDE68A"/>
+    <rect x="38" y="76" width="138" height="28" rx="6" fill="#60A5FA"/>
+    <rect x="38" y="118" width="138" height="18" rx="6" fill="#34D399"/>
+  </g>
+  <g transform="translate(160 440)">
+    <rect x="0" y="0" width="252" height="118" rx="18" fill="url(#card)" opacity="0.92"/>
+    <path d="M42 34 H210 M42 60 H210 M42 86 H154" stroke="#1E3A8A" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="198" cy="84" r="18" fill="#DC2626"/>
+  </g>
+  <g transform="translate(770 416)">
+    <rect x="0" y="0" width="272" height="126" rx="20" fill="#020617" opacity="0.88" stroke="#A7F3D0" stroke-width="4"/>
+    <text x="38" y="52" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#F8FAFC">EXPORT</text>
+    <text x="38" y="88" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#F8FAFC">CONTROL</text>
+  </g>
+  <text x="92" y="610" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#F8FAFC">THAILAND AI INFRA</text>
+  <text x="92" y="646" font-family="Inter, Arial, sans-serif" font-size="24" fill="#DBEAFE">Sovereignty, trust, and export-control scrutiny</text>
+</svg>

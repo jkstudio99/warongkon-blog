@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">CME compute futures AI infrastructure cover</title>
+  <desc id="desc">GPU racks and futures market chart showing compute becoming a tradeable infrastructure asset.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="0.45" stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="rack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <path d="M90 519 C254 438 389 529 554 434 C711 344 839 264 1110 310" fill="none" stroke="#BBF7D0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M90 566 C273 492 432 554 594 487 C744 425 888 373 1110 410" fill="none" stroke="#FDBA74" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <g transform="translate(120 112)">
+    <rect x="0" y="0" width="202" height="372" rx="18" fill="#020617" stroke="#93C5FD" stroke-width="4"/>
+    <rect x="36" y="38" width="130" height="56" rx="8" fill="url(#rack)" opacity="0.92"/>
+    <rect x="36" y="126" width="130" height="56" rx="8" fill="url(#rack)" opacity="0.78"/>
+    <rect x="36" y="214" width="130" height="56" rx="8" fill="url(#rack)" opacity="0.64"/>
+    <rect x="36" y="302" width="130" height="30" rx="8" fill="#A7F3D0" opacity="0.86"/>
+  </g>
+  <g transform="translate(370 112)">
+    <rect x="0" y="0" width="202" height="372" rx="18" fill="#020617" stroke="#93C5FD" stroke-width="4"/>
+    <rect x="36" y="38" width="130" height="56" rx="8" fill="url(#rack)" opacity="0.64"/>
+    <rect x="36" y="126" width="130" height="56" rx="8" fill="#A7F3D0" opacity="0.88"/>
+    <rect x="36" y="214" width="130" height="56" rx="8" fill="url(#rack)" opacity="0.78"/>
+    <rect x="36" y="302" width="130" height="30" rx="8" fill="#FDE68A" opacity="0.9"/>
+  </g>
+  <g transform="translate(662 122)">
+    <rect x="0" y="0" width="410" height="318" rx="22" fill="#0F172A" opacity="0.86" stroke="#D9F99D" stroke-opacity="0.56"/>
+    <line x1="42" y1="254" x2="366" y2="254" stroke="#64748B" stroke-width="3"/>
+    <line x1="42" y1="58" x2="42" y2="254" stroke="#64748B" stroke-width="3"/>
+    <polyline points="54,216 102,196 150,208 198,148 246,132 294,88 350,70" fill="none" stroke="#FDE68A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="350" cy="70" r="12" fill="#FDE68A"/>
+    <text x="42" y="296" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#F8FAFC">GPU RENTAL INDEX</text>
+  </g>
+  <text x="92" y="610" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#F8FAFC">COMPUTE FUTURES</text>
+  <text x="92" y="646" font-family="Inter, Arial, sans-serif" font-size="24" fill="#DBEAFE">AI infrastructure becomes a hedgeable market</text>
+</svg>
