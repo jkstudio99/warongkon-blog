@@ -1,0 +1,21 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#07070A"/>
+  <rect x="58" y="54" width="1084" height="567" rx="28" fill="#141219"/>
+  <path d="M118 522C228 468 310 464 408 504C522 550 604 524 702 474C820 414 920 408 1080 472" stroke="#334155" stroke-width="18" stroke-linecap="round"/>
+  <path d="M148 464C242 422 326 416 416 446C530 484 604 458 706 404C824 342 938 334 1060 388" stroke="#475569" stroke-width="10" stroke-linecap="round"/>
+  <rect x="262" y="194" width="214" height="254" rx="14" fill="#1F2937" stroke="#64748B" stroke-width="4"/>
+  <rect x="296" y="228" width="146" height="104" rx="12" fill="#0F172A" stroke="#94A3B8" stroke-width="3"/>
+  <circle cx="369" cy="280" r="38" fill="#111827" stroke="#F8FAFC" stroke-width="8"/>
+  <circle cx="369" cy="280" r="14" fill="#38BDF8"/>
+  <rect x="306" y="360" width="126" height="44" rx="10" fill="#334155"/>
+  <path d="M620 180C702 220 736 294 726 400C718 486 760 520 838 536C742 548 656 530 600 482C548 438 520 368 532 286C540 230 570 196 620 180Z" fill="#312E81"/>
+  <path d="M646 236C704 266 724 316 712 386C704 432 728 462 772 478C710 484 650 468 614 432C580 398 570 344 584 294C594 260 614 242 646 236Z" fill="#7C3AED"/>
+  <path d="M760 196L944 268L838 318L650 246L760 196Z" fill="#111827" stroke="#F59E0B" stroke-width="5"/>
+  <path d="M944 268V394L838 452V318L944 268Z" fill="#1E293B" stroke="#F59E0B" stroke-width="5"/>
+  <path d="M650 246V372L838 452V318L650 246Z" fill="#0F172A" stroke="#F59E0B" stroke-width="5"/>
+  <path d="M724 288L850 338" stroke="#FDE68A" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="946" cy="166" r="64" fill="#F8FAFC"/>
+  <path d="M920 170C940 188 970 190 994 176C984 210 944 226 912 206C882 188 872 150 890 122C890 140 900 156 920 170Z" fill="#141219"/>
+  <text x="94" y="574" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="48" font-weight="700">Phasmophobia by Alan Wake</text>
+  <text x="94" y="620" fill="#C4B5FD" font-family="Arial, sans-serif" font-size="25">limited-time horror collaboration, May 12 to June 2</text>
+</svg>
