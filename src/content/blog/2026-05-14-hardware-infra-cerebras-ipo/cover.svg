@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Cerebras IPO cover</title>
+  <desc id="desc">Wafer-scale processor and market chart motif for AI infrastructure capital markets</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101827"/>
+      <stop offset="1" stop-color="#173b45"/>
+    </linearGradient>
+    <radialGradient id="wafer" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#eef7ff"/>
+      <stop offset="0.55" stop-color="#9ccde5"/>
+      <stop offset="1" stop-color="#4d748a"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="382" cy="298" r="178" fill="url(#wafer)" opacity="0.96"/>
+  <circle cx="382" cy="298" r="132" fill="none" stroke="#173b45" stroke-width="3" opacity="0.55"/>
+  <circle cx="382" cy="298" r="82" fill="none" stroke="#173b45" stroke-width="3" opacity="0.5"/>
+  <g stroke="#173b45" stroke-width="2" opacity="0.48">
+    <path d="M244 184h276M224 242h316M214 300h336M226 358h312M252 416h260"/>
+    <path d="M268 146v304M328 126v344M388 120v356M448 132v332M508 166v264"/>
+  </g>
+  <rect x="676" y="120" width="360" height="326" rx="26" fill="#eef7ff"/>
+  <polyline points="716,386 776,342 840,352 906,264 984,208" fill="none" stroke="#e47348" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="716" y="156" width="178" height="24" rx="12" fill="#173b45"/>
+  <rect x="716" y="198" width="250" height="16" rx="8" fill="#6f8ea0"/>
+  <rect x="716" y="458" width="320" height="44" rx="16" fill="#e47348"/>
+  <text x="876" y="489" fill="#fffaf1" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">CBRS May 14 Debut</text>
+  <text x="84" y="578" fill="#eef7ff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Hardware / Infrastructure</text>
+  <text x="1116" y="578" fill="#eef7ff" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">May 14, 2026</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Nintendo May lineup cover</title>
+  <desc id="desc">Colorful handheld console grid representing Nintendo Switch and Switch 2 games</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff6e8"/>
+      <stop offset="1" stop-color="#e6f3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="94" y="95" width="1012" height="410" rx="58" fill="#242b36"/>
+  <rect x="192" y="134" width="816" height="332" rx="18" fill="#fffaf0"/>
+  <rect x="126" y="212" width="42" height="166" rx="21" fill="#e84747"/>
+  <circle cx="1052" cy="246" r="18" fill="#42a5d9"/>
+  <circle cx="1052" cy="314" r="18" fill="#f0c64b"/>
+  <circle cx="1052" cy="382" r="18" fill="#72b46a"/>
+  <g transform="translate(236 174)">
+    <rect width="164" height="116" rx="16" fill="#e84747"/>
+    <rect x="198" width="164" height="116" rx="16" fill="#42a5d9"/>
+    <rect x="396" width="164" height="116" rx="16" fill="#f0c64b"/>
+    <rect x="594" width="164" height="116" rx="16" fill="#72b46a"/>
+    <rect y="154" width="164" height="116" rx="16" fill="#9167b8"/>
+    <rect x="198" y="154" width="164" height="116" rx="16" fill="#ec7f47"/>
+    <rect x="396" y="154" width="164" height="116" rx="16" fill="#5dbfbd"/>
+    <rect x="594" y="154" width="164" height="116" rx="16" fill="#3e5e9f"/>
+  </g>
+  <text x="600" y="348" fill="#242b36" font-family="Arial, sans-serif" font-size="46" font-weight="700" text-anchor="middle">May Game Lineup</text>
+  <text x="94" y="578" fill="#242b36" font-family="Arial, sans-serif" font-size="30" font-weight="700">Games / Consumer</text>
+  <text x="1106" y="578" fill="#242b36" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">May 14, 2026</text>
+</svg>

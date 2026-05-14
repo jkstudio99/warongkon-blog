@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Claude for Small Business cover</title>
+  <desc id="desc">Abstract small business workflow board with AI connector nodes</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3eee5"/>
+      <stop offset="1" stop-color="#d6e2db"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#edf4ef" stop-opacity="0.96"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="72" y="58" width="1056" height="514" rx="34" fill="#23312d"/>
+  <rect x="112" y="96" width="420" height="438" rx="28" fill="url(#card)"/>
+  <rect x="584" y="96" width="504" height="438" rx="28" fill="#f9faf6"/>
+  <circle cx="218" cy="188" r="56" fill="#d88c62"/>
+  <rect x="298" y="150" width="164" height="22" rx="11" fill="#2d3b37"/>
+  <rect x="298" y="192" width="118" height="16" rx="8" fill="#7a8b83"/>
+  <rect x="156" y="288" width="320" height="42" rx="15" fill="#e7d6be"/>
+  <rect x="156" y="354" width="268" height="42" rx="15" fill="#d4e4da"/>
+  <rect x="156" y="420" width="300" height="42" rx="15" fill="#c8d8ea"/>
+  <path d="M642 198h104m0 0c44 0 44 72 88 72h106" fill="none" stroke="#d88c62" stroke-width="14" stroke-linecap="round"/>
+  <path d="M642 314h104m0 0c44 0 44-72 88-72h106" fill="none" stroke="#6c8f83" stroke-width="14" stroke-linecap="round"/>
+  <path d="M642 430h104m0 0c44 0 44-46 88-46h106" fill="none" stroke="#5a7fa3" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="640" cy="198" r="31" fill="#23312d"/>
+  <circle cx="640" cy="314" r="31" fill="#23312d"/>
+  <circle cx="640" cy="430" r="31" fill="#23312d"/>
+  <rect x="944" y="170" width="94" height="56" rx="18" fill="#23312d"/>
+  <rect x="944" y="286" width="94" height="56" rx="18" fill="#23312d"/>
+  <rect x="944" y="402" width="94" height="56" rx="18" fill="#23312d"/>
+  <text x="112" y="578" fill="#f7f3ea" font-family="Arial, sans-serif" font-size="30" font-weight="700">Global / AI</text>
+  <text x="1088" y="578" fill="#f7f3ea" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">May 14, 2026</text>
+</svg>
