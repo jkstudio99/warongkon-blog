@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Forza Horizon 6 early access cover</title>
+  <desc id="desc">Stylized racing road through Japan with premium launch markers</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4b7b0"/>
+      <stop offset="0.48" stop-color="#f6d7c4"/>
+      <stop offset="1" stop-color="#273c52"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#586675"/>
+      <stop offset="1" stop-color="#151d28"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <circle cx="930" cy="124" r="72" fill="#f8eee2" opacity="0.9"/>
+  <path d="M76 386c136-76 242-100 350-70 76 20 134 64 224 50 134-20 212-124 450-86v134H76z" fill="#476b5b" opacity="0.88"/>
+  <path d="M492 630l146-276h64l160 276z" fill="url(#road)"/>
+  <path d="M667 374l20 256" stroke="#f7f1df" stroke-width="10" stroke-linecap="round" stroke-dasharray="38 38"/>
+  <path d="M170 258c80-120 202-138 288-28" fill="none" stroke="#26324a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M238 260c52-68 110-72 162-8" fill="none" stroke="#f7f1df" stroke-width="12" stroke-linecap="round"/>
+  <rect x="126" y="94" width="430" height="138" rx="28" fill="#151d28" opacity="0.94"/>
+  <text x="156" y="150" fill="#f7f1df" font-family="Arial, sans-serif" font-size="34" font-weight="700">Forza Horizon 6</text>
+  <text x="156" y="192" fill="#f4b7b0" font-family="Arial, sans-serif" font-size="26" font-weight="700">Early Access rollout</text>
+  <rect x="790" y="424" width="258" height="70" rx="22" fill="#f7f1df"/>
+  <text x="919" y="468" fill="#151d28" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">May 15</text>
+  <text x="120" y="560" fill="#f7f1df" font-family="Arial, sans-serif" font-size="34" font-weight="700">Games / Consumer</text>
+  <text x="1080" y="560" fill="#f7f1df" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="end">Japan awaits</text>
+</svg>

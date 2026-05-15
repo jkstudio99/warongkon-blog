@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">SeaX Melazyme seed funding cover</title>
+  <desc id="desc">Biotech fermentation nodes connected to Bangkok and San Francisco venture capital signals</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f0e6"/>
+      <stop offset="1" stop-color="#dce9e2"/>
+    </linearGradient>
+    <linearGradient id="cell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5f9d8a"/>
+      <stop offset="1" stop-color="#233f45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="70" y="58" width="1060" height="514" rx="34" fill="#233f45"/>
+  <circle cx="318" cy="258" r="92" fill="url(#cell)"/>
+  <circle cx="478" cy="352" r="70" fill="#83b9a5"/>
+  <circle cx="664" cy="240" r="58" fill="#d0b36f"/>
+  <circle cx="810" cy="368" r="76" fill="#d98b72"/>
+  <path d="M318 258c98 24 94 94 160 94 84 0 104-112 186-112 76 0 76 128 146 128" fill="none" stroke="#f7f2e8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M278 230c28-32 66-32 94 0M438 328c26-24 56-24 82 0M778 336c34-34 70-34 104 0" fill="none" stroke="#233f45" stroke-width="12" stroke-linecap="round"/>
+  <rect x="118" y="104" width="382" height="116" rx="26" fill="#f7f2e8"/>
+  <text x="148" y="154" fill="#233f45" font-family="Arial, sans-serif" font-size="34" font-weight="700">SeaX x Melazyme</text>
+  <text x="148" y="194" fill="#61736f" font-family="Arial, sans-serif" font-size="24">$2M seed round</text>
+  <rect x="720" y="96" width="294" height="66" rx="22" fill="#f7f2e8"/>
+  <text x="867" y="138" fill="#233f45" font-family="Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">Bangkok + SF</text>
+  <text x="118" y="538" fill="#f7f2e8" font-family="Arial, sans-serif" font-size="34" font-weight="700">Thailand / SEA Ecosystem</text>
+  <text x="1084" y="538" fill="#f7f2e8" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="end">May 15, 2026</text>
+</svg>
