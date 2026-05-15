@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Anthropic and Gates Foundation AI partnership cover</title>
+  <desc id="desc">A global public goods map connected to health, education, and agriculture nodes</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7efe5"/>
+      <stop offset="1" stop-color="#e8f2ee"/>
+    </linearGradient>
+    <linearGradient id="globe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#295c51"/>
+      <stop offset="1" stop-color="#193f39"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="68" y="58" width="1064" height="514" rx="32" fill="#fffaf2"/>
+  <circle cx="412" cy="282" r="154" fill="url(#globe)"/>
+  <path d="M282 245c68-42 177-48 261-6" fill="none" stroke="#d8c7a7" stroke-width="10" stroke-linecap="round"/>
+  <path d="M282 326c76 38 174 43 259 4" fill="none" stroke="#d8c7a7" stroke-width="10" stroke-linecap="round"/>
+  <path d="M412 130c-38 58-49 242 0 304" fill="none" stroke="#d8c7a7" stroke-width="10" stroke-linecap="round"/>
+  <path d="M412 130c38 58 49 242 0 304" fill="none" stroke="#d8c7a7" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="742" cy="174" r="54" fill="#f1c86d"/>
+  <circle cx="860" cy="294" r="54" fill="#6fa493"/>
+  <circle cx="730" cy="414" r="54" fill="#b4675a"/>
+  <path d="M542 226l150-40" stroke="#295c51" stroke-width="10" stroke-linecap="round"/>
+  <path d="M560 288l246 6" stroke="#295c51" stroke-width="10" stroke-linecap="round"/>
+  <path d="M540 348l140 50" stroke="#295c51" stroke-width="10" stroke-linecap="round"/>
+  <text x="742" y="184" fill="#193f39" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Health</text>
+  <text x="860" y="304" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Edu</text>
+  <text x="730" y="424" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Agri</text>
+  <text x="116" y="520" fill="#193f39" font-family="Arial, sans-serif" font-size="38" font-weight="700">Anthropic x Gates Foundation</text>
+  <text x="1084" y="520" fill="#295c51" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">Global / AI</text>
+  <text x="1084" y="558" fill="#6b7f7a" font-family="Arial, sans-serif" font-size="24" text-anchor="end">May 15, 2026</text>
+</svg>

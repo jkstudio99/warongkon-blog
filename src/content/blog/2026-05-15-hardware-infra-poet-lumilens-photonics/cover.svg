@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">POET and Lumilens AI optical networks cover</title>
+  <desc id="desc">Optical interposer lines connecting AI accelerator racks</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1f2f"/>
+      <stop offset="1" stop-color="#173c4d"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#80d8ff"/>
+      <stop offset="1" stop-color="#f5c76a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="78" y="72" width="1044" height="486" rx="30" fill="#10283a" stroke="#3f6a79" stroke-width="4"/>
+  <rect x="146" y="154" width="210" height="260" rx="20" fill="#193b52"/>
+  <rect x="500" y="154" width="210" height="260" rx="20" fill="#193b52"/>
+  <rect x="854" y="154" width="210" height="260" rx="20" fill="#193b52"/>
+  <g fill="#80d8ff">
+    <rect x="180" y="194" width="142" height="18" rx="9"/>
+    <rect x="180" y="244" width="142" height="18" rx="9"/>
+    <rect x="180" y="294" width="142" height="18" rx="9"/>
+    <rect x="180" y="344" width="142" height="18" rx="9"/>
+    <rect x="534" y="194" width="142" height="18" rx="9"/>
+    <rect x="534" y="244" width="142" height="18" rx="9"/>
+    <rect x="534" y="294" width="142" height="18" rx="9"/>
+    <rect x="534" y="344" width="142" height="18" rx="9"/>
+    <rect x="888" y="194" width="142" height="18" rx="9"/>
+    <rect x="888" y="244" width="142" height="18" rx="9"/>
+    <rect x="888" y="294" width="142" height="18" rx="9"/>
+    <rect x="888" y="344" width="142" height="18" rx="9"/>
+  </g>
+  <path d="M356 210C430 210 430 248 500 248" fill="none" stroke="url(#beam)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M356 310C430 310 430 294 500 294" fill="none" stroke="url(#beam)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M710 248C784 248 784 210 854 210" fill="none" stroke="url(#beam)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M710 294C784 294 784 344 854 344" fill="none" stroke="url(#beam)" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="430" cy="248" r="18" fill="#f5c76a"/>
+  <circle cx="784" cy="294" r="18" fill="#f5c76a"/>
+  <text x="146" y="500" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">Wafer-level photonics for AI networks</text>
+  <text x="1064" y="500" fill="#b7e8ff" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">Hardware / Infrastructure</text>
+  <text x="1064" y="538" fill="#a9bac3" font-family="Arial, sans-serif" font-size="24" text-anchor="end">May 15, 2026</text>
+</svg>

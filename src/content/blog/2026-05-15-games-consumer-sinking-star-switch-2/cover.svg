@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Order of the Sinking Star Switch 2 cover</title>
+  <desc id="desc">A handheld puzzle grid with stars, keys, and four puzzle worlds</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#251b3b"/>
+      <stop offset="1" stop-color="#12384a"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8e9b9"/>
+      <stop offset="1" stop-color="#c7e4d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="118" y="98" width="964" height="398" rx="50" fill="#1d2736"/>
+  <rect x="260" y="136" width="680" height="322" rx="28" fill="url(#screen)"/>
+  <circle cx="196" cy="298" r="58" fill="#3f4b61"/>
+  <rect x="180" y="250" width="32" height="96" rx="12" fill="#94d2bd"/>
+  <rect x="148" y="282" width="96" height="32" rx="12" fill="#94d2bd"/>
+  <circle cx="1006" cy="238" r="24" fill="#f5c76a"/>
+  <circle cx="960" cy="300" r="24" fill="#e87461"/>
+  <circle cx="1006" cy="362" r="24" fill="#78c6d7"/>
+  <g stroke="#243142" stroke-width="5">
+    <line x1="326" y1="180" x2="326" y2="416"/>
+    <line x1="414" y1="180" x2="414" y2="416"/>
+    <line x1="502" y1="180" x2="502" y2="416"/>
+    <line x1="590" y1="180" x2="590" y2="416"/>
+    <line x1="678" y1="180" x2="678" y2="416"/>
+    <line x1="766" y1="180" x2="766" y2="416"/>
+    <line x1="854" y1="180" x2="854" y2="416"/>
+    <line x1="302" y1="210" x2="898" y2="210"/>
+    <line x1="302" y1="298" x2="898" y2="298"/>
+    <line x1="302" y1="386" x2="898" y2="386"/>
+  </g>
+  <path d="M414 255l22 44 48 7-35 34 8 48-43-23-43 23 8-48-35-34 48-7z" fill="#e87461"/>
+  <path d="M664 228h72v72h-72z" fill="#2f7f73"/>
+  <path d="M738 348c0-32 48-32 48 0v38h-48z" fill="#6a4c93"/>
+  <circle cx="548" cy="350" r="34" fill="#f5c76a"/>
+  <text x="118" y="550" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">Order of the Sinking Star on Switch 2</text>
+  <text x="1082" y="550" fill="#c7e4d2" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">Games / Consumer</text>
+  <text x="1082" y="588" fill="#b9c5d1" font-family="Arial, sans-serif" font-size="24" text-anchor="end">May 15, 2026</text>
+</svg>
