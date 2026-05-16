@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Hell Let Loose Vietnam cover</title>
+  <desc id="desc">Jungle battlefield map with helicopter, river, and 50 versus 50 marker</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6f0de"/>
+      <stop offset="1" stop-color="#f2d8b5"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#203322"/>
+      <stop offset="1" stop-color="#5a3e29"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="72" y="58" width="1056" height="514" rx="34" fill="url(#panel)"/>
+  <path d="M126 430c140-86 264-42 384-108 124-68 220-122 410-28 60 30 110 56 152 52v126H126z" fill="#7aa05d"/>
+  <path d="M126 316c102-78 206-86 320-44 112 42 196 12 290-34 110-54 220-38 336 34" fill="none" stroke="#2c6d69" stroke-width="44" stroke-linecap="round"/>
+  <path d="M250 182l-36 130M322 176l-24 150M930 170l32 150M854 188l44 120" stroke="#b0c48b" stroke-width="18" stroke-linecap="round"/>
+  <path d="M204 176c40-18 78-18 116 0M180 236c52-24 104-24 156 0M816 184c46-22 92-22 138 0M840 244c58-26 116-26 174 0" stroke="#8fb46a" stroke-width="15" stroke-linecap="round"/>
+  <g transform="translate(560 150)">
+    <rect x="0" y="34" width="154" height="34" rx="17" fill="#1a2420"/>
+    <rect x="112" y="24" width="68" height="20" rx="10" fill="#1a2420"/>
+    <line x1="-52" y1="26" x2="96" y2="26" stroke="#d7e3cf" stroke-width="10" stroke-linecap="round"/>
+    <line x1="114" y1="18" x2="222" y2="18" stroke="#d7e3cf" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <rect x="156" y="414" width="210" height="64" rx="18" fill="#f0c15f"/>
+  <text x="261" y="456" fill="#203322" font-family="Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">50v50</text>
+  <text x="116" y="524" fill="#f9fbf6" font-family="Arial, sans-serif" font-size="36" font-weight="700">Hell Let Loose: Vietnam</text>
+  <text x="1084" y="524" fill="#f9fbf6" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">Games / Consumer</text>
+  <text x="1084" y="562" fill="#d8d4b4" font-family="Arial, sans-serif" font-size="24" text-anchor="end">Open beta May 29</text>
+</svg>

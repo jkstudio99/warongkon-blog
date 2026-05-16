@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">ChatGPT personal finance cover</title>
+  <desc id="desc">Financial dashboard cards connected to an AI assistant interface</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf4ff"/>
+      <stop offset="0.52" stop-color="#f3f7ee"/>
+      <stop offset="1" stop-color="#fff2dc"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2d3a"/>
+      <stop offset="1" stop-color="#194b56"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="70" y="58" width="1060" height="514" rx="34" fill="url(#panel)"/>
+  <rect x="128" y="116" width="382" height="328" rx="28" fill="#f9fcfb"/>
+  <rect x="560" y="116" width="512" height="328" rx="28" fill="#eef6f2"/>
+  <circle cx="196" cy="184" r="38" fill="#2d7b72"/>
+  <path d="M184 184h24M196 172v24" stroke="#f9fcfb" stroke-width="9" stroke-linecap="round"/>
+  <text x="258" y="174" fill="#0f2d3a" font-family="Arial, sans-serif" font-size="30" font-weight="700">Connected finances</text>
+  <text x="258" y="212" fill="#557277" font-family="Arial, sans-serif" font-size="22">balances, spend, goals</text>
+  <rect x="158" y="272" width="300" height="26" rx="13" fill="#bfdad2"/>
+  <rect x="158" y="324" width="232" height="26" rx="13" fill="#f0c76f"/>
+  <rect x="158" y="376" width="272" height="26" rx="13" fill="#d99b8e"/>
+  <path d="M628 360c38-92 94-138 168-138s130 46 168 138" fill="none" stroke="#2d7b72" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="796" cy="220" r="60" fill="#0f2d3a"/>
+  <path d="M772 226c24 24 48 24 72 0M772 204c24-22 48-22 72 0" fill="none" stroke="#f9fcfb" stroke-width="12" stroke-linecap="round"/>
+  <rect x="626" y="382" width="340" height="34" rx="17" fill="#cfded9"/>
+  <path d="M520 280h46" stroke="#f9fcfb" stroke-width="12" stroke-linecap="round"/>
+  <path d="M520 280l-22-22M520 280l-22 22" stroke="#f9fcfb" stroke-width="12" stroke-linecap="round"/>
+  <text x="116" y="524" fill="#f9fcfb" font-family="Arial, sans-serif" font-size="36" font-weight="700">ChatGPT personal finance</text>
+  <text x="1084" y="524" fill="#f9fcfb" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">Global / AI</text>
+  <text x="1084" y="562" fill="#b8d3d4" font-family="Arial, sans-serif" font-size="24" text-anchor="end">May 16, 2026</text>
+</svg>

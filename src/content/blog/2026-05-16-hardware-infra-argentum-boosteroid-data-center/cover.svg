@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Argentum AI data center cover</title>
+  <desc id="desc">AI data center campus with power grid, GPU racks, and 300 megawatt marker</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f5f7"/>
+      <stop offset="1" stop-color="#e5efe9"/>
+    </linearGradient>
+    <linearGradient id="campus" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172533"/>
+      <stop offset="1" stop-color="#204b4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="72" y="58" width="1056" height="514" rx="34" fill="url(#campus)"/>
+  <rect x="130" y="150" width="240" height="260" rx="18" fill="#dbe7e2"/>
+  <rect x="408" y="150" width="240" height="260" rx="18" fill="#dbe7e2"/>
+  <rect x="686" y="150" width="240" height="260" rx="18" fill="#dbe7e2"/>
+  <rect x="956" y="184" width="64" height="226" rx="12" fill="#f0bf5c"/>
+  <g fill="#204b4a">
+    <rect x="164" y="190" width="56" height="56" rx="8"/>
+    <rect x="244" y="190" width="56" height="56" rx="8"/>
+    <rect x="164" y="274" width="56" height="56" rx="8"/>
+    <rect x="244" y="274" width="56" height="56" rx="8"/>
+    <rect x="442" y="190" width="56" height="56" rx="8"/>
+    <rect x="522" y="190" width="56" height="56" rx="8"/>
+    <rect x="442" y="274" width="56" height="56" rx="8"/>
+    <rect x="522" y="274" width="56" height="56" rx="8"/>
+    <rect x="720" y="190" width="56" height="56" rx="8"/>
+    <rect x="800" y="190" width="56" height="56" rx="8"/>
+    <rect x="720" y="274" width="56" height="56" rx="8"/>
+    <rect x="800" y="274" width="56" height="56" rx="8"/>
+  </g>
+  <path d="M250 410v48M528 410v48M806 410v48" stroke="#9ebbb5" stroke-width="14" stroke-linecap="round"/>
+  <path d="M250 458h556M806 458h182" stroke="#9ebbb5" stroke-width="14" stroke-linecap="round"/>
+  <path d="M988 184l-20-50h40l-20 50z" fill="#f0bf5c"/>
+  <circle cx="988" cy="458" r="42" fill="#f0bf5c"/>
+  <text x="988" y="468" fill="#172533" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">300MW</text>
+  <text x="116" y="524" fill="#f8fbfa" font-family="Arial, sans-serif" font-size="36" font-weight="700">AI data center backbone</text>
+  <text x="1084" y="524" fill="#f8fbfa" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">Hardware / Infra</text>
+  <text x="1084" y="562" fill="#bfd0cb" font-family="Arial, sans-serif" font-size="24" text-anchor="end">$2.5B agreement</text>
+</svg>
