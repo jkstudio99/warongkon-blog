@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Meta AI Incognito Chat cover</title>
+  <desc id="desc">Abstract WhatsApp-style private AI chat interface with privacy lock and secure processing nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="0.52" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfeff" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#dbeafe" stop-opacity="0.88"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#020617" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.25" stroke="#a7f3d0" stroke-width="2">
+    <path d="M72 118 C224 52 322 173 484 102 S748 40 1134 136" fill="none"/>
+    <path d="M58 502 C210 426 350 560 514 470 S770 402 1130 520" fill="none"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="150" y="92" width="900" height="446" rx="36" fill="url(#panel)"/>
+    <rect x="190" y="138" width="820" height="354" rx="26" fill="#ffffff" opacity="0.72"/>
+  </g>
+  <g transform="translate(240 168)">
+    <rect x="0" y="0" width="264" height="64" rx="24" fill="#ccfbf1"/>
+    <text x="28" y="41" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#115e59">Meta AI</text>
+    <rect x="66" y="96" width="420" height="70" rx="28" fill="#e0f2fe"/>
+    <rect x="0" y="196" width="330" height="70" rx="28" fill="#dcfce7"/>
+    <circle cx="568" cy="154" r="82" fill="#111827"/>
+    <path d="M528 146 v-30 c0-25 18-43 40-43s40 18 40 43v30" fill="none" stroke="#a7f3d0" stroke-width="16" stroke-linecap="round"/>
+    <rect x="510" y="136" width="116" height="96" rx="20" fill="#2dd4bf"/>
+    <circle cx="568" cy="178" r="11" fill="#0f172a"/>
+    <path d="M568 190 v21" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="150" y="586" font-size="34" font-weight="700" fill="#f8fafc">GLOBAL / AI</text>
+    <text x="390" y="586" font-size="34" font-weight="700" fill="#99f6e4">Incognito Chat</text>
+    <text x="760" y="586" font-size="24" fill="#cbd5e1">Private AI conversations</text>
+  </g>
+</svg>

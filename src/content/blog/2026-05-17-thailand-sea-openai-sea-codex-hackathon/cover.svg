@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sea and OpenAI Codex Hackathon cover</title>
+  <desc id="desc">Southeast Asia developer hackathon cover with code windows, map pins, and AI agent nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c4a6e"/>
+      <stop offset="0.55" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#be123c"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="17" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.22" stroke="#bae6fd" stroke-width="2" fill="none">
+    <path d="M168 420 C278 246 438 238 558 348 S786 520 1040 232"/>
+    <path d="M204 170 C340 274 450 142 602 222 S840 282 1018 144"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="130" y="126" width="430" height="300" rx="24" fill="url(#card)"/>
+    <rect x="640" y="96" width="430" height="360" rx="24" fill="#f8fafc" opacity="0.94"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="166" y="172" width="358" height="42" rx="10" fill="#0f172a"/>
+    <circle cx="194" cy="193" r="7" fill="#fb7185"/>
+    <circle cx="218" cy="193" r="7" fill="#facc15"/>
+    <circle cx="242" cy="193" r="7" fill="#34d399"/>
+    <text x="182" y="262" font-size="28" font-weight="700" fill="#0f172a">&lt;Codex /&gt;</text>
+    <rect x="182" y="294" width="290" height="16" rx="6" fill="#38bdf8"/>
+    <rect x="182" y="330" width="232" height="16" rx="6" fill="#fb7185"/>
+    <rect x="182" y="366" width="318" height="16" rx="6" fill="#34d399"/>
+    <circle cx="758" cy="224" r="58" fill="#0284c7"/>
+    <circle cx="910" cy="286" r="58" fill="#e11d48"/>
+    <circle cx="818" cy="368" r="58" fill="#059669"/>
+    <path d="M804 244 L864 266 M882 322 L846 344 M790 324 L782 280" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+    <text x="704" y="514" font-size="38" font-weight="800" fill="#ffffff">SEA x OpenAI</text>
+    <text x="704" y="558" font-size="28" font-weight="700" fill="#bae6fd">Regional Codex Hackathon</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="124" y="78" font-size="32" font-weight="700" fill="#f8fafc">THAILAND / SEA ECOSYSTEM</text>
+  </g>
+</svg>
