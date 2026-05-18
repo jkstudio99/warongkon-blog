@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Shikhondo Blue Pieta launch cover</title>
+  <desc id="desc">Stylized side-scrolling bullet hell pattern with blue and magenta projectiles.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101828"/>
+      <stop offset="0.45" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#be185d"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.22">
+    <path d="M0 126h1200M0 252h1200M0 378h1200M0 504h1200" stroke="#ffffff" stroke-width="2"/>
+    <path d="M120 0v630M300 0v630M480 0v630M660 0v630M840 0v630M1020 0v630" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  <g fill="url(#orb)">
+    <circle cx="242" cy="132" r="13"/>
+    <circle cx="332" cy="226" r="10"/>
+    <circle cx="404" cy="112" r="16"/>
+    <circle cx="510" cy="190" r="11"/>
+    <circle cx="620" cy="104" r="14"/>
+    <circle cx="728" cy="220" r="10"/>
+    <circle cx="842" cy="126" r="15"/>
+    <circle cx="946" cy="196" r="12"/>
+    <circle cx="1028" cy="108" r="16"/>
+    <circle cx="238" cy="470" r="12"/>
+    <circle cx="360" cy="544" r="15"/>
+    <circle cx="460" cy="430" r="10"/>
+    <circle cx="592" cy="520" r="14"/>
+    <circle cx="702" cy="440" r="11"/>
+    <circle cx="832" cy="538" r="15"/>
+    <circle cx="962" cy="456" r="12"/>
+    <circle cx="1050" cy="542" r="16"/>
+  </g>
+  <g transform="translate(152 290)">
+    <path d="M0 38L150 0L126 38L150 76Z" fill="#f8fafc"/>
+    <path d="M0 38L76 20L62 38L76 56Z" fill="#38bdf8"/>
+    <path d="M156 38h148" stroke="#f8fafc" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(802 278)" stroke="#fdf2f8" stroke-width="7" fill="none">
+    <circle cx="62" cy="62" r="58"/>
+    <path d="M62 4v116M4 62h116M22 22l80 80M102 22l-80 80"/>
+  </g>
+  <text x="110" y="86" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">PC LAUNCH / MAY 18</text>
+  <text x="110" y="560" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">SHIKHONDO</text>
+  <text x="110" y="606" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">BLUE PIETA</text>
+</svg>
