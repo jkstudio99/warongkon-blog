@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Riven console launch cover</title>
+  <desc id="desc">A surreal island, golden dome, and console markers inspired by puzzle adventure worlds.</desc>
+  <rect width="1200" height="630" fill="#10252f"/>
+  <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#3b6c7f"/>
+    <stop offset="1" stop-color="#10252f"/>
+  </linearGradient>
+  <rect width="1200" height="430" fill="url(#sky)"/>
+  <circle cx="942" cy="118" r="70" fill="#f0b85b"/>
+  <path d="M0 432c140-44 238-38 360 0 132 42 248 34 374-4 154-46 290-34 466 14v188H0z" fill="#0c5662"/>
+  <path d="M144 432c78-92 172-136 280-132 92 4 158 54 212 132z" fill="#314a43"/>
+  <path d="M242 432c48-50 106-72 174-70 56 2 100 30 134 70z" fill="#547466"/>
+  <ellipse cx="394" cy="362" rx="86" ry="30" fill="#d4a44f"/>
+  <path d="M308 362c8-88 164-88 172 0z" fill="#c0833d"/>
+  <path d="M340 362c8-52 100-52 108 0z" fill="#f2d7a0"/>
+  <rect x="728" y="220" width="148" height="90" rx="12" fill="#101820" stroke="#f2d7a0" stroke-width="5"/>
+  <circle cx="760" cy="265" r="14" fill="#78c6a3"/>
+  <circle cx="844" cy="265" r="14" fill="#e16f54"/>
+  <rect x="792" y="250" width="38" height="8" rx="4" fill="#f2d7a0"/>
+  <rect x="807" y="235" width="8" height="38" rx="4" fill="#f2d7a0"/>
+  <rect x="910" y="214" width="86" height="112" rx="20" fill="#1d2e3f" stroke="#7db7d8" stroke-width="5"/>
+  <circle cx="953" cy="258" r="22" fill="none" stroke="#7db7d8" stroke-width="6"/>
+  <path d="M954 236v44M932 258h44" stroke="#7db7d8" stroke-width="5"/>
+  <path d="M592 248c46-58 106-58 152 0 46-58 106-58 152 0" fill="none" stroke="#f0b85b" stroke-width="8" opacity="0.7"/>
+  <text x="84" y="548" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="700">Riven Returns</text>
+  <text x="86" y="586" fill="#f0b85b" font-family="Arial, sans-serif" font-size="26">PS5 • PS VR2 • Xbox Series X|S • May 19, 2026</text>
+</svg>

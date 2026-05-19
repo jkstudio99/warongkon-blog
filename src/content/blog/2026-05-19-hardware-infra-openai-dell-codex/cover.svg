@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">OpenAI Dell hybrid infrastructure cover</title>
+  <desc id="desc">Enterprise server racks, data pipelines, and agent nodes for a hybrid AI infrastructure article.</desc>
+  <rect width="1200" height="630" fill="#101820"/>
+  <rect x="0" y="0" width="1200" height="630" fill="#101820"/>
+  <g opacity="0.18" stroke="#8ed6d1" stroke-width="2">
+    <path d="M0 104h1200M0 208h1200M0 312h1200M0 416h1200M0 520h1200"/>
+    <path d="M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630"/>
+  </g>
+  <rect x="96" y="120" width="236" height="390" rx="8" fill="#1d2e3f" stroke="#80cbc4" stroke-width="4"/>
+  <rect x="380" y="120" width="236" height="390" rx="8" fill="#233647" stroke="#a7c957" stroke-width="4"/>
+  <g fill="#e7f6f2">
+    <rect x="126" y="158" width="176" height="42" rx="4"/>
+    <rect x="126" y="230" width="176" height="42" rx="4"/>
+    <rect x="126" y="302" width="176" height="42" rx="4"/>
+    <rect x="126" y="374" width="176" height="42" rx="4"/>
+    <rect x="410" y="158" width="176" height="42" rx="4"/>
+    <rect x="410" y="230" width="176" height="42" rx="4"/>
+    <rect x="410" y="302" width="176" height="42" rx="4"/>
+    <rect x="410" y="374" width="176" height="42" rx="4"/>
+  </g>
+  <g fill="#80cbc4">
+    <circle cx="150" cy="179" r="7"/>
+    <circle cx="150" cy="251" r="7"/>
+    <circle cx="150" cy="323" r="7"/>
+    <circle cx="150" cy="395" r="7"/>
+  </g>
+  <g fill="#a7c957">
+    <circle cx="434" cy="179" r="7"/>
+    <circle cx="434" cy="251" r="7"/>
+    <circle cx="434" cy="323" r="7"/>
+    <circle cx="434" cy="395" r="7"/>
+  </g>
+  <path d="M650 308c58-78 134-78 192 0 58-78 134-78 192 0-58 78-134 78-192 0-58 78-134 78-192 0z" fill="none" stroke="#f2c14e" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#8ed6d1" stroke-width="5" fill="none">
+    <path d="M616 232h98"/>
+    <path d="M616 384h98"/>
+    <path d="M1036 232h74"/>
+    <path d="M1036 384h74"/>
+  </g>
+  <g fill="#f2c14e">
+    <circle cx="714" cy="232" r="14"/>
+    <circle cx="714" cy="384" r="14"/>
+    <circle cx="1036" cy="232" r="14"/>
+    <circle cx="1036" cy="384" r="14"/>
+  </g>
+  <text x="92" y="570" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Hybrid Codex Infrastructure</text>
+  <text x="650" y="570" fill="#8ed6d1" font-family="Arial, sans-serif" font-size="27">OpenAI × Dell AI Data Platform</text>
+</svg>
