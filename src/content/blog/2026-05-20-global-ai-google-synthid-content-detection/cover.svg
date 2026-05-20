@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Google SynthID content detection cover</title>
+  <desc id="desc">Abstract content verification grid with watermark signals and AI media markers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7fbff"/>
+      <stop offset="0.42" stop-color="#eef6f0"/>
+      <stop offset="1" stop-color="#fff6dc"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#4285f4"/>
+      <stop offset="0.33" stop-color="#34a853"/>
+      <stop offset="0.66" stop-color="#fbbc05"/>
+      <stop offset="1" stop-color="#ea4335"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#1f2a44" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 512 C180 430 287 565 450 492 C660 398 774 250 1200 342 L1200 630 L0 630 Z" fill="#dff2e7" opacity="0.72"/>
+  <path d="M0 112 C196 42 333 74 487 142 C662 220 785 202 960 120 C1055 76 1132 64 1200 68 L1200 0 L0 0 Z" fill="#eaf1ff" opacity="0.95"/>
+  <g opacity="0.28">
+    <path d="M82 98 H1118" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M82 178 H1118" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M82 258 H1118" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M82 338 H1118" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M82 418 H1118" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M82 498 H1118" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M160 56 V568" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M320 56 V568" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M480 56 V568" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M640 56 V568" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M800 56 V568" stroke="#91a4bd" stroke-width="1"/>
+    <path d="M960 56 V568" stroke="#91a4bd" stroke-width="1"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="102" y="114" width="500" height="342" rx="28" fill="#ffffff"/>
+    <rect x="132" y="146" width="438" height="214" rx="18" fill="#f1f5f9"/>
+    <circle cx="180" cy="194" r="22" fill="#4285f4"/>
+    <rect x="218" y="178" width="250" height="16" rx="8" fill="#c7d2fe"/>
+    <rect x="218" y="207" width="190" height="12" rx="6" fill="#dbe4ef"/>
+    <path d="M158 324 C214 254 264 286 304 242 C344 198 408 214 464 282 C504 330 540 304 570 340 L570 360 L132 360 L132 344 C141 338 149 332 158 324 Z" fill="url(#signal)" opacity="0.86"/>
+    <rect x="132" y="388" width="140" height="16" rx="8" fill="#1f2937"/>
+    <rect x="132" y="418" width="296" height="12" rx="6" fill="#94a3b8"/>
+  </g>
+  <g transform="translate(690 126)" filter="url(#softShadow)">
+    <rect width="390" height="360" rx="32" fill="#111827"/>
+    <rect x="34" y="38" width="322" height="72" rx="20" fill="#1f2937"/>
+    <text x="58" y="84" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">SynthID</text>
+    <circle cx="308" cy="74" r="18" fill="#34a853"/>
+    <path d="M300 74 L306 82 L319 66" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="none" stroke="url(#signal)" stroke-width="8" stroke-linecap="round">
+      <path d="M74 166 C122 130 170 202 218 166 S310 130 338 172"/>
+      <path d="M74 220 C118 250 164 188 216 222 S296 260 338 218"/>
+      <path d="M74 278 C142 234 208 314 278 270"/>
+    </g>
+    <g fill="#e5e7eb" opacity="0.74">
+      <circle cx="74" cy="166" r="7"/>
+      <circle cx="218" cy="166" r="7"/>
+      <circle cx="338" cy="172" r="7"/>
+      <circle cx="216" cy="222" r="7"/>
+      <circle cx="278" cy="270" r="7"/>
+    </g>
+  </g>
+  <text x="102" y="526" font-family="Arial, sans-serif" font-size="46" font-weight="800" fill="#172033">AI Content Provenance</text>
+  <text x="104" y="570" font-family="Arial, sans-serif" font-size="24" fill="#475569">Search, Gemini, Chrome, Pixel and Cloud verification signals</text>
+</svg>

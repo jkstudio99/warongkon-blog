@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Deep Rock Galactic Rogue Core early access cover</title>
+  <desc id="desc">Stylized alien mine tunnel with five class markers and an early access launch beacon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#191b2a"/>
+      <stop offset="0.58" stop-color="#2e2633"/>
+      <stop offset="1" stop-color="#5b2b20"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="0.48" cy="0.46" r="0.55">
+      <stop offset="0" stop-color="#ffd166" stop-opacity="0.95"/>
+      <stop offset="0.35" stop-color="#f97316" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#111827" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#lamp)"/>
+  <path d="M0 130 L160 70 L350 116 L520 68 L730 126 L928 72 L1200 122 L1200 0 L0 0 Z" fill="#111827" opacity="0.78"/>
+  <path d="M0 510 L150 456 L300 498 L470 430 L640 506 L840 452 L1200 520 L1200 630 L0 630 Z" fill="#101422" opacity="0.95"/>
+  <g opacity="0.42" fill="#f59e0b">
+    <path d="M114 194 L136 238 L186 246 L150 280 L158 330 L114 306 L70 330 L78 280 L42 246 L92 238 Z"/>
+    <path d="M1010 172 L1024 204 L1058 208 L1034 232 L1040 266 L1010 250 L980 266 L986 232 L962 208 L996 204 Z"/>
+    <path d="M932 462 L946 494 L980 498 L956 522 L962 556 L932 540 L902 556 L908 522 L884 498 L918 494 Z"/>
+  </g>
+  <g transform="translate(192 112)" filter="url(#shadow)">
+    <path d="M74 314 C50 256 66 180 126 126 C210 50 356 38 476 98 C598 160 646 284 594 376 C526 496 300 502 160 410 C118 382 90 350 74 314 Z" fill="#2b2f3e" stroke="#6b7280" stroke-width="8"/>
+    <path d="M178 314 C196 226 276 174 374 190 C456 204 516 266 512 350 C508 432 430 470 336 460 C236 448 158 398 178 314 Z" fill="#0f172a"/>
+    <path d="M214 342 C252 288 338 264 414 308 C456 332 482 376 470 418 C388 438 290 424 214 342 Z" fill="#1f2937"/>
+  </g>
+  <g transform="translate(742 120)" filter="url(#shadow)">
+    <rect width="296" height="342" rx="28" fill="#0f172a"/>
+    <rect x="30" y="34" width="236" height="60" rx="18" fill="#f59e0b"/>
+    <text x="58" y="73" font-family="Arial, sans-serif" font-size="26" font-weight="900" fill="#111827">EARLY ACCESS</text>
+    <text x="38" y="136" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#ffffff">May 20, 2026</text>
+    <text x="38" y="174" font-family="Arial, sans-serif" font-size="19" fill="#cbd5e1">PC via Steam</text>
+    <g transform="translate(40 226)" fill="none" stroke="#fbbf24" stroke-width="5">
+      <circle cx="20" cy="20" r="18"/>
+      <circle cx="72" cy="20" r="18"/>
+      <circle cx="124" cy="20" r="18"/>
+      <circle cx="176" cy="20" r="18"/>
+      <circle cx="228" cy="20" r="18"/>
+    </g>
+    <g transform="translate(40 286)" fill="#38bdf8">
+      <rect width="228" height="14" rx="7"/>
+      <rect y="34" width="156" height="14" rx="7"/>
+    </g>
+  </g>
+  <text x="92" y="540" font-family="Arial, sans-serif" font-size="48" font-weight="900" fill="#fff7ed">Rogue Core</text>
+  <text x="94" y="586" font-family="Arial, sans-serif" font-size="25" fill="#fed7aa">co-op roguelite shooter enters Steam Early Access</text>
+</svg>
