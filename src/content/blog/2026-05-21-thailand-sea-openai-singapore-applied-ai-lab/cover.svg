@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">OpenAI Singapore Applied AI Lab cover</title>
+  <desc id="desc">Singapore skyline with AI lab nodes, regional connections, and applied AI deployment panels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="48%" stop-color="#115e59"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.07"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 474 C190 430 328 492 520 448 C700 406 826 432 1200 382 L1200 630 L0 630 Z" fill="#020617" opacity="0.55"/>
+  <g fill="#e5e7eb" opacity="0.95">
+    <rect x="122" y="342" width="58" height="160"/>
+    <rect x="204" y="286" width="70" height="216"/>
+    <rect x="308" y="318" width="52" height="184"/>
+    <rect x="392" y="246" width="78" height="256"/>
+    <path d="M510 502 V318 L554 268 L598 318 V502 Z"/>
+    <rect x="644" y="306" width="68" height="196"/>
+    <rect x="744" y="262" width="62" height="240"/>
+    <rect x="840" y="338" width="86" height="164"/>
+    <rect x="964" y="292" width="62" height="210"/>
+  </g>
+  <g stroke="#5eead4" stroke-width="4" fill="none" opacity="0.75">
+    <path d="M214 216 C360 122 510 142 620 222 C770 330 900 210 1040 146"/>
+    <path d="M230 248 C376 204 486 266 604 214 C742 154 872 260 1018 234"/>
+  </g>
+  <g fill="#f8fafc">
+    <circle cx="214" cy="216" r="13"/>
+    <circle cx="398" cy="152" r="13"/>
+    <circle cx="620" cy="222" r="13"/>
+    <circle cx="822" cy="252" r="13"/>
+    <circle cx="1040" cy="146" r="13"/>
+    <circle cx="230" cy="248" r="10"/>
+    <circle cx="486" cy="266" r="10"/>
+    <circle cx="744" cy="154" r="10"/>
+    <circle cx="1018" cy="234" r="10"/>
+  </g>
+  <rect x="92" y="82" width="452" height="150" rx="22" fill="url(#panel)" stroke="#99f6e4" stroke-opacity="0.55"/>
+  <text x="124" y="132" fill="#ccfbf1" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">OpenAI for Singapore</text>
+  <text x="124" y="184" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800">Applied AI Lab</text>
+  <rect x="680" y="84" width="340" height="132" rx="22" fill="url(#panel)" stroke="#fecaca" stroke-opacity="0.55"/>
+  <text x="716" y="136" fill="#fee2e2" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">S$300M+</text>
+  <text x="716" y="178" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">SEA AI ecosystem</text>
+  <text x="92" y="578" fill="#ccfbf1" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Thailand / SEA Ecosystem - May 21, 2026</text>
+</svg>

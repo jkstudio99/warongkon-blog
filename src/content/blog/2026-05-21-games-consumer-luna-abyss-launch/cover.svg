@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Luna Abyss launch cover</title>
+  <desc id="desc">Sci-fi moon abyss corridor with bullet hell projectile arcs and a lone explorer silhouette.</desc>
+  <defs>
+    <radialGradient id="moon" cx="50%" cy="42%" r="45%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="40%" stop-color="#c7d2fe"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="55%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="905" cy="158" r="120" fill="url(#moon)" opacity="0.9"/>
+  <path d="M140 560 L486 214 L714 214 L1060 560 Z" fill="#111827" stroke="#818cf8" stroke-width="4" opacity="0.96"/>
+  <path d="M488 214 L430 560" stroke="#6366f1" stroke-width="5" opacity="0.8"/>
+  <path d="M712 214 L770 560" stroke="#6366f1" stroke-width="5" opacity="0.8"/>
+  <path d="M288 458 H912" stroke="#4338ca" stroke-width="5" opacity="0.7"/>
+  <path d="M232 518 H968" stroke="#4338ca" stroke-width="5" opacity="0.7"/>
+  <g fill="none" stroke-linecap="round" stroke-width="8">
+    <path d="M210 175 C360 98 470 154 612 92" stroke="#f472b6"/>
+    <path d="M174 244 C360 188 492 266 652 182" stroke="#22d3ee"/>
+    <path d="M204 324 C370 284 518 352 704 276" stroke="#facc15"/>
+    <path d="M732 360 C842 312 966 340 1060 270" stroke="#fb7185"/>
+  </g>
+  <g fill="#f8fafc">
+    <circle cx="260" cy="168" r="11"/>
+    <circle cx="424" cy="132" r="11"/>
+    <circle cx="584" cy="102" r="11"/>
+    <circle cx="218" cy="238" r="10"/>
+    <circle cx="396" cy="220" r="10"/>
+    <circle cx="612" cy="188" r="10"/>
+    <circle cx="266" cy="316" r="10"/>
+    <circle cx="512" cy="334" r="10"/>
+    <circle cx="680" cy="286" r="10"/>
+    <circle cx="790" cy="344" r="10"/>
+    <circle cx="940" cy="326" r="10"/>
+    <circle cx="1040" cy="278" r="10"/>
+  </g>
+  <path d="M579 430 h42 l18 80 h-78 z" fill="#0f172a" stroke="#e0e7ff" stroke-width="4"/>
+  <circle cx="600" cy="402" r="26" fill="#0f172a" stroke="#e0e7ff" stroke-width="4"/>
+  <text x="96" y="98" fill="#e0e7ff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Luna Abyss</text>
+  <text x="96" y="150" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">Bullet hell FPS launch</text>
+  <text x="96" y="196" fill="#c4b5fd" font-family="Arial, Helvetica, sans-serif" font-size="26">Steam, PlayStation, Xbox - May 21, 2026</text>
+  <text x="96" y="594" fill="#c4b5fd" font-family="Arial, Helvetica, sans-serif" font-size="22">Games / Consumer</text>
+</svg>

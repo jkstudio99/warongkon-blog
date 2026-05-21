@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Google Gemini agent platform cover</title>
+  <desc id="desc">Abstract AI agent workspace with connected windows, terminal panels, Gemini star, and automation nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="48%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="76" y="82" width="1048" height="466" rx="28" fill="#020617" opacity="0.44"/>
+  <rect x="116" y="128" width="386" height="168" rx="18" fill="url(#card)" stroke="#93c5fd" stroke-opacity="0.55"/>
+  <rect x="545" y="128" width="270" height="168" rx="18" fill="url(#card)" stroke="#6ee7b7" stroke-opacity="0.55"/>
+  <rect x="858" y="128" width="226" height="168" rx="18" fill="url(#card)" stroke="#fde68a" stroke-opacity="0.5"/>
+  <rect x="116" y="337" width="314" height="122" rx="18" fill="url(#card)" stroke="#c4b5fd" stroke-opacity="0.55"/>
+  <rect x="474" y="337" width="610" height="122" rx="18" fill="url(#card)" stroke="#f9a8d4" stroke-opacity="0.45"/>
+  <path d="M500 212 C530 212 520 212 545 212" stroke="#dbeafe" stroke-width="5" stroke-linecap="round"/>
+  <path d="M815 212 C838 212 835 212 858 212" stroke="#d1fae5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M430 398 C450 398 452 398 474 398" stroke="#ede9fe" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="601" cy="315" r="72" fill="#ffffff" opacity="0.12"/>
+  <path d="M601 226 L619 296 L690 315 L619 334 L601 404 L583 334 L512 315 L583 296 Z" fill="#f8fafc"/>
+  <text x="144" y="182" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">ANTIGRAVITY 2.0</text>
+  <text x="144" y="230" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800">Agent Stack</text>
+  <text x="572" y="198" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Gemini API</text>
+  <text x="572" y="248" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800">Managed</text>
+  <text x="572" y="290" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800">Agents</text>
+  <text x="890" y="198" fill="#fef3c7" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Gemini 3.5</text>
+  <text x="890" y="250" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800">Flash</text>
+  <text x="144" y="389" fill="#ede9fe" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Spark</text>
+  <text x="144" y="432" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800">24/7 AI Agent</text>
+  <text x="506" y="389" fill="#fce7f3" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Google I/O 2026</text>
+  <text x="506" y="432" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800">From prompts to action</text>
+  <text x="86" y="590" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="22">Global / AI - May 21, 2026</text>
+</svg>
