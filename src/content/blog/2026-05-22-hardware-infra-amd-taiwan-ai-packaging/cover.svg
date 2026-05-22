@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">AMD Taiwan AI infrastructure packaging cover</title>
+  <desc id="desc">Abstract chip packaging and rack scale AI infrastructure showing 2nm Venice, EFB bridges, Taiwan ecosystem, and Helios racks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f0f0f"/>
+      <stop offset="52%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="82" y="78" width="1036" height="474" rx="30" fill="#030712" opacity="0.46"/>
+  <rect x="140" y="130" width="430" height="300" rx="28" fill="#111827" stroke="#fca5a5" stroke-width="3"/>
+  <rect x="220" y="190" width="270" height="180" rx="18" fill="url(#chip)"/>
+  <rect x="250" y="220" width="78" height="120" rx="10" fill="#7f1d1d" opacity="0.78"/>
+  <rect x="348" y="220" width="112" height="120" rx="10" fill="#450a0a" opacity="0.72"/>
+  <path d="M328 280 H348" stroke="#fef2f2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M206 180 H154 M206 220 H154 M206 260 H154 M206 300 H154 M206 340 H154" stroke="#fecaca" stroke-width="5" stroke-linecap="round"/>
+  <path d="M506 180 H558 M506 220 H558 M506 260 H558 M506 300 H558 M506 340 H558" stroke="#fecaca" stroke-width="5" stroke-linecap="round"/>
+  <rect x="650" y="132" width="382" height="58" rx="14" fill="#f97316"/>
+  <rect x="650" y="218" width="382" height="58" rx="14" fill="#ef4444"/>
+  <rect x="650" y="304" width="382" height="58" rx="14" fill="#fb923c"/>
+  <rect x="650" y="390" width="382" height="58" rx="14" fill="#dc2626"/>
+  <circle cx="1030" cy="161" r="10" fill="#fff7ed"/>
+  <circle cx="1030" cy="247" r="10" fill="#fff7ed"/>
+  <circle cx="1030" cy="333" r="10" fill="#fff7ed"/>
+  <circle cx="1030" cy="419" r="10" fill="#fff7ed"/>
+  <text x="166" y="116" fill="#fee2e2" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">TAIWAN ECOSYSTEM</text>
+  <text x="236" y="292" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800">2nm</text>
+  <text x="360" y="292" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">EFB</text>
+  <text x="160" y="485" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">AMD Helios</text>
+  <text x="160" y="526" fill="#fecaca" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">$10B advanced packaging push</text>
+  <text x="684" y="169" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">MI450X GPUs</text>
+  <text x="684" y="255" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">EPYC Venice</text>
+  <text x="684" y="341" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">ROCm stack</text>
+  <text x="684" y="427" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Rack scale AI</text>
+  <text x="86" y="590" fill="#fecaca" font-family="Arial, Helvetica, sans-serif" font-size="22">Hardware / Infrastructure - May 22, 2026</text>
+</svg>
