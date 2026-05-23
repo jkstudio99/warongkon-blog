@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Singapore Geneo Science Park ecosystem cover</title>
+  <desc id="desc">Abstract life sciences and innovation hub with lab towers, genomic garden, and collaboration nodes for Singapore Science Park.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="48%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="76" y="72" width="1048" height="484" rx="30" fill="#022c22" opacity="0.46"/>
+  <rect x="160" y="182" width="180" height="284" rx="18" fill="url(#tower)"/>
+  <rect x="382" y="128" width="198" height="338" rx="18" fill="#a7f3d0"/>
+  <rect x="622" y="210" width="172" height="256" rx="18" fill="#99f6e4"/>
+  <rect x="836" y="160" width="204" height="306" rx="18" fill="#ccfbf1"/>
+  <path d="M220 240 H280 M220 296 H280 M220 352 H280 M220 408 H280 M448 190 H514 M448 250 H514 M448 310 H514 M448 370 H514 M670 270 H746 M670 330 H746 M670 390 H746 M898 222 H980 M898 282 H980 M898 342 H980 M898 402 H980" stroke="#065f46" stroke-width="9" stroke-linecap="round"/>
+  <path d="M244 510 C320 454, 420 544, 520 494 S724 440, 826 502 S982 548, 1050 488" fill="none" stroke="#fef9c3" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="330" cy="506" r="20" fill="#facc15"/>
+  <circle cx="602" cy="478" r="20" fill="#facc15"/>
+  <circle cx="876" cy="510" r="20" fill="#facc15"/>
+  <text x="130" y="115" fill="#d1fae5" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">SINGAPORE SCIENCE PARK</text>
+  <text x="130" y="552" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">Geneo opens</text>
+  <text x="610" y="552" fill="#d1fae5" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">S$1.4B life sciences hub</text>
+  <text x="86" y="590" fill="#d1fae5" font-family="Arial, Helvetica, sans-serif" font-size="22">Thailand / SEA Ecosystem - May 23, 2026</text>
+</svg>

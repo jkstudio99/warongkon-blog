@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Bubsy 4D Xbox launch cover</title>
+  <desc id="desc">Colorful platform game scene with yarn, planets, movement arcs, and Xbox Play Anywhere launch labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="46%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="planet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="76" y="74" width="1048" height="482" rx="28" fill="#020617" opacity="0.38"/>
+  <circle cx="214" cy="172" r="48" fill="#38bdf8" opacity="0.9"/>
+  <circle cx="970" cy="166" r="68" fill="url(#planet)" opacity="0.94"/>
+  <path d="M134 390 C260 270, 360 472, 484 332 S730 242, 862 350 S1020 452, 1084 316" fill="none" stroke="#fef3c7" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 24"/>
+  <circle cx="392" cy="410" r="82" fill="#f97316"/>
+  <path d="M337 370 C382 348, 434 350, 459 392 M330 421 C375 450, 427 450, 464 420 M364 333 C390 392, 407 431, 456 470 M317 455 C375 404, 415 368, 462 326" fill="none" stroke="#fff7ed" stroke-width="11" stroke-linecap="round"/>
+  <rect x="560" y="138" width="420" height="76" rx="18" fill="#22c55e"/>
+  <rect x="560" y="246" width="420" height="76" rx="18" fill="#38bdf8"/>
+  <rect x="560" y="354" width="420" height="76" rx="18" fill="#f97316"/>
+  <text x="132" y="514" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="800">Bubsy 4D</text>
+  <text x="132" y="552" fill="#fef3c7" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Modern platforming launch on Xbox</text>
+  <text x="604" y="187" fill="#052e16" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Out May 22</text>
+  <text x="604" y="295" fill="#082f49" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Play Anywhere</text>
+  <text x="604" y="403" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Speedrun friendly</text>
+  <text x="86" y="590" fill="#fef3c7" font-family="Arial, Helvetica, sans-serif" font-size="22">Games / Consumer - May 23, 2026</text>
+</svg>

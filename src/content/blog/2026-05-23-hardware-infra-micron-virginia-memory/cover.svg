@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Micron Virginia memory manufacturing cover</title>
+  <desc id="desc">Abstract semiconductor fab and memory wafer design for Micron Manassas 1-alpha DRAM manufacturing expansion.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="52%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="wafer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="55%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="76" y="74" width="1048" height="482" rx="30" fill="#020617" opacity="0.43"/>
+  <circle cx="330" cy="250" r="142" fill="url(#wafer)" opacity="0.94"/>
+  <path d="M210 250 H450 M330 130 V370 M246 166 L414 334 M414 166 L246 334" stroke="#eff6ff" stroke-width="5" opacity="0.78"/>
+  <circle cx="330" cy="250" r="38" fill="#172554" opacity="0.75"/>
+  <rect x="574" y="138" width="420" height="72" rx="14" fill="#eff6ff" opacity="0.96"/>
+  <rect x="574" y="236" width="420" height="72" rx="14" fill="#93c5fd" opacity="0.94"/>
+  <rect x="574" y="334" width="420" height="72" rx="14" fill="#22d3ee" opacity="0.9"/>
+  <path d="M550 174 H498 M550 272 H498 M550 370 H498" stroke="#bfdbfe" stroke-width="8" stroke-linecap="round"/>
+  <text x="610" y="185" fill="#172554" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">1-alpha DRAM</text>
+  <text x="610" y="283" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">Virginia fab</text>
+  <text x="610" y="381" fill="#083344" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">US memory supply</text>
+  <text x="136" y="472" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">Micron Manassas</text>
+  <text x="136" y="516" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">$2B expansion inside a $200B US plan</text>
+  <text x="86" y="590" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="22">Hardware / Infrastructure - May 23, 2026</text>
+</svg>

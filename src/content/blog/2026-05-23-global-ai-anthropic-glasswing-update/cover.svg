@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Anthropic Project Glasswing cyber AI cover</title>
+  <desc id="desc">Abstract cybersecurity workflow showing AI vulnerability discovery, human triage, disclosure, and patch deployment.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101828"/>
+      <stop offset="48%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="78" y="74" width="1044" height="482" rx="28" fill="#020617" opacity="0.45"/>
+  <circle cx="240" cy="206" r="74" fill="#60a5fa" opacity="0.92"/>
+  <circle cx="600" cy="206" r="74" fill="#34d399" opacity="0.92"/>
+  <circle cx="960" cy="206" r="74" fill="#facc15" opacity="0.92"/>
+  <path d="M314 206 H526" stroke="#bfdbfe" stroke-width="8" stroke-linecap="round"/>
+  <path d="M674 206 H886" stroke="#bbf7d0" stroke-width="8" stroke-linecap="round"/>
+  <rect x="150" y="330" width="900" height="104" rx="18" fill="url(#panel)" stroke="#a7f3d0" stroke-opacity="0.56"/>
+  <rect x="190" y="468" width="230" height="42" rx="21" fill="#60a5fa"/>
+  <rect x="485" y="468" width="230" height="42" rx="21" fill="#34d399"/>
+  <rect x="780" y="468" width="230" height="42" rx="21" fill="#facc15"/>
+  <path d="M240 168 l16 30 32 5 -23 23 5 33 -30 -15 -30 15 5 -33 -23 -23 32 -5z" fill="#eff6ff"/>
+  <path d="M562 202 h76 M600 164 v76" stroke="#052e16" stroke-width="13" stroke-linecap="round"/>
+  <path d="M924 206 l25 25 48 -58" fill="none" stroke="#422006" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="164" y="384" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800">Project Glasswing update</text>
+  <text x="164" y="426" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">AI finds bugs faster than humans can patch</text>
+  <text x="222" y="217" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Find</text>
+  <text x="568" y="217" fill="#052e16" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Triage</text>
+  <text x="922" y="217" fill="#422006" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Patch</text>
+  <text x="219" y="497" fill="#082f49" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">10K+ severe findings</text>
+  <text x="525" y="497" fill="#052e16" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">90.6% true positives</text>
+  <text x="813" y="497" fill="#422006" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">Disclosure bottleneck</text>
+  <text x="86" y="590" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="22">Global / AI - May 23, 2026</text>
+</svg>
