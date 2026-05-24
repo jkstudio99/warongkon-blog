@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">MIDA Daikin supplier ecosystem cover</title>
+  <desc id="desc">Stylized Southeast Asian manufacturing supplier ecosystem with SMEs, smart manufacturing, training, and multinational supply chain connections.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="48%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="74" y="70" width="1052" height="488" rx="30" fill="#020617" opacity="0.46"/>
+  <rect x="132" y="338" width="320" height="142" rx="20" fill="#d1fae5"/>
+  <rect x="188" y="276" width="64" height="62" fill="#d1fae5"/>
+  <rect x="300" y="300" width="64" height="38" fill="#d1fae5"/>
+  <path d="M132 338 L196 282 L260 338 L324 300 L452 338" fill="#bbf7d0"/>
+  <g fill="#064e3b">
+    <rect x="174" y="378" width="48" height="34" rx="5"/>
+    <rect x="252" y="378" width="48" height="34" rx="5"/>
+    <rect x="330" y="378" width="48" height="34" rx="5"/>
+    <rect x="174" y="426" width="204" height="18" rx="5"/>
+  </g>
+  <rect x="740" y="156" width="280" height="118" rx="18" fill="#fef3c7"/>
+  <rect x="740" y="324" width="280" height="118" rx="18" fill="#dbeafe"/>
+  <rect x="508" y="238" width="160" height="124" rx="18" fill="url(#card)" stroke="#f8fafc" stroke-opacity="0.7"/>
+  <path d="M452 408 C528 410 544 362 588 362 C646 362 684 214 740 214" fill="none" stroke="#f8fafc" stroke-width="7" stroke-linecap="round"/>
+  <path d="M452 408 C538 432 610 430 740 384" fill="none" stroke="#fed7aa" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="588" cy="362" r="20" fill="#38bdf8"/>
+  <circle cx="740" cy="214" r="16" fill="#facc15"/>
+  <circle cx="740" cy="384" r="16" fill="#bfdbfe"/>
+  <text x="542" y="310" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="900">SME</text>
+  <text x="770" y="204" fill="#422006" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="900">Daikin</text>
+  <text x="770" y="242" fill="#422006" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">supplier requirements</text>
+  <text x="770" y="374" fill="#172554" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="900">SHRDC</text>
+  <text x="770" y="412" fill="#172554" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">skills + Industry 4.0</text>
+  <text x="132" y="126" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900">Malaysia Supplier Ecosystem</text>
+  <text x="132" y="560" fill="#dcfce7" font-family="Arial, Helvetica, sans-serif" font-size="22">Thailand / SEA Ecosystem - May 24, 2026</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Huawei HiFS 2026 agentic banking cover</title>
+  <desc id="desc">Stylized financial AI operating layer with bank columns, agent nodes, risk controls, and hybrid architecture rails.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#082f49"/>
+      <stop offset="48%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.07"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="78" y="72" width="1044" height="480" rx="30" fill="#020617" opacity="0.48"/>
+  <path d="M204 226 L600 106 L996 226 Z" fill="#d1fae5" opacity="0.95"/>
+  <rect x="188" y="226" width="824" height="44" fill="#064e3b"/>
+  <g fill="#bbf7d0">
+    <rect x="246" y="296" width="74" height="176" rx="8"/>
+    <rect x="390" y="296" width="74" height="176" rx="8"/>
+    <rect x="534" y="296" width="74" height="176" rx="8"/>
+    <rect x="678" y="296" width="74" height="176" rx="8"/>
+    <rect x="822" y="296" width="74" height="176" rx="8"/>
+  </g>
+  <rect x="206" y="472" width="788" height="40" fill="#064e3b"/>
+  <circle cx="600" cy="286" r="58" fill="#facc15"/>
+  <path d="M578 286 H622 M600 264 V308" stroke="#422006" stroke-width="12" stroke-linecap="round"/>
+  <g stroke="#93c5fd" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M600 344 C514 382 452 401 368 398"/>
+    <path d="M600 344 C688 382 756 403 842 398"/>
+    <path d="M600 344 V426"/>
+  </g>
+  <g fill="#38bdf8">
+    <circle cx="368" cy="398" r="18"/>
+    <circle cx="842" cy="398" r="18"/>
+    <circle cx="600" cy="426" r="18"/>
+  </g>
+  <rect x="122" y="112" width="274" height="76" rx="18" fill="url(#panel)" stroke="#86efac" stroke-opacity="0.7"/>
+  <text x="148" y="160" fill="#dcfce7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800">HiFS 2026</text>
+  <text x="448" y="174" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900">Agentic Banking</text>
+  <text x="126" y="560" fill="#d1fae5" font-family="Arial, Helvetica, sans-serif" font-size="22">Global / AI - May 24, 2026</text>
+  <text x="784" y="560" fill="#fef3c7" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Hybrid AI + compliance + risk</text>
+</svg>

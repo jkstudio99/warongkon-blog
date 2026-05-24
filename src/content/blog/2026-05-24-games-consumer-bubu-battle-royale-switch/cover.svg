@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Bubu Battle Royale Nintendo Switch cover</title>
+  <desc id="desc">Stylized forest battle royale map with shrinking zone, supply crate, weapons, and Nintendo Switch release marker.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#052e16"/>
+      <stop offset="52%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="zone" cx="50%" cy="45%" r="46%">
+      <stop offset="0%" stop-color="#bbf7d0" stop-opacity="0.2"/>
+      <stop offset="72%" stop-color="#22c55e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="315" r="246" fill="url(#zone)" stroke="#fdba74" stroke-width="10" stroke-dasharray="20 18"/>
+  <g fill="#064e3b">
+    <path d="M160 460 l44 -104 l44 104 Z"/>
+    <path d="M246 430 l36 -84 l36 84 Z"/>
+    <path d="M904 470 l48 -118 l48 118 Z"/>
+    <path d="M1004 426 l36 -80 l36 80 Z"/>
+    <path d="M698 502 l42 -94 l42 94 Z"/>
+  </g>
+  <rect x="490" y="252" width="220" height="142" rx="18" fill="#facc15" stroke="#78350f" stroke-width="8"/>
+  <path d="M490 304 H710 M600 252 V394" stroke="#78350f" stroke-width="8"/>
+  <path d="M352 182 l-92 46 l92 46 l92 -46 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="6"/>
+  <path d="M352 274 V342" stroke="#e0f2fe" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="352" cy="360" r="20" fill="#f8fafc"/>
+  <g fill="#f8fafc">
+    <circle cx="306" cy="454" r="14"/>
+    <circle cx="418" cy="422" r="14"/>
+    <circle cx="804" cy="424" r="14"/>
+    <circle cx="878" cy="344" r="14"/>
+    <circle cx="646" cy="168" r="14"/>
+  </g>
+  <g stroke="#f8fafc" stroke-width="8" stroke-linecap="round">
+    <path d="M812 196 l82 30"/>
+    <path d="M856 184 l-6 54"/>
+  </g>
+  <rect x="122" y="94" width="428" height="94" rx="18" fill="#f8fafc"/>
+  <text x="150" y="151" fill="#052e16" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="900">Bubu Battle Royale</text>
+  <text x="150" y="184" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">Nintendo Switch - May 23</text>
+  <text x="122" y="560" fill="#dcfce7" font-family="Arial, Helvetica, sans-serif" font-size="22">Games / Consumer - May 24, 2026</text>
+  <text x="760" y="560" fill="#fed7aa" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">25 opponents / shrinking zone</text>
+</svg>
