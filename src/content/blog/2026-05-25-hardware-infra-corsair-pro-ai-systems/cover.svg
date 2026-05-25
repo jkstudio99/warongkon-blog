@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">CORSAIR PRO AI infrastructure cover</title>
+  <desc id="desc">A deskside workstation connected to a row of GPU server racks.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#071525"/>
+      <stop offset="0.56" stop-color="#0f2c46"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="signal" x2="1">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a3e635"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 470 H1200" stroke="#164e63" stroke-width="3"/>
+  <path d="M458 384 H729" stroke="url(#signal)" stroke-width="8" stroke-dasharray="18 12"/>
+  <rect x="82" y="96" width="570" height="198" rx="24" fill="#06101d" stroke="#22d3ee" stroke-opacity="0.4"/>
+  <text x="120" y="146" fill="#67e8f9" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">HARDWARE / INFRASTRUCTURE</text>
+  <text x="120" y="207" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="55" font-weight="800">DESK TO RACK</text>
+  <text x="120" y="251" fill="#d9f99d" font-family="Arial, Helvetica, sans-serif" font-size="23">AI workstation + GPU server portfolio</text>
+  <g transform="translate(146 348)">
+    <rect width="176" height="187" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="3"/>
+    <circle cx="88" cy="96" r="54" fill="none" stroke="#22d3ee" stroke-width="7"/>
+    <circle cx="88" cy="96" r="30" fill="#083344"/>
+    <circle cx="88" cy="96" r="9" fill="#a3e635"/>
+    <rect x="32" y="156" width="112" height="10" rx="5" fill="#334155"/>
+  </g>
+  <text x="150" y="569" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="18">WORKSTATION</text>
+  <g transform="translate(735 325)">
+    <rect width="125" height="226" rx="10" fill="#0b1220" stroke="#475569" stroke-width="3"/>
+    <rect x="142" width="125" height="226" rx="10" fill="#0b1220" stroke="#475569" stroke-width="3"/>
+    <rect x="284" width="125" height="226" rx="10" fill="#0b1220" stroke="#475569" stroke-width="3"/>
+    <g fill="#22d3ee">
+      <rect x="18" y="28" width="88" height="10" rx="4"/><rect x="18" y="58" width="88" height="10" rx="4"/><rect x="18" y="88" width="88" height="10" rx="4"/>
+      <rect x="160" y="28" width="88" height="10" rx="4"/><rect x="160" y="58" width="88" height="10" rx="4"/><rect x="160" y="88" width="88" height="10" rx="4"/>
+      <rect x="302" y="28" width="88" height="10" rx="4"/><rect x="302" y="58" width="88" height="10" rx="4"/><rect x="302" y="88" width="88" height="10" rx="4"/>
+    </g>
+    <g fill="#a3e635"><circle cx="30" cy="190" r="6"/><circle cx="172" cy="190" r="6"/><circle cx="314" cy="190" r="6"/></g>
+  </g>
+  <text x="842" y="583" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="18">AI SERVERS</text>
+  <text x="84" y="610" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="20">May 25, 2026 - CORSAIR PRO</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Life simulation early access cover</title>
+  <desc id="desc">A colorful home, neighborhood path, and character customization cards for a life simulation game.</desc>
+  <defs>
+    <linearGradient id="sky" y2="1">
+      <stop stop-color="#a5f3fc"/>
+      <stop offset="1" stop-color="#fdf2f8"/>
+    </linearGradient>
+    <linearGradient id="hill" x2="1">
+      <stop stop-color="#86efac"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <circle cx="1026" cy="110" r="62" fill="#fbbf24"/>
+  <path d="M0 410 Q210 310 425 418 T830 408 T1200 388 V630 H0 Z" fill="url(#hill)"/>
+  <rect x="70" y="64" width="550" height="202" rx="26" fill="#ffffff" opacity="0.78"/>
+  <text x="106" y="113" fill="#be185d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">GAMES / CONSUMER</text>
+  <text x="106" y="176" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800">PARALIVES</text>
+  <text x="106" y="220" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="23">EARLY ACCESS - MAY 25, 2026</text>
+  <g transform="translate(664 174)">
+    <path d="M55 135 L235 20 L416 135 V342 H55 Z" fill="#fff7ed" stroke="#fb7185" stroke-width="5"/>
+    <path d="M30 144 L235 12 L443 144" fill="none" stroke="#e11d48" stroke-width="18" stroke-linejoin="round"/>
+    <rect x="124" y="192" width="78" height="72" fill="#bae6fd"/>
+    <path d="M163 192 V264 M124 228 H202" stroke="#f8fafc" stroke-width="5"/>
+    <rect x="280" y="206" width="69" height="136" rx="4" fill="#fdba74"/>
+    <circle cx="314" cy="274" r="5" fill="#9a3412"/>
+  </g>
+  <path d="M480 630 C540 510 655 471 804 458 C863 452 902 459 934 479 C811 495 730 543 700 630 Z" fill="#fef3c7"/>
+  <g transform="translate(266 348)">
+    <circle cx="60" cy="38" r="35" fill="#fb7185"/>
+    <path d="M25 112 C28 77 93 77 96 112 V181 H25 Z" fill="#f43f5e"/>
+    <rect x="2" y="112" width="28" height="66" rx="14" fill="#fb7185"/>
+    <rect x="92" y="112" width="28" height="66" rx="14" fill="#fb7185"/>
+    <path d="M38 180 L30 232 M84 180 L92 232" stroke="#0f172a" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <rect x="80" y="548" width="374" height="52" rx="26" fill="#ffffff" opacity="0.84"/>
+  <text x="110" y="582" fill="#be185d" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">BUILD  CREATE  LIVE  MOD</text>
+</svg>

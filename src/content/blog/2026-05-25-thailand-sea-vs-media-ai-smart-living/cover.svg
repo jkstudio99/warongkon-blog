@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Southeast Asia AI smart living cover</title>
+  <desc id="desc">A connected smart apartment and regional node network centered on Singapore.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#180f32"/>
+      <stop offset="0.5" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="window" y2="1">
+      <stop stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 514 H1200 V630 H0 Z" fill="#08111f"/>
+  <rect x="70" y="73" width="590" height="229" rx="26" fill="#0f172a" opacity="0.68"/>
+  <text x="108" y="126" fill="#5eead4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">THAILAND / SEA ECOSYSTEM</text>
+  <text x="108" y="187" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="800">AI Smart Living</text>
+  <text x="108" y="230" fill="#c4b5fd" font-family="Arial, Helvetica, sans-serif" font-size="24">Singapore hub for regional execution</text>
+  <rect x="108" y="253" width="270" height="36" rx="18" fill="#14b8a6"/>
+  <text x="129" y="278" fill="#042f2e" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">PLAN ANNOUNCED - MAY 22</text>
+  <g stroke="#2dd4bf" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M736 173 L894 103 L1047 191 L972 300 L787 302 Z"/>
+    <path d="M894 103 V255 L736 173"/>
+    <path d="M894 255 L1047 191"/>
+  </g>
+  <g fill="#f0abfc">
+    <circle cx="736" cy="173" r="12"/><circle cx="894" cy="103" r="12"/><circle cx="1047" cy="191" r="12"/><circle cx="972" cy="300" r="12"/><circle cx="787" cy="302" r="12"/><circle cx="894" cy="255" r="18"/>
+  </g>
+  <text x="863" y="347" fill="#99f6e4" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">SINGAPORE</text>
+  <g transform="translate(130 353)">
+    <rect x="0" y="58" width="130" height="108" fill="#172554"/>
+    <rect x="153" y="13" width="126" height="153" fill="#1e1b4b"/>
+    <rect x="302" y="78" width="116" height="88" fill="#172554"/>
+    <g fill="url(#window)">
+      <rect x="18" y="80" width="26" height="25"/><rect x="56" y="80" width="26" height="25"/><rect x="18" y="119" width="26" height="25"/><rect x="56" y="119" width="26" height="25"/>
+      <rect x="174" y="38" width="26" height="25"/><rect x="217" y="38" width="26" height="25"/><rect x="174" y="79" width="26" height="25"/><rect x="217" y="79" width="26" height="25"/>
+      <rect x="322" y="100" width="25" height="24"/><rect x="365" y="100" width="25" height="24"/>
+    </g>
+  </g>
+  <g fill="#14b8a6"><rect x="726" y="455" width="70" height="60"/><rect x="809" y="420" width="80" height="95"/><rect x="903" y="466" width="62" height="49"/><rect x="978" y="397" width="94" height="118"/></g>
+  <text x="78" y="590" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="20">May 25, 2026 - SEA market, channels and connected homes</text>
+</svg>
