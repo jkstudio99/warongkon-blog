@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Addepar AI agents and investment data workflows cover</title>
+  <desc id="desc">An investment dashboard linked to a human-reviewed AI workflow graph.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#071629"/>
+      <stop offset="0.52" stop-color="#102b51"/>
+      <stop offset="1" stop-color="#06121b"/>
+    </linearGradient>
+    <linearGradient id="chart" x2="1">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1015" cy="106" r="150" fill="#38bdf8" opacity="0.08"/>
+  <rect x="70" y="72" width="646" height="488" rx="28" fill="#081425" stroke="#1e3a5f" stroke-width="3"/>
+  <text x="108" y="130" fill="#67e8f9" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">GLOBAL / AI</text>
+  <text x="108" y="194" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="800">ADDEPAR</text>
+  <text x="108" y="235" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="25">Agents + investment data workflows</text>
+  <rect x="108" y="288" width="556" height="204" rx="18" fill="#0f2139"/>
+  <path d="M141 440 L218 397 L289 414 L358 344 L425 374 L501 307 L617 328" fill="none" stroke="url(#chart)" stroke-width="7"/>
+  <g fill="#34d399">
+    <circle cx="218" cy="397" r="8"/><circle cx="358" cy="344" r="8"/><circle cx="501" cy="307" r="8"/>
+  </g>
+  <text x="140" y="468" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="16">PORTFOLIO DATA / REVIEWED WORKFLOW</text>
+  <g transform="translate(788 152)">
+    <rect width="288" height="104" rx="20" fill="#102641" stroke="#22d3ee" stroke-width="3"/>
+    <text x="34" y="44" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="20">DATA ISSUE</text>
+    <text x="34" y="76" fill="#22d3ee" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">AI DETECTS</text>
+    <path d="M144 104 V145" stroke="#38bdf8" stroke-width="4"/>
+    <path d="M136 138 L144 151 L152 138" fill="none" stroke="#38bdf8" stroke-width="4"/>
+    <rect y="151" width="288" height="104" rx="20" fill="#102641" stroke="#34d399" stroke-width="3"/>
+    <text x="34" y="193" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="20">HUMAN LOOP</text>
+    <text x="34" y="225" fill="#34d399" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">REVIEW</text>
+  </g>
+  <text x="75" y="600" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="20">May 26, 2026 | AddeConf26 capability announcement</text>
+</svg>

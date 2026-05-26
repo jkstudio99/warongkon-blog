@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Lightmatter Guide DR Laser NIC cover</title>
+  <desc id="desc">A liquid cooled network card emits optical links through an AI rack.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#020b16"/>
+      <stop offset="0.48" stop-color="#062443"/>
+      <stop offset="1" stop-color="#041019"/>
+    </linearGradient>
+    <linearGradient id="beam" x2="1">
+      <stop stop-color="#2dd4bf"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="74" y="103" fill="#5eead4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">HARDWARE / INFRASTRUCTURE</text>
+  <text x="74" y="169" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="800">GUIDE DR</text>
+  <text x="74" y="211" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="25">LIQUID-COOLED LASER NIC</text>
+  <g transform="translate(82 288)">
+    <rect width="420" height="165" rx="22" fill="#0b1b30" stroke="#2dd4bf" stroke-width="3"/>
+    <path d="M32 45 H358 V121 H32 Z" fill="#072d3e" stroke="#164e63" stroke-width="2"/>
+    <g fill="#38bdf8">
+      <rect x="64" y="68" width="44" height="31" rx="5"/><rect x="124" y="68" width="44" height="31" rx="5"/>
+      <rect x="184" y="68" width="44" height="31" rx="5"/><rect x="244" y="68" width="44" height="31" rx="5"/>
+    </g>
+    <path d="M300 82 H392" stroke="#2dd4bf" stroke-width="9" stroke-dasharray="10 8"/>
+    <text x="32" y="145" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="17">OCP NIC 3.0 FORM FACTOR</text>
+  </g>
+  <g stroke="url(#beam)" stroke-width="7" opacity="0.88">
+    <path d="M504 332 C626 332 618 286 728 286"/>
+    <path d="M504 354 C634 354 640 356 728 356"/>
+    <path d="M504 376 C626 376 618 426 728 426"/>
+  </g>
+  <g transform="translate(728 249)">
+    <rect width="388" height="220" rx="13" fill="#071424" stroke="#334155" stroke-width="3"/>
+    <g fill="#102b43" stroke="#38bdf8" stroke-width="2">
+      <rect x="22" y="28" width="344" height="42" rx="6"/>
+      <rect x="22" y="88" width="344" height="42" rx="6"/>
+      <rect x="22" y="148" width="344" height="42" rx="6"/>
+    </g>
+    <g fill="#2dd4bf">
+      <circle cx="52" cy="49" r="7"/><circle cx="52" cy="109" r="7"/><circle cx="52" cy="169" r="7"/>
+    </g>
+    <text x="186" y="54" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="15">AI SCALE-UP FABRIC</text>
+  </g>
+  <text x="74" y="529" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">51.2 Tbps / MODULE</text>
+  <text x="74" y="584" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20">May 26, 2026 | Sampling planned Q4 2026</text>
+</svg>

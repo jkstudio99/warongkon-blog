@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">007 First Light early access cover</title>
+  <desc id="desc">A spy silhouette framed by a camera aperture and a global launch clock.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#080b10"/>
+      <stop offset="0.55" stop-color="#1f242b"/>
+      <stop offset="1" stop-color="#050609"/>
+    </linearGradient>
+    <radialGradient id="gold">
+      <stop stop-color="#d6b15d" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#d6b15d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="864" cy="308" r="286" fill="url(#gold)"/>
+  <g transform="translate(858 305)" fill="#0b0d11" stroke="#d9bb72" stroke-width="5">
+    <path d="M0 -236 L69 -124 L203 -119 L145 0 L203 119 L69 124 L0 236 L-69 124 L-203 119 L-145 0 L-203 -119 L-69 -124 Z"/>
+    <circle r="89" fill="#11151a"/>
+  </g>
+  <g transform="translate(835 257)" fill="#d9bb72">
+    <circle cx="29" cy="27" r="25"/>
+    <path d="M0 139 C3 78 16 52 42 52 C69 52 84 79 90 139 Z"/>
+    <path d="M74 73 L155 44 L162 56 L87 97 Z"/>
+  </g>
+  <text x="70" y="108" fill="#d9bb72" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">GAMES / CONSUMER</text>
+  <text x="70" y="207" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800">007</text>
+  <text x="70" y="271" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">FIRST LIGHT</text>
+  <rect x="70" y="332" width="480" height="112" rx="18" fill="#11161c" stroke="#d9bb72" stroke-width="2"/>
+  <text x="102" y="375" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="18">EARLY ACCESS WINDOW</text>
+  <text x="102" y="414" fill="#d9bb72" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">26 MAY | 21:00 ICT</text>
+  <text x="70" y="525" fill="#e5e7eb" font-family="Arial, Helvetica, sans-serif" font-size="23">Global release: 27 May 2026</text>
+  <text x="70" y="576" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">IO Interactive launch schedule</text>
+</svg>
