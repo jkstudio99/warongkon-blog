@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Nero and Sci Integral Edition Switch release cover</title>
+  <desc id="desc">A colorful puzzle platform world built from numbers, equations, and geometric platforms.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#20104c"/>
+      <stop offset="0.5" stop-color="#3b1a68"/>
+      <stop offset="1" stop-color="#0e294b"/>
+    </linearGradient>
+    <linearGradient id="platform" x2="1">
+      <stop stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="989" cy="122" r="86" fill="#fbbf24" opacity="0.86"/>
+  <text x="68" y="82" fill="#f9a8d4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">GAMES / CONSUMER</text>
+  <text x="68" y="150" fill="#fff7ed" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="800">NERO &amp; SCI</text>
+  <text x="68" y="194" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="25">INTEGRAL EDITION | NINTENDO SWITCH</text>
+  <g opacity="0.35" fill="#e9d5ff" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="760" y="235" font-size="48">x + 7</text>
+    <text x="964" y="305" font-size="54">pi</text>
+    <text x="650" y="355" font-size="38">sqrt(9)</text>
+    <text x="990" y="445" font-size="43">2y</text>
+  </g>
+  <g transform="translate(65 265)">
+    <path d="M0 215 H207 V176 H355 V140 H530 V110 H660" fill="none" stroke="url(#platform)" stroke-width="20" stroke-linejoin="round"/>
+    <rect x="116" y="124" width="50" height="52" rx="10" fill="#22d3ee"/>
+    <circle cx="141" cy="108" r="22" fill="#67e8f9"/>
+    <rect x="292" y="88" width="50" height="52" rx="10" fill="#f472b6"/>
+    <circle cx="317" cy="72" r="22" fill="#f9a8d4"/>
+    <g fill="#fde68a" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">
+      <text x="50" y="250">1</text><text x="246" y="210">2</text><text x="403" y="172">3</text><text x="576" y="140">4</text>
+    </g>
+  </g>
+  <g transform="translate(785 485)">
+    <rect width="334" height="62" rx="31" fill="#172554" stroke="#38bdf8" stroke-width="2"/>
+    <text x="34" y="40" fill="#e0f2fe" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">36 LEVELS | LOCAL CO-OP</text>
+  </g>
+  <text x="68" y="573" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="20">Digital release | May 27, 2026</text>
+</svg>

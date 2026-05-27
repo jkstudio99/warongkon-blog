@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">DeepSeek V4-Pro API pricing cover</title>
+  <desc id="desc">A model endpoint dashboard charts a seventy-five percent API price reduction.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#071528"/>
+      <stop offset="0.5" stop-color="#082c45"/>
+      <stop offset="1" stop-color="#06131c"/>
+    </linearGradient>
+    <linearGradient id="line" x2="1">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="72" y="82" fill="#67e8f9" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">GLOBAL / AI</text>
+  <text x="72" y="153" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">DEEPSEEK V4-PRO</text>
+  <text x="72" y="198" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="26">API PRICE ADJUSTMENT</text>
+  <g transform="translate(72 258)">
+    <rect width="655" height="220" rx="18" fill="#071e32" stroke="#164e63" stroke-width="2"/>
+    <path d="M48 48 H600 M48 106 H600 M48 164 H600" stroke="#163244" stroke-width="2"/>
+    <path d="M68 65 L178 77 L284 83 L385 128 L493 157 L589 171" fill="none" stroke="url(#line)" stroke-width="7"/>
+    <g fill="#34d399">
+      <circle cx="68" cy="65" r="7"/><circle cx="178" cy="77" r="7"/><circle cx="284" cy="83" r="7"/>
+      <circle cx="385" cy="128" r="7"/><circle cx="493" cy="157" r="7"/><circle cx="589" cy="171" r="7"/>
+    </g>
+    <text x="52" y="204" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="15">PRICE / 1M OUTPUT TOKENS</text>
+  </g>
+  <g transform="translate(796 252)">
+    <rect width="322" height="231" rx="20" fill="#0a2538" stroke="#0e7490" stroke-width="2"/>
+    <text x="34" y="48" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="18">V4-PRO OUTPUT</text>
+    <text x="34" y="119" fill="#34d399" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800">$0.87</text>
+    <text x="36" y="157" fill="#64748b" font-family="Arial, Helvetica, sans-serif" font-size="23" text-decoration="line-through">$3.48</text>
+    <rect x="35" y="182" width="150" height="30" rx="15" fill="#064e3b"/>
+    <text x="58" y="204" fill="#6ee7b7" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">75% LOWER</text>
+  </g>
+  <text x="72" y="564" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">PRICE SET TO 1/4 AFTER MAY 31</text>
+  <text x="804" y="564" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">May 27, 2026</text>
+</svg>

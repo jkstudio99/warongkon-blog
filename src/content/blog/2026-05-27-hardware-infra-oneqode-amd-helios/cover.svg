@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">OneQode AMD Helios infrastructure cover</title>
+  <desc id="desc">Rack scale GPU systems connect regional AI infrastructure through high speed links.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#150a08"/>
+      <stop offset="0.48" stop-color="#341207"/>
+      <stop offset="1" stop-color="#080e19"/>
+    </linearGradient>
+    <linearGradient id="signal" x2="1">
+      <stop stop-color="#f97316"/>
+      <stop offset="0.52" stop-color="#facc15"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="68" y="82" fill="#fb923c" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">HARDWARE / INFRASTRUCTURE</text>
+  <text x="68" y="151" fill="#fff7ed" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="800">AMD HELIOS</text>
+  <text x="68" y="195" fill="#fed7aa" font-family="Arial, Helvetica, sans-serif" font-size="25">ONEQODE GLOBAL AI ROLLOUT</text>
+  <g transform="translate(72 260)">
+    <rect width="325" height="223" rx="14" fill="#111827" stroke="#7c2d12" stroke-width="3"/>
+    <text x="25" y="34" fill="#fdba74" font-family="Arial, Helvetica, sans-serif" font-size="16">INITIAL DEPLOYMENT</text>
+    <g fill="#271510" stroke="#f97316" stroke-width="2">
+      <rect x="24" y="55" width="277" height="39" rx="6"/>
+      <rect x="24" y="105" width="277" height="39" rx="6"/>
+      <rect x="24" y="155" width="277" height="39" rx="6"/>
+    </g>
+    <g fill="#facc15">
+      <circle cx="45" cy="74" r="5"/><circle cx="45" cy="124" r="5"/><circle cx="45" cy="174" r="5"/>
+    </g>
+    <text x="75" y="80" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="17">INSTINCT MI355X</text>
+    <text x="75" y="130" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="17">ROCm SOFTWARE</text>
+    <text x="75" y="180" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="17">RACK-SCALE PATH</text>
+  </g>
+  <g stroke="url(#signal)" stroke-width="6" fill="none">
+    <path d="M398 327 C475 327 472 298 530 298"/>
+    <path d="M398 361 C476 361 479 361 530 361"/>
+    <path d="M398 395 C475 395 472 424 530 424"/>
+  </g>
+  <g transform="translate(530 265)">
+    <rect width="590" height="208" rx="20" fill="#081525" stroke="#1e3a5f" stroke-width="2"/>
+    <path d="M85 120 L211 62 L330 110 L470 45" fill="none" stroke="#38bdf8" stroke-width="4"/>
+    <path d="M85 120 L250 156 L330 110 L495 150" fill="none" stroke="#f97316" stroke-width="4"/>
+    <g fill="#facc15" stroke="#111827" stroke-width="4">
+      <circle cx="85" cy="120" r="13"/><circle cx="211" cy="62" r="13"/><circle cx="250" cy="156" r="13"/>
+      <circle cx="330" cy="110" r="13"/><circle cx="470" cy="45" r="13"/><circle cx="495" cy="150" r="13"/>
+    </g>
+    <text x="40" y="190" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="16">MULTI-REGION AI CAPACITY</text>
+  </g>
+  <text x="72" y="554" fill="#fff7ed" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">MI355X NOW, HELIOS PLANNED NEXT</text>
+  <text x="923" y="554" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">May 27, 2026</text>
+</svg>

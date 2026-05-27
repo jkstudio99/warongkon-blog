@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">IntBot and Certis physical AI Singapore cover</title>
+  <desc id="desc">A service robot assists visitors in a connected public concourse in Singapore.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#021921"/>
+      <stop offset="0.52" stop-color="#05363c"/>
+      <stop offset="1" stop-color="#0c1d32"/>
+    </linearGradient>
+    <linearGradient id="glass" y2="1">
+      <stop stop-color="#2dd4bf" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="68" y="82" fill="#5eead4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">THAILAND / SEA ECOSYSTEM</text>
+  <text x="68" y="149" fill="#f0fdfa" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">PHYSICAL AI</text>
+  <text x="68" y="193" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="25">INTBOT + CERTIS | SINGAPORE PILOTS</text>
+  <g transform="translate(70 255)">
+    <rect width="496" height="237" rx="18" fill="url(#glass)" stroke="#115e59" stroke-width="2"/>
+    <path d="M38 189 H458 M62 148 H431 M86 106 H407" stroke="#0f766e" stroke-width="3"/>
+    <path d="M101 45 V190 M224 45 V190 M349 45 V190" stroke="#164e63" stroke-width="2"/>
+    <text x="39" y="220" fill="#99f6e4" font-family="Arial, Helvetica, sans-serif" font-size="16">PUBLIC SERVICE CONCOURSE</text>
+  </g>
+  <g transform="translate(602 242)">
+    <rect x="127" y="70" width="129" height="158" rx="45" fill="#0f3040" stroke="#2dd4bf" stroke-width="4"/>
+    <rect x="142" y="0" width="99" height="88" rx="38" fill="#122c45" stroke="#38bdf8" stroke-width="4"/>
+    <circle cx="170" cy="40" r="8" fill="#67e8f9"/>
+    <circle cx="213" cy="40" r="8" fill="#67e8f9"/>
+    <path d="M168 61 Q191 76 215 61" fill="none" stroke="#5eead4" stroke-width="3"/>
+    <path d="M128 110 L67 141 M255 110 L302 80" fill="none" stroke="#2dd4bf" stroke-width="13" stroke-linecap="round"/>
+    <path d="M160 228 L133 283 M223 228 L249 283" fill="none" stroke="#38bdf8" stroke-width="14" stroke-linecap="round"/>
+    <rect x="275" y="44" width="230" height="76" rx="16" fill="#072635" stroke="#155e75" stroke-width="2"/>
+    <text x="297" y="76" fill="#a5f3fc" font-family="Arial, Helvetica, sans-serif" font-size="16">VISITOR ASSISTANCE</text>
+    <text x="297" y="101" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="19">WAYFINDING</text>
+  </g>
+  <text x="70" y="563" fill="#f0fdfa" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">FROM PARTNERSHIP TO PILOT</text>
+  <text x="925" y="563" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">May 27, 2026</text>
+</svg>
