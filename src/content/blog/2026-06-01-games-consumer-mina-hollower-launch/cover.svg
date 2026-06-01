@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Mina the Hollower launch cover</title>
+  <desc id="desc">A gothic pixel-style adventure scene with a small hero, lantern, and underground paths for Mina the Hollower launch coverage.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#120917"/>
+      <stop offset="0.55" stop-color="#312044"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1">
+      <stop stop-color="#facc15"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="72" y="82" fill="#f9a8d4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">GAMES / CONSUMER</text>
+  <text x="72" y="150" fill="#fff1f2" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="800">MINA THE HOLLOWER</text>
+  <text x="72" y="196" fill="#fbcfe8" font-family="Arial, Helvetica, sans-serif" font-size="25">YACHT CLUB GAMES LAUNCH WINDOW</text>
+  <g transform="translate(76 258)">
+    <rect width="306" height="205" rx="16" fill="#1f1230" stroke="#f472b6" stroke-width="3"/>
+    <rect x="32" y="46" width="38" height="38" fill="#facc15"/>
+    <rect x="70" y="84" width="38" height="38" fill="#f472b6"/>
+    <rect x="108" y="122" width="38" height="38" fill="#38bdf8"/>
+    <path d="M190 56v104M158 108h82" stroke="#fff7ed" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="190" cy="84" r="16" fill="#fff7ed"/>
+    <text x="32" y="188" fill="#d8b4fe" font-family="Arial, Helvetica, sans-serif" font-size="18">PIXEL ADVENTURE RETURNS</text>
+  </g>
+  <g transform="translate(475 238)">
+    <rect width="606" height="250" rx="22" fill="#090b1a" stroke="#475569" stroke-width="3"/>
+    <path d="M46 186C120 118 155 154 214 96C278 33 338 90 404 58C463 30 508 56 560 28" fill="none" stroke="#f472b6" stroke-width="6" stroke-linecap="round"/>
+    <path d="M60 204H548" stroke="#312044" stroke-width="34" stroke-linecap="round"/>
+    <g fill="#facc15">
+      <circle cx="126" cy="183" r="8"/><circle cx="252" cy="176" r="8"/><circle cx="408" cy="178" r="8"/>
+    </g>
+    <g transform="translate(280 118)">
+      <circle cx="0" cy="0" r="26" fill="#fff1f2"/>
+      <rect x="-18" y="24" width="36" height="54" rx="8" fill="#fff1f2"/>
+      <path d="M-56 46H56" stroke="url(#glow)" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="56" cy="46" r="14" fill="#facc15"/>
+    </g>
+    <text x="46" y="222" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="18">STEAM MAY 28 / XBOX MAY 29</text>
+  </g>
+  <text x="72" y="558" fill="#fff1f2" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">A NEW IP AFTER SHOVEL KNIGHT</text>
+  <text x="952" y="558" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">June 1, 2026</text>
+</svg>

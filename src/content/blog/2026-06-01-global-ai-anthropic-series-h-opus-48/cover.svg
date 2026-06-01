@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Anthropic Series H and Claude Opus 4.8 cover</title>
+  <desc id="desc">Capital, compute capacity, and long-running AI agents converge around Anthropic and Claude Opus 4.8.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#17110d"/>
+      <stop offset="0.55" stop-color="#2f2118"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#f4a261"/>
+      <stop offset="0.55" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="72" y="82" fill="#f4a261" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">GLOBAL / AI</text>
+  <text x="72" y="151" fill="#fff7ed" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">ANTHROPIC</text>
+  <text x="72" y="198" fill="#fed7aa" font-family="Arial, Helvetica, sans-serif" font-size="27">SERIES H + CLAUDE OPUS 4.8</text>
+  <g transform="translate(72 258)">
+    <rect width="315" height="205" rx="18" fill="#1c1511" stroke="#f4a261" stroke-width="3"/>
+    <text x="28" y="52" fill="#fff7ed" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">$65B</text>
+    <text x="28" y="86" fill="#fdba74" font-family="Arial, Helvetica, sans-serif" font-size="18">SERIES H FUNDING</text>
+    <text x="28" y="138" fill="#fff7ed" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">$965B</text>
+    <text x="28" y="171" fill="#fdba74" font-family="Arial, Helvetica, sans-serif" font-size="18">POST-MONEY VALUE</text>
+  </g>
+  <g transform="translate(466 235)">
+    <rect width="610" height="250" rx="22" fill="#0b1324" stroke="#334155" stroke-width="2"/>
+    <path d="M70 172 C142 58 226 202 304 92 C392 -35 454 164 536 54" fill="none" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+    <g fill="#f4a261">
+      <circle cx="70" cy="172" r="10"/><circle cx="304" cy="92" r="10"/><circle cx="536" cy="54" r="10"/>
+    </g>
+    <g transform="translate(72 124)" fill="none" stroke="#60a5fa" stroke-width="3">
+      <rect width="126" height="62" rx="10"/>
+      <rect x="198" y="0" width="126" height="62" rx="10"/>
+      <rect x="396" y="0" width="126" height="62" rx="10"/>
+      <path d="M126 31H198M324 31H396"/>
+    </g>
+    <text x="62" y="218" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="18">COMPUTE SCALE MEETS AGENT RELIABILITY</text>
+  </g>
+  <text x="72" y="556" fill="#fff7ed" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">FRONTIER AI SHIFTS FROM BENCHMARKS TO OPERATIONS</text>
+  <text x="952" y="556" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">June 1, 2026</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">ASEAN AI-ready data ecosystems cover</title>
+  <desc id="desc">Connected data nodes across ASEAN support AI-ready healthcare, supply chain, and smart city systems.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#051923"/>
+      <stop offset="0.55" stop-color="#0b3b45"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" x2="1">
+      <stop stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="70" y="80" fill="#67e8f9" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">THAILAND / SEA ECOSYSTEM</text>
+  <text x="70" y="150" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">AI-READY DATA</text>
+  <text x="70" y="196" fill="#a5f3fc" font-family="Arial, Helvetica, sans-serif" font-size="25">INTERSYSTEMS + 59STVENTURES ACROSS ASEAN</text>
+  <g transform="translate(82 245)">
+    <rect width="314" height="224" rx="18" fill="#082f3a" stroke="#2dd4bf" stroke-width="3"/>
+    <text x="30" y="47" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800">DATA SILOS</text>
+    <g fill="#0f172a" stroke="#67e8f9" stroke-width="2">
+      <rect x="32" y="74" width="96" height="44" rx="8"/>
+      <rect x="32" y="138" width="96" height="44" rx="8"/>
+      <rect x="184" y="74" width="96" height="44" rx="8"/>
+      <rect x="184" y="138" width="96" height="44" rx="8"/>
+    </g>
+    <text x="47" y="102" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="16">FHIR</text>
+    <text x="49" y="166" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="16">ERP</text>
+    <text x="198" y="102" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="16">IOT</text>
+    <text x="198" y="166" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="16">CRM</text>
+  </g>
+  <g stroke="url(#node)" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M396 358H518"/>
+    <path d="M518 358C560 310 612 302 654 264"/>
+    <path d="M518 358C570 382 620 400 686 418"/>
+    <path d="M686 418C762 365 816 320 902 302"/>
+    <path d="M654 264C744 248 814 260 902 302"/>
+  </g>
+  <g fill="url(#node)" stroke="#ecfeff" stroke-width="4">
+    <circle cx="518" cy="358" r="17"/>
+    <circle cx="654" cy="264" r="17"/>
+    <circle cx="686" cy="418" r="17"/>
+    <circle cx="902" cy="302" r="17"/>
+  </g>
+  <g transform="translate(930 232)">
+    <rect width="180" height="152" rx="18" fill="#0f172a" stroke="#93c5fd" stroke-width="3"/>
+    <text x="28" y="48" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800">AI</text>
+    <text x="28" y="84" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="19">HEALTH</text>
+    <text x="28" y="113" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="19">SUPPLY</text>
+    <text x="28" y="142" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="19">CITIES</text>
+  </g>
+  <text x="72" y="558" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">NO SCALABLE AI WITHOUT INTEROPERABLE DATA</text>
+  <text x="952" y="558" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">June 1, 2026</text>
+</svg>

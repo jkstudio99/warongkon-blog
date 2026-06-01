@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Infineon NVIDIA MGX 800 VDC AI factory cover</title>
+  <desc id="desc">High voltage power rails feed dense AI server racks for NVIDIA MGX AI factories.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#061826"/>
+      <stop offset="0.55" stop-color="#0b2f2b"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="power" x1="0" x2="1">
+      <stop stop-color="#22c55e"/>
+      <stop offset="0.5" stop-color="#facc15"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="70" y="80" fill="#86efac" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">HARDWARE / INFRASTRUCTURE</text>
+  <text x="70" y="150" fill="#f0fdf4" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">800 VDC AI RACKS</text>
+  <text x="70" y="196" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="25">INFINEON JOINS NVIDIA MGX ECOSYSTEM</text>
+  <g transform="translate(82 248)">
+    <rect width="240" height="226" rx="16" fill="#07111f" stroke="#16a34a" stroke-width="3"/>
+    <text x="32" y="42" fill="#facc15" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800">GRID</text>
+    <path d="M45 82H195M45 124H195M45 166H195" stroke="#22c55e" stroke-width="8" stroke-linecap="round"/>
+    <text x="40" y="210" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="18">800 VDC INPUT</text>
+  </g>
+  <g stroke="url(#power)" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M322 360H460"/>
+    <path d="M460 360C515 360 512 320 570 320"/>
+    <path d="M460 360C515 360 512 400 570 400"/>
+  </g>
+  <g transform="translate(570 218)">
+    <rect width="500" height="300" rx="22" fill="#07111f" stroke="#334155" stroke-width="3"/>
+    <text x="34" y="42" fill="#86efac" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">NVIDIA MGX COMPATIBLE</text>
+    <g fill="#0f172a" stroke="#38bdf8" stroke-width="2">
+      <rect x="36" y="72" width="428" height="44" rx="8"/>
+      <rect x="36" y="128" width="428" height="44" rx="8"/>
+      <rect x="36" y="184" width="428" height="44" rx="8"/>
+    </g>
+    <g fill="#facc15">
+      <circle cx="62" cy="94" r="6"/><circle cx="62" cy="150" r="6"/><circle cx="62" cy="206" r="6"/>
+    </g>
+    <text x="96" y="101" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="19">800 V TO 50 V BUS</text>
+    <text x="96" y="157" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="19">12 V AND 6 V CORE DELIVERY</text>
+    <text x="96" y="213" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="19">DENSE AI SERVER RACKS</text>
+    <text x="36" y="268" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="17">POWER ARCHITECTURE BECOMES AI CAPACITY</text>
+  </g>
+  <text x="72" y="558" fill="#f0fdf4" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">THE NEXT AI BOTTLENECK IS ELECTRICAL</text>
+  <text x="952" y="558" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">June 1, 2026</text>
+</svg>
