@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">NIST AI Consortium cover</title>
+  <desc id="desc">A standards dashboard showing six AI measurement task groups around a central consortium node.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#172554"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="node" x2="1" y2="1">
+      <stop stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#93c5fd" stroke-width="2">
+    <path d="M64 120 H1136 M64 210 H1136 M64 300 H1136 M64 390 H1136 M64 480 H1136"/>
+    <path d="M170 70 V560 M320 70 V560 M470 70 V560 M620 70 V560 M770 70 V560 M920 70 V560 M1070 70 V560"/>
+  </g>
+  <text x="72" y="82" fill="#7dd3fc" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">GLOBAL / AI</text>
+  <text x="72" y="151" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">NIST AI CONSORTIUM</text>
+  <text x="72" y="198" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="26">MEASUREMENT, INNOVATION, ADOPTION</text>
+  <g transform="translate(170 250)">
+    <circle cx="430" cy="120" r="86" fill="#0f2a4a" stroke="url(#node)" stroke-width="4"/>
+    <text x="430" y="108" fill="#f8fafc" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">AI</text>
+    <text x="430" y="142" fill="#bae6fd" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18">CONSORTIUM</text>
+    <g fill="#0b1d36" stroke="#38bdf8" stroke-width="3" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">
+      <rect x="0" y="18" width="232" height="58" rx="18"/><text x="116" y="54" fill="#dbeafe" text-anchor="middle">AI TEVV</text>
+      <rect x="0" y="148" width="232" height="58" rx="18"/><text x="116" y="184" fill="#dbeafe" text-anchor="middle">RISK VALIDITY</text>
+      <rect x="628" y="18" width="232" height="58" rx="18"/><text x="744" y="54" fill="#dbeafe" text-anchor="middle">EVALUATION</text>
+      <rect x="628" y="148" width="232" height="58" rx="18"/><text x="744" y="184" fill="#dbeafe" text-anchor="middle">BENGAL</text>
+      <rect x="245" y="-80" width="242" height="58" rx="18"/><text x="366" y="-44" fill="#dbeafe" text-anchor="middle">DOC CARDS</text>
+      <rect x="245" y="242" width="312" height="58" rx="18"/><text x="401" y="278" fill="#dbeafe" text-anchor="middle">CHEM / BIO SECURITY</text>
+    </g>
+    <g stroke="#60a5fa" stroke-width="3" opacity="0.75">
+      <path d="M232 48 L350 95"/><path d="M232 178 L350 145"/><path d="M628 48 L510 95"/>
+      <path d="M628 178 L510 145"/><path d="M388 -22 L417 36"/><path d="M430 206 L430 242"/>
+    </g>
+  </g>
+  <text x="72" y="564" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">NIST BROADENS AI MEASUREMENT WORK</text>
+  <text x="903" y="564" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">June 2, 2026</text>
+</svg>

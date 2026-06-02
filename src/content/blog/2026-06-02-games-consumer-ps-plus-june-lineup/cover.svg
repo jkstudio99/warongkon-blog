@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">PlayStation Plus June games cover</title>
+  <desc id="desc">Three stylized game tiles and a subscription calendar for the June PlayStation Plus monthly games.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#101828"/>
+      <stop offset="0.45" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="tile1" x2="1" y2="1"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#84cc16"/></linearGradient>
+    <linearGradient id="tile2" x2="1" y2="1"><stop stop-color="#f97316"/><stop offset="1" stop-color="#facc15"/></linearGradient>
+    <linearGradient id="tile3" x2="1" y2="1"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#ef4444"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="72" y="82" fill="#93c5fd" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">GAMES / CONSUMER</text>
+  <text x="72" y="151" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">PS PLUS JUNE</text>
+  <text x="72" y="198" fill="#c7d2fe" font-family="Arial, Helvetica, sans-serif" font-size="26">MONTHLY GAMES GO LIVE JUNE 2</text>
+  <g transform="translate(86 260)" font-family="Arial, Helvetica, sans-serif">
+    <rect width="300" height="210" rx="22" fill="url(#tile1)"/>
+    <rect x="33" y="35" width="88" height="118" rx="12" fill="#052e16" opacity="0.75"/>
+    <circle cx="205" cy="83" r="45" fill="#052e16" opacity="0.7"/>
+    <path d="M168 141 C198 104 233 110 262 157" fill="none" stroke="#f0fdf4" stroke-width="11" stroke-linecap="round"/>
+    <text x="30" y="185" fill="#f0fdf4" font-size="23" font-weight="800">GROUNDED</text>
+  </g>
+  <g transform="translate(450 260)" font-family="Arial, Helvetica, sans-serif">
+    <rect width="300" height="210" rx="22" fill="url(#tile2)"/>
+    <circle cx="88" cy="86" r="44" fill="#7c2d12" opacity="0.72"/>
+    <rect x="151" y="48" width="92" height="92" rx="18" fill="#7c2d12" opacity="0.72"/>
+    <path d="M74 138 L121 138 L99 165 Z M173 145 L228 145 L202 170 Z" fill="#fffbeb"/>
+    <text x="30" y="185" fill="#fffbeb" font-size="21" font-weight="800">ALL-STAR BRAWL 2</text>
+  </g>
+  <g transform="translate(814 260)" font-family="Arial, Helvetica, sans-serif">
+    <rect width="300" height="210" rx="22" fill="url(#tile3)"/>
+    <path d="M70 52 H230 L206 150 H94 Z" fill="#111827" opacity="0.72"/>
+    <path d="M108 81 H192 M96 112 H204 M123 143 H177" stroke="#fecaca" stroke-width="10" stroke-linecap="round"/>
+    <text x="30" y="185" fill="#fff1f2" font-size="21" font-weight="800">DARKTIDE</text>
+  </g>
+  <g transform="translate(72 520)" font-family="Arial, Helvetica, sans-serif">
+    <rect width="248" height="48" rx="24" fill="#2563eb"/>
+    <text x="31" y="32" fill="#eff6ff" font-size="21" font-weight="800">JUNE 2 - JULY 6</text>
+  </g>
+  <text x="372" y="556" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">THREE CO-OP AND FIGHTING PICKS</text>
+  <text x="942" y="556" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">June 2, 2026</text>
+</svg>

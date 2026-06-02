@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">NVIDIA and TSMC AI fabs cover</title>
+  <desc id="desc">A semiconductor wafer, fab tools, and accelerated computing pipelines for AI-enabled chip manufacturing.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#102018"/>
+      <stop offset="0.5" stop-color="#123524"/>
+      <stop offset="1" stop-color="#06150f"/>
+    </linearGradient>
+    <radialGradient id="wafer" cx="50%" cy="45%" r="60%">
+      <stop stop-color="#e0f2fe"/>
+      <stop offset="0.45" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="72" y="82" fill="#86efac" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">HARDWARE / INFRASTRUCTURE</text>
+  <text x="72" y="151" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">AI ENTERS THE FAB</text>
+  <text x="72" y="198" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="26">NVIDIA + TSMC SEMICONDUCTOR WORKFLOWS</text>
+  <g transform="translate(80 255)">
+    <circle cx="220" cy="140" r="132" fill="url(#wafer)" opacity="0.96"/>
+    <circle cx="220" cy="140" r="108" fill="none" stroke="#0f172a" stroke-width="2" opacity="0.45"/>
+    <circle cx="220" cy="140" r="72" fill="none" stroke="#0f172a" stroke-width="2" opacity="0.35"/>
+    <g stroke="#0f172a" stroke-width="2" opacity="0.42">
+      <path d="M88 140 H352"/><path d="M220 8 V272"/>
+      <path d="M126 46 L314 234"/><path d="M314 46 L126 234"/>
+    </g>
+    <g fill="#052e16">
+      <rect x="164" y="84" width="112" height="112" rx="16" opacity="0.9"/>
+      <path d="M186 108 H254 V176 H186 Z" fill="#22c55e"/>
+      <path d="M200 124 H240 V164 H200 Z" fill="#052e16"/>
+    </g>
+  </g>
+  <g transform="translate(515 257)" font-family="Arial, Helvetica, sans-serif">
+    <rect width="425" height="54" rx="17" fill="#09261a" stroke="#22c55e" stroke-width="2"/>
+    <rect y="82" width="425" height="54" rx="17" fill="#09261a" stroke="#22c55e" stroke-width="2"/>
+    <rect y="164" width="425" height="54" rx="17" fill="#09261a" stroke="#22c55e" stroke-width="2"/>
+    <text x="24" y="35" fill="#dcfce7" font-size="21" font-weight="700">CUDAX: LITHOGRAPHY + SIMULATION</text>
+    <text x="24" y="117" fill="#dcfce7" font-size="21" font-weight="700">METROPOLIS + TAO: DEFECT AI</text>
+    <text x="24" y="199" fill="#dcfce7" font-size="21" font-weight="700">OMNIVERSE: FABTWIN PLANNING</text>
+  </g>
+  <g transform="translate(1000 250)" fill="none" stroke="#86efac" stroke-width="4" opacity="0.85">
+    <path d="M0 20 H70 V60 H130 V104 H190"/>
+    <path d="M0 112 H80 V158 H160"/>
+    <path d="M0 205 H60 V180 H132 V222 H190"/>
+    <circle cx="0" cy="20" r="8" fill="#22c55e"/><circle cx="0" cy="112" r="8" fill="#22c55e"/><circle cx="0" cy="205" r="8" fill="#22c55e"/>
+  </g>
+  <text x="72" y="564" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">ACCELERATED COMPUTING MEETS CHIP PRODUCTION</text>
+  <text x="903" y="564" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="19">June 2, 2026</text>
+</svg>
