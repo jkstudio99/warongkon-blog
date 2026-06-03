@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Thailand AI skills gap ecosystem cover</title>
+  <desc id="desc">Abstract Bangkok skyline, cloud nodes, and AI workforce bridge.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.52" stop-color="#14532d"/>
+      <stop offset="1" stop-color="#7c2d12"/>
+    </linearGradient>
+    <linearGradient id="bridge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#facc15"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="994" cy="122" r="118" fill="#fed7aa" opacity="0.24"/>
+  <g fill="#020617" opacity="0.74">
+    <rect x="0" y="430" width="1200" height="200"/>
+    <rect x="90" y="336" width="78" height="94"/>
+    <rect x="204" y="302" width="98" height="128"/>
+    <rect x="348" y="360" width="72" height="70"/>
+    <rect x="462" y="278" width="116" height="152"/>
+    <rect x="640" y="326" width="82" height="104"/>
+    <rect x="776" y="292" width="102" height="138"/>
+    <rect x="928" y="350" width="76" height="80"/>
+  </g>
+  <path d="M172 386 C310 256 473 242 600 348 C744 468 898 441 1038 288" fill="none" stroke="url(#bridge)" stroke-width="22" stroke-linecap="round"/>
+  <g fill="#f8fafc" stroke="#0f172a" stroke-width="5">
+    <circle cx="172" cy="386" r="36"/>
+    <circle cx="360" cy="286" r="42"/>
+    <circle cx="600" cy="348" r="48"/>
+    <circle cx="826" cy="408" r="42"/>
+    <circle cx="1038" cy="288" r="36"/>
+  </g>
+  <g fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-weight="800" text-anchor="middle">
+    <text x="172" y="396" font-size="21">DATA</text>
+    <text x="360" y="296" font-size="21">SKILL</text>
+    <text x="600" y="359" font-size="24">AI</text>
+    <text x="826" y="418" font-size="21">OPS</text>
+    <text x="1038" y="298" font-size="21">ROI</text>
+  </g>
+  <g opacity="0.38" stroke="#bbf7d0" stroke-width="3">
+    <path d="M270 170 H456"/>
+    <path d="M314 126 H566"/>
+    <path d="M746 156 H942"/>
+    <path d="M698 206 H1010"/>
+  </g>
+  <text x="96" y="90" fill="#dcfce7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">THAILAND / SEA ECOSYSTEM</text>
+  <text x="96" y="540" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">AI SKILLS GAP</text>
+  <text x="96" y="584" fill="#fde68a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">From Bangkok summit energy to production readiness</text>
+</svg>

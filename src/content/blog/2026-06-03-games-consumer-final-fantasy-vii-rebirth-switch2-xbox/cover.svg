@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Final Fantasy VII Rebirth multiplatform cover</title>
+  <desc id="desc">Original abstract game launch artwork with handheld and console silhouettes.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#102a43"/>
+      <stop offset="0.5" stop-color="#125d68"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="35%" r="45%">
+      <stop offset="0" stop-color="#fef3c7"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <circle cx="600" cy="236" r="260" fill="url(#sun)" opacity="0.85"/>
+  <path d="M0 494 C164 430 267 468 398 424 C547 375 650 438 780 386 C940 322 1021 388 1200 322 V630 H0 Z" fill="#052e2b" opacity="0.95"/>
+  <path d="M0 548 C184 492 342 520 500 482 C691 436 826 498 1000 456 C1084 436 1142 421 1200 412 V630 H0 Z" fill="#071826"/>
+  <g transform="translate(154 250)">
+    <rect x="0" y="0" width="280" height="168" rx="32" fill="#0f172a" stroke="#67e8f9" stroke-width="6"/>
+    <rect x="58" y="22" width="164" height="124" rx="12" fill="#164e63"/>
+    <circle cx="34" cy="84" r="18" fill="#22c55e"/>
+    <circle cx="246" cy="70" r="9" fill="#f43f5e"/>
+    <circle cx="262" cy="92" r="9" fill="#facc15"/>
+    <text x="140" y="98" fill="#e0f2fe" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" text-anchor="middle">SWITCH 2</text>
+  </g>
+  <g transform="translate(762 258)">
+    <rect x="0" y="0" width="276" height="150" rx="28" fill="#0f172a" stroke="#bbf7d0" stroke-width="6"/>
+    <circle cx="68" cy="75" r="36" fill="#16a34a"/>
+    <path d="M50 75 H86 M68 57 V93" stroke="#f8fafc" stroke-width="8" stroke-linecap="round"/>
+    <rect x="130" y="54" width="94" height="42" rx="21" fill="#1e293b"/>
+    <text x="177" y="83" fill="#dcfce7" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" text-anchor="middle">XBOX</text>
+  </g>
+  <g transform="translate(553 160)">
+    <path d="M44 0 L78 0 L70 260 L60 318 L50 260 Z" fill="#e5e7eb"/>
+    <path d="M30 260 H92 L116 304 H6 Z" fill="#cbd5e1"/>
+    <path d="M64 0 L78 0 L70 260 L60 318 Z" fill="#94a3b8"/>
+  </g>
+  <text x="96" y="88" fill="#fef3c7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">GAMES / CONSUMER</text>
+  <text x="96" y="544" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="800">REBIRTH GOES WIDE</text>
+  <text x="96" y="588" fill="#fde68a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Nintendo Switch 2 and Xbox launch day</text>
+</svg>

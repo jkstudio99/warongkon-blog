@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Intel Computex 2026 Xeon 6+ cover</title>
+  <desc id="desc">Abstract data center racks, processor tiles, and Ethernet fabric.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06101f"/>
+      <stop offset="0.52" stop-color="#0f3b57"/>
+      <stop offset="1" stop-color="#102a43"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.26" stroke="#7dd3fc" stroke-width="2">
+    <path d="M0 122 H1200"/>
+    <path d="M0 248 H1200"/>
+    <path d="M0 374 H1200"/>
+    <path d="M0 500 H1200"/>
+    <path d="M155 0 V630"/>
+    <path d="M330 0 V630"/>
+    <path d="M505 0 V630"/>
+    <path d="M680 0 V630"/>
+    <path d="M855 0 V630"/>
+    <path d="M1030 0 V630"/>
+  </g>
+  <g transform="translate(118 134)">
+    <rect x="0" y="0" width="246" height="338" rx="22" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.55"/>
+    <rect x="44" y="36" width="158" height="52" rx="8" fill="#1e293b"/>
+    <rect x="44" y="112" width="158" height="52" rx="8" fill="#1e293b"/>
+    <rect x="44" y="188" width="158" height="52" rx="8" fill="#1e293b"/>
+    <rect x="44" y="264" width="158" height="34" rx="8" fill="#0ea5e9"/>
+  </g>
+  <g transform="translate(476 122)">
+    <rect x="0" y="0" width="252" height="252" rx="28" fill="url(#chip)" opacity="0.95"/>
+    <rect x="44" y="44" width="164" height="164" rx="22" fill="#082f49" stroke="#ecfeff" stroke-opacity="0.5"/>
+    <g stroke="#bae6fd" stroke-width="8" stroke-linecap="round">
+      <path d="M-42 42 H0"/>
+      <path d="M-42 126 H0"/>
+      <path d="M-42 210 H0"/>
+      <path d="M252 42 H294"/>
+      <path d="M252 126 H294"/>
+      <path d="M252 210 H294"/>
+      <path d="M42 -42 V0"/>
+      <path d="M126 -42 V0"/>
+      <path d="M210 -42 V0"/>
+      <path d="M42 252 V294"/>
+      <path d="M126 252 V294"/>
+      <path d="M210 252 V294"/>
+    </g>
+    <text x="126" y="119" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" text-anchor="middle">XEON</text>
+    <text x="126" y="166" fill="#cffafe" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" text-anchor="middle">6+</text>
+  </g>
+  <g transform="translate(836 134)">
+    <rect x="0" y="0" width="246" height="338" rx="22" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.55"/>
+    <g fill="#22d3ee">
+      <circle cx="74" cy="84" r="18"/>
+      <circle cx="172" cy="84" r="18"/>
+      <circle cx="74" cy="178" r="18"/>
+      <circle cx="172" cy="178" r="18"/>
+      <circle cx="123" cy="266" r="18"/>
+    </g>
+    <g stroke="#a5f3fc" stroke-width="6" stroke-linecap="round">
+      <path d="M74 84 H172"/>
+      <path d="M74 84 V178"/>
+      <path d="M172 84 V178"/>
+      <path d="M74 178 L123 266"/>
+      <path d="M172 178 L123 266"/>
+    </g>
+  </g>
+  <text x="96" y="90" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">HARDWARE / INFRASTRUCTURE</text>
+  <text x="96" y="548" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="800">COMPUTEX 2026</text>
+  <text x="96" y="590" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">CPU, Ethernet, and rackscale AI systems</text>
+</svg>
