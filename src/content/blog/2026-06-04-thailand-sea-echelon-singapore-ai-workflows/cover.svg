@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Echelon Singapore AI workflow ecosystem cover</title>
+  <desc id="desc">Southeast Asia startup ecosystem map with workflow nodes and investor connections.</desc>
+  <rect width="1200" height="630" fill="#101828"/>
+  <circle cx="290" cy="205" r="76" fill="#22C55E" opacity=".86"/>
+  <circle cx="560" cy="152" r="58" fill="#38BDF8" opacity=".9"/>
+  <circle cx="803" cy="236" r="72" fill="#F59E0B" opacity=".9"/>
+  <circle cx="646" cy="420" r="82" fill="#A78BFA" opacity=".9"/>
+  <circle cx="947" cy="434" r="54" fill="#FB7185" opacity=".9"/>
+  <path d="M362 190C420 175 477 162 502 155M616 170C690 194 727 206 742 216M785 300C748 347 716 380 698 401M726 421C806 430 870 432 893 432M324 270C399 333 496 382 568 410" fill="none" stroke="#E5E7EB" stroke-width="9" stroke-linecap="round" opacity=".84"/>
+  <rect x="86" y="70" width="310" height="72" rx="18" fill="#172033" stroke="#334155"/>
+  <rect x="92" y="496" width="1014" height="64" rx="18" fill="#172033" stroke="#334155"/>
+  <text x="112" y="118" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="34" font-weight="700">SEA AI Workflows</text>
+  <text x="130" y="222" fill="#052E16" font-family="Arial, sans-serif" font-size="28" font-weight="700">SMEs</text>
+  <text x="518" y="161" fill="#082F49" font-family="Arial, sans-serif" font-size="24" font-weight="700">Builders</text>
+  <text x="753" y="246" fill="#451A03" font-family="Arial, sans-serif" font-size="25" font-weight="700">Investors</text>
+  <text x="595" y="430" fill="#2E1065" font-family="Arial, sans-serif" font-size="25" font-weight="700">Startups</text>
+  <text x="910" y="442" fill="#4C0519" font-family="Arial, sans-serif" font-size="24" font-weight="700">Cloud</text>
+  <text x="116" y="538" fill="#C7D2FE" font-family="Arial, sans-serif" font-size="27">Echelon Singapore 2026: from AI hype to implementation</text>
+</svg>

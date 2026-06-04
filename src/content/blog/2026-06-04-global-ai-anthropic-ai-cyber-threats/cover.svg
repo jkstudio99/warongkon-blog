@@ -1,0 +1,19 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Anthropic AI cyber threat mapping cover</title>
+  <desc id="desc">Abstract security operations dashboard for AI enabled cyber threat analysis.</desc>
+  <rect width="1200" height="630" fill="#0B1020"/>
+  <rect x="62" y="58" width="1076" height="514" rx="34" fill="#111827" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M110 178H1090" stroke="#1F2937" stroke-width="4"/>
+  <path d="M178 111V520M404 111V520M630 111V520M856 111V520" stroke="#1F2937" stroke-width="3"/>
+  <circle cx="200" cy="255" r="72" fill="#0EA5E9" opacity=".22"/>
+  <circle cx="200" cy="255" r="34" fill="#67E8F9"/>
+  <circle cx="414" cy="350" r="52" fill="#FB7185" opacity=".82"/>
+  <circle cx="637" cy="250" r="46" fill="#FBBF24" opacity=".9"/>
+  <circle cx="870" cy="376" r="66" fill="#A78BFA" opacity=".78"/>
+  <path d="M236 255C305 270 339 337 362 348M466 340C523 315 565 276 591 258M681 263C742 286 786 330 820 366" fill="none" stroke="#E0F2FE" stroke-width="8" stroke-linecap="round"/>
+  <rect x="122" y="438" width="328" height="54" rx="14" fill="#0F172A" stroke="#334155"/>
+  <rect x="474" y="438" width="240" height="54" rx="14" fill="#0F172A" stroke="#334155"/>
+  <rect x="738" y="438" width="340" height="54" rx="14" fill="#0F172A" stroke="#334155"/>
+  <text x="112" y="143" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">AI-Enabled Cyber Threats</text>
+  <text x="112" y="535" fill="#BAE6FD" font-family="Arial, sans-serif" font-size="26">832 accounts mapped to attack behavior</text>
+</svg>
