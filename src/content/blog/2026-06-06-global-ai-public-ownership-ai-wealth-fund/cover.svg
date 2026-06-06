@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI public ownership cover</title>
+  <desc id="desc">Abstract public wealth fund interface with AI network and shared equity signals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#082f49"/>
+      <stop offset="0.52" stop-color="#134e4a"/>
+      <stop offset="1" stop-color="#3f3f46"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 110 C150 50 260 120 420 76 C610 24 750 88 920 56 C1040 34 1130 48 1200 20 L1200 0 L0 0 Z" fill="#14b8a6" opacity="0.18"/>
+  <rect x="90" y="86" width="1020" height="454" rx="30" fill="#f8fafc" opacity="0.1" stroke="#e2e8f0" stroke-opacity="0.35"/>
+  <circle cx="302" cy="278" r="118" fill="none" stroke="#99f6e4" stroke-width="10" opacity="0.85"/>
+  <circle cx="302" cy="278" r="60" fill="#042f2e" stroke="#fef3c7" stroke-width="8"/>
+  <path d="M302 198 V170 M302 386 V414 M210 278 H180 M424 278 H452 M238 214 L218 194 M366 342 L390 366 M366 214 L390 194 M238 342 L218 366" stroke="#fef3c7" stroke-width="8" stroke-linecap="round"/>
+  <g fill="url(#gold)" opacity="0.96">
+    <circle cx="302" cy="278" r="20"/>
+    <circle cx="180" cy="170" r="14"/>
+    <circle cx="452" cy="170" r="14"/>
+    <circle cx="180" cy="414" r="14"/>
+    <circle cx="452" cy="414" r="14"/>
+  </g>
+  <g stroke="#99f6e4" stroke-width="5" opacity="0.65">
+    <path d="M180 170 L302 278 L452 170"/>
+    <path d="M180 414 L302 278 L452 414"/>
+  </g>
+  <rect x="540" y="142" width="480" height="68" rx="16" fill="#fef3c7" opacity="0.95"/>
+  <rect x="540" y="242" width="398" height="30" rx="15" fill="#99f6e4" opacity="0.82"/>
+  <rect x="540" y="298" width="455" height="30" rx="15" fill="#ccfbf1" opacity="0.68"/>
+  <rect x="540" y="354" width="324" height="30" rx="15" fill="#ccfbf1" opacity="0.55"/>
+  <g fill="#fef3c7" opacity="0.86">
+    <rect x="548" y="432" width="86" height="54" rx="10"/>
+    <rect x="660" y="414" width="86" height="72" rx="10"/>
+    <rect x="772" y="384" width="86" height="102" rx="10"/>
+    <rect x="884" y="448" width="86" height="38" rx="10"/>
+  </g>
+  <text x="566" y="188" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="39" font-weight="700">Public Ownership</text>
+  <text x="540" y="520" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">AI Wealth Fund Debate</text>
+  <text x="96" y="560" fill="#fef3c7" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">JUNE 6, 2026</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">DayOne AI data center financing cover</title>
+  <desc id="desc">Abstract AI-ready data center campus with power lines and financing graph.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="0.58" stop-color="#064e3b"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 470 C160 430 260 470 420 430 C620 380 760 406 950 318 C1040 276 1120 260 1200 246 L1200 630 L0 630 Z" fill="#34d399" opacity="0.14"/>
+  <g fill="#e5e7eb" opacity="0.95">
+    <rect x="96" y="178" width="170" height="330" rx="18"/>
+    <rect x="300" y="128" width="190" height="380" rx="18"/>
+    <rect x="526" y="214" width="162" height="294" rx="18"/>
+  </g>
+  <g fill="#0f172a" opacity="0.62">
+    <rect x="126" y="216" width="54" height="36" rx="6"/>
+    <rect x="190" y="216" width="54" height="36" rx="6"/>
+    <rect x="126" y="276" width="54" height="36" rx="6"/>
+    <rect x="190" y="276" width="54" height="36" rx="6"/>
+    <rect x="330" y="174" width="62" height="40" rx="6"/>
+    <rect x="410" y="174" width="62" height="40" rx="6"/>
+    <rect x="330" y="238" width="62" height="40" rx="6"/>
+    <rect x="410" y="238" width="62" height="40" rx="6"/>
+    <rect x="558" y="252" width="46" height="34" rx="6"/>
+    <rect x="618" y="252" width="46" height="34" rx="6"/>
+    <rect x="558" y="306" width="46" height="34" rx="6"/>
+    <rect x="618" y="306" width="46" height="34" rx="6"/>
+  </g>
+  <g fill="none" stroke="#93c5fd" stroke-width="8" stroke-linecap="round" opacity="0.85">
+    <path d="M126 128 H650"/>
+    <path d="M181 128 V88"/>
+    <path d="M395 128 V68"/>
+    <path d="M604 128 V96"/>
+  </g>
+  <rect x="740" y="126" width="356" height="94" rx="18" fill="#dbeafe"/>
+  <rect x="740" y="258" width="268" height="28" rx="14" fill="#86efac"/>
+  <rect x="740" y="310" width="318" height="28" rx="14" fill="#bfdbfe"/>
+  <rect x="740" y="362" width="234" height="28" rx="14" fill="#bfdbfe" opacity="0.75"/>
+  <polyline points="744,470 820,434 902,452 980,382 1070,330" fill="none" stroke="#fde68a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1070" cy="330" r="18" fill="#fde68a"/>
+  <text x="766" y="186" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">US$4.5B Series C</text>
+  <text x="744" y="536" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">AI-Ready Data Centers</text>
+  <text x="96" y="566" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">1.5GW BOOKINGS</text>
+</svg>
