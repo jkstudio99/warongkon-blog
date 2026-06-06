@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Military AI governance cover</title>
+  <desc id="desc">Abstract command room interface for military AI oversight and human responsibility.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.55" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#164e63"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2e8f0" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#67e8f9" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 510 C180 430 290 470 460 410 C660 340 780 390 960 300 C1060 250 1130 245 1200 220 L1200 630 L0 630 Z" fill="#06b6d4" opacity="0.12"/>
+  <rect x="92" y="84" width="1016" height="462" rx="28" fill="url(#panel)" stroke="#94a3b8" stroke-opacity="0.45"/>
+  <rect x="142" y="134" width="340" height="278" rx="18" fill="#020617" opacity="0.78" stroke="#38bdf8" stroke-opacity="0.45"/>
+  <circle cx="312" cy="248" r="86" fill="#0ea5e9" opacity="0.18"/>
+  <path d="M312 168 L376 208 L376 284 L312 324 L248 284 L248 208 Z" fill="none" stroke="#67e8f9" stroke-width="8"/>
+  <circle cx="312" cy="248" r="22" fill="#f8fafc"/>
+  <path d="M312 226 V168 M312 270 V324 M290 248 H248 M334 248 H376" stroke="#67e8f9" stroke-width="7" stroke-linecap="round"/>
+  <rect x="538" y="134" width="520" height="82" rx="16" fill="#f8fafc" opacity="0.94"/>
+  <rect x="538" y="246" width="376" height="34" rx="17" fill="#67e8f9" opacity="0.8"/>
+  <rect x="538" y="304" width="470" height="34" rx="17" fill="#cbd5e1" opacity="0.7"/>
+  <rect x="538" y="362" width="320" height="34" rx="17" fill="#cbd5e1" opacity="0.55"/>
+  <g fill="none" stroke="#f8fafc" stroke-width="4" stroke-linecap="round" opacity="0.72">
+    <path d="M152 470 H1048"/>
+    <path d="M210 470 V430"/>
+    <path d="M340 470 V442"/>
+    <path d="M470 470 V404"/>
+    <path d="M600 470 V432"/>
+    <path d="M730 470 V386"/>
+    <path d="M860 470 V420"/>
+    <path d="M990 470 V398"/>
+  </g>
+  <text x="538" y="178" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">Human Responsibility</text>
+  <text x="538" y="520" fill="#e0f2fe" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Military AI Bills</text>
+  <text x="142" y="520" fill="#67e8f9" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">JUNE 5, 2026</text>
+</svg>

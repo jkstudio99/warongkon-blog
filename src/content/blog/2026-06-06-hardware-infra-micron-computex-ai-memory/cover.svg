@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI memory and storage cover</title>
+  <desc id="desc">Abstract memory modules, HBM stacks, and high-density storage for AI infrastructure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="0.52" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <g transform="translate(108 100)">
+    <rect x="0" y="0" width="304" height="430" rx="24" fill="#031716" opacity="0.9" stroke="#99f6e4" stroke-opacity="0.55"/>
+    <rect x="42" y="52" width="220" height="64" rx="12" fill="#14b8a6"/>
+    <rect x="42" y="148" width="220" height="64" rx="12" fill="#2dd4bf"/>
+    <rect x="42" y="244" width="220" height="64" rx="12" fill="#5eead4"/>
+    <rect x="42" y="340" width="220" height="34" rx="10" fill="#ccfbf1"/>
+    <g stroke="#99f6e4" stroke-width="5" opacity="0.75">
+      <path d="M18 86H0 M304 86H286 M18 182H0 M304 182H286 M18 278H0 M304 278H286"/>
+    </g>
+  </g>
+  <g transform="translate(500 118)">
+    <rect x="0" y="206" width="420" height="170" rx="22" fill="#0f172a" opacity="0.86" stroke="#fde68a" stroke-opacity="0.6"/>
+    <rect x="32" y="244" width="356" height="24" rx="12" fill="#fbbf24"/>
+    <rect x="32" y="296" width="286" height="24" rx="12" fill="#fed7aa"/>
+    <rect x="32" y="348" width="326" height="24" rx="12" fill="#fef3c7"/>
+    <g transform="translate(26 0)">
+      <rect x="0" y="0" width="80" height="150" rx="14" fill="#0f172a" stroke="#fef3c7" stroke-width="4"/>
+      <rect x="104" y="0" width="80" height="150" rx="14" fill="#0f172a" stroke="#fef3c7" stroke-width="4"/>
+      <rect x="208" y="0" width="80" height="150" rx="14" fill="#0f172a" stroke="#fef3c7" stroke-width="4"/>
+      <rect x="312" y="0" width="80" height="150" rx="14" fill="#0f172a" stroke="#fef3c7" stroke-width="4"/>
+      <path d="M40 150V206 M144 150V206 M248 150V206 M352 150V206" stroke="#fef3c7" stroke-width="5"/>
+    </g>
+  </g>
+  <circle cx="1004" cy="182" r="92" fill="#fbbf24" opacity="0.2"/>
+  <circle cx="1004" cy="182" r="54" fill="none" stroke="#fef3c7" stroke-width="8"/>
+  <text x="500" y="514" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">AI Memory Stack</text>
+  <text x="500" y="566" fill="#fde68a" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">HBM4 / SOCAMM2 / 245TB SSD</text>
+</svg>

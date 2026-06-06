@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">SEA Codex hackathon cover</title>
+  <desc id="desc">Regional developer network and coding agent prototype flow for Southeast Asia.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c4a6e"/>
+      <stop offset="0.5" stop-color="#155e75"/>
+      <stop offset="1" stop-color="#7c2d12"/>
+    </linearGradient>
+    <linearGradient id="code" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#fed7aa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 456 C130 372 260 424 390 350 C530 270 676 316 800 246 C944 164 1066 184 1200 114 L1200 630 L0 630 Z" fill="#f97316" opacity="0.16"/>
+  <g stroke="#a5f3fc" stroke-width="4" opacity="0.65">
+    <path d="M218 234 C340 130 520 182 610 300"/>
+    <path d="M610 300 C720 420 870 412 990 286"/>
+    <path d="M218 234 C326 376 470 424 610 300"/>
+    <path d="M610 300 C710 178 850 146 990 286"/>
+  </g>
+  <g fill="#ecfeff">
+    <circle cx="218" cy="234" r="18"/>
+    <circle cx="610" cy="300" r="22"/>
+    <circle cx="990" cy="286" r="18"/>
+    <circle cx="388" cy="402" r="14"/>
+    <circle cx="814" cy="166" r="14"/>
+  </g>
+  <rect x="132" y="104" width="432" height="344" rx="24" fill="#082f49" opacity="0.86" stroke="#67e8f9" stroke-opacity="0.6"/>
+  <text x="174" y="176" fill="#f0f9ff" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700">&lt;Codex /&gt;</text>
+  <rect x="174" y="224" width="286" height="22" rx="11" fill="#67e8f9" opacity="0.9"/>
+  <rect x="174" y="272" width="338" height="22" rx="11" fill="#cffafe" opacity="0.68"/>
+  <rect x="174" y="320" width="250" height="22" rx="11" fill="#fed7aa" opacity="0.84"/>
+  <rect x="174" y="368" width="306" height="22" rx="11" fill="#bae6fd" opacity="0.72"/>
+  <rect x="646" y="378" width="376" height="96" rx="22" fill="url(#code)" opacity="0.92"/>
+  <text x="678" y="438" fill="#0c4a6e" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">SEA Builders</text>
+  <text x="132" y="542" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Sea x OpenAI Hackathon</text>
+  <text x="132" y="586" fill="#fed7aa" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Singapore / June 6, 2026</text>
+</svg>
