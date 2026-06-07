@@ -1,0 +1,41 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Megaport distributed inference cloud cover</title>
+  <desc id="desc">A topic-specific cover with connected data center nodes, GPUs, and inference traffic paths.</desc>
+  <rect width="1200" height="630" fill="#0b1320"/>
+  <rect x="58" y="58" width="1084" height="514" rx="34" fill="#101f2d" stroke="#79b8ff" stroke-width="3"/>
+  <g stroke="#79b8ff" stroke-width="5" fill="none" opacity=".72">
+    <path d="M218 226 C344 136 472 156 596 260"/>
+    <path d="M596 260 C732 370 844 366 990 252"/>
+    <path d="M218 410 C356 464 478 434 596 260"/>
+    <path d="M596 260 C728 160 846 144 990 252"/>
+  </g>
+  <g fill="#f2f6fb" stroke="#79b8ff" stroke-width="4">
+    <rect x="160" y="178" width="156" height="104" rx="18"/>
+    <rect x="902" y="202" width="156" height="104" rx="18"/>
+    <rect x="154" y="374" width="156" height="104" rx="18"/>
+    <rect x="506" y="206" width="188" height="128" rx="20"/>
+  </g>
+  <g fill="#0b1320">
+    <rect x="184" y="205" width="24" height="52" rx="5"/>
+    <rect x="218" y="205" width="24" height="52" rx="5"/>
+    <rect x="252" y="205" width="24" height="52" rx="5"/>
+    <rect x="926" y="229" width="24" height="52" rx="5"/>
+    <rect x="960" y="229" width="24" height="52" rx="5"/>
+    <rect x="994" y="229" width="24" height="52" rx="5"/>
+    <rect x="178" y="401" width="24" height="52" rx="5"/>
+    <rect x="212" y="401" width="24" height="52" rx="5"/>
+    <rect x="246" y="401" width="24" height="52" rx="5"/>
+  </g>
+  <rect x="550" y="236" width="100" height="68" rx="12" fill="#f6c85f"/>
+  <path d="M566 250 h68 M566 268 h68 M566 286 h68" stroke="#0b1320" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#79b8ff">
+    <circle cx="218" cy="226" r="10"/>
+    <circle cx="990" cy="252" r="10"/>
+    <circle cx="218" cy="410" r="10"/>
+    <circle cx="596" cy="260" r="12"/>
+  </g>
+  <text x="86" y="118" fill="#f2f6fb" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">HARDWARE / INFRASTRUCTURE</text>
+  <text x="86" y="514" fill="#f2f6fb" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800">Distributed AI Inference Cloud</text>
+  <text x="86" y="552" fill="#79b8ff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">A$827.3M raise · A$458.9M AI contracts · 1,100 data centers</text>
+  <text x="914" y="118" fill="#f6c85f" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">JUN 7, 2026</text>
+</svg>

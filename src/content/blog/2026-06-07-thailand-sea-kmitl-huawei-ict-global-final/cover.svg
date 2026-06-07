@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">KMITL Huawei ICT global final cover</title>
+  <desc id="desc">A topic-specific editorial cover with a trophy, computing terminals, Thailand marker, and global competition stage.</desc>
+  <rect width="1200" height="630" fill="#0f1728"/>
+  <rect x="64" y="60" width="1072" height="508" rx="34" fill="#17223a" stroke="#f2c94c" stroke-width="3"/>
+  <circle cx="314" cy="290" r="144" fill="#203154" stroke="#5ee0a0" stroke-width="6"/>
+  <path d="M254 190 h120 v78 c0 60 -34 98 -60 112 c-26 -14 -60 -52 -60 -112 Z" fill="#f2c94c" stroke="#fff2b8" stroke-width="5"/>
+  <path d="M254 220 h-52 c0 56 26 90 62 94 M374 220 h52 c0 56 -26 90 -62 94" fill="none" stroke="#f2c94c" stroke-width="16" stroke-linecap="round"/>
+  <rect x="284" y="380" width="60" height="52" fill="#f2c94c"/>
+  <rect x="226" y="432" width="176" height="28" rx="8" fill="#f2c94c"/>
+  <rect x="554" y="176" width="322" height="204" rx="24" fill="#eef5ff"/>
+  <rect x="590" y="214" width="250" height="28" rx="8" fill="#17223a"/>
+  <rect x="590" y="264" width="190" height="24" rx="8" fill="#5ee0a0"/>
+  <rect x="590" y="314" width="228" height="24" rx="8" fill="#f2c94c"/>
+  <path d="M878 210 c88 24 132 76 130 156 c-2 70 -54 116 -126 132" fill="none" stroke="#5ee0a0" stroke-width="6" stroke-dasharray="12 12"/>
+  <circle cx="1002" cy="362" r="42" fill="#203154" stroke="#f2c94c" stroke-width="5"/>
+  <path d="M988 362 l16 16 l26 -34" fill="none" stroke="#5ee0a0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="92" y="118" fill="#eef5ff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">THAILAND / SEA ECOSYSTEM</text>
+  <text x="92" y="506" fill="#eef5ff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800">KMITL SIGKILL Wins First Prize</text>
+  <text x="92" y="546" fill="#5ee0a0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Huawei ICT Competition Global Final · Computing Track</text>
+  <text x="910" y="118" fill="#f2c94c" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">JUN 7, 2026</text>
+</svg>
