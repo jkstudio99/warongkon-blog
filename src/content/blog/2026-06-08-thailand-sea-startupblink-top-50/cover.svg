@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Thailand startup ecosystem top 50 cover</title>
+  <desc id="desc">Abstract Thailand startup ecosystem ranking graphic with city nodes and MedTech highlight.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#312e81"/>
+      <stop offset="0.5" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#164e63"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M144 480 C245 365 326 416 412 311 C500 203 599 253 670 179 C743 101 889 122 1018 85" fill="none" stroke="#fef08a" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
+  <rect x="88" y="96" width="336" height="378" rx="30" fill="url(#card)" stroke="#ccfbf1" stroke-opacity="0.45"/>
+  <rect x="464" y="164" width="264" height="226" rx="30" fill="url(#card)" stroke="#ccfbf1" stroke-opacity="0.45"/>
+  <rect x="774" y="130" width="318" height="292" rx="30" fill="url(#card)" stroke="#ccfbf1" stroke-opacity="0.45"/>
+  <g fill="#ccfbf1">
+    <circle cx="225" cy="414" r="18"/>
+    <circle cx="347" cy="358" r="13"/>
+    <circle cx="522" cy="262" r="18"/>
+    <circle cx="649" cy="218" r="13"/>
+    <circle cx="850" cy="208" r="18"/>
+    <circle cx="1008" cy="164" r="13"/>
+  </g>
+  <g fill="#fef08a" font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <text x="134" y="210" font-size="116">#49</text>
+    <text x="515" y="278" font-size="72">Top 50</text>
+    <text x="840" y="255" font-size="76">MedTech</text>
+    <text x="914" y="330" font-size="82">#1</text>
+  </g>
+  <g fill="#e0f2fe" font-family="Arial, Helvetica, sans-serif">
+    <text x="140" y="266" font-size="28">Global Startup Ecosystem</text>
+    <text x="523" y="326" font-size="26">first time in six years</text>
+    <text x="854" y="374" font-size="27">Southeast Asia</text>
+  </g>
+  <text x="86" y="548" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800">Thailand Startup Ecosystem 2026</text>
+  <text x="90" y="590" fill="#ccfbf1" font-family="Arial, Helvetica, sans-serif" font-size="26">Bangkok leads, secondary cities accelerate, MedTech stands out</text>
+</svg>

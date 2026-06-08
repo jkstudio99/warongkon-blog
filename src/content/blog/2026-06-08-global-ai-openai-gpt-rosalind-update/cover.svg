@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">GPT-Rosalind life sciences AI workflow cover</title>
+  <desc id="desc">Abstract scientific workflow diagram with molecules, sequence lines, and terminal panes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102033"/>
+      <stop offset="0.48" stop-color="#184c55"/>
+      <stop offset="1" stop-color="#1d6b50"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8fff5" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#b6f7ff" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 520 C190 455 315 565 488 501 C650 441 733 325 904 368 C1035 401 1102 485 1200 438 L1200 630 L0 630 Z" fill="#082535" opacity="0.58"/>
+  <rect x="92" y="86" width="470" height="380" rx="28" fill="url(#panel)" stroke="#94f6df" stroke-opacity="0.45"/>
+  <rect x="640" y="118" width="424" height="310" rx="28" fill="#061b2a" opacity="0.58" stroke="#7dd3fc" stroke-opacity="0.42"/>
+  <g fill="none" stroke="#9df6d2" stroke-width="5" stroke-linecap="round">
+    <path d="M170 365 C230 280 280 280 340 365 C400 450 450 450 510 365"/>
+    <path d="M170 305 C230 390 280 390 340 305 C400 220 450 220 510 305"/>
+  </g>
+  <g stroke="#d9fff2" stroke-width="3" opacity="0.8">
+    <line x1="214" y1="316" x2="247" y2="349"/>
+    <line x1="278" y1="351" x2="312" y2="318"/>
+    <line x1="374" y1="318" x2="408" y2="351"/>
+    <line x1="438" y1="351" x2="472" y2="318"/>
+  </g>
+  <g fill="#e6fff6">
+    <circle cx="170" cy="365" r="9"/>
+    <circle cx="340" cy="365" r="9"/>
+    <circle cx="510" cy="365" r="9"/>
+    <circle cx="170" cy="305" r="9"/>
+    <circle cx="340" cy="305" r="9"/>
+    <circle cx="510" cy="305" r="9"/>
+  </g>
+  <g fill="#c7f9ff" opacity="0.9">
+    <rect x="694" y="174" width="240" height="14" rx="7"/>
+    <rect x="694" y="218" width="306" height="14" rx="7"/>
+    <rect x="694" y="262" width="196" height="14" rx="7"/>
+    <rect x="694" y="306" width="276" height="14" rx="7"/>
+    <rect x="694" y="350" width="222" height="14" rx="7"/>
+  </g>
+  <g fill="#7dd3fc">
+    <circle cx="1014" cy="181" r="8"/>
+    <circle cx="1014" cy="225" r="8"/>
+    <circle cx="1014" cy="269" r="8"/>
+    <circle cx="1014" cy="313" r="8"/>
+    <circle cx="1014" cy="357" r="8"/>
+  </g>
+  <text x="92" y="535" fill="#f2fffb" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">GPT-Rosalind Update</text>
+  <text x="95" y="578" fill="#bff8e6" font-family="Arial, Helvetica, sans-serif" font-size="26">Life sciences AI moves into executable workflows</text>
+</svg>

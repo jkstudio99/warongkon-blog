@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Xbox Games Showcase 2026 cover</title>
+  <desc id="desc">Stylized green showcase stage with controller, console, and game tiles.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#052e16"/>
+      <stop offset="0.5" stop-color="#14532d"/>
+      <stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#86efac" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#86efac" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <path d="M120 480 C270 360 460 330 600 330 C740 330 930 360 1080 480 L1035 580 H165 Z" fill="#07130b" opacity="0.78"/>
+  <rect x="240" y="164" width="240" height="160" rx="18" fill="#0f2416" stroke="#bbf7d0" stroke-opacity="0.45"/>
+  <rect x="512" y="130" width="176" height="224" rx="20" fill="#0f2416" stroke="#bbf7d0" stroke-opacity="0.45"/>
+  <rect x="720" y="164" width="240" height="160" rx="18" fill="#0f2416" stroke="#bbf7d0" stroke-opacity="0.45"/>
+  <g fill="#86efac" opacity="0.95">
+    <rect x="275" y="199" width="76" height="24" rx="12"/>
+    <rect x="275" y="242" width="146" height="24" rx="12"/>
+    <rect x="275" y="285" width="112" height="24" rx="12"/>
+    <rect x="756" y="199" width="128" height="24" rx="12"/>
+    <rect x="756" y="242" width="82" height="24" rx="12"/>
+    <rect x="756" y="285" width="152" height="24" rx="12"/>
+  </g>
+  <g transform="translate(520 385)">
+    <path d="M35 35 C52 6 92 0 120 18 C147 0 188 6 205 35 L235 92 C248 118 228 147 199 139 L155 127 H85 L41 139 C12 147 -8 118 5 92 Z" fill="#111827" stroke="#d9f99d" stroke-width="6"/>
+    <circle cx="78" cy="78" r="16" fill="#22c55e"/>
+    <circle cx="162" cy="78" r="10" fill="#bbf7d0"/>
+    <circle cx="190" cy="58" r="10" fill="#bbf7d0"/>
+    <rect x="111" y="73" width="22" height="9" rx="4" fill="#d9f99d"/>
+  </g>
+  <text x="86" y="96" fill="#f0fdf4" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">Xbox Games Showcase 2026</text>
+  <text x="90" y="145" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="28">Exclusives, anniversary hardware, and a Game Pass-heavy slate</text>
+  <text x="878" y="552" fill="#d9f99d" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800">25</text>
+</svg>

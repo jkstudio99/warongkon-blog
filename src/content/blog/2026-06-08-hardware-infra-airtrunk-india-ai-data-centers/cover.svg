@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">AirTrunk India AI data center infrastructure cover</title>
+  <desc id="desc">Stylized data center campus with power grid, cooling lines, and five gigawatt capacity marker.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2735"/>
+      <stop offset="0.52" stop-color="#334155"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="rack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect y="455" width="1200" height="175" fill="#0b1721"/>
+  <g opacity="0.25" stroke="#f8fafc" stroke-width="2">
+    <path d="M0 470 H1200"/>
+    <path d="M0 520 H1200"/>
+    <path d="M0 570 H1200"/>
+    <path d="M80 630 L500 455"/>
+    <path d="M360 630 L650 455"/>
+    <path d="M840 630 L700 455"/>
+    <path d="M1110 630 L815 455"/>
+  </g>
+  <g>
+    <rect x="132" y="222" width="195" height="230" rx="14" fill="#172033" stroke="#67e8f9" stroke-opacity="0.48"/>
+    <rect x="373" y="184" width="235" height="268" rx="14" fill="#172033" stroke="#67e8f9" stroke-opacity="0.48"/>
+    <rect x="656" y="246" width="186" height="206" rx="14" fill="#172033" stroke="#67e8f9" stroke-opacity="0.48"/>
+    <rect x="886" y="205" width="180" height="247" rx="14" fill="#172033" stroke="#67e8f9" stroke-opacity="0.48"/>
+  </g>
+  <g fill="url(#rack)" opacity="0.9">
+    <rect x="163" y="260" width="35" height="158" rx="7"/>
+    <rect x="212" y="260" width="35" height="158" rx="7"/>
+    <rect x="261" y="260" width="35" height="158" rx="7"/>
+    <rect x="413" y="228" width="38" height="185" rx="7"/>
+    <rect x="466" y="228" width="38" height="185" rx="7"/>
+    <rect x="519" y="228" width="38" height="185" rx="7"/>
+    <rect x="697" y="284" width="38" height="129" rx="7"/>
+    <rect x="752" y="284" width="38" height="129" rx="7"/>
+    <rect x="925" y="246" width="35" height="165" rx="7"/>
+    <rect x="976" y="246" width="35" height="165" rx="7"/>
+  </g>
+  <g fill="#22d3ee">
+    <circle cx="180" cy="285" r="4"/>
+    <circle cx="229" cy="310" r="4"/>
+    <circle cx="278" cy="335" r="4"/>
+    <circle cx="432" cy="255" r="4"/>
+    <circle cx="485" cy="280" r="4"/>
+    <circle cx="538" cy="305" r="4"/>
+    <circle cx="716" cy="310" r="4"/>
+    <circle cx="771" cy="340" r="4"/>
+    <circle cx="942" cy="278" r="4"/>
+    <circle cx="993" cy="328" r="4"/>
+  </g>
+  <path d="M160 179 H1030" fill="none" stroke="#fde68a" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M229 179 V138 H492 V179 M749 179 V138 H976 V179" fill="none" stroke="#fde68a" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <text x="94" y="105" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">AirTrunk India Buildout</text>
+  <text x="98" y="155" fill="#c7f9ff" font-family="Arial, Helvetica, sans-serif" font-size="28">US$30B plan for 5GW AI data center capacity</text>
+  <text x="820" y="540" fill="#fef3c7" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="800">5GW</text>
+</svg>
