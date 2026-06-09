@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">ETDA AI Governance 2026 cover</title>
+  <desc id="desc">Thailand AI governance roadmap with trust shield, policy network, and regional hub signals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2d32"/>
+      <stop offset="0.48" stop-color="#164d5e"/>
+      <stop offset="1" stop-color="#2f3d27"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9fff7"/>
+      <stop offset="0.52" stop-color="#8af0d0"/>
+      <stop offset="1" stop-color="#ffd769"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 490 C170 390 308 518 480 430 C650 342 770 260 1200 330 L1200 630 L0 630 Z" fill="#15422f" opacity="0.55"/>
+  <g opacity="0.42" stroke="#bff5e3" stroke-width="2">
+    <path d="M170 180 L308 266 L468 196 L628 304 L790 218 L988 290"/>
+    <path d="M210 410 L360 344 L522 414 L690 350 L836 428 L1000 372"/>
+    <path d="M468 196 L522 414"/>
+    <path d="M628 304 L690 350"/>
+  </g>
+  <g fill="#e9fff7">
+    <circle cx="170" cy="180" r="8"/>
+    <circle cx="308" cy="266" r="8"/>
+    <circle cx="468" cy="196" r="8"/>
+    <circle cx="628" cy="304" r="8"/>
+    <circle cx="790" cy="218" r="8"/>
+    <circle cx="988" cy="290" r="8"/>
+    <circle cx="210" cy="410" r="8"/>
+    <circle cx="360" cy="344" r="8"/>
+    <circle cx="522" cy="414" r="8"/>
+    <circle cx="690" cy="350" r="8"/>
+    <circle cx="836" cy="428" r="8"/>
+    <circle cx="1000" cy="372" r="8"/>
+  </g>
+  <g transform="translate(122 104)" filter="url(#shadow)">
+    <path d="M214 0 L394 72 V204 C394 318 320 386 214 430 C108 386 34 318 34 204 V72 Z" fill="url(#shield)"/>
+    <path d="M214 58 L328 104 V208 C328 276 282 326 214 356 C146 326 100 276 100 208 V104 Z" fill="#0b2d32" opacity="0.88"/>
+    <path d="M158 214 L200 254 L286 150" fill="none" stroke="#8af0d0" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(650 120)">
+    <rect x="0" y="0" width="350" height="260" rx="28" fill="#ffffff" opacity="0.92"/>
+    <rect x="38" y="42" width="114" height="30" rx="15" fill="#0b2d32"/>
+    <rect x="38" y="100" width="276" height="22" rx="11" fill="#36b58b"/>
+    <rect x="38" y="144" width="236" height="22" rx="11" fill="#f2bd3e"/>
+    <rect x="38" y="188" width="286" height="22" rx="11" fill="#2776b8"/>
+    <text x="38" y="238" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#0b2d32">AI 2026</text>
+  </g>
+  <text x="118" y="520" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#ffffff">ETDA AI Governance</text>
+  <text x="118" y="570" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#d6f5e9">Driving Trust AI Governance for Thailand and SEA</text>
+</svg>
