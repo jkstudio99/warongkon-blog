@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">PointFive AI Efficiency OS cover</title>
+  <desc id="desc">Cloud cost graph, coding agent endpoint, and governed token flow for AI efficiency.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06251f"/>
+      <stop offset="0.52" stop-color="#103e4a"/>
+      <stop offset="1" stop-color="#452c5f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6fffd2"/>
+      <stop offset="1" stop-color="#f2d35e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 462 C150 390 275 520 430 450 C590 378 720 322 890 382 C1035 434 1108 338 1200 358 L1200 630 L0 630 Z" fill="#34d399" opacity="0.18"/>
+  <g transform="translate(92 108)" filter="url(#shadow)">
+    <rect width="430" height="324" rx="26" fill="#f6fff7"/>
+    <text x="38" y="62" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#073b33">AI Spend Ledger</text>
+    <rect x="40" y="96" width="350" height="172" rx="16" fill="#dffcf2"/>
+    <path d="M66 232 L116 204 L166 218 L216 158 L266 168 L316 118 L364 134" fill="none" stroke="#0f766e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="316" cy="118" r="15" fill="#f59e0b"/>
+    <rect x="40" y="288" width="112" height="16" rx="8" fill="#0f766e" opacity="0.75"/>
+    <rect x="170" y="288" width="82" height="16" rx="8" fill="#0f766e" opacity="0.42"/>
+    <rect x="270" y="288" width="120" height="16" rx="8" fill="#0f766e" opacity="0.28"/>
+  </g>
+  <g transform="translate(622 104)" filter="url(#shadow)">
+    <rect width="390" height="304" rx="28" fill="#101827"/>
+    <rect x="40" y="42" width="310" height="58" rx="15" fill="#233044"/>
+    <text x="66" y="80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Coding Agent</text>
+    <path d="M74 150 H316" stroke="#6fffd2" stroke-width="8" stroke-linecap="round"/>
+    <path d="M74 194 H252" stroke="#f2d35e" stroke-width="8" stroke-linecap="round"/>
+    <path d="M74 238 H300" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="318" cy="194" r="32" fill="url(#accent)"/>
+    <path d="M306 194 L316 204 L334 180" fill="none" stroke="#101827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g stroke="#eafff8" stroke-width="4" opacity="0.5">
+    <path d="M526 246 C560 220 586 220 622 246"/>
+    <path d="M526 294 C562 322 586 322 622 294"/>
+  </g>
+  <text x="92" y="520" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#ffffff">PointFive AI Efficiency OS</text>
+  <text x="92" y="570" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#dffcf2">Token governance, cost control, and agentic remediation</text>
+</svg>

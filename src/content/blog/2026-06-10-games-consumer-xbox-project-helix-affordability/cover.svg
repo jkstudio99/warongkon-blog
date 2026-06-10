@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Xbox Project Helix affordability cover</title>
+  <desc id="desc">Hybrid Xbox console and PC device with memory and storage cost indicators.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07120b"/>
+      <stop offset="0.48" stop-color="#12381f"/>
+      <stop offset="1" stop-color="#0b234d"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8cffb5"/>
+      <stop offset="1" stop-color="#4da3ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 446 C150 390 300 500 452 430 C618 354 740 388 900 428 C1038 462 1114 370 1200 390 L1200 630 L0 630 Z" fill="#22c55e" opacity="0.18"/>
+  <g transform="translate(102 126)" filter="url(#shadow)">
+    <rect width="468" height="266" rx="34" fill="#0f172a"/>
+    <rect x="34" y="34" width="400" height="190" rx="20" fill="url(#screen)"/>
+    <circle cx="104" cy="254" r="18" fill="#22c55e"/>
+    <circle cx="156" cy="254" r="18" fill="#94a3b8"/>
+    <rect x="290" y="240" width="114" height="28" rx="14" fill="#1f2937"/>
+  </g>
+  <g transform="translate(662 126)" filter="url(#shadow)">
+    <rect width="330" height="266" rx="30" fill="#f8fafc"/>
+    <text x="36" y="64" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#0f172a">Cost Pressure</text>
+    <rect x="36" y="92" width="258" height="46" rx="14" fill="#dcfce7"/>
+    <text x="58" y="123" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#166534">Memory</text>
+    <path d="M224 122 L248 98 L272 122" fill="none" stroke="#ef4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="36" y="160" width="258" height="46" rx="14" fill="#dbeafe"/>
+    <text x="58" y="191" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#1d4ed8">Storage</text>
+    <path d="M224 190 L248 166 L272 190" fill="none" stroke="#ef4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g stroke="#e7fff0" stroke-width="4" opacity="0.48">
+    <path d="M570 258 H662"/>
+    <path d="M616 226 V290"/>
+  </g>
+  <text x="102" y="520" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#ffffff">Xbox Project Helix</text>
+  <text x="102" y="570" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#d1fae5">Affordability becomes the next-gen console battleground</text>
+</svg>
