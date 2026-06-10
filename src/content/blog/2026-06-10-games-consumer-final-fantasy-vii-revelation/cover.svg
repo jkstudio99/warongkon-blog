@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Final Fantasy VII Revelation cover</title>
+  <desc id="desc">Abstract airship over an open world with meteor and multi-platform signals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1022"/>
+      <stop offset="0.58" stop-color="#1f3357"/>
+      <stop offset="1" stop-color="#6e2734"/>
+    </linearGradient>
+    <linearGradient id="airship" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7d7"/>
+      <stop offset="1" stop-color="#7ed7ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.36"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="938" cy="132" r="54" fill="#ff7d6e" opacity="0.9"/>
+  <path d="M892 86 L1060 12" stroke="#ffb39e" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <path d="M0 450 C170 390 320 470 470 410 C642 340 768 410 910 360 C1035 318 1120 350 1200 320 L1200 630 L0 630 Z" fill="#2d7b66" opacity="0.55"/>
+  <path d="M0 510 C170 475 312 520 470 484 C660 442 795 520 960 470 C1070 437 1140 458 1200 438 L1200 630 L0 630 Z" fill="#172b33" opacity="0.78"/>
+  <g transform="translate(156 150)" filter="url(#shadow)">
+    <path d="M100 150 C188 70 360 64 478 144 L682 126 C720 122 734 170 699 185 L478 252 C344 318 168 284 96 198 L30 188 C6 184 6 152 31 148 Z" fill="url(#airship)"/>
+    <path d="M238 102 L320 28 L374 116" fill="#dcefff"/>
+    <path d="M330 244 L408 318 L445 222" fill="#dcefff"/>
+    <rect x="476" y="152" width="122" height="28" rx="14" fill="#17304d"/>
+    <circle cx="188" cy="178" r="18" fill="#17304d"/>
+    <circle cx="262" cy="190" r="18" fill="#17304d"/>
+  </g>
+  <g transform="translate(776 392)" fill="#ffffff" opacity="0.9">
+    <rect x="0" y="0" width="68" height="68" rx="16"/>
+    <rect x="88" y="0" width="68" height="68" rx="16"/>
+    <rect x="176" y="0" width="68" height="68" rx="16"/>
+    <rect x="264" y="0" width="68" height="68" rx="16"/>
+  </g>
+  <text x="110" y="520" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#ffffff">Final Fantasy VII Revelation</text>
+  <text x="110" y="570" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#d7e9ff">The remake trilogy finale goes day-one multiplatform</text>
+</svg>
