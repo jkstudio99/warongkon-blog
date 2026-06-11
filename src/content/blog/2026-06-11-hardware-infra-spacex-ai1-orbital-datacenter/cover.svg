@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">SpaceX AI1 orbital data center cover</title>
+  <desc id="desc">A satellite data center with solar wings above Earth.</desc>
+  <rect width="1200" height="630" fill="#060b12"/>
+  <circle cx="600" cy="760" r="520" fill="#1c5f86"/>
+  <path d="M140 498c130 52 285 81 460 81s330-29 460-81" fill="none" stroke="#72b7d2" stroke-width="20" opacity=".8"/>
+  <g transform="translate(600 258)">
+    <rect x="-76" y="-64" width="152" height="128" rx="16" fill="#d8e7ef"/>
+    <rect x="-48" y="-36" width="96" height="72" rx="8" fill="#18364a"/>
+    <path d="M-82 0h-286M82 0h286" stroke="#d8e7ef" stroke-width="18" stroke-linecap="round"/>
+    <rect x="-390" y="-82" width="286" height="164" rx="12" fill="#2f8fb3"/>
+    <rect x="104" y="-82" width="286" height="164" rx="12" fill="#2f8fb3"/>
+    <path d="M-356-48h218M-356 0h218M-356 48h218M138-48h218M138 0h218M138 48h218" stroke="#b8e5f3" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-24 64v96M24 64v96" stroke="#d8e7ef" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="0" cy="184" r="40" fill="#f1c85b"/>
+  </g>
+  <path d="M420 292c64 52 296 52 360 0" fill="none" stroke="#f1c85b" stroke-width="7" stroke-dasharray="14 16"/>
+  <text x="76" y="116" fill="#d8e7ef" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">ORBITAL AI DATA CENTER</text>
+  <text x="80" y="168" fill="#f1c85b" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">AI1 satellite • Gigasat factory • 120-150kW payload</text>
+  <text x="80" y="552" fill="#d8e7ef" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Compute leaves the ground, but physics follows it</text>
+</svg>

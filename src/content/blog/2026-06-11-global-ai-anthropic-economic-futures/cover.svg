@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Anthropic economic futures AI policy cover</title>
+  <desc id="desc">Abstract dashboard showing AI policy, jobs, and economic benefit sharing.</desc>
+  <rect width="1200" height="630" fill="#102019"/>
+  <rect x="72" y="72" width="1056" height="486" rx="24" fill="#f4ead7"/>
+  <rect x="116" y="112" width="420" height="406" rx="18" fill="#203b2d"/>
+  <rect x="158" y="154" width="168" height="28" rx="14" fill="#96d2b0"/>
+  <rect x="158" y="206" width="300" height="18" rx="9" fill="#d8c6a1"/>
+  <rect x="158" y="242" width="250" height="18" rx="9" fill="#d8c6a1"/>
+  <rect x="158" y="278" width="320" height="18" rx="9" fill="#d8c6a1"/>
+  <circle cx="248" cy="400" r="72" fill="#96d2b0"/>
+  <path d="M214 402c26-48 43-48 69 0" fill="none" stroke="#203b2d" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="224" cy="374" r="13" fill="#203b2d"/>
+  <circle cx="272" cy="374" r="13" fill="#203b2d"/>
+  <rect x="586" y="112" width="498" height="100" rx="18" fill="#dcbf6c"/>
+  <rect x="586" y="238" width="498" height="280" rx="18" fill="#ffffff"/>
+  <path d="M648 454V326m92 128v-76m92 76V296m92 158V352m92 102V278" stroke="#203b2d" stroke-width="24" stroke-linecap="round"/>
+  <path d="M632 454h410" stroke="#203b2d" stroke-width="10" stroke-linecap="round"/>
+  <text x="626" y="176" fill="#102019" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">AI ECONOMIC FUTURES</text>
+  <text x="626" y="286" fill="#203b2d" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">$200M fund</text>
+  <text x="626" y="562" fill="#f4ead7" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Jobs, safety, policy, benefit sharing</text>
+</svg>

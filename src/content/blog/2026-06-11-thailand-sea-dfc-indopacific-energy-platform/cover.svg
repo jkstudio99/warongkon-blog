@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">DFC Indo-Pacific energy platform SEA ecosystem cover</title>
+  <desc id="desc">Map-like infrastructure grid connecting Southeast Asia energy and AI data centers.</desc>
+  <rect width="1200" height="630" fill="#0d1b1f"/>
+  <path d="M92 402c120-84 184-52 260-126 78-76 160-84 260-36 104 50 154 20 258-60 72-56 156-66 238-28" fill="none" stroke="#5fc2b0" stroke-width="18" stroke-linecap="round"/>
+  <path d="M108 480c154-36 252-32 356-84 104-54 184-58 286-22 106 38 210 22 340-74" fill="none" stroke="#e6b85c" stroke-width="12" stroke-linecap="round" opacity=".9"/>
+  <g fill="#f4f1df" stroke="#0d1b1f" stroke-width="8">
+    <circle cx="188" cy="402" r="34"/>
+    <circle cx="354" cy="278" r="34"/>
+    <circle cx="612" cy="240" r="34"/>
+    <circle cx="870" cy="180" r="34"/>
+    <circle cx="1046" cy="152" r="34"/>
+    <circle cx="732" cy="374" r="34"/>
+  </g>
+  <g fill="#5fc2b0">
+    <rect x="142" y="444" width="92" height="72" rx="10"/>
+    <rect x="566" y="418" width="92" height="72" rx="10"/>
+    <rect x="970" y="330" width="92" height="72" rx="10"/>
+  </g>
+  <path d="M162 444v-42h18v42M196 444v-64h18v64M586 418v-58h18v58M620 418v-34h18v34M990 330v-50h18v50M1024 330v-78h18v78" stroke="#f4f1df" stroke-width="8" stroke-linecap="round"/>
+  <text x="80" y="112" fill="#f4f1df" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">SEA ENERGY BACKBONE</text>
+  <text x="80" y="166" fill="#e6b85c" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">$1.5B Indo-Pacific platform • AI infrastructure readiness</text>
+  <text x="80" y="560" fill="#f4f1df" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Power, grid, data centers, and regional capital</text>
+</svg>

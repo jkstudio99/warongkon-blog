@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Netflix FIFA World Cup game launch cover</title>
+  <desc id="desc">A TV football game controlled by a phone for the 2026 World Cup.</desc>
+  <rect width="1200" height="630" fill="#101010"/>
+  <rect x="92" y="72" width="720" height="420" rx="26" fill="#1d2e24" stroke="#e7e4d6" stroke-width="14"/>
+  <rect x="142" y="122" width="620" height="320" rx="12" fill="#15763e"/>
+  <path d="M452 122v320M142 282h620" stroke="#e7e4d6" stroke-width="8" opacity=".85"/>
+  <circle cx="452" cy="282" r="76" fill="none" stroke="#e7e4d6" stroke-width="8"/>
+  <rect x="142" y="216" width="82" height="132" fill="none" stroke="#e7e4d6" stroke-width="8"/>
+  <rect x="680" y="216" width="82" height="132" fill="none" stroke="#e7e4d6" stroke-width="8"/>
+  <circle cx="454" cy="284" r="22" fill="#ffffff"/>
+  <rect x="872" y="136" width="206" height="360" rx="32" fill="#e7e4d6"/>
+  <rect x="898" y="184" width="154" height="238" rx="18" fill="#d71920"/>
+  <circle cx="975" cy="454" r="18" fill="#101010"/>
+  <path d="M920 306h110M975 250v110" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+  <text x="92" y="560" fill="#e7e4d6" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">FIFA ON NETFLIX</text>
+  <text x="92" y="606" fill="#9ad7a8" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">World Cup launch • TV play • phone controller</text>
+  <text x="866" y="108" fill="#e7e4d6" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">11 Jun 2026</text>
+</svg>
