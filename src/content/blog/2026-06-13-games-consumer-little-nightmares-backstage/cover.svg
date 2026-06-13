@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Little Nightmares III The Backstage cover</title>
+  <desc id="desc">Shadowy stage, small co-op figures, and theater rigging for a horror DLC story.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090b13"/>
+      <stop offset="0.5" stop-color="#231b2f"/>
+      <stop offset="1" stop-color="#4a2c20"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8d77b" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#f8d77b" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M350 86 L514 438 H186 Z" fill="url(#light)"/>
+  <path d="M850 72 L1014 438 H686 Z" fill="url(#light)" opacity="0.7"/>
+  <rect x="0" y="424" width="1200" height="206" fill="#08090f"/>
+  <g stroke="#72543d" stroke-width="10" opacity="0.7">
+    <path d="M0 128 H1200"/>
+    <path d="M180 128 V424"/>
+    <path d="M520 128 V424"/>
+    <path d="M860 128 V424"/>
+  </g>
+  <g transform="translate(408 260)" filter="url(#shadow)">
+    <path d="M0 160 L50 0 L104 160 Z" fill="#15151c"/>
+    <circle cx="50" cy="34" r="28" fill="#15151c"/>
+    <rect x="30" y="92" width="40" height="94" rx="18" fill="#15151c"/>
+  </g>
+  <g transform="translate(682 282)" filter="url(#shadow)">
+    <path d="M0 138 L45 0 L96 138 Z" fill="#15151c"/>
+    <circle cx="46" cy="30" r="24" fill="#15151c"/>
+    <rect x="28" y="82" width="38" height="88" rx="18" fill="#15151c"/>
+  </g>
+  <g transform="translate(112 112)" filter="url(#shadow)">
+    <rect width="328" height="104" rx="24" fill="#f8d77b"/>
+    <text x="30" y="64" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#231b2f">June 12 DLC</text>
+  </g>
+  <text x="104" y="520" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#ffffff">Little Nightmares III</text>
+  <text x="104" y="570" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#f8d77b">The Backstage turns horror DLC into a launch beat</text>
+</svg>

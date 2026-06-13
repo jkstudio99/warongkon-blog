@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">KKR Helix AI infrastructure cover</title>
+  <desc id="desc">AI data center, power grid, and capital stack represented as connected infrastructure blocks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.5" stop-color="#123146"/>
+      <stop offset="1" stop-color="#3c2f23"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#66e5ff"/>
+      <stop offset="1" stop-color="#f6c85f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 450 C150 394 280 500 450 438 C620 376 742 340 902 408 C1038 466 1116 380 1200 392 L1200 630 L0 630 Z" fill="#66e5ff" opacity="0.14"/>
+  <g transform="translate(106 118)" filter="url(#shadow)">
+    <rect width="360" height="266" rx="28" fill="#f8fafc"/>
+    <text x="34" y="62" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#102033">Capital Stack</text>
+    <rect x="44" y="96" width="272" height="42" rx="14" fill="#dbeafe"/>
+    <rect x="44" y="158" width="222" height="42" rx="14" fill="#e0f2fe"/>
+    <rect x="44" y="220" width="298" height="42" rx="14" fill="#fef3c7"/>
+  </g>
+  <g transform="translate(516 92)" filter="url(#shadow)">
+    <rect width="210" height="210" rx="34" fill="url(#chip)"/>
+    <rect x="52" y="52" width="106" height="106" rx="22" fill="#0f172a"/>
+    <g stroke="#0f172a" stroke-width="8" stroke-linecap="round">
+      <path d="M28 70 H6"/>
+      <path d="M28 112 H6"/>
+      <path d="M28 154 H6"/>
+      <path d="M204 70 H182"/>
+      <path d="M204 112 H182"/>
+      <path d="M204 154 H182"/>
+    </g>
+    <text x="68" y="118" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#ffffff">GPU</text>
+  </g>
+  <g transform="translate(790 120)" filter="url(#shadow)">
+    <rect width="304" height="264" rx="28" fill="#111827"/>
+    <text x="34" y="62" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#ffffff">Power</text>
+    <path d="M164 82 L106 182 H160 L126 246 L226 126 H168 Z" fill="#f6c85f"/>
+    <rect x="38" y="216" width="228" height="24" rx="12" fill="#66e5ff" opacity="0.62"/>
+  </g>
+  <g stroke="#eaf8ff" stroke-width="5" opacity="0.55">
+    <path d="M466 250 H516"/>
+    <path d="M726 202 C754 210 766 224 790 246"/>
+    <path d="M620 302 V360 H876"/>
+  </g>
+  <text x="106" y="520" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#ffffff">KKR Helix AI Infrastructure</text>
+  <text x="106" y="570" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#e0f2fe">Capital, energy, data centers, and GPUs become one platform</text>
+</svg>
