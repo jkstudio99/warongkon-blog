@@ -1,54 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Applied Materials Singapore AI chip campus cover</title>
-  <desc id="desc">Singapore skyline, semiconductor tool, and AI chip supply chain map for Southeast Asia.</desc>
+  <title id="title">Applied Materials Singapore AI chip campus</title>
+  <desc id="desc">A stylized semiconductor manufacturing campus in Singapore and Southeast Asia for an article about Applied Materials expansion.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07151f"/>
-      <stop offset="0.5" stop-color="#123f46"/>
-      <stop offset="1" stop-color="#4a3526"/>
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.55" stop-color="#123447"/>
+      <stop offset="1" stop-color="#3b1d2a"/>
     </linearGradient>
-    <linearGradient id="wafer" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7ee7ff"/>
-      <stop offset="1" stop-color="#f3c96b"/>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#f472b6"/>
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.34"/>
-    </filter>
+    <linearGradient id="cleanroom" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#a7f3d0"/>
+    </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <path d="M0 462 C150 390 290 518 448 446 C612 374 742 352 902 414 C1036 466 1116 382 1200 398 L1200 630 L0 630 Z" fill="#7ee7ff" opacity="0.14"/>
-  <g transform="translate(110 132)" filter="url(#shadow)">
-    <rect width="344" height="244" rx="28" fill="#f8fafc"/>
-    <text x="34" y="62" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#0f2d37">Singapore</text>
-    <rect x="48" y="164" width="34" height="54" fill="#0f766e"/>
-    <rect x="98" y="126" width="44" height="92" fill="#155e75"/>
-    <rect x="160" y="92" width="52" height="126" fill="#0f766e"/>
-    <rect x="234" y="146" width="48" height="72" fill="#155e75"/>
-    <path d="M42 224 H298" stroke="#0f2d37" stroke-width="8" stroke-linecap="round"/>
+  <path d="M0 460c118-52 257-48 420-8 201 49 373 56 780-62v240H0z" fill="#0f172a"/>
+  <g opacity="0.16" stroke="#f8fafc" stroke-width="1">
+    <path d="M0 105h1200M0 210h1200M0 315h1200M0 420h1200"/>
+    <path d="M145 0v630M290 0v630M435 0v630M580 0v630M725 0v630M870 0v630M1015 0v630"/>
   </g>
-  <g transform="translate(532 90)" filter="url(#shadow)">
-    <circle cx="150" cy="150" r="138" fill="url(#wafer)"/>
-    <g stroke="#0f172a" stroke-width="4" opacity="0.48">
-      <path d="M42 150 H258"/>
-      <path d="M150 42 V258"/>
-      <path d="M72 72 L228 228"/>
-      <path d="M228 72 L72 228"/>
-      <circle cx="150" cy="150" r="72" fill="none"/>
+  <g transform="translate(118 156)">
+    <rect x="0" y="170" width="760" height="150" rx="20" fill="#1f2937" stroke="#93c5fd" stroke-width="5"/>
+    <rect x="52" y="112" width="190" height="208" rx="18" fill="#172554" stroke="#7dd3fc" stroke-width="5"/>
+    <rect x="292" y="74" width="210" height="246" rx="18" fill="#172554" stroke="#7dd3fc" stroke-width="5"/>
+    <rect x="552" y="130" width="160" height="190" rx="18" fill="#172554" stroke="#7dd3fc" stroke-width="5"/>
+    <g fill="url(#cleanroom)">
+      <rect x="84" y="150" width="126" height="26" rx="7"/>
+      <rect x="84" y="202" width="126" height="26" rx="7"/>
+      <rect x="330" y="118" width="134" height="28" rx="7"/>
+      <rect x="330" y="176" width="134" height="28" rx="7"/>
+      <rect x="330" y="234" width="134" height="28" rx="7"/>
+      <rect x="584" y="172" width="96" height="26" rx="7"/>
+      <rect x="584" y="224" width="96" height="26" rx="7"/>
     </g>
-    <rect x="96" y="112" width="108" height="76" rx="16" fill="#0f172a"/>
-    <text x="115" y="160" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#ffffff">AI</text>
+    <path d="M382 74V22h96v52" fill="none" stroke="#f472b6" stroke-width="8"/>
+    <path d="M582 130V84h72v46" fill="none" stroke="#f472b6" stroke-width="8"/>
   </g>
-  <g transform="translate(850 132)" filter="url(#shadow)">
-    <rect width="246" height="244" rx="28" fill="#111827"/>
-    <text x="30" y="62" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#ffffff">SEA Supply</text>
-    <path d="M62 112 H186" stroke="#7ee7ff" stroke-width="10" stroke-linecap="round"/>
-    <path d="M62 160 H154" stroke="#f3c96b" stroke-width="10" stroke-linecap="round"/>
-    <path d="M62 208 H202" stroke="#a7f3d0" stroke-width="10" stroke-linecap="round"/>
+  <g transform="translate(814 125)">
+    <rect x="0" y="0" width="248" height="248" rx="34" fill="url(#chip)" stroke="#e0f2fe" stroke-width="7"/>
+    <rect x="58" y="58" width="132" height="132" rx="20" fill="#08111f" opacity="0.86"/>
+    <path d="M80 124h88M124 80v88" stroke="#a7f3d0" stroke-width="12" stroke-linecap="round"/>
+    <g stroke="#f8fafc" stroke-width="6">
+      <path d="M-30 48H0M-30 100H0M-30 152H0M-30 204H0"/>
+      <path d="M248 48h30M248 100h30M248 152h30M248 204h30"/>
+      <path d="M48-30v30M100-30v30M152-30v30M204-30v30"/>
+      <path d="M48 248v30M100 248v30M152 248v30M204 248v30"/>
+    </g>
   </g>
-  <g stroke="#e9fbff" stroke-width="5" opacity="0.52">
-    <path d="M454 254 C486 226 504 220 532 236"/>
-    <path d="M808 236 C828 220 836 220 850 246"/>
+  <g transform="translate(822 423)" fill="none" stroke="#f8fafc" stroke-width="6" opacity="0.82">
+    <path d="M0 70c64-82 142-82 206 0 38-48 84-62 138-42"/>
+    <circle cx="85" cy="32" r="9" fill="#f8fafc"/>
+    <circle cx="206" cy="70" r="9" fill="#f8fafc"/>
+    <circle cx="344" cy="28" r="9" fill="#f8fafc"/>
   </g>
-  <text x="110" y="520" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#ffffff">Applied Materials Singapore</text>
-  <text x="110" y="570" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#dff7ff">SEA moves deeper into the AI chip equipment chain</text>
+  <g font-family="Inter, Arial, sans-serif" fill="#f8fafc">
+    <text x="74" y="86" font-size="28" font-weight="700" letter-spacing="3">THAILAND / SEA ECOSYSTEM</text>
+    <text x="74" y="545" font-size="60" font-weight="800">SINGAPORE CHIP CAMPUS</text>
+    <text x="74" y="596" font-size="33" font-weight="700" fill="#bfdbfe">APPLIED MATERIALS EXPANDS FOR AI DEMAND</text>
+  </g>
 </svg>

@@ -1,90 +1,87 @@
 ---
-title: 'ScreenDNA วันที่ 13 มิถุนายน 2026: ผู้นำ AI หนุนกฎคัดกรอง DNA สังเคราะห์ก่อน biosecurity จะตามไม่ทัน'
-seoTitle: 'ScreenDNA AI Biosecurity Gene Synthesis - Warongkon Blog'
-description: 'สรุปข่าว Global / AI วันที่ 13 มิถุนายน 2026 เรื่องจดหมาย ScreenDNA ที่ Sam Altman, Dario Amodei, Demis Hassabis และผู้เชี่ยวชาญหนุนการคัดกรองคำสั่ง DNA สังเคราะห์แบบบังคับ'
+title: 'AI safety วันที่ 13 มิถุนายน 2026: Altman, Hassabis และ Amodei เห็นตรงกันเรื่องบังคับตรวจคำสั่งสังเคราะห์ DNA'
+seoTitle: 'AI Gene Synthesis Screening Open Letter June 2026 - Warongkon Blog'
+description: 'สรุปข่าว AI biosecurity วันที่ 12-13 มิถุนายน 2026 เรื่อง open letter ให้สหรัฐฯ บังคับ gene synthesis screening และ recordkeeping หลัง AI ทำให้การออกแบบลำดับชีวภาพเสี่ยงขึ้น'
 pubDate: '2026-06-13'
-tags: ["Global", "AI", "Biosecurity", "Gene Synthesis", "OpenAI", "Anthropic", "Google DeepMind", "ScreenDNA"]
+tags: ["Global", "AI", "Biosecurity", "Gene Synthesis", "OpenAI", "Anthropic", "Google DeepMind", "AI Safety"]
 coverImage: './cover.svg'
 ---
 
-ข่าว **Global / AI** สำหรับรอบวันที่ **13 มิถุนายน 2026** คือแคมเปญ **ScreenDNA** และรายงานของ Vox วันที่ **12 มิถุนายน 2026** ที่ระบุว่า Sam Altman จาก OpenAI, Dario Amodei จาก Anthropic, Demis Hassabis จาก Google DeepMind และผู้เชี่ยวชาญด้านชีววิทยาสังเคราะห์หลายสิบคน สนับสนุนให้สหรัฐฯ ทำ **mandatory DNA synthesis screening** สำหรับคำสั่งซื้อ DNA สังเคราะห์
+ข่าว **Global / AI** สำหรับรอบวันที่ **13 มิถุนายน 2026** คือ Vox รายงานวันที่ **12 มิถุนายน 2026 เวลา 11:00 UTC** ว่า CEO และผู้เชี่ยวชาญจากฝั่ง AI, biotech และ national security รวมตัวสนับสนุน open letter ให้ฝ่ายนิติบัญญัติสหรัฐฯ บังคับใช้ **nucleic acid synthesis screening** และ **recordkeeping** สำหรับคำสั่งซื้อ synthetic DNA/RNA
 
-รอบก่อนบล็อกนี้พูดถึง Anthropic Economic Futures, PointFive AI cost governance, Anthropic Fable/Mythos, Apple Foundation Models และ OpenAI GPT-Rosalind ไปแล้ว ข่าวนี้เลือกอีกแกนหนึ่งของ AI frontier: ความเสี่ยงที่ model ช่วยลดต้นทุนการออกแบบชีวภาพจนระบบคัดกรอง voluntary แบบเดิมอาจไม่พอ
+รอบก่อนบล็อกนี้พูดถึง Anthropic Economic Futures Fund, GPT-Rosalind, AI military policy, Anthropic Fable/Mythos และ public ownership ของ AI ไปแล้ว ข่าวนี้จึงเลือกอีกมุมที่ไม่ซ้ำกัน: frontier AI ไม่ได้เสี่ยงแค่ misinformation หรือ job displacement แต่เริ่มเชื่อมกับ supply chain ของชีววิทยาสังเคราะห์โดยตรง
 
-## ข่าวใหม่ในวันที่ 12-13 มิถุนายน
+## จดหมายเปิดผนึกเผยแพร่ในเดือนมิถุนายน 2026
 
-Vox เผยแพร่รายงานวันที่ **12 มิถุนายน 2026** ว่า open letter ของ ScreenDNA เรียกร้องให้ผู้กำหนดนโยบายสหรัฐฯ บังคับใช้การคัดกรองคำสั่ง gene synthesis แทนระบบสมัครใจที่บริษัทเลือกทำเอง
+จดหมายที่เผยแพร่บน **ScreenDNA.org** ใช้ชื่อว่า **In Support of Mandatory Nucleic Acid Synthesis Screening and Recordkeeping** และระบุชัดว่า legislator ควรทำให้การตรวจคำสั่งซื้อ synthetic nucleic acids และอุปกรณ์ที่ใช้ผลิตเป็นข้อบังคับ ไม่ใช่แนวทางสมัครใจ
 
-ประเด็นที่ทำให้ข่าวนี้สำคัญมีดังนี้:
+รายชื่อผู้ลงนามทำให้ข่าวนี้มีน้ำหนักมาก เพราะมีคู่แข่งและผู้เห็นต่างในวงการ AI อยู่ในหน้าเดียวกัน:
 
-- ผู้ลงชื่อรวมผู้นำ AI lab รายใหญ่และนักวิจัย biosecurity
-- ข้อเสนอเน้นการคัดกรอง **sequence** และ **customer** ก่อนบริษัทผลิตหรือส่งมอบ DNA สังเคราะห์
-- แคมเปญโยงกับความกังวลว่า AI จะทำให้การค้นหา ออกแบบ หรือดัดแปลง biological agent ง่ายขึ้น
-- จุดยืนนี้ต่างจาก AI policy ทั่วไป เพราะไม่ได้พูดแค่ model evaluation แต่พูดถึง chokepoint ของ supply chain ทางชีวภาพ
-- The Verge รายงานตั้งแต่วันที่ **4 มิถุนายน 2026** ว่า AI chatbots ยังให้ข้อมูลที่เกี่ยวข้องกับการสร้างอาวุธชีวภาพได้ในบางสถานการณ์ จึงยิ่งทำให้มาตรการ downstream อย่าง DNA screening ถูกหยิบขึ้นมาเร็วขึ้น
+- **Demis Hassabis** CEO ของ Google DeepMind
+- **Sam Altman** CEO และ co-founder ของ OpenAI
+- **Dario Amodei** CEO และ co-founder ของ Anthropic
+- **Mustafa Suleyman** CEO ของ Microsoft AI
+- **Alexandr Wang** Chief AI Officer ของ Meta
+- ผู้บริหารจาก Twist Bioscience, Ansa Biotechnologies, Emerald Cloud Lab และผู้เชี่ยวชาญ biosecurity หลายราย
 
-พูดให้ตรงคือ ผู้นำ AI ไม่ได้เรียกร้องให้ควบคุมเฉพาะ software แต่กำลังชี้ว่าโลกจริงมีวัตถุดิบ เครื่องมือ และบริการที่ต้องมี guardrail ตามไปด้วย
+แกนของจดหมายไม่ใช่การห้ามใช้ AI ในชีววิทยา แต่คือการทำให้จุดคอขวดที่จับต้องได้ที่สุดใน supply chain มีมาตรฐานขั้นต่ำ: ก่อนที่คำสั่งซื้อ DNA/RNA จะถูกผลิต ผู้ขายควรตรวจ sequence of concern และตรวจความชอบธรรมของลูกค้า
 
-## ทำไม gene synthesis screening ถึงเป็นจุดคุมสำคัญ
+## ทำไม AI ทำให้ gene synthesis กลายเป็นประเด็นใหญ่ขึ้น
 
-การสั่ง DNA สังเคราะห์เป็น infrastructure ที่สำคัญของ biotech สมัยใหม่ นักวิจัยใช้มันเพื่อพัฒนา vaccine, diagnostic, enzyme, cell therapy และงานวิทยาศาสตร์จำนวนมาก แต่บริการเดียวกันนี้ก็อาจถูกใช้ผิดทางได้ หากผู้สั่งซื้อขอ sequence ที่เกี่ยวข้องกับ pathogen หรือ toxin อันตราย
+Gene synthesis เป็นเทคโนโลยีพื้นฐานของยา วัคซีน diagnostic tools และงานวิจัยชีวภาพสมัยใหม่ นักวิจัยสามารถสั่ง synthetic genes จากผู้ให้บริการเชิงพาณิชย์ได้โดยไม่ต้องสร้างทุกอย่างใน lab เอง
 
-ระบบคัดกรองที่ดีจึงต้องดูสองชั้น:
+แต่เทคโนโลยีเดียวกันนี้มี dual-use risk สูง เพราะหากมีคนออกแบบลำดับพันธุกรรมที่เป็นอันตรายและหาผู้ผลิตที่ไม่ตรวจคำสั่งซื้ออย่างเข้มพอ ความเสียหายอาจใหญ่กว่าปัญหา cyber หรือ content moderation ทั่วไป
 
-- sequence ที่สั่งมีความเสี่ยงหรือคล้ายสารพันธุกรรมอันตรายหรือไม่
-- ลูกค้าคือใคร มีตัวตน งานวิจัย และบริบทที่เหมาะสมหรือไม่
+Vox อธิบายว่า LLMs และ AI biodesign tools ทำให้การออกแบบลำดับชีวภาพใหม่ง่ายขึ้น และอาจทำให้การตรวจแบบเดิมที่เทียบกับ sequence อันตรายที่รู้จักอยู่แล้วไม่พอในอนาคต หาก AI ช่วยออกแบบ sequence ที่โครงสร้างหรือ function เสี่ยง แต่ไม่เหมือนของเดิมแบบตรงไปตรงมา
 
-ก่อนหน้านี้อุตสาหกรรมจำนวนหนึ่งใช้แนวทาง voluntary screening อยู่แล้ว แต่ปัญหาคือ voluntary system ไม่ครอบคลุมทุกผู้ให้บริการ และผู้ไม่หวังดีอาจมองหาบริษัทที่คัดกรองน้อยกว่า
+ตรงนี้ทำให้ gene synthesis providers กลายเป็น chokepoint สำคัญ เพราะต่อให้ AI ให้ความรู้หรือช่วยออกแบบได้ ขั้นตอนผลิตจริงยังต้องผ่านผู้ขาย synthetic DNA/RNA อยู่
 
-เมื่อ AI ทำให้การค้นหา design space และการวิเคราะห์ชีววิทยาง่ายขึ้น การปล่อยให้ screening เป็นเรื่องสมัครใจจึงเริ่มถูกมองว่าเป็นช่องโหว่เชิงระบบ
+## สิ่งที่จดหมายต้องการ
 
-## AI lab ลงชื่อเพราะนี่คือความเสี่ยงข้ามชั้น
+สาระสำคัญของข้อเสนอมีสามชั้น:
 
-ข่าวนี้น่าสนใจเพราะผู้ลงชื่อจาก AI lab ไม่ได้มีธุรกิจ gene synthesis โดยตรง แต่ model ของพวกเขาอาจกลายเป็นตัวเร่งความสามารถด้าน bioengineering
+- บังคับให้ provider ตรวจคำสั่งซื้อ synthetic nucleic acids ก่อนผลิต
+- บังคับให้ตรวจ customer legitimacy เพื่อกันผู้ไม่หวังดี
+- เก็บ order และ sequence data เพื่อให้ investigation ย้อนรอยได้ หากมี threat ที่หลุดจากการตรวจเบื้องต้น
 
-ในเชิง policy นี่คือภาพของความเสี่ยงข้ามชั้น:
+จดหมายยังเสนอให้สหรัฐฯ มีมาตรฐานระดับประเทศแทน patchwork ของกฎหมายแต่ละรัฐ เพราะถ้ารัฐหนึ่งเข้ม แต่อีกรัฐหนึ่งหรือ provider บางรายไม่เข้ม ความเสี่ยงจะย้ายไปยังช่องที่อ่อนที่สุด
 
-- AI model ช่วยสรุป literature และออกแบบแนวทางทดลอง
-- bio-design tool ช่วยเสนอ sequence หรือ variant
-- gene synthesis provider ผลิตชิ้นส่วนชีวภาพ
-- lab automation ทำให้การทดลองใช้แรงงานคนน้อยลง
-- supply chain ระหว่างประเทศทำให้ enforcement ยากกว่าเดิม
+WIRED รายงานตั้งแต่วันที่ **3 มิถุนายน 2026** ว่า letter นี้มีผู้บริหาร AI และนักวิทยาศาสตร์ร่วมลงนาม โดยชี้ไปยัง bipartisan bill ในวุฒิสภาที่ต้องการให้ gene synthesis providers ในสหรัฐฯ ตรวจ order และ customer สำหรับ bad actors หรือ dangerous pathogens
 
-ดังนั้นการลดความเสี่ยงไม่สามารถหยุดที่ model card หรือ content policy เพียงอย่างเดียว ต้องมี governance ที่แตะทั้ง AI system และ physical supply chain
+## ข่าวนี้ต่างจาก AI safety รอบก่อนอย่างไร
 
-## ผลต่ออุตสาหกรรม AI และ biotech
+AI safety ส่วนใหญ่ในรอบ 2-3 ปีที่ผ่านมาเน้น model behavior:
 
-ถ้าสหรัฐฯ เดินหน้าบังคับใช้ screening จริง ผลกระทบจะไม่ได้จำกัดแค่บริษัทผลิต DNA
+- model hallucination
+- cybersecurity misuse
+- autonomous agents
+- election misinformation
+- model evaluation ก่อน deployment
+- child safety และ chatbot companion risk
 
-บริษัท AI ที่ทำ life sciences model จะต้องอธิบาย safety boundary ชัดขึ้น ลูกค้า enterprise จะต้องมี workflow ตรวจสอบการใช้งานด้านชีวภาพ และบริษัท biotech ที่ใช้ AI ช่วยออกแบบ molecule หรือ organism จะถูกถามเรื่อง provenance, audit trail และ vendor compliance มากขึ้น
+แต่ข่าว gene synthesis screening ย้ายคำถามไปอีกชั้นหนึ่ง คือไม่พยายามแก้ทุกอย่างที่ model อาจพูด แต่ไปควบคุม **physical production bottleneck** ที่ทำให้ความรู้ดิจิทัลกลายเป็นวัสดุชีวภาพจริง
 
-ผลลัพธ์ที่เป็นไปได้มีสามทาง:
-
-- ผู้ให้บริการ DNA synthesis รายใหญ่ได้เปรียบ เพราะมีระบบ screening และ compliance พร้อมกว่า
-- startup biotech ต้องใช้ vendor ที่ผ่านมาตรฐานมากขึ้น ทำให้ต้นทุนและระยะเวลาเพิ่มขึ้น
-- AI lab ต้องทำ red-teaming ด้านชีวภาพเชิงลึกขึ้น ไม่ใช่แค่ block keyword ใน chatbot
-
-ในระยะยาว นี่อาจกลายเป็นมาตรฐานคล้าย KYC ของอุตสาหกรรมการเงิน: ไม่ได้ห้าม innovation แต่บังคับให้ทุกฝ่ายรู้ว่าใครกำลังขอผลิตอะไร
+นี่เป็นแนวทางที่ pragmatic กว่าในหลายมุม เพราะ model guardrails เปลี่ยนเร็วและถูก jailbreak ได้ แต่ order screening, customer vetting และ recordkeeping เป็นกระบวนการใน supply chain ที่ตรวจสอบและ audit ได้ชัดกว่า
 
 ## มุมมองของผม
 
-ผมมองว่า ScreenDNA เป็นข่าว AI governance ที่ควรจับตา เพราะมันทำให้กรอบความปลอดภัยของ AI ออกจากหน้าจอและไปแตะโลกกายภาพ
+ผมมองว่านี่เป็นหนึ่งในข่าว AI safety ที่มีความเป็นรูปธรรมที่สุดของเดือนมิถุนายน 2026
 
-ที่ผ่านมา AI safety debate มักวนอยู่ที่ model capability, alignment, autonomous agents และ cyber risk แต่ biosecurity เป็นโจทย์ที่ต่างออกไปมาก เพราะถ้าเกิด incident แล้วการย้อนกลับทำได้ยาก และความเสียหายไม่จำเป็นต้องเริ่มจากองค์กรขนาดใหญ่
+หลายครั้ง AI regulation ติดอยู่กับคำถามกว้างมาก เช่น model ควรถูกหยุดที่ capability ระดับไหน หรือใครควรเป็นคน audit frontier model แต่กรณี gene synthesis มีจุดลงมือชัดกว่า: ไม่ต้องรอให้ทุกฝ่ายเห็นตรงกันเรื่อง AGI ก็สามารถเห็นตรงกันได้ว่าคำสั่งซื้อ DNA/RNA ที่เสี่ยงควรถูกตรวจ และควรมี record ให้สืบย้อนกลับ
 
-ข้อเสนอแบบ mandatory screening อาจเพิ่มภาระให้บริษัทขนาดเล็กและทำให้บางงานวิจัยช้าลง แต่การไม่มี baseline กลางก็น่ากังวลกว่า เพราะมันสร้างแรงจูงใจให้ตลาดแข่งขันกันลดมาตรฐาน
+อีกด้านหนึ่ง ต้องระวังไม่ให้กฎบังคับกลายเป็นภาระที่ปิดโอกาสของ lab เล็กหรือ startup ชีววิทยาโดยไม่จำเป็น กฎที่ดีควรแยก risk-based screening, privacy, trade secrets และ legitimate research ออกจากการป้องกัน misuse ให้ชัด
 
-สำหรับคนทำ AI product ในไทยและเอเชียตะวันออกเฉียงใต้ บทเรียนคือ regulatory frontier จะไม่ได้อยู่แค่ privacy หรือ copyright อีกต่อไป หาก product ของคุณแตะ healthcare, biology, chemistry หรือ lab automation ต้องคิดเรื่อง misuse path และ vendor control ตั้งแต่วันแรก
+สำหรับองค์กรที่ทำ AI ใน life sciences บทเรียนคือ safety ไม่ได้อยู่แค่ใน model card แล้ว แต่ต้องเชื่อมกับ procurement, vendor policy, access control, monitoring และ incident response ตั้งแต่แรก
 
 สรุปสั้น ๆ:
-**รายงานวันที่ 12 มิถุนายน 2026 และการตรวจสอบในไทยวันที่ 13 มิถุนายน 2026 ชี้ว่า ScreenDNA กำลังผลักดันการคัดกรอง DNA สังเคราะห์แบบบังคับ โดยมีผู้นำจาก OpenAI, Anthropic และ Google DeepMind ร่วมสนับสนุน ข่าวนี้ทำให้ AI biosecurity ขยับจากการควบคุมข้อความใน model ไปสู่การคุม supply chain ทางชีวภาพที่จับต้องได้**
+**วันที่ 12-13 มิถุนายน 2026 ประเด็น AI biosecurity กลับมาเด่นหลัง Vox รายงาน open letter ที่ Sam Altman, Demis Hassabis, Dario Amodei และผู้เชี่ยวชาญกว่า 85 รายร่วมสนับสนุนการบังคับตรวจคำสั่งซื้อ synthetic DNA/RNA ข่าวนี้ชี้ว่า AI safety กำลังขยับจาก model guardrails ไปสู่การควบคุม chokepoint ของโลกชีวภาพจริง**
 
 ## หมายเหตุเรื่องภาพประกอบ
 
-รอบนี้พบหน้าแคมเปญ ScreenDNA และข่าวจากสำนักข่าวที่เกี่ยวข้องโดยตรง แต่ shell environment ไม่สามารถ resolve DNS ของ `screendna.org` และโดเมนข่าวเพื่อดาวน์โหลด asset เข้าสู่ repo ได้ จึงใช้ภาพ SVG ขนาด 1200x630 ที่สร้างเฉพาะบทความนี้เป็น fallback
+รอบนี้พบแหล่งข่าวและจดหมายเปิดผนึกที่เกี่ยวกับประเด็นโดยตรง แต่ shell environment ไม่สามารถ resolve DNS ของ `screendna.org`, `vox.com` และแหล่งภาพประกอบข่าวเพื่อดาวน์โหลด asset เข้าสู่ repo ได้ จึงใช้ภาพ SVG ขนาด 1200x630 ที่สร้างเฉพาะบทความนี้เป็น fallback
 
 ## แหล่งอ้างอิง
 
-- [ScreenDNA: Open letter on mandatory DNA synthesis screening](https://screendna.org/)
-- [Vox: AI leaders back mandatory DNA synthesis screening](https://www.vox.com/future-perfect/491660/artificial-intelligence-openai-anthropic-dna-bioweapons)
-- [The Verge: AI chatbots can help with bioweapons instructions, experts warn](https://www.theverge.com/ai-artificial-intelligence/680128/ai-chatbots-bioweapons-biological-weapons)
+- [ScreenDNA: In Support of Mandatory Nucleic Acid Synthesis Screening and Recordkeeping](https://screendna.org/)
+- [Vox: The next AI safety fight may actually be about DNA](https://www.vox.com/future-perfect/491660/artificial-intelligence-openai-anthropic-dna-bioweapons)
+- [WIRED: OpenAI and Anthropic Sign Letter to Prevent AI-Developed Biological Weapons](https://www.wired.com/story/openai-anthropic-letter-ai-biological-weapons/)
