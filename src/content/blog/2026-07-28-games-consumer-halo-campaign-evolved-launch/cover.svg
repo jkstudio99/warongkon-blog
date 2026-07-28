@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Halo Campaign Evolved launch cover</title>
+  <desc id="desc">A sci-fi ring world, helmet visor, and cross-platform launch map for Halo Campaign Evolved.</desc>
+  <defs>
+    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="0.45" stop-color="#0b2545"/>
+      <stop offset="1" stop-color="#1b4332"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="0.48" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9f99d"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#020617" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#space)"/>
+  <g opacity="0.35" fill="#f8fafc">
+    <circle cx="132" cy="90" r="2"/><circle cx="270" cy="170" r="3"/><circle cx="430" cy="88" r="2"/><circle cx="625" cy="155" r="3"/><circle cx="1010" cy="116" r="2"/><circle cx="1148" cy="212" r="3"/><circle cx="935" cy="65" r="2"/>
+  </g>
+  <path d="M-80 540C180 365 502 311 782 360C1004 399 1168 521 1360 347" fill="none" stroke="url(#ring)" stroke-width="48" stroke-linecap="round" opacity="0.85"/>
+  <path d="M-80 540C180 365 502 311 782 360C1004 399 1168 521 1360 347" fill="none" stroke="#0f172a" stroke-width="22" stroke-linecap="round" opacity="0.85"/>
+  <g filter="url(#shadow)">
+    <path d="M420 196L502 122H778L860 196L832 456L742 574H538L448 456Z" fill="#2f3e2f" stroke="#a3e635" stroke-width="5"/>
+    <path d="M505 236L560 200H720L775 236L752 326H528Z" fill="url(#visor)" stroke="#fed7aa" stroke-width="4"/>
+    <path d="M485 360H795L760 510H520Z" fill="#17261d" stroke="#65a30d" stroke-width="4"/>
+    <path d="M420 196L500 265M860 196L780 265M448 456L528 404M832 456L752 404" stroke="#86efac" stroke-width="7" opacity="0.55"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" filter="url(#shadow)">
+    <rect x="72" y="92" width="295" height="148" rx="24" fill="#0b1220" stroke="#38bdf8" stroke-width="3"/>
+    <text x="219" y="146" fill="#f8fafc" text-anchor="middle" font-size="34" font-weight="800">JULY 28</text>
+    <text x="219" y="190" fill="#bfdbfe" text-anchor="middle" font-size="24">global launch</text>
+    <rect x="914" y="92" width="295" height="148" rx="24" fill="#0b1220" stroke="#a3e635" stroke-width="3"/>
+    <text x="1062" y="146" fill="#f8fafc" text-anchor="middle" font-size="32" font-weight="800">GAME PASS</text>
+    <text x="1062" y="190" fill="#bbf7d0" text-anchor="middle" font-size="24">Xbox, PC, PS5</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="82" y="628" fill="#f8fafc" font-size="48" font-weight="900">HALO: CAMPAIGN EVOLVED</text>
+    <text x="84" y="670" fill="#fcd34d" font-size="26" font-weight="700">nostalgia remake becomes cross-platform franchise</text>
+  </g>
+</svg>

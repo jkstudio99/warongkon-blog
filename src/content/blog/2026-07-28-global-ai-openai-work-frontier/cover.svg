@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">OpenAI Work at the Frontier cover</title>
+  <desc id="desc">A workplace map showing tasks crossing between roles with an AI layer in the middle.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.48" stop-color="#18324f"/>
+      <stop offset="1" stop-color="#0f3d36"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#dcfce7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#d9f99d" stroke-width="2">
+    <path d="M0 140H1280M0 280H1280M0 420H1280M0 560H1280"/>
+    <path d="M160 0V720M320 0V720M480 0V720M640 0V720M800 0V720M960 0V720M1120 0V720"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="80" y="92" width="310" height="122" rx="22" fill="url(#cardA)"/>
+    <rect x="80" y="298" width="310" height="122" rx="22" fill="url(#cardA)"/>
+    <rect x="80" y="504" width="310" height="122" rx="22" fill="url(#cardA)"/>
+    <rect x="890" y="92" width="310" height="122" rx="22" fill="url(#cardB)"/>
+    <rect x="890" y="298" width="310" height="122" rx="22" fill="url(#cardB)"/>
+    <rect x="890" y="504" width="310" height="122" rx="22" fill="url(#cardB)"/>
+    <rect x="475" y="170" width="330" height="380" rx="36" fill="#0b1220" stroke="#a7f3d0" stroke-width="3"/>
+    <circle cx="640" cy="290" r="78" fill="#102a43" stroke="#67e8f9" stroke-width="4"/>
+    <path d="M602 290C602 269 619 252 640 252C661 252 678 269 678 290C678 311 661 328 640 328C619 328 602 311 602 290Z" fill="none" stroke="#bef264" stroke-width="8"/>
+    <path d="M640 232V197M640 383V348M549 290H584M696 290H731" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+    <text x="640" y="444" fill="#f8fafc" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">TASK CROSSOVER</text>
+    <text x="640" y="485" fill="#a7f3d0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24">800K+ ChatGPT work messages</text>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round" stroke-width="8" fill="none">
+    <path d="M390 153C470 153 496 245 562 262" stroke="#93c5fd"/>
+    <path d="M390 359C475 359 504 319 562 306" stroke="#86efac"/>
+    <path d="M390 565C482 565 510 382 562 335" stroke="#fcd34d"/>
+    <path d="M718 262C790 246 811 153 890 153" stroke="#93c5fd"/>
+    <path d="M718 306C792 318 818 359 890 359" stroke="#86efac"/>
+    <path d="M718 335C792 382 818 565 890 565" stroke="#fcd34d"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="120" y="145" fill="#0f172a" font-size="25" font-weight="800">Sales</text>
+    <text x="120" y="180" fill="#334155" font-size="18">customer dataset</text>
+    <text x="120" y="351" fill="#0f172a" font-size="25" font-weight="800">Marketing</text>
+    <text x="120" y="386" fill="#334155" font-size="18">website troubleshooting</text>
+    <text x="120" y="557" fill="#0f172a" font-size="25" font-weight="800">Small business</text>
+    <text x="120" y="592" fill="#334155" font-size="18">copy, contracts, finance</text>
+    <text x="930" y="145" fill="#064e3b" font-size="25" font-weight="800">Analysis</text>
+    <text x="930" y="180" fill="#166534" font-size="18">from another role</text>
+    <text x="930" y="351" fill="#064e3b" font-size="25" font-weight="800">Engineering</text>
+    <text x="930" y="386" fill="#166534" font-size="18">technical first pass</text>
+    <text x="930" y="557" fill="#064e3b" font-size="25" font-weight="800">Policy</text>
+    <text x="930" y="592" fill="#166534" font-size="18">review and guardrails</text>
+  </g>
+  <text x="80" y="670" fill="#d9f99d" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">OPENAI WORK AT THE FRONTIER</text>
+  <text x="1028" y="670" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="20">July 2026</text>
+</svg>
