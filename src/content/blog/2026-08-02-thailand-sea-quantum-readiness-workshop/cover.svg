@@ -1,0 +1,46 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Thailand quantum readiness workshop cover</title>
+  <desc id="desc">Editorial cover about Thailand's quantum readiness workshop, quantum-safe security, and ecosystem planning.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#072527"/>
+      <stop offset="0.5" stop-color="#18294a"/>
+      <stop offset="1" stop-color="#3b244a"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.3" stop-color="#75f7e0"/>
+      <stop offset="1" stop-color="#7b5cff"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.2" stroke="#b8fff1" stroke-width="2" fill="none">
+    <circle cx="925" cy="350" r="250"/>
+    <circle cx="925" cy="350" r="178"/>
+    <circle cx="925" cy="350" r="104"/>
+    <path d="M675 350 H1175 M925 100 V600 M748 173 L1102 527 M1102 173 L748 527"/>
+  </g>
+  <g transform="translate(84 88)">
+    <rect x="0" y="0" width="390" height="48" rx="8" fill="#f7fbff"/>
+    <text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#10222c">THAILAND / SEA ECOSYSTEM</text>
+  </g>
+  <g transform="translate(96 188)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="900" fill="#ffffff">QUANTUM</text>
+    <text x="0" y="80" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="900" fill="#ffffff">READINESS</text>
+    <text x="0" y="160" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="900" fill="#ffffff">WORKSHOP</text>
+    <rect x="0" y="198" width="520" height="12" fill="#75f7e0"/>
+    <text x="0" y="268" font-family="Inter, Arial, sans-serif" font-size="30" fill="#d9f8f5">White paper / talent / quantum-safe migration</text>
+  </g>
+  <g transform="translate(760 168)">
+    <circle cx="165" cy="182" r="42" fill="url(#core)"/>
+    <ellipse cx="165" cy="182" rx="168" ry="70" fill="none" stroke="#75f7e0" stroke-width="8"/>
+    <ellipse cx="165" cy="182" rx="168" ry="70" fill="none" stroke="#ffd166" stroke-width="8" transform="rotate(60 165 182)"/>
+    <ellipse cx="165" cy="182" rx="168" ry="70" fill="none" stroke="#b99cff" stroke-width="8" transform="rotate(120 165 182)"/>
+    <circle cx="18" cy="182" r="14" fill="#ffd166"/>
+    <circle cx="312" cy="182" r="14" fill="#75f7e0"/>
+    <circle cx="165" cy="14" r="14" fill="#b99cff"/>
+    <circle cx="165" cy="350" r="14" fill="#ffffff"/>
+    <rect x="-10" y="402" width="350" height="56" rx="10" fill="#f8fbff"/>
+    <text x="18" y="438" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#132438">THAILAND 2026</text>
+  </g>
+</svg>

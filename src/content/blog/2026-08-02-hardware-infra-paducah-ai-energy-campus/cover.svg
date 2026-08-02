@@ -1,0 +1,49 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Paducah AI energy campus cover</title>
+  <desc id="desc">Editorial cover showing an AI data center campus connected to gas power, battery storage, and grid infrastructure.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17324a"/>
+      <stop offset="0.58" stop-color="#24313d"/>
+      <stop offset="1" stop-color="#15191e"/>
+    </linearGradient>
+    <linearGradient id="power" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8fd14f"/>
+      <stop offset="1" stop-color="#49c6e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#sky)"/>
+  <rect x="0" y="490" width="1280" height="230" fill="#12171b"/>
+  <g opacity="0.22" stroke="#cfe9f2" stroke-width="2">
+    <path d="M0 478 H1280"/>
+    <path d="M70 520 H1210 M120 570 H1160 M180 620 H1100"/>
+  </g>
+  <g transform="translate(92 92)">
+    <rect x="0" y="0" width="360" height="48" rx="8" fill="#f3f8f6"/>
+    <text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#142231">HARDWARE / INFRA</text>
+  </g>
+  <g transform="translate(98 180)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800" fill="#ffffff">PADUCAH</text>
+    <text x="0" y="82" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800" fill="#ffffff">AI ENERGY</text>
+    <text x="0" y="164" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800" fill="#ffffff">CAMPUS</text>
+    <rect x="0" y="202" width="560" height="12" fill="url(#power)"/>
+    <text x="0" y="270" font-family="Inter, Arial, sans-serif" font-size="30" fill="#d9eef7">1.8GW HPC + 2GW generation + 2.6GW storage</text>
+  </g>
+  <g transform="translate(720 172)" fill="none" stroke-linejoin="round">
+    <rect x="0" y="170" width="360" height="150" fill="#273640" stroke="#86d7ef" stroke-width="4"/>
+    <path d="M0 170 L70 95 H430 L360 170 Z" fill="#344552" stroke="#86d7ef" stroke-width="4"/>
+    <path d="M360 170 L430 95 V240 L360 320 Z" fill="#202a32" stroke="#86d7ef" stroke-width="4"/>
+    <g stroke="#8fd14f" stroke-width="5">
+      <path d="M42 200 H318 M42 235 H318 M42 270 H318"/>
+      <path d="M102 178 V312 M178 178 V312 M254 178 V312"/>
+    </g>
+    <g stroke="#ffd166" stroke-width="8" stroke-linecap="round">
+      <path d="M-120 330 C30 265 120 390 270 328 S555 250 655 330"/>
+      <path d="M-98 362 H565"/>
+    </g>
+    <g transform="translate(470 70)" stroke="#f6f7f8" stroke-width="5">
+      <path d="M0 250 L70 0 L140 250"/>
+      <path d="M32 90 H108 M22 145 H118 M12 205 H128"/>
+    </g>
+  </g>
+</svg>

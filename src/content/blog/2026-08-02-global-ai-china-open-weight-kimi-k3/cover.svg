@@ -1,0 +1,39 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">China open-weight AI model race cover</title>
+  <desc id="desc">Editorial cover for a story about Kimi K3, open-weight AI, and US-China model competition.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09111f"/>
+      <stop offset="0.55" stop-color="#10283a"/>
+      <stop offset="1" stop-color="#351c25"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#19d19f"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.22" stroke="#83f7d0" stroke-width="2" fill="none">
+    <path d="M80 145 C230 90 310 210 455 150 S705 95 820 175 1040 245 1195 130"/>
+    <path d="M96 560 C260 500 350 610 500 535 S760 475 915 560 1080 605 1200 520"/>
+    <path d="M170 90 V650 M365 70 V655 M560 80 V640 M755 70 V650 M950 92 V640 M1145 72 V650"/>
+  </g>
+  <g transform="translate(84 92)">
+    <rect x="0" y="0" width="210" height="46" rx="8" fill="#f4f8fb"/>
+    <text x="24" y="31" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#0b1524">GLOBAL / AI</text>
+  </g>
+  <g transform="translate(96 186)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="800" fill="#f8fbff">OPEN-WEIGHT</text>
+    <text x="0" y="88" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="800" fill="#f8fbff">AI PRESSURE</text>
+    <rect x="0" y="124" width="470" height="12" fill="url(#panel)"/>
+    <text x="0" y="198" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#b9ffe9">KIMI K3 / DEEPSEEK / QWEN</text>
+    <text x="0" y="248" font-family="Inter, Arial, sans-serif" font-size="28" fill="#d9e7ef">Price, access, and policy reshape the model race</text>
+  </g>
+  <g transform="translate(818 165)">
+    <rect x="0" y="0" width="320" height="320" rx="32" fill="#0d1b2a" stroke="#4ee6bb" stroke-width="3"/>
+    <circle cx="160" cy="160" r="108" fill="none" stroke="#ffd166" stroke-width="14"/>
+    <path d="M160 66 L160 254 M66 160 L254 160 M86 102 L234 218 M234 102 L86 218" stroke="#4ee6bb" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="160" cy="160" r="34" fill="#f8fbff"/>
+    <text x="72" y="392" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">KIMI K3</text>
+  </g>
+</svg>

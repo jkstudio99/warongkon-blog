@@ -1,0 +1,42 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Xbox price hike memory crisis cover</title>
+  <desc id="desc">Editorial cover about Xbox console price increases caused by storage and memory component costs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07140b"/>
+      <stop offset="0.58" stop-color="#101820"/>
+      <stop offset="1" stop-color="#263044"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7cff6b"/>
+      <stop offset="1" stop-color="#00c853"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#8cff93" stroke-width="2" fill="none">
+    <path d="M80 110 H1200 M80 190 H1200 M80 270 H1200 M80 350 H1200 M80 430 H1200 M80 510 H1200 M80 590 H1200"/>
+    <path d="M130 70 V650 M250 70 V650 M370 70 V650 M490 70 V650 M610 70 V650 M730 70 V650 M850 70 V650 M970 70 V650 M1090 70 V650"/>
+  </g>
+  <g transform="translate(84 84)">
+    <rect x="0" y="0" width="330" height="48" rx="8" fill="#f5fff5"/>
+    <text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#0a1c11">GAMES / CONSUMER</text>
+  </g>
+  <g transform="translate(96 182)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="900" fill="#ffffff">XBOX PRICE</text>
+    <text x="0" y="88" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="900" fill="#ffffff">RESET</text>
+    <rect x="0" y="126" width="410" height="14" fill="url(#green)"/>
+    <text x="0" y="198" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#a8ff9d">AUG 1, 2026</text>
+    <text x="0" y="250" font-family="Inter, Arial, sans-serif" font-size="30" fill="#d9eadb">Memory and storage costs hit console economics</text>
+  </g>
+  <g transform="translate(792 154)">
+    <rect x="0" y="0" width="320" height="430" rx="42" fill="#111820" stroke="#68ff75" stroke-width="5"/>
+    <rect x="55" y="52" width="210" height="310" rx="18" fill="#1d2730" stroke="#a6ffac" stroke-width="3"/>
+    <circle cx="160" cy="210" r="70" fill="none" stroke="#68ff75" stroke-width="18"/>
+    <path d="M115 165 L205 255 M205 165 L115 255" stroke="#e9ffee" stroke-width="16" stroke-linecap="round"/>
+    <text x="60" y="405" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900" fill="#ffffff">+$150</text>
+  </g>
+  <g transform="translate(720 596)">
+    <rect x="0" y="0" width="478" height="54" rx="10" fill="#f7fff6"/>
+    <text x="24" y="37" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#102215">512GB +$100 / 1TB +$150</text>
+  </g>
+</svg>
