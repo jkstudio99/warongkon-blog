@@ -1,0 +1,47 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Techsauce Solution Spotlight cover</title>
+  <desc id="desc">Bangkok deal-making hub with startup, venture capital, and solution spotlight nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101828"/>
+      <stop offset="0.48" stop-color="#17324d"/>
+      <stop offset="1" stop-color="#0f3f3e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#e0f2fe" stroke-width="2">
+    <path d="M82 576H1190M132 516H1140M190 456H1084"/>
+    <path d="M254 576L366 300L478 576M400 576L520 250L640 576M560 576L704 210L848 576M760 576L880 318L1000 576"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="92" y="92" width="470" height="508" rx="26" fill="#0f172a" stroke="#22d3ee" stroke-width="2"/>
+    <rect x="660" y="130" width="430" height="390" rx="30" fill="#f8fafc" opacity="0.95"/>
+  </g>
+  <text x="132" y="174" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="38" font-weight="700">TECHSAUCE</text>
+  <text x="132" y="236" fill="#facc15" font-family="Arial, sans-serif" font-size="52" font-weight="800">SOLUTION</text>
+  <text x="132" y="292" fill="#22d3ee" font-family="Arial, sans-serif" font-size="48" font-weight="800">SPOTLIGHT</text>
+  <text x="132" y="362" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="28">Business Matching Zone</text>
+  <text x="132" y="408" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="28">AI • FinTech • HRM</text>
+  <text x="132" y="454" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="28">Infrastructure • Health</text>
+  <rect x="132" y="520" width="316" height="48" rx="24" fill="url(#accent)"/>
+  <text x="158" y="552" fill="#0f172a" font-family="Arial, sans-serif" font-size="24" font-weight="800">BANGKOK • AUG 26-28</text>
+  <g transform="translate(710 178)">
+    <circle cx="118" cy="100" r="54" fill="#22d3ee"/>
+    <circle cx="246" cy="72" r="44" fill="#facc15"/>
+    <circle cx="262" cy="218" r="58" fill="#0f766e"/>
+    <circle cx="112" cy="246" r="48" fill="#1d4ed8"/>
+    <path d="M118 100L246 72M246 72L262 218M262 218L112 246M112 246L118 100M118 100L262 218" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+    <text x="86" y="109" fill="#0f172a" font-family="Arial, sans-serif" font-size="22" font-weight="800">AI</text>
+    <text x="210" y="80" fill="#0f172a" font-family="Arial, sans-serif" font-size="20" font-weight="800">VC</text>
+    <text x="222" y="227" fill="#f8fafc" font-family="Arial, sans-serif" font-size="20" font-weight="800">B2B</text>
+    <text x="74" y="255" fill="#f8fafc" font-family="Arial, sans-serif" font-size="20" font-weight="800">SEA</text>
+  </g>
+  <text x="700" y="584" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="34" font-weight="800">THAILAND / SEA ECOSYSTEM</text>
+</svg>
