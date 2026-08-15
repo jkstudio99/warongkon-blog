@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">gamescom 2026 consumer attention cover</title>
+  <desc id="desc">Convention hall, controller icons, and game showcase stage</desc>
+  <rect width="1280" height="720" fill="#111827"/>
+  <rect x="0" y="492" width="1280" height="228" fill="#1f2937"/>
+  <polygon points="120,492 320,210 960,210 1160,492" fill="#263345"/>
+  <rect x="350" y="160" width="580" height="250" rx="10" fill="#0f172a" stroke="#f97316" stroke-width="8"/>
+  <rect x="390" y="200" width="500" height="170" rx="8" fill="#172554"/>
+  <circle cx="470" cy="285" r="54" fill="#22c55e"/>
+  <rect x="585" y="250" width="220" height="70" rx="12" fill="#f97316"/>
+  <g fill="#e5e7eb">
+    <circle cx="476" cy="285" r="11"/>
+    <circle cx="452" cy="285" r="11"/>
+    <circle cx="470" cy="261" r="11"/>
+    <circle cx="470" cy="309" r="11"/>
+    <circle cx="768" cy="270" r="16"/>
+    <circle cx="808" cy="300" r="16"/>
+  </g>
+  <g fill="#38bdf8" opacity=".8">
+    <rect x="160" y="530" width="140" height="86" rx="6"/>
+    <rect x="340" y="530" width="140" height="86" rx="6"/>
+    <rect x="800" y="530" width="140" height="86" rx="6"/>
+    <rect x="980" y="530" width="140" height="86" rx="6"/>
+  </g>
+  <path d="M180 500 L1100 500" stroke="#f8fafc" stroke-width="4" opacity=".45"/>
+  <text x="80" y="88" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">GAMES / CONSUMER</text>
+  <text x="80" y="150" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800">gamescom 2026</text>
+  <text x="82" y="646" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="24">15 Aug 2026</text>
+  <text x="360" y="455" fill="#f97316" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800">BOOKED OUT BEFORE SHOWTIME</text>
+  <text x="610" y="298" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="900">ONL</text>
+</svg>
