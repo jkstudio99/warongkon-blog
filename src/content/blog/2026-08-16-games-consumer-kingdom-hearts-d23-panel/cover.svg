@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Kingdom Hearts D23 consumer cover</title>
+  <desc id="desc">Stylized key, stage lights, and consumer spotlight for a Kingdom Hearts D23 panel</desc>
+  <rect width="1280" height="720" fill="#141022"/>
+  <path d="M0 560 C190 470 350 650 535 540 C700 442 820 375 1030 430 C1130 457 1190 515 1280 485 V720 H0 Z" fill="#1f2937"/>
+  <g opacity=".38">
+    <path d="M210 0 L410 720" stroke="#a78bfa" stroke-width="34"/>
+    <path d="M1080 0 L815 720" stroke="#22d3ee" stroke-width="30"/>
+    <path d="M625 0 L610 720" stroke="#facc15" stroke-width="18"/>
+  </g>
+  <g transform="translate(680 190) rotate(-18)">
+    <rect x="0" y="74" width="310" height="38" rx="19" fill="#facc15"/>
+    <circle cx="337" cy="93" r="53" fill="none" stroke="#facc15" stroke-width="28"/>
+    <rect x="12" y="41" width="52" height="105" rx="8" fill="#facc15"/>
+    <rect x="83" y="35" width="28" height="66" rx="6" fill="#facc15"/>
+    <rect x="126" y="35" width="28" height="96" rx="6" fill="#facc15"/>
+  </g>
+  <g fill="#ffffff" opacity=".95">
+    <circle cx="150" cy="168" r="8"/>
+    <circle cx="278" cy="116" r="5"/>
+    <circle cx="516" cy="94" r="7"/>
+    <circle cx="1046" cy="126" r="6"/>
+    <circle cx="1148" cy="212" r="8"/>
+  </g>
+  <rect x="80" y="96" width="560" height="344" rx="8" fill="#0f172a" opacity=".9" stroke="#facc15" stroke-width="3"/>
+  <text x="112" y="162" fill="#facc15" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">GAMES / CONSUMER</text>
+  <text x="112" y="238" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">Kingdom Hearts</text>
+  <text x="116" y="296" fill="#c4b5fd" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">D23 deep dive</text>
+  <text x="116" y="360" fill="#e5e7eb" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">$1B franchise, KH4 expectations</text>
+  <text x="116" y="406" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="24">16 Aug 2026</text>
+</svg>

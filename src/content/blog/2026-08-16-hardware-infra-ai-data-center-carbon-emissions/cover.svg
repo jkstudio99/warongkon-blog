@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI data center carbon emissions cover</title>
+  <desc id="desc">Data center blocks connected to a power grid with emissions counters</desc>
+  <rect width="1280" height="720" fill="#10140f"/>
+  <rect x="70" y="85" width="520" height="440" rx="8" fill="#1f2937"/>
+  <g fill="#334155">
+    <rect x="110" y="130" width="95" height="80" rx="6"/>
+    <rect x="230" y="130" width="95" height="80" rx="6"/>
+    <rect x="350" y="130" width="95" height="80" rx="6"/>
+    <rect x="470" y="130" width="80" height="80" rx="6"/>
+    <rect x="110" y="240" width="95" height="80" rx="6"/>
+    <rect x="230" y="240" width="95" height="80" rx="6"/>
+    <rect x="350" y="240" width="95" height="80" rx="6"/>
+    <rect x="470" y="240" width="80" height="80" rx="6"/>
+    <rect x="110" y="350" width="95" height="80" rx="6"/>
+    <rect x="230" y="350" width="95" height="80" rx="6"/>
+    <rect x="350" y="350" width="95" height="80" rx="6"/>
+    <rect x="470" y="350" width="80" height="80" rx="6"/>
+  </g>
+  <g fill="#22c55e">
+    <rect x="130" y="151" width="55" height="10"/>
+    <rect x="250" y="151" width="55" height="10"/>
+    <rect x="370" y="151" width="55" height="10"/>
+    <rect x="130" y="261" width="55" height="10"/>
+    <rect x="250" y="261" width="55" height="10"/>
+    <rect x="370" y="261" width="55" height="10"/>
+  </g>
+  <path d="M590 310 C700 260 770 160 895 190 C1010 218 1050 345 1160 320" fill="none" stroke="#94a3b8" stroke-width="8"/>
+  <path d="M590 386 C720 360 790 500 920 470 C1030 445 1070 360 1165 390" fill="none" stroke="#f97316" stroke-width="10"/>
+  <g fill="#111827" stroke="#f97316" stroke-width="5">
+    <circle cx="900" cy="220" r="62"/>
+    <circle cx="1048" cy="396" r="76"/>
+  </g>
+  <text x="860" y="232" fill="#fed7aa" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">60</text>
+  <text x="992" y="390" fill="#fed7aa" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800">101.5</text>
+  <text x="1002" y="430" fill="#fed7aa" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Mt CO2</text>
+  <text x="80" y="612" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">HARDWARE / INFRASTRUCTURE</text>
+  <text x="80" y="660" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800">AI data centers meet the carbon ledger</text>
+  <text x="790" y="120" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="24">16 Aug 2026</text>
+</svg>
