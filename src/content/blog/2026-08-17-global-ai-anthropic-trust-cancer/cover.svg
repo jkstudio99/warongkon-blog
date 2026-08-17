@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Anthropic AI public trust and science cover</title>
+  <desc id="desc">Scientific validation dashboard linking frontier AI, public trust, and medical research.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.52" stop-color="#12312f"/>
+      <stop offset="1" stop-color="#2f3b16"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#f8d84e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#d1fae5" stroke-width="2">
+    <path d="M76 132H1196M76 252H1196M76 372H1196M76 492H1196M76 612H1196"/>
+    <path d="M180 80V642M340 80V642M500 80V642M660 80V642M820 80V642M980 80V642M1140 80V642"/>
+  </g>
+  <g transform="translate(710 124)">
+    <rect x="0" y="0" width="390" height="420" rx="18" fill="#f8fafc" opacity=".96"/>
+    <rect x="44" y="58" width="302" height="48" rx="8" fill="#102a43"/>
+    <rect x="44" y="136" width="190" height="20" rx="4" fill="#34d399"/>
+    <rect x="44" y="188" width="258" height="20" rx="4" fill="#60a5fa"/>
+    <rect x="44" y="240" width="226" height="20" rx="4" fill="#f8d84e"/>
+    <path d="M72 332C116 262 162 262 206 332S296 402 338 332" fill="none" stroke="#0f766e" stroke-width="11" stroke-linecap="round"/>
+    <path d="M72 374C116 304 162 304 206 374S296 444 338 374" fill="none" stroke="#1d4ed8" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(132 120)">
+    <text x="0" y="0" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">GLOBAL / AI</text>
+    <text x="0" y="88" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800">Anthropic</text>
+    <text x="0" y="156" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">and public trust</text>
+    <rect x="0" y="214" width="430" height="64" rx="10" fill="url(#signal)"/>
+    <text x="26" y="256" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">SCIENCE MUST PROVE AI</text>
+    <text x="0" y="344" fill="#d1fae5" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">medical breakthroughs as legitimacy</text>
+    <text x="0" y="404" fill="#e5e7eb" font-family="Arial, Helvetica, sans-serif" font-size="24">17 Aug 2026</text>
+  </g>
+</svg>

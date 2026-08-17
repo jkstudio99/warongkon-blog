@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">FEED IT PC launch cover</title>
+  <desc id="desc">Retro horror Steam launch scene for FEED IT with dark corridor and PC storefront cues.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0a0a0a"/>
+      <stop offset=".58" stop-color="#1f1717"/>
+      <stop offset="1" stop-color="#2d1111"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#3b1f1f"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <path d="M132 660L440 246H840L1150 660Z" fill="url(#floor)"/>
+  <path d="M440 246L514 108H766L840 246Z" fill="#090909" stroke="#7f1d1d" stroke-width="6"/>
+  <g opacity=".28" stroke="#ef4444" stroke-width="2">
+    <path d="M190 660L480 246M350 660L540 246M930 660L798 246M1090 660L840 246"/>
+    <path d="M246 584H1030M298 504H982M354 424H926M410 344H870"/>
+  </g>
+  <g transform="translate(812 118)">
+    <rect x="0" y="0" width="292" height="350" rx="14" fill="#111827" stroke="#ef4444" stroke-width="4"/>
+    <rect x="30" y="36" width="232" height="132" rx="8" fill="#271111"/>
+    <rect x="30" y="204" width="232" height="28" rx="5" fill="#e5e7eb"/>
+    <rect x="30" y="254" width="152" height="44" rx="7" fill="#22c55e"/>
+    <text x="54" y="284" fill="#052e16" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800">STEAM</text>
+  </g>
+  <g transform="translate(96 110)">
+    <text x="0" y="0" fill="#fca5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">GAMES / CONSUMER</text>
+    <text x="0" y="100" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="900">FEED IT</text>
+    <text x="2" y="166" fill="#fecaca" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">PC launch on Steam</text>
+    <rect x="0" y="224" width="368" height="58" rx="8" fill="#ef4444"/>
+    <text x="24" y="263" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="900">RETRO HORROR • AUG 17</text>
+  </g>
+  <text x="96" y="640" fill="#d1d5db" font-family="Arial, Helvetica, sans-serif" font-size="25">Pretty Soon / Games On A Chair consumer launch signal</text>
+</svg>
