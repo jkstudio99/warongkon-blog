@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">A2A agent interoperability cover</title>
+  <desc id="desc">A network of AI agents exchanging signed tasks through a shared protocol layer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#06131f"/>
+      <stop offset="0.5" stop-color="#102a43"/>
+      <stop offset="1" stop-color="#293241"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#f8d84e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#d9f99d" stroke-width="2">
+    <path d="M92 128H1188M92 248H1188M92 368H1188M92 488H1188M92 608H1188"/>
+    <path d="M190 84V640M350 84V640M510 84V640M670 84V640M830 84V640M990 84V640M1150 84V640"/>
+  </g>
+  <g fill="none" stroke="#67e8f9" stroke-width="10" stroke-linecap="round" opacity=".92">
+    <path d="M330 230C475 150 555 158 640 275S820 392 970 294"/>
+    <path d="M330 492C470 402 562 420 650 314S820 202 970 178"/>
+    <path d="M330 230V492"/>
+    <path d="M970 178V294"/>
+  </g>
+  <g>
+    <circle cx="330" cy="230" r="58" fill="#0f172a" stroke="#67e8f9" stroke-width="7"/>
+    <circle cx="330" cy="492" r="58" fill="#0f172a" stroke="#67e8f9" stroke-width="7"/>
+    <circle cx="970" cy="178" r="58" fill="#0f172a" stroke="#f8d84e" stroke-width="7"/>
+    <circle cx="970" cy="294" r="58" fill="#0f172a" stroke="#f8d84e" stroke-width="7"/>
+    <circle cx="650" cy="314" r="86" fill="#f8fafc"/>
+    <text x="650" y="303" text-anchor="middle" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900">A2A</text>
+    <text x="650" y="344" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">PROTOCOL</text>
+  </g>
+  <g transform="translate(96 116)">
+    <text x="0" y="0" fill="#a7f3d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">GLOBAL / AI</text>
+    <text x="0" y="82" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="900">Agent-to-agent</text>
+    <text x="0" y="150" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900">gets a home</text>
+  </g>
+  <g transform="translate(96 542)">
+    <rect width="430" height="64" rx="10" fill="url(#rail)"/>
+    <text x="24" y="42" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="900">OPEN STANDARD FOR AGENTS</text>
+    <text x="0" y="102" fill="#e5e7eb" font-family="Arial, Helvetica, sans-serif" font-size="24">18 Aug 2026</text>
+  </g>
+</svg>

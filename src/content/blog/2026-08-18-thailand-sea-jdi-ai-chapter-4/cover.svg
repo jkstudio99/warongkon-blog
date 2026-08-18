@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">JDI AI Chapter 4 SEA ecosystem cover</title>
+  <desc id="desc">Conference stage, investor matching nodes, and Southeast Asia AI business impact signals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.48" stop-color="#173b53"/>
+      <stop offset="1" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="stage" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#86efac"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity=".17" stroke="#d9f99d" stroke-width="2">
+    <path d="M82 128H1198M82 248H1198M82 368H1198M82 488H1198M82 608H1198"/>
+    <path d="M180 80V642M340 80V642M500 80V642M660 80V642M820 80V642M980 80V642M1140 80V642"/>
+  </g>
+  <g transform="translate(710 128)">
+    <rect x="0" y="0" width="410" height="270" rx="18" fill="#f8fafc"/>
+    <rect x="34" y="36" width="342" height="62" rx="9" fill="#0f172a"/>
+    <text x="205" y="78" text-anchor="middle" fill="#86efac" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="900">AI CHAPTER 4</text>
+    <rect x="52" y="132" width="94" height="78" rx="10" fill="#38bdf8"/>
+    <rect x="158" y="132" width="94" height="78" rx="10" fill="#86efac"/>
+    <rect x="264" y="132" width="94" height="78" rx="10" fill="#f8d84e"/>
+    <path d="M82 246H330" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M56 300C120 270 186 332 250 300S356 272 414 304" fill="none" stroke="url(#stage)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M92 364H350" stroke="#86efac" stroke-width="6" stroke-linecap="round" stroke-dasharray="18 18"/>
+    <circle cx="92" cy="364" r="18" fill="#38bdf8"/>
+    <circle cx="220" cy="364" r="18" fill="#f8d84e"/>
+    <circle cx="350" cy="364" r="18" fill="#86efac"/>
+  </g>
+  <g transform="translate(104 130)">
+    <text x="0" y="0" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">THAILAND / SEA</text>
+    <text x="0" y="86" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="900">AI from hype</text>
+    <text x="0" y="154" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900">to business impact</text>
+    <rect x="0" y="220" width="412" height="64" rx="10" fill="url(#stage)"/>
+    <text x="24" y="262" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900">HO CHI MINH CITY</text>
+    <text x="0" y="350" fill="#d1fae5" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">conference, matching, deployment</text>
+    <text x="0" y="412" fill="#e5e7eb" font-family="Arial, Helvetica, sans-serif" font-size="24">18 Aug 2026</text>
+  </g>
+</svg>

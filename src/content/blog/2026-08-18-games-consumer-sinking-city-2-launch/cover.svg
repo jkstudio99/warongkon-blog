@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">The Sinking City 2 launch cover</title>
+  <desc id="desc">Flooded 1920s horror city skyline with a launch-day signal and survival horror framing.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="0.48" stop-color="#17324d"/>
+      <stop offset="1" stop-color="#0f3f46"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#bfdbfe" stroke-width="2">
+    <path d="M84 148H1198M84 278H1198M84 408H1198M84 538H1198"/>
+    <path d="M200 96V626M380 96V626M560 96V626M740 96V626M920 96V626M1100 96V626"/>
+  </g>
+  <g transform="translate(650 148)">
+    <path d="M40 324V116h70V64h72v260h52V34h88v290h58V92h74v232h64V164h68v160" fill="#0b1220"/>
+    <path d="M20 324H620" stroke="#67e8f9" stroke-width="9" stroke-linecap="round"/>
+    <path d="M38 366C112 340 176 392 244 366S378 340 452 366S558 386 630 358" fill="none" stroke="url(#water)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M54 420C128 394 192 446 260 420S394 394 468 420S574 440 646 412" fill="none" stroke="#7dd3fc" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+    <circle cx="494" cy="84" r="46" fill="#f8d84e" opacity=".95"/>
+    <path d="M486 90C516 118 536 150 542 190" fill="none" stroke="#f8d84e" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(94 126)">
+    <text x="0" y="0" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">GAMES / CONSUMER</text>
+    <text x="0" y="86" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="900">The Sinking</text>
+    <text x="0" y="154" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="900">City 2</text>
+    <rect x="0" y="220" width="372" height="64" rx="10" fill="#f8d84e"/>
+    <text x="24" y="262" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="900">LAUNCH DAY</text>
+    <text x="0" y="352" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">survival horror pivot</text>
+    <text x="0" y="414" fill="#e5e7eb" font-family="Arial, Helvetica, sans-serif" font-size="24">18 Aug 2026</text>
+  </g>
+</svg>
