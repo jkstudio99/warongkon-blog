@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Anthropic and OpenAI revenue momentum cover</title>
+  <desc id="desc">A generated cover showing two AI revenue bars, cloud compute lines, and a market momentum curve.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10131f"/>
+      <stop offset="0.5" stop-color="#172838"/>
+      <stop offset="1" stop-color="#241821"/>
+    </linearGradient>
+    <linearGradient id="anthropic" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f2c078"/>
+      <stop offset="1" stop-color="#d57a42"/>
+    </linearGradient>
+    <linearGradient id="openai" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#7ed6c4"/>
+      <stop offset="1" stop-color="#318f8c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.22" stroke="#ffffff" stroke-width="1">
+    <path d="M80 145H1200M80 265H1200M80 385H1200M80 505H1200M80 625H1200"/>
+    <path d="M170 90V650M330 90V650M490 90V650M650 90V650M810 90V650M970 90V650M1130 90V650"/>
+  </g>
+  <path d="M120 570C235 525 278 467 375 468C484 469 536 360 640 350C742 340 794 263 900 244C1016 224 1080 169 1160 122" fill="none" stroke="#f2c078" stroke-width="12" stroke-linecap="round"/>
+  <path d="M120 602C234 592 315 560 410 536C529 506 610 493 710 460C833 419 963 414 1162 378" fill="none" stroke="#7ed6c4" stroke-width="10" stroke-linecap="round" opacity="0.82"/>
+  <g transform="translate(420 170)">
+    <rect x="0" y="230" width="150" height="290" rx="18" fill="url(#openai)"/>
+    <rect x="240" y="70" width="150" height="450" rx="18" fill="url(#anthropic)"/>
+    <rect x="-52" y="520" width="500" height="12" rx="6" fill="#d8dee9" opacity="0.75"/>
+    <text x="75" y="568" fill="#d7f5f0" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" text-anchor="middle">OpenAI</text>
+    <text x="315" y="568" fill="#ffe3bd" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" text-anchor="middle">Anthropic</text>
+  </g>
+  <g transform="translate(78 86)">
+    <text x="0" y="0" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">AI Revenue Race</text>
+    <text x="0" y="58" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="28">August 19, 2026</text>
+  </g>
+  <g transform="translate(930 110)" fill="none" stroke="#cbd5e1" stroke-width="5" opacity="0.75">
+    <rect x="0" y="0" width="210" height="150" rx="24"/>
+    <path d="M42 43H168M42 77H168M42 111H128"/>
+    <circle cx="176" cy="112" r="18" fill="#f2c078" stroke="none"/>
+  </g>
+</svg>

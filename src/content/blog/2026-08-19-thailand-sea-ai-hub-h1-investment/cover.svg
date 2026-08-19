@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Thailand AI hub investment cover</title>
+  <desc id="desc">A generated cover showing Thailand, data centers, chips, and export growth lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1f2a"/>
+      <stop offset="0.5" stop-color="#18333d"/>
+      <stop offset="1" stop-color="#2d2330"/>
+    </linearGradient>
+    <linearGradient id="growth" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#ffffff" stroke-width="1">
+    <path d="M80 160H1200M80 300H1200M80 440H1200M80 580H1200"/>
+    <path d="M180 90V640M340 90V640M500 90V640M660 90V640M820 90V640M980 90V640M1140 90V640"/>
+  </g>
+  <path d="M570 110C620 160 624 222 592 278C565 326 610 360 628 405C655 474 615 565 542 602C492 628 438 602 434 548C429 482 371 446 388 384C401 335 456 326 448 271C439 204 496 143 570 110Z" fill="#e2e8f0" opacity="0.92"/>
+  <path d="M545 163C577 202 565 255 540 294C520 326 550 359 565 397C586 450 560 523 510 548C477 565 454 548 458 507C464 455 419 422 433 377C445 338 488 327 478 277C468 227 497 183 545 163Z" fill="#0f172a" opacity="0.34"/>
+  <g transform="translate(116 420)">
+    <path d="M0 120C120 98 186 62 282 72C393 84 438 36 526 18" fill="none" stroke="url(#growth)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="526" cy="18" r="17" fill="#facc15"/>
+    <text x="0" y="178" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800">H1 2026 Investment</text>
+  </g>
+  <g transform="translate(810 220)">
+    <rect x="0" y="80" width="105" height="178" rx="10" fill="#5eead4"/>
+    <rect x="140" y="25" width="105" height="233" rx="10" fill="#facc15"/>
+    <rect x="280" y="120" width="105" height="138" rx="10" fill="#93c5fd"/>
+    <rect x="-32" y="258" width="445" height="12" rx="6" fill="#e2e8f0" opacity="0.7"/>
+  </g>
+  <g transform="translate(760 88)">
+    <rect x="0" y="0" width="108" height="108" rx="22" fill="#facc15"/>
+    <rect x="20" y="20" width="68" height="68" rx="12" fill="#0f172a" opacity="0.8"/>
+    <path d="M-24 28H0M-24 54H0M-24 80H0M108 28H132M108 54H132M108 80H132M28 -24V0M54 -24V0M80 -24V0M28 108V132M54 108V132M80 108V132" stroke="#facc15" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="78" y="100" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="900">Thailand AI Hub</text>
+  <text x="80" y="150" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="28">Digital infrastructure, exports, and skills</text>
+</svg>

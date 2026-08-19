@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Pennsylvania data center permit guardrails cover</title>
+  <desc id="desc">A generated cover showing data center buildings, grid lines, and a permit checkpoint.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101820"/>
+      <stop offset="0.55" stop-color="#20323a"/>
+      <stop offset="1" stop-color="#2c1f2d"/>
+    </linearGradient>
+    <linearGradient id="building" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#b9e4ff"/>
+      <stop offset="1" stop-color="#4f8aa8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.28" stroke="#dbeafe" stroke-width="3" fill="none">
+    <path d="M120 580L260 430L390 510L540 330L710 410L860 260L1030 360L1160 210"/>
+    <circle cx="260" cy="430" r="12" fill="#dbeafe"/>
+    <circle cx="540" cy="330" r="12" fill="#dbeafe"/>
+    <circle cx="860" cy="260" r="12" fill="#dbeafe"/>
+    <circle cx="1160" cy="210" r="12" fill="#dbeafe"/>
+  </g>
+  <g transform="translate(170 235)">
+    <rect x="0" y="180" width="170" height="210" rx="10" fill="url(#building)"/>
+    <rect x="210" y="100" width="170" height="290" rx="10" fill="url(#building)"/>
+    <rect x="420" y="145" width="170" height="245" rx="10" fill="url(#building)"/>
+    <g fill="#0f172a" opacity="0.7">
+      <rect x="28" y="215" width="42" height="22" rx="4"/>
+      <rect x="98" y="215" width="42" height="22" rx="4"/>
+      <rect x="28" y="270" width="42" height="22" rx="4"/>
+      <rect x="98" y="270" width="42" height="22" rx="4"/>
+      <rect x="238" y="145" width="42" height="22" rx="4"/>
+      <rect x="308" y="145" width="42" height="22" rx="4"/>
+      <rect x="238" y="205" width="42" height="22" rx="4"/>
+      <rect x="308" y="205" width="42" height="22" rx="4"/>
+      <rect x="448" y="190" width="42" height="22" rx="4"/>
+      <rect x="518" y="190" width="42" height="22" rx="4"/>
+      <rect x="448" y="250" width="42" height="22" rx="4"/>
+      <rect x="518" y="250" width="42" height="22" rx="4"/>
+    </g>
+    <rect x="-35" y="390" width="680" height="18" rx="9" fill="#e2e8f0" opacity="0.75"/>
+  </g>
+  <g transform="translate(820 214)">
+    <rect x="0" y="0" width="260" height="190" rx="24" fill="#f8fafc"/>
+    <text x="130" y="68" fill="#182033" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900" text-anchor="middle">PERMIT</text>
+    <rect x="44" y="102" width="172" height="50" rx="25" fill="#ef4444"/>
+    <text x="130" y="137" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800" text-anchor="middle">REVIEW</text>
+  </g>
+  <text x="78" y="100" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Data Center Guardrails</text>
+  <text x="82" y="150" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="28">Grid, water, and local approval</text>
+</svg>
