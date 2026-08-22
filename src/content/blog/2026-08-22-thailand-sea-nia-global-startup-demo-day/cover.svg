@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">NIA Global Startup Hub Demo Day cover</title>
+  <desc id="desc">Thai and ASEAN startup nodes pitching on a regional demo day stage.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="48%" stop-color="#155e75"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.36"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="76" y="76" width="1128" height="568" rx="30" fill="#020617" opacity="0.36"/>
+  <g stroke="#a7f3d0" stroke-width="4" fill="none" opacity="0.56">
+    <path d="M222 408c150-118 272-172 420-170 166 3 268 78 420 186"/>
+    <path d="M302 526c118-72 232-108 344-108 130 0 240 42 338 126"/>
+    <circle cx="278" cy="382" r="16" fill="#38bdf8"/>
+    <circle cx="520" cy="258" r="16" fill="#facc15"/>
+    <circle cx="748" cy="270" r="16" fill="#fb7185"/>
+    <circle cx="1000" cy="430" r="16" fill="#34d399"/>
+  </g>
+  <g transform="translate(440 152)" filter="url(#shadow)">
+    <rect x="0" y="0" width="400" height="300" rx="26" fill="#f8fafc"/>
+    <rect x="38" y="48" width="324" height="52" rx="26" fill="#0f766e"/>
+    <rect x="64" y="136" width="86" height="96" rx="16" fill="#38bdf8"/>
+    <rect x="158" y="104" width="86" height="128" rx="16" fill="#facc15"/>
+    <rect x="252" y="160" width="86" height="72" rx="16" fill="#22c55e"/>
+    <path d="M64 258h274" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="112" y="154" font-size="34" fill="#a7f3d0">THAILAND SEA</text>
+    <text x="112" y="586" font-size="68">GLOBAL STARTUP HUB</text>
+    <text x="112" y="634" font-size="30" fill="#bae6fd">demo day to ASEAN market</text>
+    <rect x="884" y="156" width="214" height="72" rx="36" fill="#facc15" opacity="0.95"/>
+    <text x="940" y="204" font-size="30" fill="#172554">NIA</text>
+    <rect x="884" y="496" width="248" height="72" rx="36" fill="#14b8a6" opacity="0.95"/>
+    <text x="934" y="544" font-size="30">30 TEAMS</text>
+  </g>
+</svg>
