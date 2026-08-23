@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Australia AI data center grid cover</title>
+  <desc id="desc">Abstract energy grid, data center blocks and load meter for an article about AI data centers in Australia.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#082f49"/>
+      <stop offset="0.52" stop-color="#155e75"/>
+      <stop offset="1" stop-color="#422006"/>
+    </linearGradient>
+    <linearGradient id="load" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="0.55" stop-color="#facc15"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#sky)"/>
+  <path d="M0 524 C146 458 251 552 378 488 C516 419 664 488 797 413 C960 321 1088 395 1280 320 L1280 720 L0 720 Z" fill="#0f172a" opacity="0.76"/>
+  <g stroke="#bae6fd" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M132 512 L270 216 L410 512"/>
+    <path d="M202 366 H340"/>
+    <path d="M166 444 H376"/>
+    <path d="M270 216 L270 512"/>
+    <path d="M410 512 L552 260 L692 512"/>
+    <path d="M482 386 H622"/>
+    <path d="M450 452 H656"/>
+    <path d="M552 260 L552 512"/>
+    <path d="M692 512 L828 304 L964 512"/>
+    <path d="M760 410 H896"/>
+    <path d="M730 462 H926"/>
+    <path d="M828 304 L828 512"/>
+  </g>
+  <g stroke="#fde68a" stroke-width="5" opacity="0.75">
+    <path d="M270 230 C388 174 461 303 552 270"/>
+    <path d="M552 270 C673 230 737 331 828 310"/>
+    <path d="M828 310 C984 246 1074 321 1170 284"/>
+  </g>
+  <g transform="translate(806 114)">
+    <rect x="0" y="0" width="310" height="258" rx="18" fill="#e0f2fe" opacity="0.96"/>
+    <rect x="32" y="38" width="246" height="42" rx="7" fill="#0f172a"/>
+    <rect x="32" y="104" width="246" height="42" rx="7" fill="#0f172a"/>
+    <rect x="32" y="170" width="246" height="42" rx="7" fill="#0f172a"/>
+    <g fill="#38bdf8">
+      <circle cx="62" cy="59" r="8"/>
+      <circle cx="62" cy="125" r="8"/>
+      <circle cx="62" cy="191" r="8"/>
+    </g>
+    <g fill="#facc15">
+      <rect x="104" y="53" width="136" height="12" rx="6"/>
+      <rect x="104" y="119" width="104" height="12" rx="6"/>
+      <rect x="104" y="185" width="156" height="12" rx="6"/>
+    </g>
+  </g>
+  <g transform="translate(156 92)">
+    <rect x="0" y="0" width="358" height="102" rx="18" fill="#f8fafc" opacity="0.95"/>
+    <rect x="28" y="58" width="302" height="18" rx="9" fill="#0f172a" opacity="0.18"/>
+    <rect x="28" y="58" width="249" height="18" rx="9" fill="url(#load)"/>
+    <text x="28" y="40" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900" fill="#082f49">GRID LOAD RISING</text>
+  </g>
+  <text x="112" y="636" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="900" fill="#f8fafc">AI DATA CENTER POWER</text>
+  <text x="112" y="681" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#fde68a">AUSTRALIA GRID PRESSURE</text>
+</svg>
+

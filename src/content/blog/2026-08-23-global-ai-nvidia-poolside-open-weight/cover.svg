@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">NVIDIA Poolside open-weight AI cover</title>
+  <desc id="desc">Abstract GPU grid and model factory pipeline for an article about NVIDIA, Poolside and open-weight AI.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10261f"/>
+      <stop offset="0.55" stop-color="#163a3b"/>
+      <stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9f227"/>
+      <stop offset="1" stop-color="#53d769"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <path d="M0 612 C186 530 330 674 505 586 C688 493 772 309 963 319 C1115 327 1191 420 1280 377 L1280 720 L0 720 Z" fill="#081917" opacity="0.74"/>
+  <g opacity="0.22" stroke="#e8ffe6" stroke-width="1">
+    <path d="M80 104 H1200"/>
+    <path d="M80 184 H1200"/>
+    <path d="M80 264 H1200"/>
+    <path d="M80 344 H1200"/>
+    <path d="M80 424 H1200"/>
+    <path d="M80 504 H1200"/>
+    <path d="M180 58 V578"/>
+    <path d="M300 58 V578"/>
+    <path d="M420 58 V578"/>
+    <path d="M540 58 V578"/>
+    <path d="M660 58 V578"/>
+    <path d="M780 58 V578"/>
+    <path d="M900 58 V578"/>
+    <path d="M1020 58 V578"/>
+    <path d="M1140 58 V578"/>
+  </g>
+  <g transform="translate(112 126)">
+    <rect x="0" y="0" width="430" height="430" rx="34" fill="#0b1715" stroke="#a5ff45" stroke-width="5"/>
+    <rect x="58" y="58" width="314" height="314" rx="24" fill="url(#chip)" opacity="0.92"/>
+    <g stroke="#0b1715" stroke-width="10" stroke-linecap="round" opacity="0.74">
+      <path d="M122 150 H310"/>
+      <path d="M122 220 H310"/>
+      <path d="M122 290 H245"/>
+      <path d="M154 116 V320"/>
+      <path d="M236 116 V320"/>
+      <path d="M318 116 V240"/>
+    </g>
+    <g stroke="#a5ff45" stroke-width="8" stroke-linecap="round">
+      <path d="M-44 80 H0"/>
+      <path d="M-44 170 H0"/>
+      <path d="M-44 260 H0"/>
+      <path d="M-44 350 H0"/>
+      <path d="M430 80 H474"/>
+      <path d="M430 170 H474"/>
+      <path d="M430 260 H474"/>
+      <path d="M430 350 H474"/>
+    </g>
+  </g>
+  <g transform="translate(628 150)">
+    <rect x="0" y="0" width="470" height="76" rx="14" fill="#f1f5f9"/>
+    <rect x="0" y="132" width="470" height="76" rx="14" fill="#b9f227"/>
+    <rect x="0" y="264" width="470" height="76" rx="14" fill="#38bdf8"/>
+    <path d="M235 82 V126" stroke="#f1f5f9" stroke-width="8" stroke-linecap="round"/>
+    <path d="M235 214 V258" stroke="#f1f5f9" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="235" cy="104" r="15" fill="#b9f227"/>
+    <circle cx="235" cy="236" r="15" fill="#38bdf8"/>
+    <text x="28" y="49" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#10261f">MODEL FACTORY</text>
+    <text x="28" y="181" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#10261f">NEMOTRON STACK</text>
+    <text x="28" y="313" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#082f49">ENTERPRISE AI</text>
+  </g>
+  <text x="112" y="641" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="900" fill="#f8fafc">NVIDIA + POOLSIDE</text>
+  <text x="112" y="684" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#b9f227">OPEN-WEIGHT AI STRATEGY</text>
+</svg>
+

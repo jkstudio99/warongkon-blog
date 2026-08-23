@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Ternox PlayStation access restored cover</title>
+  <desc id="desc">Abstract storefront shelves and restored access badge for an article about Ternox Games and PlayStation Store platform risk.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="0.5" stop-color="#123c69"/>
+      <stop offset="1" stop-color="#2f124f"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <path d="M0 572 C181 472 321 581 478 501 C636 421 773 446 910 374 C1067 291 1182 308 1280 256 L1280 720 L0 720 Z" fill="#080b18" opacity="0.72"/>
+  <g transform="translate(104 126)">
+    <rect x="0" y="0" width="626" height="370" rx="28" fill="#e0f2fe" opacity="0.96"/>
+    <rect x="36" y="42" width="554" height="56" rx="14" fill="#0f172a"/>
+    <rect x="36" y="130" width="554" height="56" rx="14" fill="#0f172a"/>
+    <rect x="36" y="218" width="554" height="56" rx="14" fill="#0f172a"/>
+    <rect x="36" y="306" width="554" height="28" rx="10" fill="#94a3b8"/>
+    <g fill="#38bdf8">
+      <rect x="70" y="54" width="46" height="32" rx="6"/>
+      <rect x="70" y="142" width="46" height="32" rx="6"/>
+      <rect x="70" y="230" width="46" height="32" rx="6"/>
+    </g>
+    <g fill="#f472b6">
+      <rect x="148" y="59" width="178" height="22" rx="11"/>
+      <rect x="148" y="147" width="258" height="22" rx="11"/>
+      <rect x="148" y="235" width="212" height="22" rx="11"/>
+    </g>
+    <g fill="#34d399">
+      <rect x="438" y="59" width="106" height="22" rx="11"/>
+      <rect x="438" y="147" width="106" height="22" rx="11"/>
+      <rect x="438" y="235" width="106" height="22" rx="11"/>
+    </g>
+  </g>
+  <g transform="translate(786 126)">
+    <circle cx="168" cy="168" r="168" fill="url(#badge)"/>
+    <circle cx="168" cy="168" r="130" fill="#08111f" opacity="0.82"/>
+    <path d="M90 174 L142 226 L254 110" fill="none" stroke="#ecfeff" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="168" y="344" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="900" fill="#f8fafc">ACCESS RESTORED</text>
+  </g>
+  <g opacity="0.5" stroke="#e0f2fe" stroke-width="3">
+    <path d="M716 210 C756 184 782 174 818 170"/>
+    <path d="M716 300 C770 314 807 308 852 280"/>
+    <path d="M716 386 C781 426 870 407 940 336"/>
+  </g>
+  <text x="104" y="636" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="900" fill="#f8fafc">TERNOX ON PLAYSTATION</text>
+  <text x="104" y="681" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#67e8f9">INDIE STORE POLICY RISK</text>
+</svg>
