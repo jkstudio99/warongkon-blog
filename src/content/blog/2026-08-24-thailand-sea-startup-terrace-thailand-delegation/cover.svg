@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Startup Terrace Thailand delegation cover</title>
+  <desc id="desc">A generated editorial cover showing Taiwan and Thailand startup ecosystem nodes connected through Bangkok.</desc>
+  <rect width="1280" height="720" fill="#f5f7f2"/>
+  <rect x="0" y="0" width="1280" height="132" fill="#0f766e"/>
+  <rect x="0" y="588" width="1280" height="132" fill="#1f2937"/>
+  <circle cx="294" cy="344" r="138" fill="#ffffff" stroke="#0f766e" stroke-width="10"/>
+  <path d="M258 238c52 22 88 58 104 112 12 42 6 82-18 120-62-18-104-62-126-130 14-44 28-78 40-102z" fill="#e53e3e"/>
+  <circle cx="886" cy="344" r="138" fill="#ffffff" stroke="#0f766e" stroke-width="10"/>
+  <path d="M806 292h160v110H806z" fill="#334e68"/>
+  <path d="M806 292l80 66 80-66" fill="none" stroke="#f5f7f2" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M432 344h318" stroke="#f59e0b" stroke-width="16" stroke-linecap="round" stroke-dasharray="28 24"/>
+  <path d="M720 292l64 52-64 52" fill="none" stroke="#f59e0b" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#0f766e">
+    <circle cx="590" cy="214" r="34"/>
+    <circle cx="590" cy="474" r="34"/>
+    <circle cx="724" cy="214" r="24"/>
+    <circle cx="724" cy="474" r="24"/>
+  </g>
+  <g stroke="#0f766e" stroke-width="8" stroke-linecap="round">
+    <path d="M590 248v192"/>
+    <path d="M624 220h76"/>
+    <path d="M624 468h76"/>
+  </g>
+  <text x="72" y="82" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#ffffff">THAILAND / SEA ECOSYSTEM</text>
+  <text x="72" y="665" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" fill="#ffffff">TAIWAN-THAILAND INNOVATION CORRIDOR OPENS</text>
+</svg>

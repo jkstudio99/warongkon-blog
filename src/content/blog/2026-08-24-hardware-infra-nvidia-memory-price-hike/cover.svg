@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">NVIDIA memory cost cover</title>
+  <desc id="desc">A generated editorial cover showing AI server racks, memory modules, and rising infrastructure cost lines.</desc>
+  <rect width="1280" height="720" fill="#08111f"/>
+  <rect x="74" y="96" width="302" height="482" rx="18" fill="#111d2e" stroke="#76b900" stroke-width="8"/>
+  <rect x="458" y="96" width="302" height="482" rx="18" fill="#111d2e" stroke="#76b900" stroke-width="8"/>
+  <rect x="842" y="96" width="302" height="482" rx="18" fill="#111d2e" stroke="#76b900" stroke-width="8"/>
+  <g fill="#20344e">
+    <rect x="108" y="142" width="234" height="38" rx="6"/>
+    <rect x="108" y="210" width="234" height="38" rx="6"/>
+    <rect x="108" y="278" width="234" height="38" rx="6"/>
+    <rect x="492" y="142" width="234" height="38" rx="6"/>
+    <rect x="492" y="210" width="234" height="38" rx="6"/>
+    <rect x="492" y="278" width="234" height="38" rx="6"/>
+    <rect x="876" y="142" width="234" height="38" rx="6"/>
+    <rect x="876" y="210" width="234" height="38" rx="6"/>
+    <rect x="876" y="278" width="234" height="38" rx="6"/>
+  </g>
+  <g stroke="#76b900" stroke-width="12" stroke-linecap="round">
+    <path d="M148 498h160"/>
+    <path d="M532 498h160"/>
+    <path d="M916 498h160"/>
+  </g>
+  <rect x="228" y="392" width="824" height="98" rx="14" fill="#dce8cc" stroke="#76b900" stroke-width="8"/>
+  <g fill="#08111f">
+    <rect x="274" y="420" width="72" height="42" rx="4"/>
+    <rect x="386" y="420" width="72" height="42" rx="4"/>
+    <rect x="498" y="420" width="72" height="42" rx="4"/>
+    <rect x="610" y="420" width="72" height="42" rx="4"/>
+    <rect x="722" y="420" width="72" height="42" rx="4"/>
+    <rect x="834" y="420" width="72" height="42" rx="4"/>
+    <rect x="946" y="420" width="72" height="42" rx="4"/>
+  </g>
+  <path d="M190 624c190-118 344-146 478-94 142 56 234 8 416-128" fill="none" stroke="#f6c445" stroke-width="16" stroke-linecap="round"/>
+  <path d="M1010 394l84-24-22 86" fill="none" stroke="#f6c445" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="76" y="64" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#dce8cc">HARDWARE / INFRASTRUCTURE</text>
+  <text x="76" y="674" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#ffffff">MEMORY COSTS RESET AI SERVER ECONOMICS</text>
+</svg>
