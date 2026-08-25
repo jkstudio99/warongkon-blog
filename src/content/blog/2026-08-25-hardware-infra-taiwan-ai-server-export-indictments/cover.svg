@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Taiwan AI server export indictments cover</title>
+  <desc id="desc">Generated editorial cover showing server racks, export routes, and a customs checkpoint for Taiwan AI server enforcement.</desc>
+  <rect width="1280" height="720" fill="#0f1720"/>
+  <rect x="90" y="92" width="372" height="462" rx="22" fill="#1d2a35"/>
+  <rect x="818" y="92" width="372" height="462" rx="22" fill="#1d2a35"/>
+  <g fill="#d7f9ff" opacity="0.86">
+    <rect x="128" y="140" width="296" height="36" rx="8"/>
+    <rect x="128" y="204" width="296" height="36" rx="8"/>
+    <rect x="128" y="268" width="296" height="36" rx="8"/>
+    <rect x="128" y="332" width="296" height="36" rx="8"/>
+    <rect x="128" y="396" width="296" height="36" rx="8"/>
+    <rect x="128" y="460" width="296" height="36" rx="8"/>
+    <rect x="856" y="140" width="296" height="36" rx="8"/>
+    <rect x="856" y="204" width="296" height="36" rx="8"/>
+    <rect x="856" y="268" width="296" height="36" rx="8"/>
+    <rect x="856" y="332" width="296" height="36" rx="8"/>
+    <rect x="856" y="396" width="296" height="36" rx="8"/>
+    <rect x="856" y="460" width="296" height="36" rx="8"/>
+  </g>
+  <g fill="#18b7a7">
+    <circle cx="148" cy="158" r="7"/>
+    <circle cx="148" cy="222" r="7"/>
+    <circle cx="148" cy="286" r="7"/>
+    <circle cx="876" cy="158" r="7"/>
+    <circle cx="876" cy="222" r="7"/>
+    <circle cx="876" cy="286" r="7"/>
+  </g>
+  <path d="M466 242 C560 178 690 178 814 242" fill="none" stroke="#ffbf3f" stroke-width="12" stroke-linecap="round" stroke-dasharray="26 22"/>
+  <path d="M466 406 C590 498 686 498 814 406" fill="none" stroke="#e84f5f" stroke-width="12" stroke-linecap="round" stroke-dasharray="26 22"/>
+  <g transform="translate(548 218)">
+    <rect x="0" y="0" width="184" height="184" rx="26" fill="#ffffff"/>
+    <path d="M46 95h92M92 48v92" stroke="#0f1720" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="92" cy="92" r="70" fill="none" stroke="#e84f5f" stroke-width="14"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#ffffff">
+    <text x="94" y="615" font-size="62" font-weight="800">AI server export controls</text>
+    <text x="98" y="665" font-size="28" font-weight="600" opacity="0.82">Taiwan indictments put hardware compliance on the rack</text>
+  </g>
+</svg>

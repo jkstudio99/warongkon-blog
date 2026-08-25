@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Alibaba HK80B AI placement cover</title>
+  <desc id="desc">Generated editorial cover for Alibaba raising capital to invest in full-stack AI and cloud infrastructure.</desc>
+  <rect width="1280" height="720" fill="#101418"/>
+  <path d="M0 520 C180 470 265 560 450 510 C660 454 735 340 940 352 C1080 360 1172 430 1280 392 L1280 720 L0 720 Z" fill="#f36f21"/>
+  <path d="M0 585 C210 555 310 645 498 590 C725 523 760 450 982 465 C1110 474 1190 520 1280 500 L1280 720 L0 720 Z" fill="#ffd166"/>
+  <g opacity="0.18" stroke="#ffffff" stroke-width="3">
+    <path d="M164 184h952"/>
+    <path d="M164 264h952"/>
+    <path d="M164 344h952"/>
+    <path d="M244 104v392"/>
+    <path d="M404 104v392"/>
+    <path d="M564 104v392"/>
+    <path d="M724 104v392"/>
+    <path d="M884 104v392"/>
+    <path d="M1044 104v392"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M255 426 C352 300 440 360 525 264 C624 152 752 218 826 146 C890 84 990 102 1052 62" stroke="#ffffff" stroke-width="12"/>
+    <path d="M255 426 C352 300 440 360 525 264 C624 152 752 218 826 146 C890 84 990 102 1052 62" stroke="#2f4858" stroke-width="5"/>
+  </g>
+  <g transform="translate(126 122)">
+    <rect x="0" y="0" width="432" height="286" rx="18" fill="#ffffff" opacity="0.95"/>
+    <rect x="34" y="38" width="146" height="34" rx="17" fill="#f36f21"/>
+    <rect x="34" y="100" width="356" height="18" rx="9" fill="#25313a" opacity="0.24"/>
+    <rect x="34" y="136" width="308" height="18" rx="9" fill="#25313a" opacity="0.24"/>
+    <rect x="34" y="186" width="110" height="62" rx="12" fill="#101418"/>
+    <rect x="165" y="186" width="110" height="62" rx="12" fill="#101418"/>
+    <rect x="296" y="186" width="94" height="62" rx="12" fill="#101418"/>
+    <text x="58" y="226" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">AI</text>
+    <text x="190" y="226" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">HK</text>
+    <text x="316" y="226" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">80B</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#ffffff">
+    <text x="126" y="560" font-size="68" font-weight="800">Alibaba AI capital raise</text>
+    <text x="130" y="620" font-size="30" font-weight="600" opacity="0.82">HK$80B for full-stack AI and cloud infrastructure</text>
+  </g>
+</svg>

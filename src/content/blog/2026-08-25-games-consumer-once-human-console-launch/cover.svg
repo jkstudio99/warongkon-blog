@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Once Human console launch cover</title>
+  <desc id="desc">Generated editorial cover for Once Human launching on PlayStation 5 and Xbox Series consoles.</desc>
+  <rect width="1280" height="720" fill="#111116"/>
+  <radialGradient id="g" cx="48%" cy="40%" r="65%">
+    <stop offset="0" stop-color="#6df0c2" stop-opacity="0.42"/>
+    <stop offset="0.48" stop-color="#6157ff" stop-opacity="0.28"/>
+    <stop offset="1" stop-color="#111116" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <path d="M0 534 C150 500 286 542 420 510 C570 474 650 410 812 442 C982 476 1110 442 1280 382 L1280 720 L0 720 Z" fill="#25323b"/>
+  <path d="M0 594 C142 570 280 610 428 578 C620 535 716 500 862 530 C1015 562 1142 528 1280 486 L1280 720 L0 720 Z" fill="#46545d"/>
+  <g transform="translate(474 150)">
+    <path d="M166 0 C255 0 332 76 332 178 C332 296 245 372 166 430 C87 372 0 296 0 178 C0 76 77 0 166 0Z" fill="#d8fff3" opacity="0.92"/>
+    <path d="M166 54 C222 54 270 103 270 180 C270 258 212 304 166 340 C120 304 62 258 62 180 C62 103 110 54 166 54Z" fill="#111116"/>
+    <circle cx="126" cy="174" r="20" fill="#6df0c2"/>
+    <circle cx="206" cy="174" r="20" fill="#6df0c2"/>
+    <path d="M128 248 C152 266 180 266 204 248" fill="none" stroke="#6df0c2" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.8">
+    <path d="M202 268 h160 c40 0 72 32 72 72 v26 c0 40-32 72-72 72H202c-40 0-72-32-72-72v-26c0-40 32-72 72-72Z"/>
+    <path d="M918 268 h160 c40 0 72 32 72 72 v26 c0 40-32 72-72 72H918c-40 0-72-32-72-72v-26c0-40 32-72 72-72Z"/>
+    <path d="M228 354h86M271 311v86"/>
+    <circle cx="1002" cy="330" r="16"/>
+    <circle cx="1050" cy="374" r="16"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#ffffff">
+    <text x="86" y="600" font-size="70" font-weight="800">Once Human on console</text>
+    <text x="90" y="656" font-size="30" font-weight="600" opacity="0.82">PS5 and Xbox launch with FPP, crossplay, and shared progression</text>
+  </g>
+</svg>

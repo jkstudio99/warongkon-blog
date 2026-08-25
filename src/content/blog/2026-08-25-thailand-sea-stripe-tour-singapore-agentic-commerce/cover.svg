@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Stripe Tour Singapore agentic commerce cover</title>
+  <desc id="desc">Generated editorial cover for Stripe Tour Singapore and agentic commerce infrastructure in Southeast Asia.</desc>
+  <rect width="1280" height="720" fill="#12151f"/>
+  <rect x="0" y="458" width="1280" height="262" fill="#eef2ff"/>
+  <path d="M0 458 C170 402 326 436 470 392 C650 338 774 354 938 304 C1082 260 1180 276 1280 238 L1280 458 Z" fill="#635bff"/>
+  <path d="M118 152h284c54 0 98 44 98 98v86c0 54-44 98-98 98H118c-54 0-98-44-98-98v-86c0-54 44-98 98-98Z" fill="#ffffff"/>
+  <path d="M878 118h284c54 0 98 44 98 98v118c0 54-44 98-98 98H878c-54 0-98-44-98-98V216c0-54 44-98 98-98Z" fill="#ffffff"/>
+  <g fill="#12151f" opacity="0.18">
+    <rect x="76" y="214" width="362" height="24" rx="12"/>
+    <rect x="76" y="266" width="290" height="24" rx="12"/>
+    <rect x="76" y="318" width="210" height="24" rx="12"/>
+    <rect x="838" y="190" width="360" height="24" rx="12"/>
+    <rect x="838" y="242" width="300" height="24" rx="12"/>
+    <rect x="838" y="294" width="240" height="24" rx="12"/>
+  </g>
+  <g transform="translate(520 164)">
+    <rect x="0" y="0" width="240" height="240" rx="42" fill="#00d4a6"/>
+    <circle cx="120" cy="120" r="72" fill="#12151f"/>
+    <path d="M82 126h76M120 84v76" stroke="#00d4a6" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <g stroke="#12151f" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+    <path d="M278 434 C380 520 466 548 594 526 C732 502 812 464 930 432"/>
+    <path d="M914 392l54 40-58 32"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="88" y="560" font-size="68" font-weight="800" fill="#12151f">Stripe Tour Singapore</text>
+    <text x="92" y="620" font-size="30" font-weight="600" fill="#334155">SEA founders meet payments, AI monetization, and agentic commerce</text>
+  </g>
+</svg>
