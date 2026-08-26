@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Brigandine Abyss Steam launch cover</title>
+  <desc id="desc">Generated editorial cover showing a fantasy tactical strategy board with hex grid and faction banners.</desc>
+  <rect width="1280" height="720" fill="#18151f"/>
+  <polygon points="0,0 1280,0 1280,200 0,420" fill="#2f1b3a"/>
+  <polygon points="0,520 1280,292 1280,720 0,720" fill="#23423d"/>
+  <g stroke="#facc15" stroke-width="3" opacity="0.48" fill="none">
+    <path d="M160 190l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M276 190l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M392 190l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M508 190l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M624 190l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M740 190l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M218 292l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M334 292l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M450 292l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M566 292l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M682 292l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M798 292l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M160 394l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M276 394l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M392 394l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M508 394l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M624 394l58-34 58 34v68l-58 34-58-34z"/>
+    <path d="M740 394l58-34 58 34v68l-58 34-58-34z"/>
+  </g>
+  <g transform="translate(910 92)">
+    <path d="M78 28 C158 58 194 134 172 222 C218 212 250 248 238 292 C222 348 154 350 126 306 C88 366 12 342 18 274 C22 230 58 214 92 222 C60 156 28 92 78 28Z" fill="#facc15"/>
+    <path d="M112 104 C146 134 148 184 116 226 C144 226 164 248 156 272 C144 306 94 300 92 260 C58 286 26 260 38 224 C48 194 84 198 90 214 C70 166 74 126 112 104Z" fill="#7c2d12"/>
+    <path d="M66 86 C30 116 24 162 42 204" stroke="#f97316" stroke-width="13" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(150 94)">
+    <path d="M0 0h150v250l-75-42-75 42z" fill="#dc2626"/>
+    <path d="M190 0h150v250l-75-42-75 42z" fill="#2563eb"/>
+    <path d="M380 0h150v250l-75-42-75 42z" fill="#16a34a"/>
+    <text x="44" y="118" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff">I</text>
+    <text x="232" y="118" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff">II</text>
+    <text x="418" y="118" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff">III</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#ffffff">
+    <text x="94" y="608" font-size="66" font-weight="800">BRIGANDINE ABYSS</text>
+    <text x="98" y="660" font-size="30" font-weight="700" fill="#facc15">Steam launch - August 26, 2026</text>
+  </g>
+</svg>
+

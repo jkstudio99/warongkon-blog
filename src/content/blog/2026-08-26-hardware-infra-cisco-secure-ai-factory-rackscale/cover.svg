@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Cisco Secure AI Factory rack-scale cover</title>
+  <desc id="desc">Generated editorial cover showing rack-scale AI infrastructure, network fabric, and liquid cooling.</desc>
+  <rect width="1280" height="720" fill="#07111f"/>
+  <linearGradient id="rack" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#1f2937"/>
+    <stop offset="1" stop-color="#0f172a"/>
+  </linearGradient>
+  <g transform="translate(112 88)">
+    <rect x="0" y="0" width="220" height="500" rx="18" fill="url(#rack)" stroke="#38bdf8" stroke-width="4"/>
+    <rect x="36" y="46" width="148" height="28" rx="6" fill="#22c55e"/>
+    <rect x="36" y="106" width="148" height="28" rx="6" fill="#38bdf8"/>
+    <rect x="36" y="166" width="148" height="28" rx="6" fill="#a3e635"/>
+    <rect x="36" y="226" width="148" height="28" rx="6" fill="#38bdf8"/>
+    <rect x="36" y="286" width="148" height="28" rx="6" fill="#22c55e"/>
+    <rect x="36" y="346" width="148" height="28" rx="6" fill="#38bdf8"/>
+    <rect x="36" y="406" width="148" height="28" rx="6" fill="#a3e635"/>
+  </g>
+  <g transform="translate(382 88)">
+    <rect x="0" y="0" width="220" height="500" rx="18" fill="url(#rack)" stroke="#a3e635" stroke-width="4"/>
+    <path d="M58 70h104M58 130h104M58 190h104M58 250h104M58 310h104M58 370h104M58 430h104" stroke="#e0f2fe" stroke-width="14" stroke-linecap="round"/>
+    <path d="M34 54 C86 106 34 148 86 198 C136 246 88 312 156 382" fill="none" stroke="#38bdf8" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(652 88)">
+    <rect x="0" y="0" width="220" height="500" rx="18" fill="url(#rack)" stroke="#38bdf8" stroke-width="4"/>
+    <circle cx="70" cy="116" r="28" fill="#22c55e"/>
+    <circle cx="150" cy="116" r="28" fill="#38bdf8"/>
+    <circle cx="70" cy="224" r="28" fill="#38bdf8"/>
+    <circle cx="150" cy="224" r="28" fill="#a3e635"/>
+    <circle cx="70" cy="332" r="28" fill="#a3e635"/>
+    <circle cx="150" cy="332" r="28" fill="#22c55e"/>
+    <path d="M70 116h80M70 224h80M70 332h80M110 144v52M110 252v52" stroke="#e0f2fe" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(922 88)">
+    <rect x="0" y="0" width="220" height="500" rx="18" fill="url(#rack)" stroke="#a3e635" stroke-width="4"/>
+    <path d="M56 72 C170 116 38 172 154 226 C52 282 172 340 66 426" fill="none" stroke="#22c55e" stroke-width="12" stroke-linecap="round"/>
+    <path d="M78 72 C190 116 60 172 176 226 C74 282 194 340 88 426" fill="none" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <path d="M222 612h834" stroke="#38bdf8" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="222" cy="612" r="18" fill="#a3e635"/>
+  <circle cx="504" cy="612" r="18" fill="#22c55e"/>
+  <circle cx="786" cy="612" r="18" fill="#a3e635"/>
+  <circle cx="1056" cy="612" r="18" fill="#22c55e"/>
+  <g font-family="Inter, Arial, sans-serif" fill="#ffffff">
+    <text x="112" y="674" font-size="56" font-weight="800">Secure AI Factory</text>
+    <text x="698" y="674" font-size="30" font-weight="700" fill="#a3e635">rack-scale fabric + compute</text>
+  </g>
+</svg>
+
