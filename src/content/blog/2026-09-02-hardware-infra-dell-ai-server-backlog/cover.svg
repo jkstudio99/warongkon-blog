@@ -1,0 +1,27 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#eef2f7"/>
+  <rect x="76" y="96" width="1128" height="528" rx="22" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>
+  <rect x="132" y="154" width="392" height="412" rx="16" fill="#111827"/>
+  <rect x="166" y="196" width="324" height="48" rx="10" fill="#2563eb"/>
+  <rect x="166" y="272" width="324" height="48" rx="10" fill="#1d4ed8"/>
+  <rect x="166" y="348" width="324" height="48" rx="10" fill="#1e40af"/>
+  <rect x="166" y="424" width="324" height="48" rx="10" fill="#1e3a8a"/>
+  <circle cx="462" cy="220" r="10" fill="#86efac"/>
+  <circle cx="462" cy="296" r="10" fill="#86efac"/>
+  <circle cx="462" cy="372" r="10" fill="#fde68a"/>
+  <circle cx="462" cy="448" r="10" fill="#86efac"/>
+  <rect x="596" y="154" width="476" height="132" rx="16" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+  <text x="630" y="210" fill="#1e3a8a" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">$95B</text>
+  <text x="750" y="210" fill="#1e3a8a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">AI server backlog</text>
+  <rect x="630" y="240" width="360" height="18" rx="9" fill="#93c5fd"/>
+  <rect x="596" y="330" width="476" height="236" rx="16" fill="#f8fafc" stroke="#334155" stroke-width="3"/>
+  <path d="M658 506V424M762 506V384M866 506V344M970 506V294" stroke="#64748b" stroke-width="18" stroke-linecap="round"/>
+  <path d="M642 414l120-44 104-48 116-54" stroke="#16a34a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="642" cy="414" r="12" fill="#16a34a"/>
+  <circle cx="762" cy="370" r="12" fill="#16a34a"/>
+  <circle cx="866" cy="322" r="12" fill="#16a34a"/>
+  <circle cx="982" cy="268" r="12" fill="#16a34a"/>
+  <text x="132" y="674" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Dell AI infrastructure demand</text>
+  <text x="596" y="674" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="24">Orders, shipments, backlog, capacity</text>
+</svg>
+
