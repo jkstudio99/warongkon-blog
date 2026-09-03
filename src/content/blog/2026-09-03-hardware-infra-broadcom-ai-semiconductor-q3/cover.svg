@@ -1,0 +1,28 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#f4f7f8"/>
+  <rect x="82" y="82" width="1116" height="556" rx="22" fill="#ffffff" stroke="#17212b" stroke-width="4"/>
+  <rect x="142" y="146" width="388" height="388" rx="24" fill="#17212b"/>
+  <rect x="190" y="194" width="292" height="292" rx="18" fill="#0f766e"/>
+  <rect x="226" y="230" width="220" height="220" rx="14" fill="#d9f99d"/>
+  <rect x="276" y="280" width="120" height="120" rx="10" fill="#17212b"/>
+  <path d="M142 216H82M142 292H82M142 368H82M142 444H82M530 216h70M530 292h70M530 368h70M530 444h70M260 146V82M336 146V82M412 146V82M260 534v86M336 534v86M412 534v86" stroke="#0f766e" stroke-width="16" stroke-linecap="round"/>
+  <rect x="640" y="146" width="420" height="132" rx="18" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+  <text x="674" y="206" fill="#1e3a8a" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">$16.7B</text>
+  <text x="822" y="206" fill="#1e3a8a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Q3 AI silicon</text>
+  <rect x="674" y="236" width="302" height="16" rx="8" fill="#93c5fd"/>
+  <rect x="640" y="318" width="420" height="216" rx="18" fill="#fff7ed" stroke="#ea580c" stroke-width="3"/>
+  <text x="674" y="380" fill="#9a3412" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">$21.7B</text>
+  <text x="822" y="380" fill="#9a3412" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Q4 guide</text>
+  <path d="M702 478h62l46-68 54 88 62-104 54 84" stroke="#ea580c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="702" cy="478" r="10" fill="#ea580c"/>
+  <circle cx="764" cy="478" r="10" fill="#ea580c"/>
+  <circle cx="810" cy="410" r="10" fill="#ea580c"/>
+  <circle cx="864" cy="498" r="10" fill="#ea580c"/>
+  <circle cx="926" cy="394" r="10" fill="#ea580c"/>
+  <circle cx="980" cy="478" r="10" fill="#ea580c"/>
+  <path d="M530 340h110" stroke="#17212b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 310l34 30-34 30" stroke="#17212b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="142" y="674" fill="#17212b" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Broadcom custom AI accelerator cycle</text>
+  <text x="640" y="674" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="24">Semiconductor revenue, networking, data center fabric</text>
+</svg>
+
