@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">PyTorch China open AI stack cover</title>
+  <desc id="desc">Generated editorial cover for PyTorch Foundation China open AI stack news.</desc>
+  <defs>
+    <linearGradient id="bg" x1="84" y1="72" x2="1210" y2="648" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181B22"/>
+      <stop offset="0.52" stop-color="#243247"/>
+      <stop offset="1" stop-color="#0F665E"/>
+    </linearGradient>
+    <linearGradient id="torch" x1="166" y1="128" x2="470" y2="572" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB15E"/>
+      <stop offset="1" stop-color="#EE4C2C"/>
+    </linearGradient>
+    <linearGradient id="line" x1="470" y1="170" x2="1050" y2="548" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE08A"/>
+      <stop offset="1" stop-color="#6CE4D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="72" y="74" width="1136" height="572" rx="42" fill="#0D1119" opacity="0.32"/>
+  <g transform="translate(138 120)">
+    <circle cx="184" cy="184" r="168" fill="none" stroke="url(#torch)" stroke-width="34" stroke-linecap="round" stroke-dasharray="710 320" transform="rotate(-36 184 184)"/>
+    <circle cx="264" cy="90" r="30" fill="#FFB15E"/>
+    <path d="M185 140C154 179 132 229 132 279C132 365 196 430 280 430C365 430 430 365 430 279C430 231 411 190 381 155" fill="none" stroke="#FFE8D9" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <g stroke="url(#line)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M526 214H706L758 172H1020"/>
+    <path d="M526 330H680L742 330H1088"/>
+    <path d="M526 446H706L782 516H1030"/>
+  </g>
+  <g>
+    <rect x="700" y="124" width="210" height="96" rx="18" fill="#162236" stroke="#6CE4D4" stroke-width="2"/>
+    <rect x="954" y="124" width="210" height="96" rx="18" fill="#162236" stroke="#FFB15E" stroke-width="2"/>
+    <rect x="700" y="282" width="464" height="96" rx="18" fill="#162236" stroke="#D7E5FF" stroke-width="2"/>
+    <rect x="700" y="500" width="210" height="96" rx="18" fill="#162236" stroke="#FFB15E" stroke-width="2"/>
+    <rect x="954" y="500" width="210" height="96" rx="18" fill="#162236" stroke="#6CE4D4" stroke-width="2"/>
+  </g>
+  <g fill="#EAF4FF" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="732" y="182" font-size="26">Qwen Cloud</text>
+    <text x="986" y="182" font-size="26">Accelerators</text>
+    <text x="748" y="340" font-size="30">Open AI Runtime</text>
+    <text x="732" y="558" font-size="26">Agents</text>
+    <text x="986" y="558" font-size="26">Frameworks</text>
+  </g>
+  <text x="118" y="626" fill="#FFE8D9" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">GLOBAL / AI</text>
+  <text x="118" y="670" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">PyTorch Conference China 2026</text>
+</svg>
