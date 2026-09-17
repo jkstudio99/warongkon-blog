@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">OpenAI model misalignment reporting framework cover</title>
+  <desc id="desc">Abstract incident reporting workflow with alert cards, review lanes, and disclosure status nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="0.5" stop-color="#1f2937"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#dbeafe" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#ccfbf1" stroke-width="1">
+    <path d="M0 110h1200M0 210h1200M0 310h1200M0 410h1200M0 510h1200"/>
+    <path d="M120 0v630M300 0v630M480 0v630M660 0v630M840 0v630M1020 0v630"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="102" y="102" width="292" height="214" rx="24" fill="url(#card)"/>
+    <rect x="454" y="102" width="292" height="214" rx="24" fill="url(#card)"/>
+    <rect x="806" y="102" width="292" height="214" rx="24" fill="url(#card)"/>
+    <rect x="278" y="378" width="292" height="150" rx="24" fill="url(#card)"/>
+    <rect x="630" y="378" width="292" height="150" rx="24" fill="url(#card)"/>
+  </g>
+  <g fill="none" stroke="#99f6e4" stroke-width="8" stroke-linecap="round">
+    <path d="M394 210h60"/>
+    <path d="M746 210h60"/>
+    <path d="M248 316v62"/>
+    <path d="M952 316v62"/>
+    <path d="M570 453h60"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="126" y="158" fill="#0f172a" font-size="26">Detect</text>
+    <text x="478" y="158" fill="#0f172a" font-size="26">Investigate</text>
+    <text x="830" y="158" fill="#0f172a" font-size="26">Disclose</text>
+    <text x="302" y="432" fill="#0f172a" font-size="24">Evidence</text>
+    <text x="654" y="432" fill="#0f172a" font-size="24">Mitigation</text>
+  </g>
+  <g fill="#0f172a" opacity="0.72">
+    <rect x="126" y="184" width="198" height="12" rx="6"/>
+    <rect x="126" y="214" width="154" height="12" rx="6"/>
+    <rect x="478" y="184" width="188" height="12" rx="6"/>
+    <rect x="478" y="214" width="220" height="12" rx="6"/>
+    <rect x="830" y="184" width="160" height="12" rx="6"/>
+    <rect x="830" y="214" width="202" height="12" rx="6"/>
+    <rect x="302" y="458" width="184" height="12" rx="6"/>
+    <rect x="654" y="458" width="190" height="12" rx="6"/>
+  </g>
+  <g fill="#f97316">
+    <circle cx="346" cy="148" r="16"/>
+    <path d="M346 130l16 31h-32z" fill="#fed7aa"/>
+  </g>
+  <g fill="#14b8a6">
+    <circle cx="690" cy="148" r="16"/>
+    <circle cx="1042" cy="148" r="16"/>
+  </g>
+  <text x="102" y="586" fill="#ecfeff" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">Model Misalignment Reports</text>
+</svg>
