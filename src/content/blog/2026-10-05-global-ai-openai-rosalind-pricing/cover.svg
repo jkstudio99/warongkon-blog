@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">GPT-Rosalind pricing cover</title>
+  <desc id="desc">Abstract life-sciences reasoning cover with molecule paths, token meters, and pricing panels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102a2a"/>
+      <stop offset="0.52" stop-color="#22313f"/>
+      <stop offset="1" stop-color="#1f1a30"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#68d8c1"/>
+      <stop offset="1" stop-color="#f5c979"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="210" cy="132" r="90" fill="#68d8c1" opacity="0.16" filter="url(#soft)"/>
+  <circle cx="1008" cy="512" r="130" fill="#f5c979" opacity="0.12" filter="url(#soft)"/>
+  <g fill="none" stroke="#d6fff5" stroke-width="3" opacity="0.72">
+    <path d="M166 420 C260 310 323 336 404 242 S548 138 652 220 827 303 965 180"/>
+    <path d="M201 455 C308 378 387 413 482 323 S651 250 752 322 890 407 1016 318" opacity="0.48"/>
+  </g>
+  <g fill="#d6fff5" stroke="#102a2a" stroke-width="5">
+    <circle cx="166" cy="420" r="20"/>
+    <circle cx="404" cy="242" r="18"/>
+    <circle cx="652" cy="220" r="24"/>
+    <circle cx="965" cy="180" r="19"/>
+    <circle cx="482" cy="323" r="17"/>
+    <circle cx="752" cy="322" r="21"/>
+    <circle cx="1016" cy="318" r="18"/>
+  </g>
+  <g transform="translate(92 82)">
+    <rect x="0" y="0" width="455" height="180" rx="16" fill="#ffffff" opacity="0.09"/>
+    <rect x="24" y="28" width="96" height="18" rx="9" fill="url(#accent)"/>
+    <text x="24" y="82" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">GPT-Rosalind</text>
+    <text x="24" y="124" fill="#cce9e6" font-family="Arial, Helvetica, sans-serif" font-size="24">Life sciences reasoning</text>
+    <text x="24" y="154" fill="#a9cbc8" font-family="Arial, Helvetica, sans-serif" font-size="20">usage-based pricing starts Oct 5</text>
+  </g>
+  <g transform="translate(676 96)">
+    <rect x="0" y="0" width="390" height="286" rx="20" fill="#071716" opacity="0.72"/>
+    <text x="34" y="58" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Pricing signal</text>
+    <text x="34" y="112" fill="#f5c979" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">$15</text>
+    <text x="158" y="111" fill="#cce9e6" font-family="Arial, Helvetica, sans-serif" font-size="22">/ 1M input tokens</text>
+    <text x="34" y="190" fill="#68d8c1" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">$60</text>
+    <text x="158" y="189" fill="#cce9e6" font-family="Arial, Helvetica, sans-serif" font-size="22">/ 1M output tokens</text>
+    <rect x="34" y="226" width="318" height="14" rx="7" fill="#ffffff" opacity="0.15"/>
+    <rect x="34" y="226" width="216" height="14" rx="7" fill="url(#accent)"/>
+  </g>
+</svg>
