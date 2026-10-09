@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI-enabled false front operations cover</title>
+  <desc id="desc">A stylized network of false personas, media cards, and verification paths for an AI safety news article.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101318"/>
+      <stop offset="0.55" stop-color="#17252b"/>
+      <stop offset="1" stop-color="#26333a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fe3cf"/>
+      <stop offset="1" stop-color="#f5b66b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#d7fff4" stroke-width="1">
+    <path d="M110 106h1060M110 186h1060M110 266h1060M110 346h1060M110 426h1060M110 506h1060M110 586h1060"/>
+    <path d="M170 70v580M290 70v580M410 70v580M530 70v580M650 70v580M770 70v580M890 70v580M1010 70v580M1130 70v580"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="118" y="112" width="320" height="426" rx="22" fill="#f2f5ef"/>
+    <rect x="150" y="148" width="150" height="18" rx="9" fill="#20262b"/>
+    <rect x="150" y="190" width="256" height="16" rx="8" fill="#b7c2bd"/>
+    <rect x="150" y="224" width="224" height="16" rx="8" fill="#b7c2bd"/>
+    <rect x="150" y="258" width="242" height="16" rx="8" fill="#b7c2bd"/>
+    <rect x="150" y="332" width="256" height="126" rx="16" fill="#243339"/>
+    <path d="M188 410c38-72 104-78 176-20" fill="none" stroke="#8fe3cf" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="234" cy="374" r="17" fill="#f5b66b"/>
+    <circle cx="314" cy="392" r="17" fill="#8fe3cf"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="826" y="128" width="334" height="416" rx="26" fill="#161d22" stroke="#9cdccf" stroke-opacity="0.55" stroke-width="2"/>
+    <rect x="866" y="176" width="154" height="18" rx="9" fill="#8fe3cf"/>
+    <rect x="866" y="222" width="244" height="16" rx="8" fill="#dbe9e3" opacity="0.56"/>
+    <rect x="866" y="256" width="214" height="16" rx="8" fill="#dbe9e3" opacity="0.42"/>
+    <rect x="866" y="320" width="244" height="90" rx="18" fill="#26333a"/>
+    <path d="M890 368h198" stroke="#f5b66b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M920 386h116" stroke="#8fe3cf" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="1106" cy="474" r="27" fill="none" stroke="#f5b66b" stroke-width="9"/>
+    <path d="M1089 474l12 12 24-31" fill="none" stroke="#8fe3cf" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g stroke="url(#accent)" stroke-width="6" stroke-linecap="round" opacity="0.88">
+    <path d="M442 236c120-60 250-54 386-4" fill="none"/>
+    <path d="M440 414c124 64 254 66 386 10" fill="none"/>
+    <path d="M500 324h278" fill="none"/>
+  </g>
+  <g>
+    <circle cx="510" cy="324" r="48" fill="#f5b66b"/>
+    <circle cx="646" cy="238" r="36" fill="#8fe3cf"/>
+    <circle cx="772" cy="328" r="48" fill="#f5b66b"/>
+    <circle cx="646" cy="424" r="38" fill="#8fe3cf"/>
+    <g fill="#1a2429">
+      <circle cx="510" cy="309" r="13"/>
+      <path d="M480 354c10-25 50-25 60 0"/>
+      <circle cx="772" cy="313" r="13"/>
+      <path d="M742 358c10-25 50-25 60 0"/>
+      <circle cx="646" cy="226" r="10"/>
+      <path d="M622 258c8-20 40-20 48 0"/>
+      <circle cx="646" cy="411" r="10"/>
+      <path d="M622 443c8-20 40-20 48 0"/>
+    </g>
+  </g>
+  <g fill="#f2f5ef">
+    <text x="118" y="612" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">AI-enabled false front operations</text>
+    <text x="118" y="658" font-family="Arial, Helvetica, sans-serif" font-size="23">personas, media pitches, influence reporting, and verification debt</text>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Broadcom OCP AI networking cover</title>
+  <desc id="desc">A stylized open rack and high-speed networking diagram for an AI infrastructure news article.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="0.5" stop-color="#16313b"/>
+      <stop offset="1" stop-color="#25303b"/>
+    </linearGradient>
+    <linearGradient id="lane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#68d8ff"/>
+      <stop offset="0.5" stop-color="#a2f5bf"/>
+      <stop offset="1" stop-color="#ffca7a"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.16" fill="none" stroke="#d7f7ff" stroke-width="2">
+    <path d="M120 118h1040M120 202h1040M120 286h1040M120 370h1040M120 454h1040M120 538h1040"/>
+    <path d="M220 84v510M380 84v510M540 84v510M700 84v510M860 84v510M1020 84v510"/>
+  </g>
+  <g transform="translate(120 96)">
+    <rect x="0" y="0" width="348" height="488" rx="24" fill="#0d141b" stroke="#89c8da" stroke-width="3"/>
+    <rect x="28" y="36" width="292" height="74" rx="12" fill="#20313a"/>
+    <rect x="28" y="136" width="292" height="74" rx="12" fill="#20313a"/>
+    <rect x="28" y="236" width="292" height="74" rx="12" fill="#20313a"/>
+    <rect x="28" y="336" width="292" height="74" rx="12" fill="#20313a"/>
+    <g fill="#68d8ff">
+      <rect x="52" y="60" width="48" height="18" rx="4"/>
+      <rect x="118" y="60" width="48" height="18" rx="4"/>
+      <rect x="184" y="60" width="48" height="18" rx="4"/>
+      <rect x="250" y="60" width="48" height="18" rx="4"/>
+      <rect x="52" y="160" width="48" height="18" rx="4"/>
+      <rect x="118" y="160" width="48" height="18" rx="4"/>
+      <rect x="184" y="160" width="48" height="18" rx="4"/>
+      <rect x="250" y="160" width="48" height="18" rx="4"/>
+      <rect x="52" y="260" width="48" height="18" rx="4"/>
+      <rect x="118" y="260" width="48" height="18" rx="4"/>
+      <rect x="184" y="260" width="48" height="18" rx="4"/>
+      <rect x="250" y="260" width="48" height="18" rx="4"/>
+    </g>
+    <g fill="#ffca7a">
+      <circle cx="64" cy="374" r="8"/>
+      <circle cx="104" cy="374" r="8"/>
+      <circle cx="144" cy="374" r="8"/>
+      <circle cx="184" cy="374" r="8"/>
+      <circle cx="224" cy="374" r="8"/>
+      <circle cx="264" cy="374" r="8"/>
+    </g>
+  </g>
+  <g fill="none" stroke="url(#lane)" stroke-width="10" stroke-linecap="round" filter="url(#glow)" opacity="0.9">
+    <path d="M478 178C610 120 735 120 874 178"/>
+    <path d="M478 302C635 244 720 244 874 302"/>
+    <path d="M478 426C610 500 742 500 874 426"/>
+  </g>
+  <g transform="translate(846 120)">
+    <rect x="0" y="0" width="310" height="420" rx="26" fill="#f3f7f2"/>
+    <rect x="34" y="38" width="136" height="20" rx="10" fill="#0d141b"/>
+    <text x="34" y="106" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#172027">OCP AI</text>
+    <text x="34" y="148" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#172027">Networking</text>
+    <rect x="34" y="202" width="236" height="46" rx="12" fill="#172027"/>
+    <rect x="34" y="270" width="236" height="46" rx="12" fill="#172027"/>
+    <rect x="34" y="338" width="236" height="46" rx="12" fill="#172027"/>
+    <text x="54" y="232" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#68d8ff">Tomahawk 6</text>
+    <text x="54" y="300" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#a2f5bf">Thor Ultra 800G</text>
+    <text x="54" y="368" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#ffca7a">Co-Packaged Optics</text>
+  </g>
+  <g fill="#f3f7f2">
+    <text x="120" y="640" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">Broadcom at OCP Global Summit 2026</text>
+    <text x="120" y="682" font-family="Arial, Helvetica, sans-serif" font-size="22">scale-up, scale-out, and scale-across fabrics for frontier AI clusters</text>
+  </g>
+</svg>
