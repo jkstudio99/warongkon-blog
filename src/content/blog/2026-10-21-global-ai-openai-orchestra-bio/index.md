@@ -31,5 +31,5 @@ OpenAI ยังไม่ได้เปิด roadmap ผลิตภัณฑ�
 
 ## แหล่งอ้างอิง
 
-- [OpenAI Newsroom](https://openai.com/news/company-announcements/)
-- [TechCrunch: OpenAI acquires Orchestra Bio](https://techcrunch.com/2026/10/20/)
+- [OpenAI: OpenAI acquires Orchestra Bio](https://openai.com/index/openai-to-acquire-orchestra-bio/)
+- [TechCrunch: OpenAI acquires startup Orchestra Bio to beef up its biotech business](https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%E2%81%A0-to-beef-up-its-biotech-business/)
