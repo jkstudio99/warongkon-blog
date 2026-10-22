@@ -1,6 +1,6 @@
 # Warongkon Blog V1.0
 
-[warongkon.dev](https://warongkon.dev)
+[warongkon-blog.vercel.app](https://warongkon-blog.vercel.app)
 
 ---
 
@@ -78,3 +78,11 @@ The API is exposed under `/api/v1` and supports listing posts, getting stats, cr
 ## 👀 Want to learn more?
 
 Check out [Astro documentation](https://docs.astro.build).
+
+## 🚀 Deploy (Vercel)
+
+- เว็บ deploy ผ่าน Vercel Git integration (โปรเจกต์ `warongkon-blog`) ทุกครั้งที่ push เข้า `main` จะขึ้น production อัตโนมัติ และ branch/PR อื่นจะได้ Preview URL
+- Build: `pnpm run build` → output `dist/` (Vercel ตรวจเจอ Astro ให้เอง ไม่ต้องมี `vercel.json`)
+- URL ของเว็บตั้งผ่าน env `SITE_URL` (ใช้กับ canonical, sitemap, RSS) ถ้าไม่ตั้งจะใช้ `https://warongkon-blog.vercel.app`
+- GitHub Actions (`.github/workflows/ci.yml`) แค่ install + build เพื่อเช็กว่าโค้ดไม่พัง ไม่ได้ deploy
+- เลิกใช้ Azure Static Web Apps และโดเมน warongkon.dev แล้ว
