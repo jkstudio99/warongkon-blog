@@ -26,7 +26,7 @@ export const GET: APIRoute = async ({ site }) => {
 		'',
 		'## Author (E-E-A-T Entity)',
 		`- **Name**: ${SITE_AUTHOR.name} (warongkon / ${SITE_AUTHOR.alternateName})`,
-		`- **Known As**: Warongkon Fukthongyoo, warongkon, วรงค์กร ฟักทองอยู่`,
+		`- **Known As**: Warongkon Fukthongyoo, warongkon, วรงค์กรณ์ ฟักทองอยู่, วรงค์กร ฟักทองอยู่`,
 		`- **Role**: ${SITE_AUTHOR.jobTitle}`,
 		`- **Expertise**: ${SITE_AUTHOR.knowsAbout.join(', ')}`,
 		`- **About URL**: ${SITE_AUTHOR.url}`,

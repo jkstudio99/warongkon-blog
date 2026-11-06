@@ -67,7 +67,7 @@ const { tag } = Astro.params;
 const { tagLabel = unslugify(tag || ''), taggedPosts = [] } = Astro.props;
 
 const title = `รวมบทความเกี่ยวกับ ${tagLabel} (${taggedPosts.length} บทความ) | Warongkon Blog`;
-const description = `สำรวจบทความ ข่าวสาร และเทคนิคเชิงลึกเกี่ยวกับ ${tagLabel} จำนวน ${taggedPosts.length} บทความ บน Warongkon Blog โดย วรงค์กร ฟักทองอยู่ (Warongkon Fukthongyoo)`;
+const description = `สำรวจบทความ ข่าวสาร และเทคนิคเชิงลึกเกี่ยวกับ ${tagLabel} จำนวน ${taggedPosts.length} บทความ บน Warongkon Blog โดย วรงค์กรณ์ ฟักทองอยู่ (Warongkon Fukthongyoo)`;
 const isThinTag = taggedPosts.length < 2;
 
 const siteOrigin = (Astro.site ? Astro.site.toString() : 'https://warongkon-blog.vercel.app').replace(/\/+$/, '');

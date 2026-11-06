@@ -5,13 +5,15 @@ export const SITE_TITLE = 'Warongkon Blog';
 export const SITE_TAGLINE =
 	'บล็อกเทคโนโลยี AI, Software Engineering, .NET, C# และ Architecture โดย Warongkon Fukthongyoo (warongkon)';
 export const SITE_DESCRIPTION =
-	'Warongkon Blog — แหล่งรวมบทความ ข่าวสาร AI ระดับโลก, Software Engineering, System Design, C#, ASP.NET Core, TypeScript, Cloud Infrastructure และเทรนด์เทคโนโลยีล่าสุดโดย วรงค์กร ฟักทองอยู่ (Warongkon Fukthongyoo / warongkon)';
+	'Warongkon Blog — แหล่งรวมบทความ ข่าวสาร AI ระดับโลก, Software Engineering, System Design, C#, ASP.NET Core, TypeScript, Cloud Infrastructure และเทรนด์เทคโนโลยีล่าสุดโดย วรงค์กรณ์ ฟักทองอยู่ (Warongkon Fukthongyoo / warongkon)';
 
 export const SITE_KEYWORDS: string[] = [
 	'warongkon',
 	'Warongkon',
 	'Warongkon Fukthongyoo',
 	'warongkon fukthongyoo',
+	'วรงค์กรณ์ ฟักทองอยู่',
+	'วรงค์กรณ์',
 	'วรงค์กร ฟักทองอยู่',
 	'วรงค์กร',
 	'Warongkon Blog',
@@ -38,8 +40,8 @@ export const SITE_KEYWORDS: string[] = [
 
 export const SITE_AUTHOR = {
 	name: 'Warongkon Fukthongyoo',
-	alternateName: 'วรงค์กร ฟักทองอยู่',
-	alternateNames: ['warongkon', 'Warongkon', 'วรงค์กร ฟักทองอยู่', 'วรงค์กร', 'jkstudio99'],
+	alternateName: 'วรงค์กรณ์ ฟักทองอยู่',
+	alternateNames: ['warongkon', 'Warongkon', 'วรงค์กรณ์ ฟักทองอยู่', 'วรงค์กรณ์', 'วรงค์กร ฟักทองอยู่', 'วรงค์กร', 'jkstudio99'],
 	additionalName: 'warongkon',
 	jobTitle: 'Software Developer',
 	email: 'warongkon.gen@gmail.com',
