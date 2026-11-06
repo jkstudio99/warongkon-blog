@@ -1,30 +1,147 @@
 ---
-import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostsByYear from '../../components/PostsByYear.astro';
 import Pagination from '../../components/Pagination.astro';
 
 type BlogPost = CollectionEntry<'blog'>;
-const title = 'All posts'
-const description = 'Articles, guides, tutorials, and tech updates.'
+const title = 'บทความเทคโนโลยี AI และ Software Engineering ทั้งหมด (All Posts) | Warongkon Blog';
+const description =
+	'คลังบทความ ข่าวสาร AI ระดับโลก, Software Engineering, C#, .NET, Cloud Infrastructure และอัปเดตเทคโนโลยีล่าสุดทั้งหมดโดย วรงค์กร ฟักทองอยู่ (หน้า 1)';
 const PAGE_SIZE = 10;
 
-const allPosts = (await getCollection('blog')).sort((a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const allPosts = (await getCollection('blog')).sort(
+	(a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 const posts = allPosts.slice(0, PAGE_SIZE);
 const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
+const nextUrl = totalPages > 1 ? '/posts/2/' : undefined;
+
+const siteOrigin = (Astro.site ? Astro.site.toString() : 'https://warongkon-blog.vercel.app').replace(/\/+$/, '');
+const canonicalUrl = `${siteOrigin}/posts/`;
+
+const collectionSchema = {
+	'@type': 'CollectionPage',
+	'@id': `${canonicalUrl}#collection`,
+	url: canonicalUrl,
+	name: title,
+	description,
+	isPartOf: { '@id': 'https://warongkon-blog.vercel.app/#website' },
+	inLanguage: 'th-TH',
+	mainEntity: {
+		'@type': 'ItemList',
+		itemListElement: posts.map((post: BlogPost, idx: number) => ({
+			'@type': 'ListItem',
+			position: idx + 1,
+			url: `${siteOrigin}/${post.slug}/`,
+			name: post.data.title
+		}))
+	}
+};
+
+const breadcrumbSchema = {
+	'@type': 'BreadcrumbList',
+	'@id': `${canonicalUrl}#breadcrumb`,
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: `${siteOrigin}/`
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Posts',
+			item: canonicalUrl
+		}
+	]
+};
+
+const quickTopics = [
+	{ label: 'AI', href: '/tags/ai/' },
+	{ label: 'Architecture', href: '/tags/architecture/' },
+	{ label: '.NET & C#', href: '/tags/dotnet/' },
+	{ label: 'Hardware', href: '/tags/hardware/' },
+	{ label: 'Thailand', href: '/tags/thailand/' },
+	{ label: 'SEA', href: '/tags/sea/' },
+	{ label: 'Games', href: '/tags/games/' },
+	{ label: 'Cloud', href: '/tags/cloud/' }
+];
 ---
 
-<BaseLayout
-	title={title}
-	description={description}
->
-  <div class='container'>
-    <div class="mb-10">
-      <h1 class="mb-3 text-4xl font-bold leading-tight">{title}</h1>
-      <p class="text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300">{description}</p>
-    </div>
-    <PostsByYear posts={posts}/>
-    <Pagination currentPage={1} totalPages={totalPages} />
-  </div>
+<BaseLayout title={title} description={description} nextUrl={nextUrl} schema={[collectionSchema, breadcrumbSchema]}>
+	<div class='container'>
+		<nav aria-label='Breadcrumb' class='mb-6 text-sm text-zinc-500 dark:text-zinc-400'>
+			<ol class='flex flex-wrap items-center gap-2'>
+				<li>
+					<a href='/' class='hover:text-zinc-900 dark:hover:text-zinc-100'>Home</a>
+				</li>
+				<li aria-hidden='true'>/</li>
+				<li class='font-medium text-zinc-800 dark:text-zinc-200' aria-current='page'>Posts</li>
+			</ol>
+		</nav>
+		<div class='mb-8'>
+			<h1 class='mb-3 text-4xl font-bold leading-tight'>All Posts — บทความทั้งหมด ({allPosts.length} บทความ)</h1>
+			<p class='text-[1.12rem] leading-8 text-zinc-700 dark:text-zinc-300'>{description}</p>
+		</div>
+
+		<div class='mb-8 flex flex-col gap-4 rounded-2xl border border-zinc-200 p-4 dark:border-zinc-800 sm:flex-row sm:items-center sm:justify-between'>
+			<div class='flex flex-wrap items-center gap-2'>
+				<span class='text-sm font-semibold text-zinc-600 dark:text-zinc-400'>หมวดหมู่ยอดนิยม:</span>
+				{
+					quickTopics.map((topic) => (
+						<a
+							href={topic.href}
+							class='rounded-full bg-zinc-100 px-3 py-1 text-xs font-semibold text-zinc-700 no-underline hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700'
+						>
+							{topic.label}
+						</a>
+					))
+				}
+			</div>
+			<div class='w-full sm:w-72'>
+				<label for='post-search' class='sr-only'>ค้นหาบทความ</label>
+				<input
+					id='post-search'
+					type='search'
+					placeholder='ค้นหาบทความในหน้านี้...'
+					class='w-full rounded-xl border border-zinc-300 bg-white px-3.5 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-600 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100'
+				/>
+			</div>
+		</div>
+
+		<div id='posts-list-container'>
+			<PostsByYear posts={posts} />
+		</div>
+		<Pagination currentPage={1} totalPages={totalPages} />
+	</div>
+
+	<script is:inline>
+		const searchInput = document.getElementById('post-search');
+		const container = document.getElementById('posts-list-container');
+		const params = new URLSearchParams(window.location.search);
+		const initialQuery = params.get('q');
+
+		function filterPosts(query) {
+			if (!container) return;
+			const normalized = (query || '').trim().toLowerCase();
+			const items = container.querySelectorAll('h3');
+			items.forEach((h3) => {
+				const row = h3.closest('div.border-b');
+				if (!row) return;
+				const text = row.textContent?.toLowerCase() || '';
+				row.style.display = !normalized || text.includes(normalized) ? '' : 'none';
+			});
+		}
+
+		if (searchInput && initialQuery) {
+			searchInput.value = initialQuery;
+			filterPosts(initialQuery);
+		}
+
+		searchInput?.addEventListener('input', (e) => {
+			filterPosts(e.target.value);
+		});
+	</script>
 </BaseLayout>

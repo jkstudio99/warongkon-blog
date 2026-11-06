@@ -1,10 +1,9 @@
 ---
 import { SITE_TITLE, SITE_TAGLINE, SITE_DESCRIPTION } from '../consts';
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import type { CollectionEntry } from 'astro:content';
 import { projects } from './projects/projects';
-import ProjectList from '../components/ProjectList.astro'
+import ProjectList from '../components/ProjectList.astro';
 import PostItem from '../components/PostItem.astro';
 import { Image } from 'astro:assets';
 import AvaImage from '../assets/img/ava.jpg';
@@ -12,64 +11,214 @@ import AvaImage from '../assets/img/ava.jpg';
 type BlogPost = CollectionEntry<'blog'>;
 
 const top6Projects = projects.slice(0, 6);
-const posts = (await getCollection('blog'))
-  .sort((a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 5);
+const allPosts = (await getCollection('blog')).sort(
+	(a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const recentPosts = allPosts.slice(0, 8);
+const featuredEngineeringPosts = allPosts
+	.filter((p: BlogPost) =>
+		(p.data.tags || []).some((t: string) =>
+			/software engineering|architecture|c#|\.net|microservices|clean code|database|system design/i.test(t)
+		)
+	)
+	.slice(0, 6);
+
+const topicPillars = [
+	{
+		name: 'Global AI & World Models',
+		href: '/tags/ai/',
+		description: 'เจาะลึก Generative AI, LLM, AI Agents และโมเดลระดับโลกจาก OpenAI, Google, Anthropic'
+	},
+	{
+		name: 'Software Engineering & .NET',
+		href: '/tags/architecture/',
+		description: 'สถาปัตยกรรมซอฟต์แวร์ C#, ASP.NET Core, Clean Architecture, SOLID และ System Design'
+	},
+	{
+		name: 'Hardware & Cloud Infra',
+		href: '/tags/hardware/',
+		description: 'Data Center, GPU/TPU/NPU, Cloud Computing, Liquid Cooling และโครงสร้างพื้นฐานยุค AI'
+	},
+	{
+		name: 'Thailand & SEA Tech',
+		href: '/tags/thailand/',
+		description: 'ความเคลื่อนไหววงการเทคโนโลยีไทยและเอเชียตะวันออกเฉียงใต้ (SEA), Cloud & AI Hub'
+	},
+	{
+		name: 'Games & Spatial Tech',
+		href: '/tags/games/',
+		description: 'เทคโนโลยีเกมยุคใหม่, AI NPCs, คอนโซล, Spatial Computing และ Consumer Tech'
+	},
+	{
+		name: 'Cloud & Cybersecurity',
+		href: '/tags/cloud/',
+		description: 'Multi-Cloud, Kubernetes, DevSecOps, Zero Trust และการรักษาความปลอดภัยไซเบอร์'
+	}
+];
+
+const siteOrigin = (Astro.site ? Astro.site.toString() : 'https://warongkon-blog.vercel.app').replace(/\/+$/, '');
+const homeTitle = `${SITE_TITLE} — ${SITE_TAGLINE}`;
+
+const homeCollectionSchema = {
+	'@type': 'CollectionPage',
+	'@id': `${siteOrigin}/#collection`,
+	url: `${siteOrigin}/`,
+	name: homeTitle,
+	description: SITE_DESCRIPTION,
+	isPartOf: { '@id': 'https://warongkon-blog.vercel.app/#website' },
+	about: { '@id': 'https://warongkon-blog.vercel.app/#person' },
+	inLanguage: 'th-TH',
+	mainEntity: {
+		'@type': 'ItemList',
+		itemListElement: recentPosts.map((post: BlogPost, idx: number) => ({
+			'@type': 'ListItem',
+			position: idx + 1,
+			url: `${siteOrigin}/${post.slug}/`,
+			name: post.data.title
+		}))
+	}
+};
+
+const homeBreadcrumbSchema = {
+	'@type': 'BreadcrumbList',
+	'@id': `${siteOrigin}/#breadcrumb`,
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: `${siteOrigin}/`
+		}
+	]
+};
 ---
 
-<BaseLayout title={SITE_TITLE + ' - ' + SITE_TAGLINE} description={SITE_DESCRIPTION}>
+<BaseLayout title={homeTitle} description={SITE_DESCRIPTION} schema={[homeCollectionSchema, homeBreadcrumbSchema]}>
 	<div class='container'>
 		<div class='mb-20 w-full'>
-      <div class='flex flex-col-reverse items-start gap-10 md:flex-row md:items-center md:gap-16'>
-        <div class="flex-1">
-          <h1 class="mb-8 text-4xl font-semibold leading-tight tracking-tighter sm:text-5xl">
-            Warongkon Blog
-          </h1>
+			<div class='flex flex-col-reverse items-start gap-10 md:flex-row md:items-center md:gap-16'>
+				<div class='flex-1'>
+					<h1 class='mb-6 text-4xl font-semibold leading-tight tracking-tighter sm:text-5xl'>
+						Warongkon Blog — Warongkon Fukthongyoo (warongkon)
+					</h1>
 
-          <div class="space-y-4">
-            <p class="text-lg leading-relaxed text-zinc-700 dark:text-zinc-300 sm:text-xl">
-              Hi, I’m <strong>Warongkon</strong> – an enthusiastic Software Developer with 4 years of experience, specializing in <strong>C#, TypeScript, Angular, ASP.NET Core, SQL Server, and MongoDB</strong>. 
-            </p>
-            <p class="text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-xl">
-              I’m passionate about leveraging my love for C# to build high-performance, scalable solutions and RESTful APIs, following <strong>Clean Code</strong> and <strong>SOLID</strong> principles to drive efficient development workflows and impactful software solutions.
-            </p>
-          </div>
-        </div>
-        <div class="group relative shrink-0">
-          <!-- Soft Background Glow for Depth -->
-          <div class="absolute -inset-6 rounded-full bg-zinc-100 blur-3xl transition-all duration-700 group-hover:bg-zinc-200 dark:bg-zinc-800/40"></div>
-          
-          <!-- Sleek Minimal Premium Frame -->
-          <div class="relative z-10 overflow-hidden rounded-[2rem] border border-zinc-200 bg-white p-1 shadow-[0_12px_24px_-8px_rgba(0,0,0,0.12)] dark:border-zinc-700 dark:bg-zinc-800">
-            <Image 
-              src={AvaImage} 
-              alt="Warongkon" 
-              class="h-40 w-40 rounded-[1.7rem] object-cover transition-transform duration-700 group-hover:scale-105 sm:h-56 sm:w-56"
-            />
-          </div>
-        </div>
-      </div>
-		<div class='mt-6 mb-12'>
-		  <div class="mb-2 flex justify-between gap-3 border-b dark:border-b-zinc-700">
-		    <h2 class="mb-4 text-2xl font-semibold">Recent Posts</h2>
-		    <a href="/posts/" class="inline-block py-2 text-[1.08rem] font-semibold underline dark:prose-invert">All posts &raquo;</a>
-		  </div>
-		  <div>
-		    {
-		      posts.map((post: BlogPost) => (
-		        <PostItem post={post} />
-		      ))
-		    }      
-		  </div>
-		</div>
-		<div>
-		  <div class="mb-2 flex justify-between gap-3">
-		    <h2 class="mb-4 text-2xl font-semibold">My Projects</h2>
-		    <a href="/projects/" class="inline-block py-2 text-[1.08rem] font-semibold underline dark:prose-invert">All projects &raquo;</a>
-		  </div>
-		  <ProjectList projects={top6Projects}/>
-		</div>
+					<div class='space-y-4'>
+						<p class='text-lg leading-relaxed text-zinc-700 dark:text-zinc-300 sm:text-xl'>
+							สวัสดีครับ ผม <strong>วรงค์กร ฟักทองอยู่ (Warongkon Fukthongyoo)</strong> — Software Developer
+							ที่มีประสบการณ์กว่า 4 ปี เชี่ยวชาญด้าน{' '}
+							<strong>C#, ASP.NET Core, TypeScript, Angular, SQL Server, MongoDB และ System Design</strong>
+						</p>
+						<p class='text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-xl'>
+							แหล่งรวบรวมบทความเจาะลึกด้าน <strong>Software Engineering, Clean Code, SOLID Principles</strong>{' '}
+							พร้อมสรุปข่าวสารและบทวิเคราะห์เทรนด์ <strong>Global AI, Cloud &amp; Hardware Infrastructure</strong>{' '}
+							และระบบนิเวศเทคโนโลยีในไทยและเอเชียตะวันออกเฉียงใต้ (SEA)
+						</p>
+						<div class='flex flex-wrap gap-3 pt-2'>
+							<a
+								href='/posts/'
+								class='rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-bold text-white no-underline transition-colors hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300'
+							>
+								อ่านบทความทั้งหมด ({allPosts.length}) &rarr;
+							</a>
+							<a
+								href='/about/'
+								class='rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-bold text-zinc-800 no-underline transition-colors hover:border-zinc-700 dark:border-zinc-700 dark:text-zinc-200 dark:hover:border-zinc-300'
+							>
+								เกี่ยวกับผู้เขียน (About Me)
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class='group relative shrink-0'>
+					<div
+						class='absolute -inset-6 rounded-full bg-zinc-100 blur-3xl transition-all duration-700 group-hover:bg-zinc-200 dark:bg-zinc-800/40'
+					>
+					</div>
 
-		</main>
+					<div
+						class='relative z-10 overflow-hidden rounded-[2rem] border border-zinc-200 bg-white p-1 shadow-[0_12px_24px_-8px_rgba(0,0,0,0.12)] dark:border-zinc-700 dark:bg-zinc-800'
+					>
+						<Image
+							src={AvaImage}
+							alt='Warongkon Fukthongyoo (วรงค์กร ฟักทองอยู่) — Software Developer'
+							width={224}
+							height={224}
+							loading='eager'
+							fetchpriority='high'
+							class='h-40 w-40 rounded-[1.7rem] object-cover transition-transform duration-700 group-hover:scale-105 sm:h-56 sm:w-56'
+						/>
+					</div>
+				</div>
+			</div>
+
+			<section class='mt-12 mb-12' aria-label='Topic pillars'>
+				<div class='mb-4 flex items-center justify-between gap-3 border-b pb-2 dark:border-b-zinc-700'>
+					<h2 class='text-2xl font-semibold'>หมวดหมู่บทความหลัก (Topic Pillars)</h2>
+					<a href='/tags/' class='inline-block py-1 text-[1.02rem] font-semibold underline dark:prose-invert'>
+						ดูแท็กทั้งหมด &raquo;
+					</a>
+				</div>
+				<div class='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+					{
+						topicPillars.map((pillar) => (
+							<a
+								href={pillar.href}
+								class='group rounded-2xl border border-zinc-200 p-5 no-underline transition-colors hover:border-zinc-500 dark:border-zinc-800 dark:hover:border-zinc-500'
+							>
+								<h3 class='mb-1.5 text-lg font-bold text-zinc-900 group-hover:underline dark:text-zinc-100'>
+									{pillar.name}
+								</h3>
+								<p class='text-sm leading-relaxed text-zinc-600 dark:text-zinc-400'>{pillar.description}</p>
+							</a>
+						))
+					}
+				</div>
+			</section>
+
+			<section class='mt-10 mb-12' aria-label='Recent posts'>
+				<div class='mb-2 flex justify-between gap-3 border-b dark:border-b-zinc-700'>
+					<h2 class='mb-4 text-2xl font-semibold'>บทความล่าสุด (Recent Posts)</h2>
+					<a href='/posts/' class='inline-block py-2 text-[1.08rem] font-semibold underline dark:prose-invert'>
+						All posts &raquo;
+					</a>
+				</div>
+				<div>
+					{recentPosts.map((post: BlogPost) => <PostItem post={post} />)}
+				</div>
+			</section>
+
+			{
+				featuredEngineeringPosts.length > 0 && (
+					<section class='mt-10 mb-12' aria-label='Featured engineering deep-dives'>
+						<div class='mb-2 flex justify-between gap-3 border-b dark:border-b-zinc-700'>
+							<h2 class='mb-4 text-2xl font-semibold'>
+								บทความเจาะลึกด้าน Software Engineering &amp; Architecture
+							</h2>
+							<a
+								href='/tags/architecture/'
+								class='inline-block py-2 text-[1.08rem] font-semibold underline dark:prose-invert'
+							>
+								Software Engineering &raquo;
+							</a>
+						</div>
+						<div>
+							{featuredEngineeringPosts.map((post: BlogPost) => (
+								<PostItem post={post} />
+							))}
+						</div>
+					</section>
+				)
+			}
+
+			<section class='mt-10' aria-label='Projects'>
+				<div class='mb-4 flex justify-between gap-3'>
+					<h2 class='text-2xl font-semibold'>ผลงานและโปรเจกต์ (My Projects)</h2>
+					<a href='/projects/' class='inline-block py-2 text-[1.08rem] font-semibold underline dark:prose-invert'>
+						All projects &raquo;
+					</a>
+				</div>
+				<ProjectList projects={top6Projects} />
+			</section>
+		</div>
 	</div>
 </BaseLayout>

@@ -1,15 +1,40 @@
 ---
+import { SITE_TITLE, SITE_AUTHOR } from '@src/consts';
 const today = new Date();
 ---
 
-<footer class='container mt-8'>
-  </div>
-
-	<div class='border-t py-5 dark:border-t-zinc-700'>
-    <div class="prose justify-between text-[1rem] leading-7 text-zinc-600 dark:prose-invert dark:text-zinc-300 md:flex">
-      <div>Copyright © {today.getFullYear()}</div>
-      <!-- Please leave the credit if you dont make a significant changes to the template. It's just a nofollow link :)  -->
-      <div> powered by Astro, and <a href="https://github.com/devaradise/devolio" target="_blank">devaradise</a> </div>      
-    </div>
+<footer class='container mt-12'>
+	<div class='border-t py-8 dark:border-t-zinc-700'>
+		<div class='mb-6 flex flex-col justify-between gap-6 md:flex-row md:items-center'>
+			<div>
+				<a href='/' class='text-lg font-bold text-zinc-900 no-underline dark:text-zinc-100'>
+					{SITE_TITLE}
+				</a>
+				<p class='mt-1 text-sm text-zinc-600 dark:text-zinc-400'>
+					โดย {SITE_AUTHOR.name} ({SITE_AUTHOR.alternateName}) — {SITE_AUTHOR.jobTitle}
+				</p>
+			</div>
+			<nav aria-label='Footer navigation' class='flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-zinc-600 dark:text-zinc-300'>
+				<a href='/' class='hover:text-zinc-900 dark:hover:text-white'>Home</a>
+				<a href='/posts/' class='hover:text-zinc-900 dark:hover:text-white'>Posts</a>
+				<a href='/tags/' class='hover:text-zinc-900 dark:hover:text-white'>Tags</a>
+				<a href='/projects/' class='hover:text-zinc-900 dark:hover:text-white'>Projects</a>
+				<a href='/about/' class='hover:text-zinc-900 dark:hover:text-white'>About</a>
+				<a href='/rss.xml' class='hover:text-zinc-900 dark:hover:text-white'>RSS</a>
+				<a href='/sitemap-index.xml' class='hover:text-zinc-900 dark:hover:text-white'>Sitemap</a>
+				<a href='/llms.txt' class='hover:text-zinc-900 dark:hover:text-white'>LLMs.txt</a>
+			</nav>
+		</div>
+		<div class='prose flex flex-col justify-between gap-2 text-sm leading-6 text-zinc-500 dark:prose-invert dark:text-zinc-400 sm:flex-row'>
+			<div>
+				Copyright © {today.getFullYear()} {SITE_AUTHOR.name} ({SITE_AUTHOR.alternateName}). All rights reserved.
+			</div>
+			<div>
+				Powered by Astro • Theme credit{' '}
+				<a href='https://github.com/devaradise/devolio' target='_blank' rel='nofollow noopener noreferrer'>
+					devaradise
+				</a>
+			</div>
+		</div>
 	</div>
 </footer>

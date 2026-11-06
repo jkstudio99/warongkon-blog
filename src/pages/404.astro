@@ -5,15 +5,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import NotFoundImage from '@src/assets/img/404-not-found.png';
 ---
 
-<BaseLayout title={'404 Page Not Found - ' + SITE_TITLE} description={SITE_DESCRIPTION + ' 404 Page Not Found'}>
+<BaseLayout
+	title={'404 Page Not Found | ' + SITE_TITLE}
+	description={SITE_DESCRIPTION + ' — 404 Page Not Found'}
+	noindex={true}
+	robots='noindex, nofollow'
+>
 	<div class='container text-center'>
 		<Image width={300} class='my-8 mx-auto' src={NotFoundImage} alt='404 Page Not Found' />
 		<div class='p-4'>
-			<h1 class='my-4 text-5xl font-bold leading-tight sm:text-6xl'>Page Not Found</h1>
-			<p class='text-2xl leading-9'>
-				The page you're looking for is either moved or no longer exists. <br />
-				Please contact the site owner that linked you to the original URL and let them know their link is broken.
+			<h1 class='my-4 text-5xl font-bold leading-tight sm:text-6xl'>Page Not Found (404)</h1>
+			<p class='text-xl leading-8 text-zinc-600 dark:text-zinc-300'>
+				ไม่พบหน้าที่คุณกำลังค้นหา อาจถูกย้ายหรือลบออกไปแล้ว <br />
+				The page you're looking for has either moved or no longer exists.
 			</p>
+			<div class='mt-6'>
+				<a
+					href='/'
+					class='inline-block rounded-full bg-zinc-900 px-6 py-3 text-sm font-bold text-white no-underline hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900'
+				>
+					กลับสู่หน้าแรก (Back to Home)
+				</a>
+			</div>
 		</div>
 	</div>
 </BaseLayout>

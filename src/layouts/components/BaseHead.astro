@@ -3,26 +3,129 @@
 // all pages through the use of the <BaseHead /> component.
 import '../../styles/global.css';
 import Favicon from '@src/assets/img/favicon.png';
+import AvaImage from '@src/assets/img/ava.jpg';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_KEYWORDS, SITE_AUTHOR } from '@src/consts';
 
-interface Props {
+export interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	imageAlt?: string;
+	type?: 'website' | 'article' | 'profile';
+	pubDate?: Date;
+	updatedDate?: Date;
+	tags?: string[];
+	author?: string;
+	noindex?: boolean;
+	robots?: string;
+	prevUrl?: string;
+	nextUrl?: string;
+	schema?: Record<string, any> | Record<string, any>[];
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const siteUrl = Astro.site || new URL('https://warongkon-blog.vercel.app');
+const normalizedPathname =
+	Astro.url.pathname === '/' || Astro.url.pathname.endsWith('/') || /\.[a-z0-9]+$/i.test(Astro.url.pathname)
+		? Astro.url.pathname
+		: `${Astro.url.pathname}/`;
+const canonicalURL = new URL(normalizedPathname, siteUrl);
 
-const { title, description, image = '/syakir.webp' } = Astro.props;
+const {
+	title,
+	description = SITE_DESCRIPTION,
+	image = '/og-default.png',
+	imageAlt,
+	type = 'website',
+	pubDate,
+	updatedDate,
+	tags,
+	author = SITE_AUTHOR.name,
+	noindex = false,
+	robots,
+	prevUrl,
+	nextUrl,
+	schema
+} = Astro.props;
+
+const robotsContent =
+	robots ||
+	(noindex
+		? 'noindex, follow'
+		: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+
+const shouldEmitCanonical = !robotsContent.includes('noindex, nofollow');
+const resolvedImageUrl = new URL(image || '/og-default.png', siteUrl).toString();
+const resolvedImageAlt = imageAlt || title;
+const keywordsContent = (tags && tags.length > 0 ? tags : SITE_KEYWORDS).join(', ');
+const authorAvatarUrl = new URL(AvaImage.src, siteUrl).toString();
+
+const websiteEntity = {
+	'@type': 'WebSite',
+	'@id': 'https://warongkon-blog.vercel.app/#website',
+	url: 'https://warongkon-blog.vercel.app/',
+	name: SITE_TITLE,
+	alternateName: ['warongkon', 'Warongkon Fukthongyoo Blog', 'Warongkon Tech Blog', 'วรงค์กร บล็อก'],
+	description: SITE_DESCRIPTION,
+	inLanguage: 'th-TH',
+	publisher: {
+		'@id': 'https://warongkon-blog.vercel.app/#person'
+	},
+	potentialAction: {
+		'@type': 'SearchAction',
+		target: {
+			'@type': 'EntryPoint',
+			urlTemplate: 'https://warongkon-blog.vercel.app/posts/?q={search_term_string}'
+		},
+		'query-input': 'required name=search_term_string'
+	}
+};
+
+const personEntity = {
+	'@type': 'Person',
+	'@id': 'https://warongkon-blog.vercel.app/#person',
+	name: SITE_AUTHOR.name,
+	alternateName: SITE_AUTHOR.alternateNames || [SITE_AUTHOR.alternateName, 'warongkon', 'วรงค์กร'],
+	additionalName: SITE_AUTHOR.additionalName || 'warongkon',
+	givenName: 'Warongkon',
+	familyName: 'Fukthongyoo',
+	jobTitle: SITE_AUTHOR.jobTitle,
+	description: 'Warongkon Fukthongyoo (warongkon) — Software Developer specializing in C#, ASP.NET Core, TypeScript, Angular, System Design, and AI.',
+	email: `mailto:${SITE_AUTHOR.email}`,
+	url: SITE_AUTHOR.url,
+	image: authorAvatarUrl,
+	sameAs: SITE_AUTHOR.sameAs,
+	knowsAbout: SITE_AUTHOR.knowsAbout
+};
+
+const pageSchemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const jsonLdGraph = {
+	'@context': 'https://schema.org',
+	'@graph': [websiteEntity, personEntity, ...pageSchemas]
+};
 ---
 
 <!-- Global Metadata -->
 <meta charset='utf-8' />
 <meta name='viewport' content='width=device-width,initial-scale=1' />
-<link rel='icon' href={Favicon.src} />
+<link rel='icon' type='image/png' href={Favicon.src} />
+<link rel='apple-touch-icon' href={Favicon.src} />
+<link rel='manifest' href='/site.webmanifest' />
+<link rel='sitemap' href='/sitemap-index.xml' />
+<link rel='alternate' type='application/rss+xml' title={SITE_TITLE} href={new URL('rss.xml', siteUrl)} />
 <meta name='generator' content={Astro.generator} />
+<meta name='theme-color' content='#ffffff' media='(prefers-color-scheme: light)' />
+<meta name='theme-color' content='#18181b' media='(prefers-color-scheme: dark)' />
 
-<!-- Canonical URL -->
-<link rel='canonical' href={canonicalURL} />
+<!-- Robots & Search Directives -->
+<meta name='robots' content={robotsContent} />
+<meta name='googlebot' content={robotsContent} />
+<meta name='author' content={author} />
+<meta name='keywords' content={keywordsContent} />
+
+<!-- Canonical & Pagination URLs -->
+{shouldEmitCanonical && <link rel='canonical' href={canonicalURL} />}
+{prevUrl && <link rel='prev' href={new URL(prevUrl, siteUrl)} />}
+{nextUrl && <link rel='next' href={new URL(nextUrl, siteUrl)} />}
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -30,20 +133,46 @@ const { title, description, image = '/syakir.webp' } = Astro.props;
 <meta name='description' content={description} />
 
 <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link
+	href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sarabun:wght@400;600;700&display=swap'
+	rel='stylesheet'
+/>
 
 <!-- Open Graph / Facebook -->
-<meta property='og:type' content='website' />
-<meta property='og:url' content={Astro.url} />
+<meta property='og:type' content={type} />
+<meta property='og:site_name' content={SITE_TITLE} />
+<meta property='og:locale' content='th_TH' />
+<meta property='og:locale:alternate' content='en_US' />
+<meta property='og:url' content={canonicalURL} />
 <meta property='og:title' content={title} />
 <meta property='og:description' content={description} />
-<meta property='og:image' content={new URL(image, Astro.url)} />
+<meta property='og:image' content={resolvedImageUrl} />
+<meta property='og:image:alt' content={resolvedImageAlt} />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+{
+	type === 'article' && (
+		<>
+			{pubDate && <meta property='article:published_time' content={pubDate.toISOString()} />}
+			{(updatedDate || pubDate) && (
+				<meta property='article:modified_time' content={(updatedDate || pubDate)!.toISOString()} />
+			)}
+			<meta property='article:author' content={SITE_AUTHOR.url} />
+			<meta property='article:section' content={tags?.[0] || 'Technology'} />
+			{tags?.map((tag) => <meta property='article:tag' content={tag} />)}
+		</>
+	)
+}
 
-<!-- Twitter -->
-<meta property='twitter:card' content='summary_large_image' />
-<meta property='twitter:url' content={Astro.url} />
-<meta property='twitter:title' content={title} />
-<meta property='twitter:description' content={description} />
-<meta property='twitter:image' content={new URL(image, Astro.url)} />
+<!-- Twitter Cards -->
+<meta name='twitter:card' content='summary_large_image' />
+<meta name='twitter:url' content={canonicalURL} />
+<meta name='twitter:title' content={title} />
+<meta name='twitter:description' content={description} />
+<meta name='twitter:image' content={resolvedImageUrl} />
+<meta name='twitter:image:alt' content={resolvedImageAlt} />
+
+<!-- Schema.org JSON-LD Structured Data -->
+<script is:inline type='application/ld+json' set:html={JSON.stringify(jsonLdGraph)} />

@@ -2,26 +2,71 @@ import { loadEnv } from 'vite';
 
 const { GITHUB_PERSONAL_ACCESS_TOKEN } = loadEnv(process.env.NODE_ENV || 'production', process.cwd(), '');
 
+const ACRONYMS = new Set([
+	'AI',
+	'AWS',
+	'SEA',
+	'NVIDIA',
+	'SQL',
+	'API',
+	'LLM',
+	'GPU',
+	'CPU',
+	'RAM',
+	'UX',
+	'UI',
+	'IOS',
+	'VR',
+	'AR',
+	'ERP',
+	'SAAS',
+	'IOT',
+	'5G',
+	'6G',
+	'PC',
+	'IT',
+	'SEO',
+	'EV',
+	'AAA',
+	'NPU',
+	'TPU',
+	'AMD',
+	'SDK',
+	'CLI',
+	'SSR',
+	'SSG',
+	'CSS',
+	'HTML'
+]);
+
 export const slugify = (input: string) => {
 	if (!input) return '';
 
-	// make lower case and trim
-	var slug = input.toLowerCase().trim();
+	// Make lower case and trim
+	let slug = input.toLowerCase().trim();
 
-	// remove accents from charaters
-	slug = slug.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+	// Remove Latin combining diacritics while preserving Thai combining marks (\u0E00-\u0E7F)
+	slug = slug.normalize('NFC');
 
-	// replace invalid chars with spaces
-	slug = slug.replace(/[^a-z0-9\s-]/g, ' ').trim();
+	// Allow ASCII alphanumeric, Thai Unicode characters (\u0E00-\u0E7F), spaces, and hyphens
+	slug = slug.replace(/[^a-z0-9\u0E00-\u0E7F\s-]/g, ' ').trim();
 
-	// replace multiple spaces or hyphens with a single hyphen
-	slug = slug.replace(/[\s-]+/g, '-');
+	// Replace multiple spaces or hyphens with a single hyphen
+	slug = slug.replace(/[\s-]+/g, '-').replace(/^-+|-+$/g, '');
 
 	return slug;
 };
 
 export const unslugify = (slug: string) =>
-	slug.replace(/\-/g, ' ').replace(/\w\S*/g, (text) => text.charAt(0).toUpperCase() + text.slice(1).toLowerCase());
+	slug
+		.replace(/\-/g, ' ')
+		.replace(/\S+/g, (word) => {
+			const upper = word.toUpperCase();
+			if (ACRONYMS.has(upper)) {
+				return upper;
+			}
+			return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+		});
 
 export const kFormatter = (num: number) => {
 	return Math.abs(num) > 999 ? (Math.sign(num) * (Math.abs(num) / 1000)).toFixed(1) + 'k' : Math.sign(num) * Math.abs(num);

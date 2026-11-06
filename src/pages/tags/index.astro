@@ -12,21 +12,21 @@ interface Tag {
 }
 
 function groupTagsByFirstLetter(tags: Tag[]) {
-  const grouped = tags.reduce((acc, tag) => {
-    const firstLetter = tag.label[0].toUpperCase();
-    if (!acc[firstLetter]) {
-      acc[firstLetter] = [];
-    }
-    acc[firstLetter].push(tag);
-    return acc;
-  }, {} as Record<string, Tag[]>);
+	const grouped = tags.reduce((acc, tag) => {
+		const firstLetter = tag.label[0].toUpperCase();
+		if (!acc[firstLetter]) {
+			acc[firstLetter] = [];
+		}
+		acc[firstLetter].push(tag);
+		return acc;
+	}, {} as Record<string, Tag[]>);
 
-  return Object.entries(grouped)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([letter, tags]) => ({
-      letter,
-      tags: tags.sort((a, b) => a.label.localeCompare(b.label)),
-    }));
+	return Object.entries(grouped)
+		.sort(([a], [b]) => a.localeCompare(b))
+		.map(([letter, tags]) => ({
+			letter,
+			tags: tags.sort((a, b) => a.label.localeCompare(b.label))
+		}));
 }
 
 const allPosts: BlogPost[] = await getCollection('blog');
@@ -34,6 +34,7 @@ const mappedTags: { [key: string]: Tag } = {};
 for (const post of allPosts) {
 	for (const tag of post.data?.tags || []) {
 		const tagValue = slugify(tag);
+		if (!tagValue) continue;
 		if (mappedTags[tagValue]) {
 			mappedTags[tagValue].postCount += 1;
 		} else {
@@ -46,37 +47,93 @@ for (const post of allPosts) {
 		}
 	}
 }
-const groupedTags  = groupTagsByFirstLetter(Object.values(mappedTags))
-const title = `All Tags`;
-const description = 'Post tags: concise keywords categorizing content for easy navigation and improved searchability'
+const groupedTags = groupTagsByFirstLetter(Object.values(mappedTags));
+const topTags = Object.values(mappedTags)
+	.sort((a, b) => b.postCount - a.postCount)
+	.slice(0, 20);
+
+const title = 'รวมหมวดหมู่และแท็กบทความทั้งหมด (All Tags) | Warongkon Blog';
+const description =
+	'ค้นหาบทความตามหมวดหมู่และแท็กเทคโนโลยี AI, Software Engineering, C#, .NET, Cloud Infrastructure, Hardware และเทรนด์ไอทีบน Warongkon Blog';
+
+const siteOrigin = (Astro.site ? Astro.site.toString() : 'https://warongkon-blog.vercel.app').replace(/\/+$/, '');
+const canonicalUrl = `${siteOrigin}/tags/`;
+
+const collectionSchema = {
+	'@type': 'CollectionPage',
+	'@id': `${canonicalUrl}#collection`,
+	url: canonicalUrl,
+	name: title,
+	description,
+	isPartOf: { '@id': 'https://warongkon-blog.vercel.app/#website' },
+	inLanguage: 'th-TH',
+	mainEntity: {
+		'@type': 'ItemList',
+		itemListElement: topTags.map((t, idx) => ({
+			'@type': 'ListItem',
+			position: idx + 1,
+			url: `${siteOrigin}/tags/${t.value}/`,
+			name: `${t.label} (${t.postCount})`
+		}))
+	}
+};
+
+const breadcrumbSchema = {
+	'@type': 'BreadcrumbList',
+	'@id': `${canonicalUrl}#breadcrumb`,
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: `${siteOrigin}/`
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Tags',
+			item: canonicalUrl
+		}
+	]
+};
 ---
 
-<BaseLayout title={title} description={description}>
-  <div class='container'>
-    <div class="mb-10">
-      <h1 class="mb-3 text-4xl font-bold leading-tight">{title}</h1>
-      <p class="text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300">{description}</p>
-    </div>
-    <div>
-      {groupedTags.map(({ letter, tags }) => (
-        <div class="mb-6 flex gap-4 border-b py-4 capitalize dark:border-b-zinc-700">
-          <h2 class="w-9 shrink-0 text-3xl font-bold text-zinc-800 dark:text-zinc-200">{letter}</h2>
-          <div class='flex gap-2 flex-wrap'>
-            {
-              (tags || [] )?.map((tag: Tag) => (
-                <a
-                  class='border border-zinc-300 dark:border-zinc-700 rounded-full
+<BaseLayout title={title} description={description} schema={[collectionSchema, breadcrumbSchema]}>
+	<div class='container'>
+		<nav aria-label='Breadcrumb' class='mb-6 text-sm text-zinc-500 dark:text-zinc-400'>
+			<ol class='flex flex-wrap items-center gap-2'>
+				<li>
+					<a href='/' class='hover:text-zinc-900 dark:hover:text-zinc-100'>Home</a>
+				</li>
+				<li aria-hidden='true'>/</li>
+				<li class='font-medium text-zinc-800 dark:text-zinc-200' aria-current='page'>Tags</li>
+			</ol>
+		</nav>
+		<div class='mb-10'>
+			<h1 class='mb-3 text-4xl font-bold leading-tight'>All Tags — หมวดหมู่และแท็กบทความทั้งหมด</h1>
+			<p class='text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300'>{description}</p>
+		</div>
+		<div>
+			{
+				groupedTags.map(({ letter, tags }) => (
+					<div class='mb-6 flex gap-4 border-b py-4 capitalize dark:border-b-zinc-700'>
+						<h2 class='w-9 shrink-0 text-3xl font-bold text-zinc-800 dark:text-zinc-200'>{letter}</h2>
+						<div class='flex gap-2 flex-wrap'>
+							{(tags || [])?.map((tag: Tag) => (
+								<a
+									class='border border-zinc-300 dark:border-zinc-700 rounded-full
                     text-[1.05rem] leading-7 text-zinc-700 dark:text-zinc-300 no-underline px-4 py-1.5
                     transition-colors duration-200
                   hover:border-zinc-700 dark:hover:border-zinc-300'
-                  href={`/tags/${slugify(tag.value)}/`}>
-                  {tag.label} ({tag.postCount})
-                </a>
-              ))
-            }
-          </div>
-        </div>
-      ))}
-    </div>
+									href={`/tags/${slugify(tag.value)}/`}
+								>
+									{tag.label} ({tag.postCount})
+								</a>
+							))}
+						</div>
+					</div>
+				))
+			}
+		</div>
 	</div>
 </BaseLayout>

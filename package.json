@@ -8,6 +8,7 @@
     "backoffice": "node scripts/backoffice-server.mjs",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "test": "node --test tests/seo.test.mjs",
     "astro": "astro"
   },
   "dependencies": {

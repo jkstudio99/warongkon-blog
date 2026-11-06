@@ -3,7 +3,8 @@ title: 'วิวัฒนาการของ Generative AI ในปี 2026:
 seoTitle: 'Generative AI Evolution 2026 - Warongkon Blog'
 slug: 'generative-ai-evolution-2026'
 description: 'เจาะลึกการเปลี่ยนแปลงของ AI ในปี 2026 ที่ไม่ได้เป็นแค่เครื่องมือช่วยเขียนโค้ด แต่กลายเป็นส่วนหนึ่งของทีมพัฒนาอย่างเต็มตัว'
-pubDate: '2024-08-18'
+pubDate: '2026-04-18'
+updatedDate: '2026-04-18'
 tags: ["AI", "Generative AI", "Future Tech"]
 coverImage: './cover.jpg'
 ---

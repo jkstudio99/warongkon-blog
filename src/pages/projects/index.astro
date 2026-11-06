@@ -3,17 +3,70 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProjectList from '../../components/ProjectList.astro';
 import { projects } from './projects';
 
+const title = 'ผลงานและโปรเจกต์ซอฟต์แวร์ (Projects Portfolio) | Warongkon Blog';
+const description =
+	'รวมผลงานการพัฒนาซอฟต์แวร์ เว็บแอปพลิเคชัน ระบบ Enterprise .NET, Clean Architecture และโปรเจกต์ Open Source โดย วรงค์กร ฟักทองอยู่ (Warongkon Fukthongyoo)';
+
+const siteOrigin = (Astro.site ? Astro.site.toString() : 'https://warongkon-blog.vercel.app').replace(/\/+$/, '');
+const canonicalUrl = `${siteOrigin}/projects/`;
+
+const collectionSchema = {
+	'@type': 'CollectionPage',
+	'@id': `${canonicalUrl}#collection`,
+	url: canonicalUrl,
+	name: title,
+	description,
+	isPartOf: { '@id': 'https://warongkon-blog.vercel.app/#website' },
+	inLanguage: 'th-TH',
+	mainEntity: {
+		'@type': 'ItemList',
+		itemListElement: projects.map((project, idx) => ({
+			'@type': 'ListItem',
+			position: idx + 1,
+			url: project.demoLink,
+			name: project.name
+		}))
+	}
+};
+
+const breadcrumbSchema = {
+	'@type': 'BreadcrumbList',
+	'@id': `${canonicalUrl}#breadcrumb`,
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: `${siteOrigin}/`
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Projects',
+			item: canonicalUrl
+		}
+	]
+};
 ---
 
-<BaseLayout
-	title="All My Projects"
-	description="All my project portfolio from real projects to open source projects."
->
-  <div class='container'>
-    <div class="mb-10">
-      <h1 class="mb-3 text-4xl font-bold leading-tight">All My Projects</h1>
-      <p class="text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300">All my project portfolio from real projects to open source projects.</p>
-    </div>
-    <ProjectList projects={projects}/>
-  </div>
+<BaseLayout title={title} description={description} schema={[collectionSchema, breadcrumbSchema]}>
+	<div class='container'>
+		<nav aria-label='Breadcrumb' class='mb-6 text-sm text-zinc-500 dark:text-zinc-400'>
+			<ol class='flex flex-wrap items-center gap-2'>
+				<li>
+					<a href='/' class='hover:text-zinc-900 dark:hover:text-zinc-100'>Home</a>
+				</li>
+				<li aria-hidden='true'>/</li>
+				<li class='font-medium text-zinc-800 dark:text-zinc-200' aria-current='page'>Projects</li>
+			</ol>
+		</nav>
+		<div class='mb-10'>
+			<h1 class='mb-3 text-4xl font-bold leading-tight'>All My Projects — ผลงานและโปรเจกต์ซอฟต์แวร์</h1>
+			<p class='text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300'>
+				{description}
+			</p>
+		</div>
+		<h2 class='sr-only'>รายการโปรเจกต์ทั้งหมด (All Projects)</h2>
+		<ProjectList projects={projects} />
+	</div>
 </BaseLayout>

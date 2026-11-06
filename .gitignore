@@ -24,3 +24,6 @@ __pycache__/
 
 # jetbrains setting folder
 .idea/
+
+# teamwork agent data
+.agents/

@@ -1,6 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostsByYear from '../../components/PostsByYear.astro';
 import Pagination from '../../components/Pagination.astro';
@@ -8,46 +7,117 @@ import Pagination from '../../components/Pagination.astro';
 type BlogPost = CollectionEntry<'blog'>;
 
 export async function getStaticPaths() {
-  const pageSize = 10;
-  const allPosts = (await getCollection('blog')).sort((a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-  const totalPages = Math.ceil(allPosts.length / pageSize);
+	const pageSize = 10;
+	const allPosts = (await getCollection('blog')).sort(
+		(a: BlogPost, b: BlogPost) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	);
+	const totalPages = Math.ceil(allPosts.length / pageSize);
 
-  return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, index) => {
-    const currentPage = index + 2;
-    const start = (currentPage - 1) * pageSize;
+	return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, index) => {
+		const currentPage = index + 2;
+		const start = (currentPage - 1) * pageSize;
 
-    return {
-      params: { page: String(currentPage) },
-      props: {
-        currentPage,
-        totalPages,
-        posts: allPosts.slice(start, start + pageSize),
-      },
-    };
-  });
+		return {
+			params: { page: String(currentPage) },
+			props: {
+				currentPage,
+				totalPages,
+				posts: allPosts.slice(start, start + pageSize)
+			}
+		};
+	});
 }
 
 interface Props {
-  currentPage: number;
-  totalPages: number;
-  posts: BlogPost[];
+	currentPage: number;
+	totalPages: number;
+	posts: BlogPost[];
 }
 
 const { currentPage, totalPages, posts } = Astro.props;
-const title = `All posts - Page ${currentPage}`;
-const description = 'Articles, guides, tutorials, and tech updates.';
+const title = `บทความทั้งหมด — หน้า ${currentPage} จาก ${totalPages} (All Posts - Page ${currentPage}) | Warongkon Blog`;
+const description = `รวมบทความเทคโนโลยี AI, Software Engineering, Cloud และอัปเดตไอทีโดย Warongkon Fukthongyoo — หน้าที่ ${currentPage} จาก ${totalPages}`;
+const prevUrl = currentPage === 2 ? '/posts/' : `/posts/${currentPage - 1}/`;
+const nextUrl = currentPage < totalPages ? `/posts/${currentPage + 1}/` : undefined;
+
+const siteOrigin = (Astro.site ? Astro.site.toString() : 'https://warongkon-blog.vercel.app').replace(/\/+$/, '');
+const canonicalUrl = `${siteOrigin}/posts/${currentPage}/`;
+
+const collectionSchema = {
+	'@type': 'CollectionPage',
+	'@id': `${canonicalUrl}#collection`,
+	url: canonicalUrl,
+	name: title,
+	description,
+	isPartOf: { '@id': 'https://warongkon-blog.vercel.app/#website' },
+	inLanguage: 'th-TH',
+	mainEntity: {
+		'@type': 'ItemList',
+		itemListElement: posts.map((post: BlogPost, idx: number) => ({
+			'@type': 'ListItem',
+			position: idx + 1,
+			url: `${siteOrigin}/${post.slug}/`,
+			name: post.data.title
+		}))
+	}
+};
+
+const breadcrumbSchema = {
+	'@type': 'BreadcrumbList',
+	'@id': `${canonicalUrl}#breadcrumb`,
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: `${siteOrigin}/`
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Posts',
+			item: `${siteOrigin}/posts/`
+		},
+		{
+			'@type': 'ListItem',
+			position: 3,
+			name: `Page ${currentPage}`,
+			item: canonicalUrl
+		}
+	]
+};
 ---
 
 <BaseLayout
 	title={title}
 	description={description}
+	prevUrl={prevUrl}
+	nextUrl={nextUrl}
+	schema={[collectionSchema, breadcrumbSchema]}
 >
-  <div class='container'>
-    <div class="mb-10">
-      <h1 class="mb-3 text-4xl font-bold leading-tight">All posts</h1>
-      <p class="text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300">{description}</p>
-    </div>
-    <PostsByYear posts={posts}/>
-    <Pagination currentPage={currentPage} totalPages={totalPages} />
-  </div>
+	<div class='container'>
+		<nav aria-label='Breadcrumb' class='mb-6 text-sm text-zinc-500 dark:text-zinc-400'>
+			<ol class='flex flex-wrap items-center gap-2'>
+				<li>
+					<a href='/' class='hover:text-zinc-900 dark:hover:text-zinc-100'>Home</a>
+				</li>
+				<li aria-hidden='true'>/</li>
+				<li>
+					<a href='/posts/' class='hover:text-zinc-900 dark:hover:text-zinc-100'>Posts</a>
+				</li>
+				<li aria-hidden='true'>/</li>
+				<li class='font-medium text-zinc-800 dark:text-zinc-200' aria-current='page'>
+					Page {currentPage}
+				</li>
+			</ol>
+		</nav>
+		<div class='mb-10'>
+			<h1 class='mb-3 text-4xl font-bold leading-tight'>
+				All Posts — บทความทั้งหมด (หน้า {currentPage} / {totalPages})
+			</h1>
+			<p class='text-[1.18rem] leading-8 text-zinc-700 dark:text-zinc-300'>{description}</p>
+		</div>
+		<PostsByYear posts={posts} />
+		<Pagination currentPage={currentPage} totalPages={totalPages} />
+	</div>
 </BaseLayout>

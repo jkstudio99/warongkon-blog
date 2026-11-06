@@ -2,8 +2,9 @@
 title: 'สถาปัตยกรรม Microservices ในยุค 2026: ความท้าทายและทางออก'
 seoTitle: 'Microservices Architecture 2026 - Warongkon Blog'
 slug: 'microservices-architecture-2026'
-description: 'สรุปบทเรียนจากการออกแบบระบบ Microservices ให้ทันสมัยและรองรับการขยายตัวในอนาคต'
-pubDate: '2023-08-17'
+description: 'สรุปบทเรียนจากการออกแบบระบบ Microservices ให้ทันสมัยและรองรับการขยายตัวในอนาคตด้วย C# และ ASP.NET Core'
+pubDate: '2026-04-16'
+updatedDate: '2026-04-16'
 tags: ["IT Trends", "Microservices", "Architecture"]
 coverImage: './cover.jpg'
 ---
